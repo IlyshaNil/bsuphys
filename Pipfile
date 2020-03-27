@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.10b0"
+
+
+[packages]
+django = "*"
+dj-database-url = "*"
+dynaconf = {extras = ["yaml"],version = "*"}
+whitenoise = "*"
+psycopg2 = "*"
+django-taggit = "*"
+pillow = "*"
+gunicorn = "*"
