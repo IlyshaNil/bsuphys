@@ -9,7 +9,7 @@ class StaffAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("name",)}
     list_display = ["name", "position", "specialization"]
     list_filter = ["position", "specialization", "position_var"]
-    #formfield_overrides = {models.TextField: {"widget": forms.TextInput}}
+    # formfield_overrides = {models.TextField: {"widget": forms.TextInput}}
 
     class Meta:
         verbose_name_plural = "Сотрудники"

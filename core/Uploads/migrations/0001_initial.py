@@ -7,20 +7,25 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Uploads',
+            name="Uploads",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('file', models.FileField(upload_to='media/')),
-                ('title', models.TextField()),
-                ('created', models.DateField(auto_now_add=True, db_index=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("file", models.FileField(upload_to="media/")),
+                ("title", models.TextField()),
+                ("created", models.DateField(auto_now_add=True, db_index=True)),
             ],
-            options={
-                'verbose_name_plural': 'Загрузка файлов',
-            },
+            options={"verbose_name_plural": "Загрузка файлов",},
         ),
     ]

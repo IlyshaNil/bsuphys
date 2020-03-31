@@ -13,34 +13,71 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('Uploads', '0001_initial'),
+        ("Uploads", "0001_initial"),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('taggit', '0003_taggeditem_add_unique_index'),
+        ("taggit", "0003_taggeditem_add_unique_index"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Post',
+            name="Post",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.TextField()),
-                ('slug', models.SlugField(max_length=250, unique_for_date='publish')),
-                ('image', models.ImageField(blank=True, null=True, upload_to='media')),
-                ('body', models.TextField()),
-                ('publish', models.DateTimeField(default=django.utils.timezone.now)),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
-                ('status', models.TextField(blank=True, choices=[('draft', 'Draft'), ('published', 'Published')], max_length=10, null=True)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='blog_posts', to=settings.AUTH_USER_MODEL)),
-                ('tags', taggit.managers.TaggableManager(help_text='A comma-separated list of tags.', through='taggit.TaggedItem', to='taggit.Tag', verbose_name='Tags')),
-                ('uploads', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='Uploads.Uploads')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.TextField()),
+                ("slug", models.SlugField(max_length=250, unique_for_date="publish")),
+                ("image", models.ImageField(blank=True, null=True, upload_to="media")),
+                ("body", models.TextField()),
+                ("publish", models.DateTimeField(default=django.utils.timezone.now)),
+                ("created", models.DateTimeField(auto_now_add=True)),
+                ("updated", models.DateTimeField(auto_now=True)),
+                (
+                    "status",
+                    models.TextField(
+                        blank=True,
+                        choices=[("draft", "Draft"), ("published", "Published")],
+                        max_length=10,
+                        null=True,
+                    ),
+                ),
+                (
+                    "author",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="blog_posts",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "tags",
+                    taggit.managers.TaggableManager(
+                        help_text="A comma-separated list of tags.",
+                        through="taggit.TaggedItem",
+                        to="taggit.Tag",
+                        verbose_name="Tags",
+                    ),
+                ),
+                (
+                    "uploads",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="Uploads.Uploads",
+                    ),
+                ),
             ],
             options={
-                'verbose_name_plural': 'Добавление новостей',
-                'ordering': ('-publish',),
+                "verbose_name_plural": "Добавление новостей",
+                "ordering": ("-publish",),
             },
-            managers=[
-                ('published', django.db.models.manager.Manager()),
-            ],
+            managers=[("published", django.db.models.manager.Manager()),],
         ),
     ]
