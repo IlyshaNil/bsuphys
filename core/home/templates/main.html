@@ -1,364 +1,138 @@
+{% load static %}
 <!DOCTYPE html>
-<!DOCTYPE html> <html lang="ru-RU"><head>
-	    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="http://energy.bsu.by/xmlrpc.php">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{% static 'headers.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <title>Физический Факультет</title>
+</head>
+<body>
+    <svg class="_icon">
+        <symbol id="search" viewBox="0 0 512 512">
+            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+        </symbol>
+    </svg>
+   <header class="header">
+       <div class="container headers__container row">
+           <div class="header__change-language">
+               <a href="#" id="RU" class="header__color ">Ru</a>
+               <a href="#" id="EN" class="header__color">En</a>
+               <a href="#" id="BLR" class="header__color">Blr</a>
+           </div>
+           <div class="header__logo">
+               <img  id="logo" src="./logo.png" alt="logo">
+           </div>
+           <form >
+               <input  class="header__search" type="search" placeholder="     поиск по сайту">
+               <button  class="header__search-button" type="submit">
+                   <svg class="icon">
+                       <use href="#search"></use>
+                   </svg>
 
-<title>Физический факультет</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Кафедра энергофизики &raquo; Лента" href="http://energy.bsu.by/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Кафедра энергофизики &raquo; Лента комментариев" href="http://energy.bsu.by/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/energy.bsu.by\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.13"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='edsanimate-animo-css-css'  href='http://energy.bsu.by/wp-content/plugins/animate-it/assets/css/animate-animo.css?ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='fontsforwebstyle-css'  href='http://energy.bsu.by/wp-content/plugins/font/css/fontsforwebstyle.css?pver=7.5.1&#038;ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery-ui-css'  href='http://energy.bsu.by/wp-content/plugins/font/css/start/jquery-ui-1.8.14.custom.css?ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='colorpicker2-css'  href='http://energy.bsu.by/wp-content/plugins/font/css/colorpicker.css?ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='wpstatistics-css-css'  href='http://energy.bsu.by/wp-content/plugins/wp-statistics/assets/css/frontend.css?ver=12.5.2' type='text/css' media='all' />
-<link rel='stylesheet' id='fontawesome-css'  href='http://energy.bsu.by/wp-content/themes/education-hub/third-party/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='education-hub-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%2C400italic%2C300%2C100%2C700%7CMerriweather+Sans%3A400%2C700&#038;ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='education-hub-style-css'  href='http://energy.bsu.by/wp-content/themes/education-hub/style.css?ver=1.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css'  href='http://energy.bsu.by/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=6.3.0' type='text/css' media='all' />
-<link rel='stylesheet' id='myStyleSheets-css'  href='http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/css/wpcufpn_front.css?ver=4.9.13' type='text/css' media='all' />
-<link rel='stylesheet' id='myFonts-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C800%2C900%7CAlegreya%3A400%2C400italic%2C700%2C700italic%2C900%2C900italic%7CVarela+Round&#038;subset=latin%2Clatin-ext&#038;ver=4.9.13' type='text/css' media='all' />
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/font/js/jquery.fcarousel.min.js?ver=4.9.13'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/font/js/colorpicker.js?ver=4.9.13'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/font/js/jquery.fontPlugin.js?pver=7.5.1&#038;ver=4.9.13'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/font/js/pluginscripts.js?pver=7.5.1&#038;ver=4.9.13'></script>
-<link rel='https://api.w.org/' href='http://energy.bsu.by/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://energy.bsu.by/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://energy.bsu.by/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 4.9.13" />
-<link rel="canonical" href="http://energy.bsu.by/" />
-<link rel='shortlink' href='http://energy.bsu.by/' />
-<link rel="alternate" type="application/json+oembed" href="http://energy.bsu.by/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fenergy.bsu.by%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://energy.bsu.by/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fenergy.bsu.by%2F&#038;format=xml" />
-<style type="text/css">@font-face {
-			font-family: 'segoeui58c29c0eb0522';
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.eot');
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.woff') format('woff'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.eot') format('eot'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.ttf')  format('truetype');
-		}
-@font-face {
-			font-family: 'DINPro';
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/DINPro.eot');
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/DINPro.woff') format('woff'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/DINPro.eot') format('eot'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/DINPro.ttf')  format('truetype');
-		}
-PICK AN ELEMENT NOW - or type CSS selector(advanced) {
-font-size: 30px !important;
-color: #444 !important;
-}
-DIV DIV DIV.inner-wrapper DIV.recent-news H2, DIV DIV DIV.news-post DIV.news-content H3, DIV DIV DIV.news-post DIV.news-content DIV.block-meta, DIV DIV DIV.news-post DIV.news-content P, DIV DIV DIV.news-post DIV.news-content A.button {
-font-size: 16px !important;
-font-family:'segoeui58c29c0eb0522' !important;}
-BODY DIV FOOTER.site-footer DIV.container DIV.site-info {
-color: #136390 !important;
-font-size: 8px !important;
-}
-BODY DIV FOOTER.site-footer DIV.container DIV.copyright {
-font-size: 14px !important;
-font-family:'DINPro' !important;}
-DIV MAIN ARTICLE.post-91.page.type-page.status-publish.hentry DIV.entry-content H2, DIV MAIN ARTICLE.post-94.page.type-page.status-publish.hentry DIV.entry-content H2 {
-font-family:'segoeui58c29c0eb0522' !important;}
-DIV DIV DIV H1.site-title A, DIV DIV DIV P.site-title A {
-font-size: 28px !important;
-font-family:'DINPro' !important;}
-DIV DIV DIV.container DIV.quick-links A.links-btn, DIV DIV UL LI.page_item.page-item-94 A, DIV DIV UL LI.page_item.page-item-97 A, DIV DIV UL LI.page_item.page-item-91 A, DIV DIV UL LI.page_item.page-item-102 A {
-font-size: 14px !important;
-font-family:'DINPro' !important;}
-DIV DIV UL LI.quick-call A, DIV DIV UL LI.quick-email A {
-font-size: 14px !important;
-font-family:'segoeui58c29c0eb0522' !important;}
-DIV DIV FORM.search-form LABEL INPUT.search-field, HEADER DIV DIV.search-section FORM.search-form INPUT.search-submit {
-font-size: 13px !important;
-font-family:'segoeui58c29c0eb0522' !important;}
-DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-110 A.ui-draggable.ui-draggable-handle, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-175 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-174 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-176 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-177 A, UL LI UL.sub-menu LI.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-192 A.ui-draggable.ui-draggable-handle, UL LI UL.sub-menu LI.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-193 A.ui-draggable.ui-draggable-handle, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-has-children.menu-item-632 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-632 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-799 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-800 A, DIV DIV UL.menu LI.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-801 A {
-font-size: 16px !important;
-font-family:'DINPro' !important;}
-DIV MAIN ARTICLE.post-131.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-118.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-134.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-601.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-144.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-149.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-146.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-155.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-157.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-159.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-161.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-163.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-168.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-170.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-172.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-928.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title {
-font-size: 30px !important;
-font-family:'DINPro' !important;}
-MAIN ARTICLE DIV.entry-content DIV.wpcufpn_outside.wpcufpn_widget_431 SPAN.wpcu_block_title, MAIN ARTICLE DIV.entry-content DIV.wpcufpn_outside.wpcufpn_widget_572 SPAN.wpcu_block_title, MAIN ARTICLE DIV.entry-content DIV.wpcufpn_outside.wpcufpn_widget_738 SPAN.wpcu_block_title {
-font-size: 22px !important;
-color: #c9140a !important;
-font-family:'DINPro' !important;}
-DIV DIV UL.menu LI.lang-item.lang-item-15.lang-item-ru.lang-item-first.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-621-ru A, DIV DIV UL.menu LI.lang-item.lang-item-20.lang-item-en.current-lang.menu-item.menu-item-type-custom.menu-item-object-custom.current_page_item.menu-item-home.menu-item-621-en A, DIV DIV UL.menu LI.lang-item.lang-item-20.lang-item-en.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-621-en A, DIV DIV UL.menu LI.lang-item.lang-item-15.lang-item-ru.lang-item-first.current-lang.menu-item.menu-item-type-custom.menu-item-object-custom.current_page_item.menu-item-home.menu-item-2117-ru A, DIV DIV UL.menu LI.lang-item.lang-item-20.lang-item-en.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2117-en A, DIV DIV UL.menu LI.lang-item.lang-item-20.lang-item-en.current-lang.menu-item.menu-item-type-custom.menu-item-object-custom.current_page_item.menu-item-home.menu-item-2118-en A, DIV DIV UL.menu LI.lang-item.lang-item-15.lang-item-ru.lang-item-first.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2118-ru A {
-font-size: 17px !important;
-font-family:'segoeui58c29c0eb0522' !important;}
-MAIN ARTICLE FOOTER.entry-footer SPAN.edit-link A.post-edit-link {
-}
-DIV MAIN ARTICLE.post-624.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title, DIV MAIN ARTICLE.post-388.page.type-page.status-publish.hentry HEADER.entry-header H1.entry-title {
-color: #ffffff !important;
-}
-@font-face {
-			font-family: 'segoeui58c29c0eb0522';
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.eot');
-			src: url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.woff') format('woff'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.eot') format('eot'),
-			url('http://energy.bsu.by/wp-content/plugins/font/font_files/segoeui58c29c0eb0522.ttf')  format('truetype');
-		}
-.fontplugin_fontid_76676_segoeui58c29c0eb0522 {
-			font-family:'segoeui58c29c0eb0522' !important;
-		}
-</style><link rel="alternate" href="http://energy.bsu.by/" hreflang="ru" />
-<link rel="alternate" href="http://energy.bsu.by/en/homepage/" hreflang="en" />
-		<script type="text/javascript">
-			var ajaxproxy = 'http://energy.bsu.by/wp-admin/admin-ajax.php';
-			var fontBlogUrl = 'http://energy.bsu.by';
-			var fontBlogName = 'Кафедра энергофизики';
-			var fontPluginVersion = '7.5.1';
-		</script>
-		<link rel="icon" href="http://energy.bsu.by/wp-content/uploads/2018/08/cropped-circle_nojpg-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="http://energy.bsu.by/wp-content/uploads/2018/08/cropped-circle_nojpg-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="http://energy.bsu.by/wp-content/uploads/2018/08/cropped-circle_nojpg-180x180.jpg" />
-<meta name="msapplication-TileImage" content="http://energy.bsu.by/wp-content/uploads/2018/08/cropped-circle_nojpg-270x270.jpg" />
-<!-- Dojo Digital Hide Title -->
-<script type="text/javascript">
-	jQuery(document).ready(function($){
-
-		if( $('.entry-title').length != 0 ) {
-			$('.entry-title span.dojodigital_toggle_title').parents('.entry-title:first').hide();
-		} else {
-			$('h1 span.dojodigital_toggle_title').parents('h1:first').hide();
-			$('h2 span.dojodigital_toggle_title').parents('h2:first').hide();
-		}
-
-	});
-</script>
-<noscript><style type="text/css"> .entry-title { display:none !important; }</style></noscript>
-<!-- END Dojo Diguyuyuyital Hide Title -->
-
-			</head>
-
-<body class="home page-template-default page page-id-388 wp-custom-logo site-layout-fluid global-layout-no-sidebar">
-
-	    <div id="page" class="container hfeed site">
-    <a class="skip-link screen-reader-text" href="#content">Перейти к содержимому</a>
-    	<div id="tophead">
-		<div class="container">
-			<div id="quick-contact">
-									<ul>
-													<li class="quick-call"><a href="tel:375172095451">+375 (17) 209 54 51</a></li>
-																			<li class="quick-email"><a href="mailto:rubleuskaya@bsu.by">rubleuskaya@bsu.by</a></li>
-											</ul>
-											</div>
-
-							<div class="quick-links">
-					<a href="#" class="links-btn">LANGUAGE / ЯЗЫК</a>
-					<ul id="menu-quick_menu" class="menu"><li id="menu-item-2117-ru" class="lang-item lang-item-15 lang-item-ru lang-item-first current-lang menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-2117-ru"><a href="http://energy.bsu.by/" hreflang="ru-RU" lang="ru-RU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69T8DAvz79w9CQVj/0MCffwwAAcQClObiAin6/x+okxHMgPCAbOb//5n+I4EXL74ABBALxGSwagTjPzbAyMgItAQggBg9Pf9nZPx//x7kjL9////9C2QAyf9//qCQQCQkxFhY+BEggFi2b/+nq8v46BEDSPQ3w+8//3//BqFfv9BJeXmQEwACCOSkP38YgHy4Bog0RN0vIOMXVOTPH6Cv/gEEEEgDxFKgHEgDXCmGDUAE1AAQQCybGZg1f/d8//XsH0jTn3+///z79RtE/v4NZfz68xfI/vOX+4/0ZoZFAAHE4gYMvD+3/v2+h91wCANo9Z+/jH9VxBkYAAKIBRg9TL//MEhKAuWAogxgZzGC2CCfgUggAoYdGAEVAwQQ41egu5AQAyoXTQoIAAIMAD+JZR7YOGEWAAAAAElFTkSuQmCC" title="РУССКИЙ" alt="РУССКИЙ" /><span style="margin-left:0.3em;">РУССКИЙ</span></a></li>
-<li id="menu-item-2117-en" class="lang-item lang-item-20 lang-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-2117-en"><a href="http://energy.bsu.by/en/homepage/" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAflJREFUeNpinDRzn5qN3uFDt16+YWBg+Pv339+KGN0rbVP+//2rW5tf0Hfy/2+mr99+yKpyOl3Ydt8njEWIn8f9zj639NC7j78eP//8739GVUUhNUNuhl8//ysKeZrJ/v7z10Zb2PTQTIY1XZO2Xmfad+f7XgkXxuUrVB6cjPVXef78JyMjA8PFuwyX7gAZj97+T2e9o3d4BWNp84K1NzubTjAB3fH0+fv6N3qP/ir9bW6ozNQCijB8/8zw/TuQ7r4/ndvN5mZgkpPXiis3Pv34+ZPh5t23//79Rwehof/9/NDEgMrOXHvJcrllgpoRN8PFOwy/fzP8+gUlgZI/f/5xcPj/69e/37//AUX+/mXRkN555gsOG2xt/5hZQMwF4r9///75++f3nz8nr75gSms82jfvQnT6zqvXPjC8e/srJQHo9P9fvwNtAHmG4f8zZ6dDc3bIyM2LTNlsbtfM9OPHH3FhtqUz3eXX9H+cOy9ZMB2o6t/Pn0DHMPz/b+2wXGTvPlPGFxdcD+mZyjP8+8MUE6sa7a/xo6Pykn1s4zdzIZ6///8zMGpKM2pKAB0jqy4UE7/msKat6Jw5mafrsxNtWZ6/fjvNLW29qv25pQd///n+5+/fxDDVbcc//P/zx/36m5Ub9zL8+7t66yEROcHK7q5bldMBAgwADcRBCuVLfoEAAAAASUVORK5CYII=" title="ENGLISH" alt="ENGLISH" /><span style="margin-left:0.3em;">ENGLISH</span></a></li>
-</ul>				</div>
-
-
-		</div> <!-- .container -->
-	</div><!--  #topрапщdsfsdfрщшщшваhead -->
-
-	<header id="masthead" class="site-header" role="banner"><div class="container">			    <div class="site-branding">
-
-		    <a href="http://energy.bsu.by/" class="custom-logo-link" rel="home" itemprop="url"><img width="1027" height="278" src="http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij.png" class="custom-logo" alt="Кафедра энергофизики" itemprop="logo" srcset="http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij.png 1027w, http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij-300x81.png 300w, http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij-768x208.png 768w, http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij-1024x277.png 1024w, http://energy.bsu.by/wp-content/uploads/2018/10/cropped-Kafedra_anglijskij-360x97.png 360w" sizes="(max-width: 1027px) 100vw, 1027px" /></a>
-
-	    </div><!-- .site-branding -->
-
-	    	    		    <div class="search-section">
-		    	<form role="search" method="get" class="search-form" action="http://energy.bsu.by/">
-	      <label>
-	        <span class="screen-reader-text">Искать:</span>
-	        <input type="search" class="search-field" placeholder="Поиск..." value="" name="s" title="Искать:" />
-	      </label>
-	      <input type="submit" class="search-submit" value="Поиск" />
-	    </form>		    </div>
-
-        </div><!-- .container --></header><!-- #masthead -->    <div id="main-nav" class="clear-fix">
-        <div class="container">
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i>
-			Меню</button>
-            <div class="wrap-menu-content">
-				<div class="menu-menu_header-container"><ul id="primary-menu" class="menu"><li id="menu-item-175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-175"><a href="#">О ФАКУЛЬТЕТЕ</a>
-<ul class="sub-menu">
-	<li id="menu-item-193" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="http://energy.bsu.by/info/employees/">СОТРУДНИКИ</a></li>
-	<li id="menu-item-939" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-939"><a href="http://energy.bsu.by/novosti/">НОВОСТИ</a></li>
-	<li id="menu-item-192" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="http://energy.bsu.by/info/history/">ИСТОРИЯ</a></li>
-	<li id="menu-item-191" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="http://energy.bsu.by/info/graduates/">ВЫПУСКНИКИ</a></li>
-	<li id="menu-item-603" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-603"><a href="http://energy.bsu.by/info/contacts/">КОНТАКТЫ</a></li>
-</ul>
-</li>
-<li id="menu-item-174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-174"><a href="#">ПОСТУПЛЕНИЕ</a>
-<ul class="sub-menu">
-	<li id="menu-item-188" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://energy.bsu.by/science_ru/projects/">ПРОЕКТЫ</a></li>
-	<li id="menu-item-186" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="http://energy.bsu.by/science_ru/equipment_ru/">ОБОРУДОВАНИЕ</a></li>
-	<li id="menu-item-187" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a href="http://energy.bsu.by/science_ru/publ/">ОСНОВНЫЕ ПУБЛИКАЦИИ</a></li>
-</ul>
-</li>
-<li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-176"><a href="#">ОБРАЗОВАНИЕ</a>
-<ul class="sub-menu">
-	<li id="menu-item-2468" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="http://energy.bsu.by/education_ru/timetable/">РАСПИСАНИЕ ЗАНЯТИЙ И КОНСУЛЬТАЦИЙ</a></li>
-	<li id="menu-item-185" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://energy.bsu.by/education_ru/tr_direct_ru/">СПЕЦИАЛЬНОСТИ И РАСПРЕДЕЛЕНИЕ</a></li>
-	<li id="menu-item-864" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-864"><a href="http://energy.bsu.by/education_ru/student_research/">СТУДЕНЧЕСКИЕ ИССЛЕДОВАНИЯ</a></li>
-	<li id="menu-item-184" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="http://energy.bsu.by/education_ru/courses/">УЧЕБНЫЕ ДИСЦИПЛИНЫ</a></li>
-	<li id="menu-item-182" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="http://energy.bsu.by/education_ru/laboratory_ru/">ЛАБОРАТОРНОЕ ОБОРУДОВАНИЕ</a></li>
-	<li id="menu-item-181" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="http://energy.bsu.by/education_ru/ed_proj/">ОБРАЗОВАТЕЛЬНЫЕ ПРОЕКТЫ</a></li>
-</ul>
-</li>
-<li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-176"><a href="#">НАУКА</a>
-<ul class="sub-menu">
-	<li id="menu-item-2468" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="http://energy.bsu.by/education_ru/timetable/">РАСПИСАНИЕ ЗАНЯТИЙ И КОНСУЛЬТАЦИЙ</a></li>
-	<li id="menu-item-185" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://energy.bsu.by/education_ru/tr_direct_ru/">СПЕЦИАЛЬНОСТИ И РАСПРЕДЕЛЕНИЕ</a></li>
-	<li id="menu-item-864" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-864"><a href="http://energy.bsu.by/education_ru/student_research/">СТУДЕНЧЕСКИЕ ИССЛЕДОВАНИЯ</a></li>
-	<li id="menu-item-184" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="http://energy.bsu.by/education_ru/courses/">УЧЕБНЫЕ ДИСЦИПЛИНЫ</a></li>
-	<li id="menu-item-182" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="http://energy.bsu.by/education_ru/laboratory_ru/">ЛАБОРАТОРНОЕ ОБОРУДОВАНИЕ</a></li>
-	<li id="menu-item-181" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="http://energy.bsu.by/education_ru/ed_proj/">ОБРАЗОВАТЕЛЬНЫЕ ПРОЕКТЫ</a></li>
-</ul>
-</li>
-<li id="menu-item-177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-177"><a href="#">СОТРУДНИЧЕСТВО</a>
-<ul class="sub-menu">
-	<li id="menu-item-180" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="http://energy.bsu.by/collab_ru/propose_ru/">ПРЕДЛОЖЕНИЯ</a></li>
-	<li id="menu-item-179" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="http://energy.bsu.by/collab_ru/rabotodatelyam/">РАБОТОДАТЕЛЯМ</a></li>
-	<li id="menu-item-178" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="http://energy.bsu.by/collab_ru/partners_ru/">ПАРТНЕРЫ</a></li>
-	<li id="menu-item-1529" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1529"><a href="http://energy.bsu.by/collab_ru/sponsors/">СПОНСОРЫ</a></li>
-</ul>
-</li>
-<li id="menu-item-177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-177"><a href="#">КОНТАКТЫ</a>
-<ul class="sub-menu">
-	<li id="menu-item-180" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="http://energy.bsu.by/collab_ru/propose_ru/">ПРЕДЛОЖЕНИЯ</a></li>
-	<li id="menu-item-179" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="http://energy.bsu.by/collab_ru/rabotodatelyam/">РАБОТОДАТЕЛЯМ</a></li>
-	<li id="menu-item-178" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="http://energy.bsu.by/collab_ru/partners_ru/">ПАРТНЕРЫ</a></li>
-	<li id="menu-item-1529" class="animated fadeIn duration1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1529"><a href="http://energy.bsu.by/collab_ru/sponsors/">СПОНСОРЫ</a></li>
-</ul>
-</li>
-</ul></div>            </div><!-- .menu-content -->
-        </nav><!-- #site-navigation -->
-       </div> <!-- .container -->
-    </div> <!-- #main-nav -->
-
-	<div id="content" class="site-content"><div class="container"><div class="inner-wrapper">
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+               </button>
+           </form>
+       </div>
+       <div class="container ">
+           <ul class="header__links row">
+               <li>
+                   <a href="">Главная</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">О факультете</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Поступление</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Кафедры</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Расписание</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Учеба</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Наука</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Сотрудничество</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">Контакты</a>
+                   <ul class="header__links-hidden">
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                       <li><a href="">Lorem</a></li>
+                   </ul>
+               </li>
+           </ul>
+       </div>
 
 
 
-<article id="post-388" class="post-388 page type-page status-publish hentry">
-	<header class="entry-header">
-		<h1 class="entry-title"><span class="dojodigital_toggle_title">ГЛАВНАЯ</span></h1>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-    		<p><center><br />
-<a href="http://energy.bsu.by/education_ru/tr_direct_ru/"><br />
-<img style="float: left;" class="wp-image-488 size-full animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2019/04/front3_educ21.jpg" onmouseover="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front3_onmouse11.jpg';" onmouseout="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front3_educ21.jpg';" /></a><a href="http://energy.bsu.by/science_ru/equipment_ru/"><img class="wp-image-485 size-full animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2019/04/front2_facil2-3.jpg" onmouseover="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front2_onmouse.jpg';" onmouseout="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front2_facil2-3.jpg';" /></a><a href="http://energy.bsu.by/collab_ru/propose_ru/"><img style="float: right;" class="wp-image-477 size-full animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2019/04/front1_collab2-1.jpg" onmouseover="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front1_onmouse2.jpg';" onmouseout="this.src='http://energy.bsu.by/wp-content/uploads/2019/04/front1_collab2-1.jpg';" /></a></center><br />
-<style>/*
-Theme Name:     Default theme
-*/
-.wpcufpn_container.default .wpcu-front-box.right {
-	/*max-width: 75%;*/
-}</style><script language="javascript" type="text/javascript">wpfpn_nbrows = ( typeof wpfpn_nbrows != 'undefined' && wpfpn_nbrows instanceof Array ) ? wpfpn_nbrows : [];wpfpn_nbrows[572]=0;</script><div class="wpcufpn_outside wpcufpn_widget_572" style="width:100%;"><span class="wpcu_block_title">НОВОСТИ</span><div id="wpcufpn_widget_572" class="wpcufpn_container vertical default cols1" style="width:100%;"><ul class="wpcufpn_listposts" style="width: 100%;"><li id="wpcufpn_li_572_2625" class="postno_1" style="width:100%;"><div class="insideframe"><div id="wpcufpn_box_top_572_2625" class="wpcu-front-box top" ><a href="http://energy.bsu.by/magon-n-s-proshla-stazhirovku-v-universitete-palatskogo/"></a></div><table><tr><td id="wpcufpn_box_left_572_2625" class="wpcu-front-box left" ><a href="http://energy.bsu.by/magon-n-s-proshla-stazhirovku-v-universitete-palatskogo/"><span class="date">07.02.2020</span><span class="thumbnail"><span class="img_cropper" style="margin-right:4px;margin-bottom:4px;"><img src="http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/img/default-image-fpnp.png" style="width:60px;height:60px;" alt="Стажировка в Университете Палацкого."  class="wpcufpn_default" /></span></span></a></td><td id="wpcufpn_box_right_572_2625" class="wpcu-front-box right" ><a href="http://energy.bsu.by/magon-n-s-proshla-stazhirovku-v-universitete-palatskogo/"><span class="title"><span style="height:1.1em" class="line_limit">Стажировка в Университете Палацкого.</span></span><span class="text"><span style="max-height:2.2em" class="line_limit">С 20 по 31 января 2020 года младший научный сотрудник, ассистент и аспирант кафедры энергофизики Магонь Н.С. проходила стажировку в Университете Палацкого (Чешская Республика) в рамках проекта кредитованной мобильности Erasmus+ KA107. В ходе стажировки ею были освоены методы сканирующей электронной <a href="http://energy.bsu.by/magon-n-s-proshla-stazhirovku-v-universitete-palatskogo/" class="read-more">Читать дальше...</a></span></span></a></td></tr></table><div id="wpcufpn_box_bottom_572_2625" class="wpcu-front-box bottom" ><a href="http://energy.bsu.by/magon-n-s-proshla-stazhirovku-v-universitete-palatskogo/"></a></div></div></li><li id="wpcufpn_li_572_2591" class="postno_2" style="width:100%;"><div class="insideframe"><div id="wpcufpn_box_top_572_2591" class="wpcu-front-box top" ><a href="http://energy.bsu.by/nauchnyj-seminar-2/"></a></div><table><tr><td id="wpcufpn_box_left_572_2591" class="wpcu-front-box left" ><a href="http://energy.bsu.by/nauchnyj-seminar-2/"><span class="date">21.01.2020</span><span class="thumbnail"><span class="img_cropper" style="margin-right:4px;margin-bottom:4px;"><img src="http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/img/default-image-fpnp.png" style="width:60px;height:60px;" alt="Научный семинар"  class="wpcufpn_default" /></span></span></a></td><td id="wpcufpn_box_right_572_2591" class="wpcu-front-box right" ><a href="http://energy.bsu.by/nauchnyj-seminar-2/"><span class="title"><span style="height:1.1em" class="line_limit">Научный семинар</span></span><span class="text"><span style="max-height:2.2em" class="line_limit">В четверг 23 января 2020 г. в 11.45 в 342 аудитории состоится научный семинар, посвященный обсуждению материалов диссертационного исследования старшего преподавателя Ларькина А.В.</span></span></a></td></tr></table><div id="wpcufpn_box_bottom_572_2591" class="wpcu-front-box bottom" ><a href="http://energy.bsu.by/nauchnyj-seminar-2/"></a></div></div></li><li id="wpcufpn_li_572_2582" class="postno_3" style="width:100%;"><div class="insideframe"><div id="wpcufpn_box_top_572_2582" class="wpcu-front-box top" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-27/"></a></div><table><tr><td id="wpcufpn_box_left_572_2582" class="wpcu-front-box left" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-27/"><span class="date">17.01.2020</span><span class="thumbnail"><span class="img_cropper" style="margin-right:4px;margin-bottom:4px;"><img src="http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/img/default-image-fpnp.png" style="width:60px;height:60px;" alt="Заседание кафедры энергофизики"  class="wpcufpn_default" /></span></span></a></td><td id="wpcufpn_box_right_572_2582" class="wpcu-front-box right" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-27/"><span class="title"><span style="height:1.1em" class="line_limit">Заседание кафедры энергофизики</span></span><span class="text"><span style="max-height:2.2em" class="line_limit">23.01.2020 в 14-00 в 342 ауд. состоится заседание кафедры энергофизики. Повестка заседания: Утверждение целей кафедры в области СМК на 2020 год. О выполнении плана работы кафедры за I семестр 2019/2020 учебного года. Отчёты кураторов о проделанной работе за I семестр 2019/2020 учебного года. О готовности лабораторных практикумов кафедры к работе во II семестре 2019/2020 учебного <a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-27/" class="read-more">Читать дальше...</a></span></span></a></td></tr></table><div id="wpcufpn_box_bottom_572_2582" class="wpcu-front-box bottom" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-27/"></a></div></div></li><li id="wpcufpn_li_572_2569" class="postno_4" style="width:100%;"><div class="insideframe"><div id="wpcufpn_box_top_572_2569" class="wpcu-front-box top" ><a href="http://energy.bsu.by/nauchnyj-seminar/"></a></div><table><tr><td id="wpcufpn_box_left_572_2569" class="wpcu-front-box left" ><a href="http://energy.bsu.by/nauchnyj-seminar/"><span class="date">13.01.2020</span><span class="thumbnail"><span class="img_cropper" style="margin-right:4px;margin-bottom:4px;"><img src="http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/img/default-image-fpnp.png" style="width:60px;height:60px;" alt="Научный семинар"  class="wpcufpn_default" /></span></span></a></td><td id="wpcufpn_box_right_572_2569" class="wpcu-front-box right" ><a href="http://energy.bsu.by/nauchnyj-seminar/"><span class="title"><span style="height:1.1em" class="line_limit">Научный семинар</span></span><span class="text"><span style="max-height:2.2em" class="line_limit">В четверг 16 января 2020г. в 15.45 в 319 аудитории состоится научный семинар, посвященный обсуждению материалов диссертационного исследования старшего преподавателя Гиро А.В.</span></span></a></td></tr></table><div id="wpcufpn_box_bottom_572_2569" class="wpcu-front-box bottom" ><a href="http://energy.bsu.by/nauchnyj-seminar/"></a></div></div></li><li id="wpcufpn_li_572_2566" class="postno_5" style="width:100%;"><div class="insideframe"><div id="wpcufpn_box_top_572_2566" class="wpcu-front-box top" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-26/"></a></div><table><tr><td id="wpcufpn_box_left_572_2566" class="wpcu-front-box left" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-26/"><span class="date">23.12.2019</span><span class="thumbnail"><span class="img_cropper" style="margin-right:4px;margin-bottom:4px;"><img src="http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/img/default-image-fpnp.png" style="width:60px;height:60px;" alt="Заседание кафедры энергофизики"  class="wpcufpn_default" /></span></span></a></td><td id="wpcufpn_box_right_572_2566" class="wpcu-front-box right" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-26/"><span class="title"><span style="height:1.1em" class="line_limit">Заседание кафедры энергофизики</span></span><span class="text"><span style="max-height:2.2em" class="line_limit">26.12.2019 в 16-30 в 319 ауд. состоится заседание кафедры энергофизики. Повестка заседания: Обсуждение результатов выполнения проектов НИР на кафедре в 2019 году. Утверждение отчета о научно-инновационной деятельности кафедры за 2019 год. Утверждение отчета по СМК за 2019 год. Обсуждение отчета магистранта Шаршукова <a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-26/" class="read-more">Читать дальше...</a></span></span></a></td></tr></table><div id="wpcufpn_box_bottom_572_2566" class="wpcu-front-box bottom" ><a href="http://energy.bsu.by/zasedanie-kafedry-energofiziki-26/"></a></div></div></li></ul></div></div><script>var autoanimate = false;</script></p>
-<p class="fontplugin_fontid_76676_segoeui58c29c0eb0522" style="text-align: left; font-size: 22px; color: #c9140a;"><strong>ПОСЛЕДНИЕ ПУБЛИКАЦИИ</strong></p>
-<table>
-<tbody>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2020/02/MRX.jpg" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="https://iopscience.iop.org/article/10.1088/2053-1591/ab6a5b">Annealing and plasma treatment effect on structural, morphological and topographical properties of evaporated β-In2S3 films</a> / S. Rasool, K. Saritha, K. T. Ramakrishna Reddy, M. S. Tivanov, V. F. Gremenok, S. P. Zimin, A. S. Pipkova, L. A. Mazaletskiy and I. I. Amirov // Materials Research Express – 2020. – Volume 7, Number 1 – Pages 016431.</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2019/11/Journal-of-Physics-D-Applied-Physics-e1573469221734.gif" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="https://iopscience.iop.org/article/10.1088/1361-6463/ab52d9/meta">Atmospheric adsorption on pristine and nitrogen-doped graphene: doping-dependent, spatially selective</a> / E.A. Kolesov, M.S. Tivanov, O.V. Korolik, E.Yu. Kataev, Xiao Fu, O.O. Kapitanova, Hak Dong Cho, Tae Won Kang, G.N. Panin // J. Phys. D: Appl. Phys. – 2020. – Vol. 53. – P. 045302.</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2019/01/Solar-Energy-e1548055139650.jpg" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="https://www.sciencedirect.com/science/article/pii/S0038092X1931151X">Photoluminescence kinetics for monitoring photoinduced processes in perovskite solar cells</a> / N.S. Mahon, O.V. Korolik, M.V. Khenkin, G.E. Arnaoutakis, Y. Galagan, V. Soriūtė, D. Litvinas, P. Ščajev, E.A. Katz, A.V. Mazanik // Solar Energy. – 2020. – Vol. 195. – P. 114–120.</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2020/01/Journal-of-Solid-State-Electrochemistry.jpg" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="https://link.springer.com/article/10.1007%2Fs10008-020-04494-5">Effective p-type photocurrent sensitization of n-Bi2O3 with p-CuBi2O4 and p-CuO: Z-scheme photoelectrochemical system</a> / М. Malashchonak, E. Streltsov, A. Mazanik, O. Korolik, A. Kulak, D. Puzikova, M. Dergacheva, A. Selskis // Journal of Solid State Electrochemistry. – 2020.</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2019/12/IOP-Conference-Series-Materials-Science-and-Engineering.jpg" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="http://elib.bsu.by/handle/123456789/236377">Formation and optical properties of hybrid organic-inorganic MAPbI3 perovskite films</a> / Zelenyak T., Kinev V., Rezepov P., Korolik O., Mazanik A., Tivanov M., Dоrоshkevich N., Lavysh A., Gevorgyan V., Tameev A., Vannikov A., Turchenko V., Gladyshev P. // IOP Conf. Series: Materials Science and Engineering 498 (2019) 012012 doi:10.1088/1757-899X/498/1/012012</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2018/01/JAS.png" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="http://elib.bsu.by/handle/123456789/236325">Transformation of Structural Defects and The Hydrogen State Upon Heat Treatment of Hydrogenated Silicon</a> / Pokotilo Yu. M., Petuh A. М., Smirnova O. Yu., Stelmakh G. F., Markevich V. P., Korolik O. V., Svito I. A., Saad A. M. // Journal of Applied Spectroscopy. – 2019. – Vol. 86, №5. – P. 822-824.</td>
-</tr>
-<tr>
-<td style="border: none;" width="57"><img class="alignnone size-full wp-image-657" src="http://energy.bsu.by/wp-content/uploads/2019/12/International-Journal-of-Nanoscience.jpg" alt="" width="70" height="93" /></td>
-<td style="border: none; text-align: left;" width="595"><a href="http://elib.bsu.by/handle/123456789/236324">Modification of electric transport properties of CVD graphene by electrochemical deposition of cobalt nanoparticles</a> / Bayev V., Fedotova J., Humennik U., Vorobyova S., Konakow A., Fedotov A., Svito I., Rybin M., Obraztsova E. // International Journal of Nanoscience. – 2019. – 2019. – Vol. 18, №03n04. – P.1940041 1-4.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><center><a href="https://bsu.by"><img style="float: left;" class="size-full wp-image-678 animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2017/09/bsu.png" alt="" width="380" height="85" /></a><a href="https://vk.com/energy_bsu"><img class="size-full wp-image-678 animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2017/09/vk.png" alt="" width="292" height="85" /></a><a href="http://www.physics.bsu.by"><img style="float: right;" class="size-full wp-image-679 animated grow duration1 eds-on-hover" src="http://energy.bsu.by/wp-content/uploads/2017/09/phys.png" alt="" width="380" height="85" /></a></center></p>
-			</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
-
-</div><!-- .inner-wrapper --></div><!-- .container --></div><!-- #content -->
-	<footer id="colophon" class="site-footer" role="contentinfo"><div class="container">
-	    			<div id="footer-navigation" class="menu-language-yazyk-container"><ul id="menu-language-yazyk" class="menu"><li id="menu-item-621-ru" class="lang-item lang-item-15 lang-item-ru lang-item-first current-lang menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-621-ru"><a href="http://energy.bsu.by/" hreflang="ru-RU" lang="ru-RU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69T8DAvz79w9CQVj/0MCffwwAAcQClObiAin6/x+okxHMgPCAbOb//5n+I4EXL74ABBALxGSwagTjPzbAyMgItAQggBg9Pf9nZPx//x7kjL9////9C2QAyf9//qCQQCQkxFhY+BEggFi2b/+nq8v46BEDSPQ3w+8//3//BqFfv9BJeXmQEwACCOSkP38YgHy4Bog0RN0vIOMXVOTPH6Cv/gEEEEgDxFKgHEgDXCmGDUAE1AAQQCybGZg1f/d8//XsH0jTn3+///z79RtE/v4NZfz68xfI/vOX+4/0ZoZFAAHE4gYMvD+3/v2+h91wCANo9Z+/jH9VxBkYAAKIBRg9TL//MEhKAuWAogxgZzGC2CCfgUggAoYdGAEVAwQQ41egu5AQAyoXTQoIAAIMAD+JZR7YOGEWAAAAAElFTkSuQmCC" title="РУССКИЙ" alt="РУССКИЙ" /><span style="margin-left:0.3em;">РУССКИЙ</span></a></li>
-<li id="menu-item-621-en" class="lang-item lang-item-20 lang-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-621-en"><a href="http://energy.bsu.by/en/homepage/" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAflJREFUeNpinDRzn5qN3uFDt16+YWBg+Pv339+KGN0rbVP+//2rW5tf0Hfy/2+mr99+yKpyOl3Ydt8njEWIn8f9zj639NC7j78eP//8739GVUUhNUNuhl8//ysKeZrJ/v7z10Zb2PTQTIY1XZO2Xmfad+f7XgkXxuUrVB6cjPVXef78JyMjA8PFuwyX7gAZj97+T2e9o3d4BWNp84K1NzubTjAB3fH0+fv6N3qP/ir9bW6ozNQCijB8/8zw/TuQ7r4/ndvN5mZgkpPXiis3Pv34+ZPh5t23//79Rwehof/9/NDEgMrOXHvJcrllgpoRN8PFOwy/fzP8+gUlgZI/f/5xcPj/69e/37//AUX+/mXRkN555gsOG2xt/5hZQMwF4r9///75++f3nz8nr75gSms82jfvQnT6zqvXPjC8e/srJQHo9P9fvwNtAHmG4f8zZ6dDc3bIyM2LTNlsbtfM9OPHH3FhtqUz3eXX9H+cOy9ZMB2o6t/Pn0DHMPz/b+2wXGTvPlPGFxdcD+mZyjP8+8MUE6sa7a/xo6Pykn1s4zdzIZ6///8zMGpKM2pKAB0jqy4UE7/msKat6Jw5mafrsxNtWZ6/fjvNLW29qv25pQd///n+5+/fxDDVbcc//P/zx/36m5Ub9zL8+7t66yEROcHK7q5bldMBAgwADcRBCuVLfoEAAAAASUVORK5CYII=" title="ENGLISH" alt="ENGLISH" /><span style="margin-left:0.3em;">ENGLISH</span></a></li>
-</ul></div>	    	    	      <div class="copyright">
-	        Кафедра энергофизики Белорусского государственного университета	      </div><!-- .copyright -->
-
-	    	</div><!-- .container --></footer><!-- #colophon -->
-</div><!-- #page --><a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-chevron-up"></i></a>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/animate-it/assets/js/animo.min.js?ver=1.0.3'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/animate-it/assets/js/jquery.ba-throttle-debounce.min.js?ver=1.1'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/animate-it/assets/js/viewportchecker.js?ver=1.4.4'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/animate-it/assets/js/edsanimate.js?ver=1.4.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var edsanimate_options = {"offset":"75","hide_hz_scrollbar":"1","hide_vl_scrollbar":"0"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/animate-it/assets/js/edsanimate.site.js?ver=1.4.5'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/themes/education-hub/js/skip-link-focus-fix.min.js?ver=20130115'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/themes/education-hub/third-party/cycle2/js/jquery.cycle2.min.js?ver=2.1.6'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/themes/education-hub/js/custom.min.js?ver=1.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var EducationHubScreenReaderText = {"expand":"<span class=\"screen-reader-text\">\u0440\u0430\u0441\u043a\u0440\u044b\u0442\u044c \u0434\u043e\u0447\u0435\u0440\u043d\u0435\u0435 \u043c\u0435\u043d\u044e<\/span>","collapse":"<span class=\"screen-reader-text\">\u0441\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0434\u043e\u0447\u0435\u0440\u043d\u0435\u0435 \u043c\u0435\u043d\u044e<\/span>"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/themes/education-hub/js/navigation.min.js?ver=20120206'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-content/plugins/wp-frontpage-news/js/wpcufpn_front.js?ver=0.1'></script>
-<script type='text/javascript' src='http://energy.bsu.by/wp-includes/js/wp-embed.min.js?ver=4.9.13'></script>
+   </header>
 </body>
+<script src="main.js"> </script>
 </html>
-
