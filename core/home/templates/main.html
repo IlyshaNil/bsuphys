@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="{% static 'headers.css' %}">
+    <link rel="stylesheet" href="{% static 'home/headers.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>Физический Факультет</title>
@@ -23,7 +23,7 @@
                <a href="#" id="BLR" class="header__color">Blr</a>
            </div>
            <div class="header__logo">
-               <img  id="logo" src="{% static 'logo.png' %}" alt="logo">
+               <img  id="logo" src="{% static 'home/logo.png' %}" alt="logo">
            </div>
            <form >
                <input  class="header__search" type="search" placeholder="     поиск по сайту">
@@ -134,5 +134,5 @@
 
    </header>
 </body>
-<script src="main.js"> </script>
+<script src="{% static 'home/main.js' %}"> </script>
 </html>
