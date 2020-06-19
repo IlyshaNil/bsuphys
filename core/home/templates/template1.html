@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
     <meta charset="UTF-8">
-    <title>Физический факультет</title>
-    <link rel="stylesheet" href="{% static 'home/assets/styles/styles.css' %}">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
     <svg class="_icon">
@@ -67,8 +66,6 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 11.1213L18 19.4142L19.4142 18L11.1213 9.70711L19.4142 1.41421L18 0L9.70711 8.29289L1.41421 0L0 1.41421L8.29289 9.70711L0 18L1.41421 19.4142L9.70711 11.1213Z" fill="white"/>
         </symbol>
     </svg>
-
-
     <header class="header">
         <div class=" row container">
             <div class="header__logo">
@@ -81,17 +78,10 @@
                 <svg class="icon header_icon">
                     <use href="#menu"></use>
                 </svg>
-               <svg  width="20" height="20" class="header_icon header_active">
+                <svg  width="20" height="20" class="header_icon header_active">
                     <use href="#cross"></use>
                 </svg>
             </a>
-
-        </div>
-
-        <div class="header__image">
-            <svg width="564" height="253" >
-                <use href="#logotype"></use>
-            </svg>
         </div>
     </header>
     <nav id="nav" class="nav nav_active">
@@ -165,162 +155,14 @@
             </div>
         </div>
     </nav>
-    <section class="main">
-        <div class="main_grid container ">
-            <a href="#" class="main_card1 main_img">
-                    <div  class="main_bg"><p>О факультете</p></div>
-            </a>
-            <a  href="#" class="main_card2 main_img">
-                <div class="main_bg"><p>Поступление</p></div>
-            </a>
-            <a href="#" class="main_card3 main_img">
-                <div class="main_bg"><p>Сотруднечество</p></div>
-            </a>
-            <a href="#" class="main_card4 main_img">
-                <div class="main_bg"><p>Наука</p></div>
-            </a>
-            <a href="#"  class="main_card5 main_img">
-                <div class="main_bg"><p>Образование</p></div>
-            </a>
-            <a href="#" class="main_card6 main_img">
-                <div class="main_bg"><p>Контакты</p></div>
-            </a>
-        </div>
-    </section>
-    <section class="news">
+
+    <section class="main_inf">
         <div class="container">
-            <div class="news_position">
-                <img src="./assets/image/news_image.png" alt="">
-                <div class="news_inf">
-                    <p class="news_inf-title">Заместитель Генерального директора МАГАТЭ выступил на Дне атомных технологий в Минске!</p>
-                    <p class="news_inf-description">В этом году участники Дня атомных технологий получили уникальную возможность пообщаться с заместителем Генерального директора, руководителем Департамента ядерной энергии МАГАТЭ Михаилом Чудаковым.</p>
-                    <div class="news_button">
-                         <a href="#" class="button_more">Подробнее</a>
-                        <a href="#" class="news_more">Больше новостей</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="event">
-        <div class="container">
-            <div class="event_position">
-                <img src="./assets/image/event_image.png" alt="">
-                <div class="event_inf">
-                    <p class="news_inf-title">Студенческая жизнь</p>
-                    <p class="event_inf-description">Каждый найдет себе занятие<br/>на свободное время!</p>
-                    <div class="event_list">
-                        <ul>
-                            <li>Художественое декорирование</li>
-                            <li>Фотография/видео</li>
-                            <li>Хореография</li>
-                        </ul>
-                        <ul class="event_ul">
-                            <li>Дизайн</li>
-                            <li>Вокал</li>
-                            <li>SMM</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="button_more">Присоединиться</a>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="numbers">
-        <div class="container">
-            <div class="numbers_title">Физический факультет в цифрах</div>
-            <div class="numbers_grid1">
-                <div class="numbers_row block1 ">
-                    <div class="numbers_size">10</div>
-                    <div>Научно- исследовательских лабораторий</div>
-                </div>
-                <div class="numbers_row block2">
-                    <div class="numbers_size">186</div>
-                    <div>Преподавателей с ученой степенью</div>
-                </div>
-                <div class="numbers_row block3 numbers_main_bg">
-                    <div class="numbers_size">50</div>
-                    <div>Выпускников- академиков НАН Беларуси</div>
-                </div>
-            </div>
-            <div class="numbers_grid2">
-                <div class="numbers_row block3">
-                    <div class="numbers_size numbers_main_bg numbers_pad">11</div>
-                    <div>Специальностей</div>
-                </div>
-                <div class="numbers_row block5">
-                    <div class="numbers_size">5</div>
-                    <div>Кафедр</div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <section class="publication">
-        <div class="container">
-            <div class="publication_title">Крайние публикации</div>
-            <div class="row">
-                <div>
-                    <img src="./assets/image/publication1.png" alt="">
-                    <p>Photoluminescence kinetics for monitoring photoinduced processe</p>
-                </div>
-                <div>
-                    <img src="./assets/image/publication2.png" alt="">
-                    <p>Atmospheric adsorption on pristine and nitrogen-doped graphene: doping-dependent, spatially selective</p>
-                </div>
-                <div>
-                    <img src="./assets/image/publication3.png" alt="">
-                    <p>Effective p-type photocurrent sensitization of n-Bi2O3 with p-C</p>
-                </div>
-
-            </div>
-            <div class="publication_button">
-                <a href="#" class="button_more">Подробнее</a>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="people">
-        <div class="container">
-            <div class="publication_title">Известные выпускники</div>
-                <div class="row">
-                    <div class="people_bg-card">
-                        <div class="people_img">
-                            <img src="./assets/image/people1.png" alt="">
-                        </div>
-                        <p class="people_name">Кислый Виктор Владимирович</p>
-                        <p class="people_name-year">выпускник 1999 года</p>
-                        <p class="people_name-description">Основатель компании «Game Stream» (1998 г.). В том же году зарегистрировал компанию Wargaming, стал ее генеральным директором. Создатель знаменитой игры «World of Tanks».</p>
-                    </div>
-                    <div class="people_bg-card">
-                        <div class="people_img">
-                            <img src="./assets/image/people2.png" alt="">
-                        </div>
-                        <p class="people_name">Румянцев Михаил Леонидович</p>
-                        <p class="people_name-year">выпускник 2011 года</p>
-                        <p class="people_name-description">Основатель и генеральный директор стартап-компании «FriendlyData» (с 2016 г.); вошел в рейтинг молодых бизнесменов «2019 Европа 30 до 30», составленный журналом Forbes в категории «Технологии».</p>
-                    </div>
-                    <div class="people_bg-card">
-                        <div class="people_img">
-                            <img src="./assets/image/people3.png" alt="">
-                        </div>
-
-                        <p class="people_name">Кондрашов Олег Владимирович</p>
-                        <p class="people_name-year">выпускник 2007 года</p>
-                        <p class="people_name-description">Генеральный директор компании EnCata - инжинирингового центра по разработке и производству промышленных прототипов; «Минчанин года — 2016» в области промышленности.</p>
-                    </div>
-                </div>
-            <div class="people_button">
-                <a href="#" class="button_more">Узнать больше</a>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam at consectetur dolor, ducimus error esse, exercitationem fugiat in labore libero magni mollitia nobis non numquam odio officia officiis praesentium quas quibusdam ratione recusandae rerum similique soluta unde, velit vitae voluptatibus. Ab fugiat molestias nam nesciunt odit quas saepe voluptates.</p>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" style="position: absolute; width: 100%; bottom: 0;">
         <div class="container">
             <div class="footer_grid">
                 <div>
@@ -363,5 +205,5 @@
         </div>
     </footer>
 </body>
-<script src="{% static 'home/main.js' %}"></script>
+    <script src="main.js"></script>
 </html>
