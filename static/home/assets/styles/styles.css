@@ -43,10 +43,12 @@ a{
     background-color: #000000;
     color: #ffffff;
     font-size: 20px;
-    position: relative;
+
+
 }
 .header .container{
     padding: 25px 0 25px 0;
+    position: relative;
 }
 .header__logo p{
     text-transform: uppercase;
@@ -86,6 +88,7 @@ a{
     position: absolute;
     width: 100%;
     top: 90px;
+    animation: open 0.7s ease-in-out;
 }
 .nav a{
     color: #ffffff;
@@ -426,5 +429,10 @@ a{
     font-size: 40px;
     padding: 0 15px;
 }
-/*main-inf*/
+
+@keyframes open {
+    from{opacity: 0}
+    to{opacity: 1}
+
+}
 

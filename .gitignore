@@ -132,3 +132,4 @@ dmypy.json
 .secrets.yaml
 /media/
 
+/core/home/templates/index1.html

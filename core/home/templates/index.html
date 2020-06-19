@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>Физический факультет</title>
@@ -75,7 +74,7 @@
                 <svg class="icon logoff" >
                     <use href="#logo"></use>
                 </svg>
-                <p>Физический факултет</p>
+                <p>Физический факультет</p>
             </div>
             <a  id="nav_menu" href="#" class="header_menu" >
                 <svg class="icon header_icon">
@@ -87,13 +86,12 @@
             </a>
 
         </div>
-
-        <div class="header__image">
-            <svg width="564" height="253" >
-                <use href="#logotype"></use>
-            </svg>
-        </div>
     </header>
+    <div class="header__image">
+        <svg width="564" height="253" >
+            <use href="#logotype"></use>
+        </svg>
+    </div>
     <nav id="nav" class="nav nav_active">
         <div class="container">
             <div class="nav_grid">
@@ -174,7 +172,7 @@
                 <div class="main_bg"><p>Поступление</p></div>
             </a>
             <a href="#" class="main_card3 main_img">
-                <div class="main_bg"><p>Сотруднечество</p></div>
+                <div class="main_bg"><p>Сотрудничество</p></div>
             </a>
             <a href="#" class="main_card4 main_img">
                 <div class="main_bg"><p>Наука</p></div>
@@ -324,27 +322,27 @@
         <div class="container">
             <div class="footer_grid">
                 <div>
-                    <img src="./assets/image/footer1.png" alt="">
+                    <img src="{% static 'home/assets/image/footer1.png' %}" alt="">
                     <p>Министерство Образования РБ</p>
                 </div>
                 <div>
-                    <img src="./assets/image/footer2.png" alt="">
+                    <img src="{% static 'home/assets/image/footer2.png' %}" alt="">
                     <p>Белорусский<br> государственный<br> Университет</p>
                 </div>
                 <div>
-                    <img src="./assets/image/footer3.png" alt="">
+                    <img src="{% static 'home/assets/image/footer3.png' %}" alt="">
                     <p>БРСМ БГУ <br>Физический<br> факультет</p>
                 </div>
                 <div>
-                    <img src="./assets/image/footer4.png" alt="">
+                    <img src="{% static 'home/assets/image/footer4.png' %}" alt="">
                     <p>220006, Минск <br>ул. Бобруйская, 5,<br> Физический Факультет</p>
                 </div>
                 <div>
-                    <img src="./assets/image/footer5.png" alt="">
+                    <img src="{% static 'home/assets/image/footer5.png' %}" alt="">
                     <p>Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45</p>
                 </div>
                 <div>
-                    <img src="./assets/image/footer6.png" alt="">
+                    <img src="{% static 'home/assets/image/footer6.png' %}" alt="">
                     <p>physdean@bsu.by</p>
                 </div>
             </div>
