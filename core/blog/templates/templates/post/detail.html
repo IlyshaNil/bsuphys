@@ -5,7 +5,7 @@
     <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
     {{ post.body|linebreaks }}
     {% if post.image %}
-    <img src="{{ post.image.url }}" alt="альтернативный тек"  id="image">
+    <img src="{{ post.image.url }}" alt="альтернативный тек"  id="image" >
     <style>
     #image{max-width:250px};
     </style>
