@@ -159,12 +159,21 @@
 
     <section class="main_inf">
         <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam at consectetur dolor, ducimus error esse, exercitationem fugiat in labore libero magni mollitia nobis non numquam odio officia officiis praesentium quas quibusdam ratione recusandae rerum similique soluta unde, velit vitae voluptatibus. Ab fugiat molestias nam nesciunt odit quas saepe voluptates.</p>
+            <div class="news_position">
+                <img src="{{ posts.image.url }}" alt="">
+                <div class="news_inf">
+                    <p class="news_inf-title">{{ posts.title }}</p>
+                    <p class="news_inf-description">{{ posts.body|truncatechars:195 }}</p>
+                    <div class="news_button">
+                         <a href="#" class="button_more">Подробнее</a>
+                        <a href="#" class="news_more">Больше новостей</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <p> {{posts.body}}</p>
-    <br>
+
 
 
     <footer class="footer" style="position: absolute; width: 100%; bottom: 0;">
