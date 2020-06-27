@@ -149,12 +149,12 @@
                     <a href="">Психологическая служба</a>
                     <a href="">Заведующие кафедр</a>
                     <div class="nav_logo">
-                        <a href="#">
+                        <a href="https://vk.com/bsuphys">
                             <svg class="icon nav_icon_size"  >
                                 <use href="#vk"></use>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/bsuphys/?hl=ru">
                             <svg class="icon nav_icon_size"  >
                                 <use href="#inst"></use>
                             </svg>
@@ -191,7 +191,7 @@
             <div class="news_position">
                 <img src="{{ post.image.url }}" alt=""> <!-- {{ post.image }} {{ post.body|linebreaks }-->
                 <div class="news_inf">
-                    <p class="news_inf-title">{{ post.title }}</p>
+                    <p class="news_inf-title">{{ post.title|truncatechars:86 }}</p>
                     <p class="news_inf-description">{{ post.body|truncatechars:195 }}</p>
                     <div class="news_button">
                          <a href="#" class="button_more">Подробнее</a>
