@@ -4,7 +4,8 @@ from blog.models import Post
 from django.utils import timezone
 
 def index(request):
-    return render(request, "index.html")
+    post = Post.published.latest("publish")
+    return render(request, "index.html", {"post": post})
 
 
 def templates(request):
