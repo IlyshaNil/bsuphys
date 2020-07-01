@@ -1,18 +1,14 @@
 <!DOCTYPE html>
+{% include "pagination.html" with page=posts %}
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Физический факультет</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новости</title>
     <link rel="stylesheet" href="{% static 'home/assets/styles/styles.css' %}">
-    <link
-            rel="stylesheet"
-            href="{% static 'home/animate.min.css' %}"
-    />
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 </head>
-<body style="background-color: #000000">
+<body>
     <svg class="_icon">
         <symbol id="logo" viewBox="0 0 920 920" >
             <path  d="M.512,481.287C-11.368,228.068,184.974,12.4,438.193.512S907.081,184.974,918.968,438.193,734.505,907.081,481.287,918.968q-10.942.513-21.8.512C215.8,919.488,12.056,727.211.512,481.287ZM438.724,11.934C191.81,23.519.342,233.827,11.927,480.749s221.9,438.382,468.822,426.8,438.382-221.893,426.8-468.822C896.3,198.939,697.6,11.451,459.985,11.435h-.057C452.883,11.435,445.834,11.6,438.724,11.934ZM254.4,831.217c-28-16.06-37.387-58.72-30.248-117.985a27.3,27.3,0,0,1,8.517-53.248c.42,0,.841.007,1.261.029,10.641-44.532,28.169-95.029,51.988-148.647-45.631.914-87.729.716-124.445-.649-130.359-4.852-131.6-21.76-132.073-28.124-.354-4.8-1.15-15.611,53.618-30.344a27.313,27.313,0,1,1,53.27-11.931q9.314-1.793,19.741-3.628c46.088-8.134,101.113-15.589,161.278-21.938-22.919-41.1-41.309-80.643-53.861-116.178-16.555-46.825-30.056-106.983-.457-127.631,11.12-7.757,25.382-7.876,40.867-3.318a27.307,27.307,0,1,1,47.792,24.415c10.8,7.322,21.3,15.441,30.949,23.442a657.128,657.128,0,0,1,49.834,46.309c31.8-42.114,64.375-78.844,96.106-108.045C591.692,95.6,644.682,74.024,677.776,93c15.781,9.048,25.89,26.679,30.153,51.751a27.314,27.314,0,0,1,1.35,52.857,425.646,425.646,0,0,1-8.569,54.886c-9.454,43.375-25.338,91.564-46.538,141.833,37.563-.472,72.4-.148,103.406,1.011,130.345,4.845,131.591,21.753,132.055,28.125.45,6.025,1.6,21.5-107.33,42.356.059.716.089,1.445.089,2.176a27.312,27.312,0,0,1-53.7,7.042c-36.369,5.649-76.964,10.885-120.338,15.552-.869,1.644-1.74,3.281-2.617,4.926,24.3,43.021,43.75,84.434,56.847,121.5,16.547,46.825,30.056,106.983.45,127.63a36.065,36.065,0,0,1-19.357,6.239c-7.087.332-14.926-.922-23.376-3.591A27.307,27.307,0,1,1,572,721.811c-22.273-15.445-46.422-36.336-71.067-60.958-32.165,42.77-65.157,80.053-97.271,109.616-46.612,42.9-87.685,65.9-119.3,67.384q-1.627.077-3.223.074a52.817,52.817,0,0,1-26.734-6.71Zm44.458-320.138c-24.4,54.679-42.489,106.651-53.4,152.076a27.307,27.307,0,0,1-9.617,51.25c-6.88,54.281.443,93.245,24.246,106.9,27.985,16.032,77.487-5.552,135.823-59.243,31.974-29.43,64.848-66.661,96.9-109.431-38.331-39.393-77.5-87.28-112.352-137.269q-2.445-3.506-4.86-7.02c-26.351,1.224-52.035,2.139-76.739,2.737Zm324.416,223.81c0,.443-.015.878-.03,1.313,14.276,4.594,25.625,4.38,33.257-.937,18.221-12.712,16.518-54.427-4.69-114.446-12.248-34.672-30.167-73.254-52.5-113.421q-6.449,11.78-13.2,23.546a1274.69,1274.69,0,0,1-78.5,120.942c26.038,26.075,50.379,46.642,71.824,61.279a27.3,27.3,0,0,1,43.846,21.723ZM499.487,643.635A1263.418,1263.418,0,0,0,576.2,525.259q8.483-14.789,16.481-29.592-.929-1.616-1.858-3.237-25.2,2.577-51.448,4.889a91.444,91.444,0,0,1-140.84,23.811C433.09,569.511,467.453,610.6,499.487,643.635ZM40.8,481.811c.015.14,4.306,14.188,121.245,18.538,37.785,1.408,81.329,1.579,128.581.553,10.589-23.236,22.351-47.032,35.219-71.123q-1.5-2.6-2.986-5.184c-61.559,6.416-117.823,13.989-164.752,22.27q-11.746,2.07-21.952,4.056A27.31,27.31,0,0,1,87.681,461.79C41.976,473.913,40.8,481.707,40.8,481.811Zm262.8,18.782c21.09-.546,42.858-1.32,65.15-2.316-12.809-19.025-24.873-38.05-36.075-56.861-10.447,19.917-20.159,39.7-29.075,59.177Zm247.26-47.674a91.1,91.1,0,0,1-6.349,33.53q20.585-1.847,40.549-3.865c-12.617-21.318-26.369-42.932-41.081-64.523a91.172,91.172,0,0,1,6.882,34.858Zm-208.1-30.344q-1.914,3.507-3.8,7.006c10.832,18.472,22.535,37.173,34.99,55.9a91.773,91.773,0,0,1,.28-65.865q-15.909,1.429-31.465,2.958Zm208.02-14.83c16.894,24.593,32.579,49.281,46.781,73.557l2.935-.31c13.414-25.573,25.677-51.036,36.657-76.027C609.566,405.482,580.63,406.4,550.78,407.745Zm98.931-2.986c-10.655,24.57-22.565,49.605-35.573,74.766,40.985-4.5,79.353-9.5,113.848-14.881a27.314,27.314,0,0,1,51.53-8.864c96.777-18.5,98.732-31.406,98.716-31.539v-.007c-.007-.14-4.307-14.188-121.229-18.538-21.687-.812-45.284-1.21-70.379-1.21q-17.973,0-36.913.273ZM283.05,176.1a25.265,25.265,0,0,0-13.517,4.218c-18.229,12.72-16.518,54.428,4.69,114.446,12.786,36.192,31.753,76.646,55.468,118.707q2.654-.275,5.316-.538,5.409-9.81,11.062-19.659a1270.593,1270.593,0,0,1,79.448-122.218A651.3,651.3,0,0,0,375.3,224.271a382.782,382.782,0,0,0-32.829-24.622,27.321,27.321,0,0,1-39.407-20.272,60.1,60.1,0,0,0-18.274-3.318C284.2,176.059,283.625,176.066,283.05,176.1Zm72.937,222.86q-3.618,6.3-7.138,12.609,15.075-1.449,30.491-2.809a91.455,91.455,0,0,1,141.4-23.664c-28.5-39.1-58.108-74.935-87.2-105.671a1262.541,1262.541,0,0,0-77.558,119.531ZM648.3,97.79c-28.56,1.342-67.746,23.6-112.035,64.369-31.6,29.091-64.088,65.806-95.8,107.964,34.621,36.4,69.95,79.934,103.34,127.563,33.958-1.578,66.78-2.64,97.876-3.171,21.9-51.279,38.257-100.413,47.866-144.458a415.656,415.656,0,0,0,8.185-51.7,27.307,27.307,0,0,1-1.431-53.764c-3.812-20.36-11.931-34.637-24.209-41.678a41.717,41.717,"></path>
@@ -90,7 +86,7 @@
                 <svg class="icon header_icon">
                     <use href="#menu"></use>
                 </svg>
-               <svg  width="20" height="20" class="header_icon header_active">
+                <svg  width="20" height="20" class="header_icon header_active">
                     <use href="#cross"></use>
                 </svg>
             </a>
@@ -149,167 +145,38 @@
                 </div>
             </div>
         </nav>
-        <div id="header_img" class="header__image">
-            <svg width="564" height="253" >
-                <use href="#logotype"></use>
-            </svg>
-        </div>
     </header>
-    <section class="main wow animate__animated animate__fadeIn">
-        <div class="main_grid container ">
-            <a href="#" class="main_card1 main_img">
-                    <div  class="main_bg"><p>О факультете</p></div>
-            </a>
-            <a  href="#" class="main_card2 main_img">
-                <div class="main_bg"><p>Поступление</p></div>
-            </a>
-            <a href="#" class="main_card3 main_img">
-                <div class="main_bg"><p>Сотрудничество</p></div>
-            </a>
-            <a href="#" class="main_card4 main_img">
-                <div class="main_bg"><p>Наука</p></div>
-            </a>
-            <a href="#"  class="main_card5 main_img">
-                <div class="main_bg"><p>Образование</p></div>
-            </a>
-            <a href="#" class="main_card6 main_img">
-                <div class="main_bg"><p>Контакты</p></div>
-            </a>
-        </div>
-    </section>
-    <section class="news  wow animate__animated animate__fadeIn">
+    {% block content %}
+    <section class="newsM">
         <div class="container">
-            <div class="news_position">
-                <img class="wow animate__animated animate__fadeInLeft" src="{{ post.image.url }}" alt="">
-                <div class="news_inf wow animate__animated animate__fadeInRight">
-                    <p class="news_inf-title">{{ post.title|truncatechars:86 }}</p>
-                    <p class="news_inf-description">{{ post.body|truncatechars:195 }}</p>
-                    <div class="news_button">
-                         <a href="{{ post.get_absolute_url }}" class="button_more">Подробнее</a>
-                        <a href="blog/" class="news_more">Больше новостей</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="event wow animate__animated animate__fadeIn">
-        <div class="container">
-            <div class="event_position">
-                <img class="wow animate__animated animate__fadeInRight" src="{% static 'home/assets/image/event_image.png' %}" alt="">
-                <div class="event_inf wow animate__animated animate__fadeInLeft">
-                    <p class="news_inf-title">Студенческая жизнь</p>
-                    <p class="event_inf-description">Каждый найдет себе занятие<br/>на свободное время!</p>
-                    <div class="event_list">
-                        <ul>
-                            <li>Художественое декорирование</li>
-                            <li>Фотография/видео</li>
-                            <li>Хореография</li>
-                        </ul>
-                        <ul class="event_ul">
-                            <li>Дизайн</li>
-                            <li>Вокал</li>
-                            <li>SMM</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="button_more">Присоединиться</a>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="numbers wow animate__animated animate__fadeIn">
-        <div class="container">
-            <div class="numbers_title">Физический факультет в цифрах</div>
-            <div class="numbers_grid1">
-                <div class="numbers_row block1 ">
-                    <div class="numbers_size">10</div>
-                    <div>Научно- исследовательских лабораторий</div>
-                </div>
-                <div class="numbers_row block2">
-                    <div class="numbers_size">186</div>
-                    <div>Преподавателей с ученой степенью</div>
-                </div>
-                <div class="numbers_row block3 numbers_main_bg">
-                    <div class="numbers_size">50</div>
-                    <div>Выпускников- академиков НАН Беларуси</div>
-                </div>
-            </div>
-            <div class="numbers_grid2">
-                <div class="numbers_row block3">
-                    <div class="numbers_size numbers_main_bg numbers_pad">5</div>
-                    <div>Специальностей</div>
-                </div>
-                <div class="numbers_row block5">
-                    <div class="numbers_size">11</div>
-                    <div>Кафедр</div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <section class="publication wow animate__animated animate__fadeIn">
-        <div class="container">
-            <div class="publication_title">Крайние публикации</div>
-            <div class="row">
-                <div>
-                    <img  class="wow animate__animated animate__fadeInDown" src="{% static 'home/assets/image/publication1.png' %}" alt="">
-                    <p>Photoluminescence kinetics for monitoring photoinduced processe</p>
-                </div>
-                <div>
-                    <img class="wow animate__animated animate__fadeInDown" src="{% static 'home/assets/image/publication2.png' %}" alt="">
-                    <p>Atmospheric adsorption on pristine and nitrogen-doped graphene: doping-dependent, spatially selective</p>
-                </div>
-                <div>
-                    <img class="wow animate__animated animate__fadeInDown" src="{% static 'home/assets/image/publication3.png' %}" alt="">
-                    <p>Effective p-type photocurrent sensitization of n-Bi2O3 with p-C</p>
-                </div>
-
-            </div>
-            <div class="publication_button">
-                <a href="#" class="button_more">Подробнее</a>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="people ">
-        <div class="container">
-            <div class="publication_title">Известные выпускники</div>
-                <div class="row">
-                    <div class="people_bg-card wow animate__animated animate__fadeInDown">
-                        <div class="people_img">
-                            <img src="{% static 'home/assets/image/people1.png' %}" alt="">
-                        </div>
-                        <p class="people_name">Кислый Виктор Владимирович</p>
-                        <p class="people_name-year">выпускник 1999 года</p>
-                        <p class="people_name-description">Основатель компании «Game Stream» (1998 г.). В том же году зарегистрировал компанию Wargaming, стал ее генеральным директором. Создатель знаменитой игры «World of Tanks».</p>
-                    </div>
-                    <div class="people_bg-card wow animate__animated animate__fadeInDown">
-                        <div class="people_img">
-                            <img src="{% static 'home/assets/image/people2.png' %}" alt="">
-                        </div>
-                        <p class="people_name">Румянцев Михаил Леонидович</p>
-                        <p class="people_name-year">выпускник 2011 года</p>
-                        <p class="people_name-description">Основатель и генеральный директор стартап-компании «FriendlyData» (с 2016 г.); вошел в рейтинг молодых бизнесменов «2019 Европа 30 до 30», составленный журналом Forbes в категории «Технологии».</p>
-                    </div>
-                    <div class="people_bg-card wow animate__animated animate__fadeInDown">
-                        <div class="people_img">
-                            <img src="{% static 'home/assets/image/people3.png' %}" alt="">
+            <div class="page_name">Новости</div>
+            {% for post in posts %}
+            <a  href="{{ post.get_absolute_url }}" class="newsModel">
+                <div class="newsModel_row">
+                    <img src="{{ post.image.url }}" alt="">
+                    <div class="page_inf">
+                        <div class="page_inf-title">{{ post.title }}</div>
+                        <div class="newsModel_inf">
+                            {{ post.body|truncatechars:240|linebreaks }}
                         </div>
 
-                        <p class="people_name">Кондрашов Олег Владимирович</p>
-                        <p class="people_name-year">выпускник 2007 года</p>
-                        <p class="people_name-description">Генеральный директор компании EnCata - инжинирингового центра по разработке и производству промышленных прототипов; «Минчанин года — 2016» в области промышленности.</p>
                     </div>
+
                 </div>
-            <div class="people_button">
-                <a href="#" class="button_more">Узнать больше</a>
+            </a>
+            {% endfor %}
+
+            <div class="newsModel_button">
+                {% if page.has_previous %}
+                <a href="#">Back</a>
+                {% endif %}
+                {% if page.has_next %}
+                <a href="#">Next</a>
+                {% endif %}
             </div>
         </div>
     </section>
-
+    {% endblock %}
     <footer class="footer">
         <div class="container">
             <div class="footer_grid">
@@ -358,9 +225,5 @@
         </div>
     </footer>
 </body>
-<script src="{% static 'home/wow.min.js' %}"></script>
-<script>
-    new WOW().init();
-</script>
 <script src="{% static 'home/main.js' %}"></script>
 </html>

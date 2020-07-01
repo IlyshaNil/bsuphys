@@ -34,6 +34,6 @@ def post_list(request, tag_slug=None):
         posts = paginator.page(paginator.num_pages)
     return render(
         request,
-        "../templates/templates/post/list.html",
+        "../templates/templates/post/listNews.html",
         {"page": page, "posts": posts, "tag": tag},
     )
