@@ -11,3 +11,7 @@ def index(request):
 def templates(request):
     posts = Post.published.latest("publish")
     return render(request, "template1.html", {"posts": posts})
+
+
+def dekanat(request):
+    return render(request, "dekonat.html")
