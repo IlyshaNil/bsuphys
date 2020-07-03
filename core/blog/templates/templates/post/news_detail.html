@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Деканат физического факультета</title>
     <link rel="stylesheet" href="{% static 'home/assets/styles/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <title>{{ post.title }}</title>
 </head>
 <body>
     <svg class="_icon">
@@ -145,81 +145,14 @@
             </div>
         </nav>
     </header>
-
-    <section class="page">
+    <section class="newsM">
         <div class="container">
-            <div class="page_name">
-                Деканат
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan.png' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Тиванов Михаил Сергеевич</div>
-                    <div class="page_inf-description">Декан <br>кандидат физико-математических наук, доцент
-                    </div>
-                    <p>сл.тел: (375-17) 209-52-50</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: tivanov@bsu.by</p>
-                </div>
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan2.jpg' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Горбачук Николай Иванович</div>
-                    <div class="page_inf-description">Заместитель декана по учебной и методической работе <br>кандидат физико-математических наук, доцент
-                    </div>
-                    <p>сл.тел: (375-17) 209-55-06</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: Gorbachuk@bsu.by</p>
-                </div>
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan3.jpg' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Ляшенко Людмила Сергеевна</div>
-                    <div class="page_inf-description">Заместитель декана по учебно-воспитательной работе и социальным вопросам <br>Кандидат физико-математических наук, доцент
-                    </div>
-                    <p>сл.тел: (375-17) 209-50-67</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: lyashenko@bsu.by</p>
-                </div>
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan4.jpg' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Папковская Наталья Федоровна</div>
-                    <div class="page_inf-description">Старший инспектор <br>
-                    </div>
-                    <p>сл.тел: (375-17) 209-52-67</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: Papkousk@bsu.by</p>
-                </div>
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan5.jpg' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Фурс Светлана Васильевна</div>
-                    <div class="page_inf-description">Методист <br>
-                    </div>
-                    <p>сл.тел: (375-17) 209-55-07</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: Furssv@bsu.by</p>
-                </div>
-            </div>
-            <div class="page_row">
-                <img src="{% static 'home/assets/image/dekan6.jpg' %}" alt="">
-                <div class="page_inf">
-                    <div class="page_inf-title">Колесова Ирина Михайловна</div>
-                    <div class="page_inf-description">Специалист (диспетчер) <br>
-                    </div>
-                    <p>сл.тел: (375-17) 209-51-15</p>
-                    <p>(факс): (375-17) 209-54-45</p>
-                    <p>E-mail: tivanov@bsu.by</p>
-                </div>
-            </div>
+            <div class="page_name">{{ post.title }}</div>
+            <p class="newsModel_position">
+                <img src="{{ post.image.url }}" alt=""  align="left">{{ post.body }}
+            </p>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer_grid">
@@ -268,5 +201,5 @@
         </div>
     </footer>
 </body>
-    <script src="{% static 'home/main.js' %}"></script>
+<script src="{% static 'home/main.js' %}"></script>
 </html>
