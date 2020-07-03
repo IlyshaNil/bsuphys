@@ -15,3 +15,7 @@ def templates(request):
 
 def dekanat(request):
     return render(request, "dekonat.html")
+
+
+def spec(request):
+    return render(request, "spec.html")
