@@ -19,3 +19,35 @@ def dekanat(request):
 
 def spec(request):
     return render(request, "spex.html")
+
+
+def abitur(request):
+    return render(request, "enrollee.html")
+
+
+def info(request):
+    return render(request, "mainInf.html")
+
+
+def faculty(request):
+    return render(request, "1.html")
+
+
+def enter(request):
+    return render(request, "2.html")
+
+
+def cooperation(request):
+    return render(request, "3.html")
+
+
+def science(request):
+    return render(request, "4.html")
+
+
+def education(request):
+    return render(request, "5.html")
+
+
+def contacts(request):
+    return render(request, "6.html")
