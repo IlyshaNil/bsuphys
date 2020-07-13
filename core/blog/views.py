@@ -14,7 +14,7 @@ def post_detail(request, year, month, day, post):
         publish__month=month,
         publish__day=day,
     )
-    return render(request, "../templates/templates/post/news_detail_old.html", {"post": post})
+    return render(request, "../templates/templates/post/pageNews.html", {"post": post})
 
 
 def post_list(request, tag_slug=None):
