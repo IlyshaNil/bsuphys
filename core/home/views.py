@@ -5,7 +5,7 @@ from django.utils import timezone
 
 def index(request):
     post = Post.published.latest("publish")
-    return render(request, "index.html", {"post": post})
+    return render(request, "main.html", {"post": post})
 
 
 def templates(request):
@@ -14,8 +14,8 @@ def templates(request):
 
 
 def dekanat(request):
-    return render(request, "dekonat.html")
+    return render(request, "dekanat.html")
 
 
 def spec(request):
-    return render(request, "spec.html")
+    return render(request, "spex.html")

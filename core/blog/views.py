@@ -14,7 +14,7 @@ def post_detail(request, year, month, day, post):
         publish__month=month,
         publish__day=day,
     )
-    return render(request, "../templates/templates/post/news_detail.html", {"post": post})
+    return render(request, "../templates/templates/post/news_detail_old.html", {"post": post})
 
 
 def post_list(request, tag_slug=None):
@@ -34,6 +34,6 @@ def post_list(request, tag_slug=None):
         posts = paginator.page(paginator.num_pages)
     return render(
         request,
-        "../templates/templates/post/listNews.html",
+        "../templates/templates/post/news.html",
         {"page": page, "posts": posts, "tag": tag},
     )

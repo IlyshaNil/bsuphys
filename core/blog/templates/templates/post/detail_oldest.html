@@ -1,0 +1,24 @@
+{% extends "templates/base.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
+    {{ post.body|linebreaks }}
+    {% if post.image %}
+    <img src="{{ post.image.url }}" alt="альтернативный тек"  id="image" >
+    <style>
+    #image{max-width:250px};
+    </style>
+
+
+    {% endif %}
+    {% if post.uploads %}
+        <a href="{{ BASE_DIR }}/media/{{ post.uploads.file }}" >
+    {% endif %}
+    {{ post.uploads.title }}
+    {% if post.uploads %}
+        </a>
+    {% endif %}
+    
+
+{% endblock %}
