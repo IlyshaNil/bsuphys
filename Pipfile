@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 black = "==19.10b0"
 
-
 [packages]
 django = "*"
 dj-database-url = "*"
@@ -16,3 +15,5 @@ psycopg2 = "*"
 django-taggit = "*"
 pillow = "*"
 gunicorn = "*"
+python-gettext = "*"
+django-modeltranslation = "*"
