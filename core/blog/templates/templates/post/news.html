@@ -2,13 +2,12 @@
 
 {% load static %}
 
-{% block title %}Контакты{% endblock %}
+{% block title %}Новости{% endblock %}
 
 {% block content %}
 <div class="pageNews">
     <div class="container">
         <div class="page_name">Новости</div>
-        {% block content %}
         {% for post in posts %}
         <a class="page row" href="{{ post.get_absolute_url }}">
             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
@@ -21,7 +20,6 @@
         </a>
         {% endfor %}
         {% include "pagination.html" with page=posts %}
-        {% endblock %}
     </div>
 </div>
 {% endblock %}
