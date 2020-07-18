@@ -7,6 +7,7 @@ from django.core.files.storage import FileSystemStorage
 from ckeditor.fields import RichTextField
 
 
+
 from Uploads.models import Uploads
 
 fs = FileSystemStorage(location="/files")
@@ -29,7 +30,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    body = models.RichTextField()
+    body = RichTextField()
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
