@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.core.files.storage import FileSystemStorage
+from ckeditor.widgets import CKEditorWidget
 
 from Uploads.models import Uploads
 
@@ -27,7 +28,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    body = models.TextField()
+    body = models.TextField(widget=CKEditorWidget())
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
