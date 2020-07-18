@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "images.apps.ImagesConfig",
     "Uploads",
     "staff",
+    "ckeditor",
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,5 @@ STATICFILES_FINDERS = (
 )
 
 ADMIN_MEDIA_PREFIX = "/static/admin/"
+
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
