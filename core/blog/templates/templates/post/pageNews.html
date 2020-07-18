@@ -12,7 +12,7 @@
             <img src="{{ post.image.url }}">
         </div>
         <div class="data">Опубликованно {{ post.publish }} by {{ post.author }}</div>
-        <div class="inf">{{ post.body }} </div>
+        <div class="inf">{{ post.body| safe }} </div>
         {% if post.uploads %}
         <a href="{{ BASE_DIR }}/media/{{ post.uploads.file }}">Прикрепленные документы</a>
         {% endif %}
