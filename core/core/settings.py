@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
-from django.utils.translation import gettext
 from dynaconf import settings as _settings
 from pathlib import Path
 
@@ -133,11 +132,11 @@ USE_L10N = False
 
 USE_TZ = True
 
-#gettext = lambda s: s
-#LANGUAGES = (
-#    ("ru", gettext("Russian"))
-#    ("en", gettext("English"))
-#)
+gettext = lambda s: s
+LANGUAGES = (
+    ("ru", gettext("Russian")),
+    ("en", gettext("English")),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
