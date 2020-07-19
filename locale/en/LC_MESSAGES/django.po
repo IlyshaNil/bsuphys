@@ -24,71 +24,71 @@ msgstr ""
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "О факультете"
-msgstr ""
+msgstr "About the faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Сотрудничество"
-msgstr ""
+msgstr "Cooperation"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Контакты"
-msgstr ""
+msgstr "Contacts"
 
 #: core/home/templates/main.html:8
 msgid "Поступление"
-msgstr ""
+msgstr "Entrance"
 
 #: core/home/templates/main.html:8
 msgid "Наука"
-msgstr ""
+msgstr "Science"
 
 #: core/home/templates/main.html:8
 msgid "Образование"
-msgstr ""
+msgstr "Education"
 
 #: core/home/templates/main.html:8
 msgid "Подробнее"
-msgstr ""
+msgstr "Details"
 
 #: core/home/templates/main.html:8
 msgid "Больше новостей"
-msgstr ""
+msgstr "More news"
 
 #: core/home/templates/main.html:8
 msgid "Студенческая жизнь"
-msgstr ""
+msgstr "Student life"
 
 #: core/home/templates/main.html:8
 msgid "Каждый найдет себе занятие"
-msgstr ""
+msgstr "Everyone will find something to do"
 
 #: core/home/templates/main.html:8
 msgid "на свободное время!"
-msgstr ""
+msgstr "in their free time"
 
 #: core/home/templates/main.html:8
 msgid "Художественое декорирование"
-msgstr ""
+msgstr "Artistic decoration"
 
 #: core/home/templates/main.html:8
 msgid "Фотография/видео"
-msgstr ""
+msgstr "Photo/video"
 
 #: core/home/templates/main.html:8
 msgid "Хореография"
-msgstr ""
+msgstr "Choreography"
 
 #: core/home/templates/main.html:8
 msgid "Дизайн"
-msgstr ""
+msgstr "Design"
 
 #: core/home/templates/main.html:8
 msgid "Вокал"
-msgstr ""
+msgstr "Vocal"
 
 #: core/home/templates/main.html:8
 msgid "Присоединиться"
-msgstr ""
+msgstr "Join"
 
 #: core/home/templates/main.html:8
 msgid "Физический факультет в цифрах"
@@ -96,36 +96,36 @@ msgstr ""
 
 #: core/home/templates/main.html:8
 msgid "Научно-исследовательских лабораторий"
-msgstr ""
+msgstr "Faculty of physics in numbers"
 
 #: core/home/templates/main.html:8
 msgid "Преподавателей"
-msgstr ""
+msgstr "Teachers"
 
 #: core/home/templates/main.html:8
 msgid "с ученой"
-msgstr ""
+msgstr "with scientific"
 
 #: core/home/templates/main.html:8
 msgid "степенью"
-msgstr ""
+msgstr "degrease"
 
 #: core/home/templates/main.html:8
 msgid "Выпускников- академиков НАН Беларуси"
-msgstr ""
+msgstr "Graduates-academicians of the national Academy of Sciences of Belarus"
 
 #: core/home/templates/main.html:8
 msgid "Специальностей"
-msgstr ""
+msgstr "Specialties"
 
 #: core/home/templates/main.html:8
 msgid "Кафедр"
-msgstr ""
+msgstr "Departments"
 
 #: core/home/templates/main.html:8
 msgid "Последние публикации"
-msgstr ""
+msgstr "Recent publication"
 
 #: core/home/templates/main.html:8
 msgid "Известные выпускники"
-msgstr ""
+msgstr "Notable alumni"
