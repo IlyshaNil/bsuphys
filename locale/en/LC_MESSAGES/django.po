@@ -20,7 +20,7 @@ msgstr ""
 
 #: core/home/templates/header.html:1 core/home/templates/header.html:534
 msgid "Физический факультет"
-msgstr ""
+msgstr "Physics department"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "О факультете"
@@ -28,11 +28,11 @@ msgstr "About the faculty"
 
 #: core/home/templates/header.html:534
 msgid "Общая информация"
-msgstr ""
+msgstr "Common information"
 
 #: core/home/templates/header.html:534
 msgid "Деканат"
-msgstr ""
+msgstr "Deanery"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Известные выпускники"
@@ -40,7 +40,7 @@ msgstr "Notable alumni"
 
 #: core/home/templates/header.html:534
 msgid "Новости"
-msgstr ""
+msgstr "News"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Поступление"
@@ -48,11 +48,11 @@ msgstr "Entrance"
 
 #: core/home/templates/header.html:534
 msgid "Абитуриенту"
-msgstr ""
+msgstr "Entrant"
 
 #: core/home/templates/header.html:534
 msgid "План приема"
-msgstr ""
+msgstr "Reception plan"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Сотрудничество"
@@ -72,31 +72,31 @@ msgstr "Contacts"
 
 #: core/home/templates/header.html:534
 msgid "Одно окно"
-msgstr ""
+msgstr "One window"
 
 #: core/home/templates/header.html:534
 msgid "Мы на карте"
-msgstr ""
+msgstr "We are on the map"
 
 #: core/home/templates/header.html:534
 msgid "Министерство Образования РБ"
-msgstr ""
+msgstr "Ministry of Education of the Republic of Belarus"
 
 #: core/home/templates/header.html:534
 msgid "Белорусский государственный Университет"
-msgstr ""
+msgstr "Belarusian state University"
 
 #: core/home/templates/header.html:534
 msgid "Журнал Белорусского государственного университета"
-msgstr ""
+msgstr "Journal of the Belarusian state University"
 
 #: core/home/templates/header.html:534
 msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
-msgstr ""
+msgstr "220006, 5 babruiskaya str., Minsk, faculty of Physics"
 
 #: core/home/templates/header.html:534
 msgid "Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45"
-msgstr ""
+msgstr "Tel: +375 17 209-52-67 Fax: 8 (017) 209-54-45"
 
 #: core/home/templates/main.html:8
 msgid "Подробнее"
@@ -144,7 +144,7 @@ msgstr "Join"
 
 #: core/home/templates/main.html:8
 msgid "Физический факультет в цифрах"
-msgstr ""
+msgstr "Faculty of physics in numbers"
 
 #: core/home/templates/main.html:8
 msgid "Научно-исследовательских лабораторий"
