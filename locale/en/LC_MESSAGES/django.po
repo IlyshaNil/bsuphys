@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-19 15:00+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/home/templates/header.html:1
+msgid "Физический факультет"
+msgstr ""
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "О факультете"
+msgstr ""
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "Сотрудничество"
+msgstr ""
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "Контакты"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Поступление"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Наука"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Образование"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Подробнее"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Больше новостей"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Студенческая жизнь"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Каждый найдет себе занятие"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "на свободное время!"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Художественое декорирование"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Фотография/видео"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Хореография"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Дизайн"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Вокал"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Присоединиться"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Физический факультет в цифрах"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Научно-исследовательских лабораторий"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Преподавателей"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "с ученой"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "степенью"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Выпускников- академиков НАН Беларуси"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Специальностей"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Кафедр"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Последние публикации"
+msgstr ""
+
+#: core/home/templates/main.html:8
+msgid "Известные выпускники"
+msgstr ""
