@@ -24,21 +24,21 @@ class Post(models.Model):
         ("draft", "Черновик"),
         ("published", "Опубликовать"),
     )
-    title = models.TextField(label="Заголовок")
-    slug = models.SlugField(max_length=250, unique_for_date="publish", label="Ссылка")
-    image = models.ImageField(upload_to="media", null=True, blank=True, label="Афиша новости")
+    title = models.TextField()
+    slug = models.SlugField(max_length=250, unique_for_date="publish")
+    image = models.ImageField(upload_to="media", null=True, blank=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="blog_posts", label="Автор"
+        User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    body = RichTextField(label="Текст новости")
-    publish = models.DateTimeField(default=timezone.now, label="Дата публикации")
+    body = RichTextField()
+    publish = models.DateTimeField(default=timezone.now,)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     uploads = models.ForeignKey(
-        Uploads, null=True, blank=True, on_delete=models.CASCADE, label="Прикрепленный файл"
+        Uploads, null=True, blank=True, on_delete=models.CASCADE
     )
     status = models.TextField(
-        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, label="Статус", help_text="Обязательное поле!"
+        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
     )
 
     tags = TaggableManager()
