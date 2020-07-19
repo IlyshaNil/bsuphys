@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+from django.utils.translation import gettext
 from dynaconf import settings as _settings
 from pathlib import Path
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
@@ -34,6 +36,7 @@ ALLOWED_HOSTS = _settings.ALLOWED_HOSTS
 # Application definition
 
 INSTALLED_APPS = [
+    "modeltranslation",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -52,6 +55,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -115,7 +119,11 @@ FILE_UPLOAD_HANDLERS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = "ru-RU"
+
+
+LANGUAGE_CODE = "ru"
+
+prefix_default_language = False
 
 TIME_ZONE = "Europe/Minsk"
 
@@ -125,7 +133,11 @@ USE_L10N = False
 
 USE_TZ = True
 
-
+#gettext = lambda s: s
+#LANGUAGES = (
+#    ("ru", gettext("Russian"))
+#    ("en", gettext("English"))
+#)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

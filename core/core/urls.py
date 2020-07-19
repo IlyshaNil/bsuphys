@@ -19,16 +19,20 @@ from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.conf.urls import  i18n
+from django.conf.urls.i18n import  i18n_patterns
 
 
 urlpatterns = [
-    path("", include("home.urls")),
     path("admin/", admin.site.urls),
     path("images/", include("images.urls", namespace="images")),
-    path("blog/", include("blog.urls", namespace="blog")),
+    path("i18n/", include("django.conf.urls.i18n"))
 
 ]
+
+urlpatterns += i18n_patterns(
+    path("", include("home.urls")),
+    path("blog/", include("blog.urls", namespace="blog")),
+)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
