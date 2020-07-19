@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-19 15:00+0300\n"
+"POT-Creation-Date: 2020-07-19 17:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: core/home/templates/header.html:1
+#: core/home/templates/header.html:1 core/home/templates/header.html:534
 msgid "Физический факультет"
 msgstr ""
 
@@ -26,25 +26,77 @@ msgstr ""
 msgid "О факультете"
 msgstr "About the faculty"
 
+#: core/home/templates/header.html:534
+msgid "Общая информация"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Деканат"
+msgstr ""
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "Известные выпускники"
+msgstr "Notable alumni"
+
+#: core/home/templates/header.html:534
+msgid "Новости"
+msgstr ""
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "Поступление"
+msgstr "Entrance"
+
+#: core/home/templates/header.html:534
+msgid "Абитуриенту"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "План приема"
+msgstr ""
+
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
 #: core/home/templates/header.html:534 core/home/templates/main.html:8
-msgid "Контакты"
-msgstr "Contacts"
-
-#: core/home/templates/main.html:8
-msgid "Поступление"
-msgstr "Entrance"
-
-#: core/home/templates/main.html:8
 msgid "Наука"
 msgstr "Science"
 
-#: core/home/templates/main.html:8
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
 msgid "Образование"
 msgstr "Education"
+
+#: core/home/templates/header.html:534 core/home/templates/main.html:8
+msgid "Контакты"
+msgstr "Contacts"
+
+#: core/home/templates/header.html:534
+msgid "Одно окно"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Мы на карте"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Министерство Образования РБ"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Белорусский государственный Университет"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Журнал Белорусского государственного университета"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
+msgstr ""
+
+#: core/home/templates/header.html:534
+msgid "Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45"
+msgstr ""
 
 #: core/home/templates/main.html:8
 msgid "Подробнее"
@@ -125,7 +177,3 @@ msgstr "Departments"
 #: core/home/templates/main.html:8
 msgid "Последние публикации"
 msgstr "Recent publication"
-
-#: core/home/templates/main.html:8
-msgid "Известные выпускники"
-msgstr "Notable alumni"
