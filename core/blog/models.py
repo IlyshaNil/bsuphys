@@ -21,30 +21,30 @@ class PublishedManager(models.Manager):
 class Post(models.Model):
     published = PublishedManager()
     STATUS_CHOICES = (
-        ("draft", "Draft"),
-        ("published", "Published"),
+        ("draft", "Черновик"),
+        ("published", "Опубликовать"),
     )
-    title = models.TextField()
-    slug = models.SlugField(max_length=250, unique_for_date="publish")
-    image = models.ImageField(upload_to="media", null=True, blank=True)
+    title = models.TextField(label="Заголовок")
+    slug = models.SlugField(max_length=250, unique_for_date="publish", label="Ссылка")
+    image = models.ImageField(upload_to="media", null=True, blank=True, label="Афиша новости")
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="blog_posts"
+        User, on_delete=models.CASCADE, related_name="blog_posts", label="Автор"
     )
-    body = RichTextField()
-    publish = models.DateTimeField(default=timezone.now)
+    body = RichTextField(label="Текст новости")
+    publish = models.DateTimeField(default=timezone.now, label="Дата публикации")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     uploads = models.ForeignKey(
-        Uploads, null=True, blank=True, on_delete=models.CASCADE
+        Uploads, null=True, blank=True, on_delete=models.CASCADE, label="Прикрепленный файл"
     )
     status = models.TextField(
-        max_length=10, choices=STATUS_CHOICES, null=True, blank=True
+        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, label="Статус", help_text="Обязательное поле!"
     )
 
     tags = TaggableManager()
 
     class Meta:
-        ordering = ("-publish",)
+        ordering = ("publish",)
         verbose_name_plural = "Добавление новостей"
 
     def __str__(self):

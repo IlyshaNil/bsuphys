@@ -15,7 +15,7 @@
             </div>
             <div class="inf col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="title">{{ post.title }}</div>
-                <div class="description">{{ post.body|truncatechars:240|linebreaks }}</div>
+                <div class="description">{{ post.body|truncatechars:240|linebreaks|safe }}</div>
             </div>
         </a>
         {% endfor %}

@@ -1,9 +1,9 @@
-<div class="newsModel_button">
+<div class="newsModel_button" style="color:#000000; font-size:20px;">
     {% if page.has_previous %}
-    <a href="?page={{page.previous_page_number}}">Back</a>
+    <a href="?page={{page.previous_page_number}}">Предыдущая страница</a>
     {% endif %}
     {% if page.has_next %}
-    <a href="?page={{ page.next_page_number }}">Next</a>
+    <a href="?page={{ page.next_page_number }}">Следующая страница</a>
     {% endif %}
 </div>
 
