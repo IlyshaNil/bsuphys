@@ -3,6 +3,7 @@ default:
   DEBUG: False
   ALLOWED_HOSTS: ["127.0.0.1",
                   "localhost",
-                  "physics.bsu.by"]
+                  "physics.bsu.by",
+                  "www.physics.bsu.by"]
   DATABASE_URL: ""
 
