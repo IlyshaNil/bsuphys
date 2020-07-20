@@ -5,6 +5,7 @@ default:
                   "localhost",
                   "217.21.43.37",
                   "physics.bsu.by",
+		 
   ]
   DATABASE_URL: ""
 
