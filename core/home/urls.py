@@ -15,4 +15,6 @@ urlpatterns = [path("", views.index, name="index"),
                 path("science/", views.science, name="science"),
                 path("education/", views.education, name="education"),
                 path("contacts/", views.contacts, name="contacts"),
+
+
                ]
