@@ -21,7 +21,7 @@ msgstr ""
 #: core/home/templates/header.html:1 core/home/templates/header.html:534
 #: core/home/templates/header2.html:534
 msgid "Физический факультет"
-msgstr "Physics department"
+msgstr "Physics faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 #: core/home/templates/main.html:16 core/home/templates/main2.html:8
@@ -60,7 +60,7 @@ msgstr "News"
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 #: core/home/templates/main.html:20 core/home/templates/main2.html:8
 msgid "Поступление"
-msgstr "Entrance"
+msgstr "Admission"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Абитуриенту"
@@ -90,7 +90,7 @@ msgstr "Cooperation"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Конференции"
-msgstr ""
+msgstr "Сonferences"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 #, fuzzy
