@@ -33,9 +33,6 @@ msgstr "Next page"
 msgid "Новости"
 msgstr "News"
 
-#: core/blog/templates/templates/post/pageNews.html:14
-msgid "Образование"
-msgstr "Education"
 
 #: core/blog/templates/templates/post/pageNews.html:17
 msgid "Прикрепленные документы"
