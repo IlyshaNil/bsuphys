@@ -17,7 +17,7 @@ urlpatterns = [path("", views.index, name="index"),
                 path("contacts/", views.contacts, name="contacts"),
 
                 path("language_en/", views.language_switch_en, name="language_en"),
-                path("language_ru/", views.language_switch_en, name="language_ru"),
+                path("language_ru/", views.language_switch_ru, name="language_ru"),
 
 
                ]
