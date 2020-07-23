@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:48+0300\n"
+"POT-Creation-Date: 2020-07-23 18:14+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,11 @@ msgstr "Notable alumni"
 msgid "Кафедры"
 msgstr "Departments"
 
+#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#, fuzzy
+#| msgid "О факультете"
+msgid "Совет факультета"
+msgstr "About the faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Новости"
@@ -67,6 +72,12 @@ msgid "Наука"
 msgstr "Science"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#, fuzzy
+#| msgid "О факультете"
+msgid "Наука на факультете"
+msgstr "About the faculty"
+
+#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Международное сотрудничество"
 msgstr "International cooperation"
 
@@ -75,7 +86,9 @@ msgid "Конференции"
 msgstr "Сonferences"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-msgid "Последние публикации"
+#, fuzzy
+#| msgid "Последние публикации"
+msgid "Основные публикации"
 msgstr "Recent publication"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
@@ -83,8 +96,10 @@ msgid "Образование"
 msgstr "Education"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-msgid "Каждый найдет себе занятие"
-msgstr "Everyone will find something to do"
+#, fuzzy
+#| msgid "Распределение"
+msgid "Расписание занятий"
+msgstr "Employment"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Учебно-астрономическая лаборатория"
@@ -155,6 +170,9 @@ msgstr "More news"
 msgid "Студенческая жизнь"
 msgstr "Student life"
 
+#: core/home/templates/main.html:64
+msgid "Каждый найдет себе занятие"
+msgstr "Everyone will find something to do"
 
 #: core/home/templates/main.html:64
 msgid "на свободное время!"
@@ -216,3 +234,6 @@ msgstr "Specialties"
 msgid "кафедр"
 msgstr "Departments"
 
+#: core/home/templates/main.html:111
+msgid "Последние публикации"
+msgstr "Recent publication"
