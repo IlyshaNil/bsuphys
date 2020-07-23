@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [path("", views.index, name="index"),
@@ -16,7 +16,7 @@ urlpatterns = [path("", views.index, name="index"),
                 path("education/", views.education, name="education"),
                 path("contacts/", views.contacts, name="contacts"),
 
-                path("*/language_en/", views.language_switch_en, name="language_en"),
+                re_path(r'^.+/language_en', views.language_switch_en, name="language_en"),
                 path("language_ru/", views.language_switch_ru, name="language_ru"),
 
 
