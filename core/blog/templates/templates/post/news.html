@@ -2,12 +2,12 @@
 
 {% load static %}
 
-{% block title %}Новости{% endblock %}
+{% block title %}{% trans "Новости" %}{% endblock %}
 
 {% block content %}
 <div class="pageNews">
     <div class="container">
-        <div class="page_name">Новости</div>
+        <div class="page_name">{% trans "Новости" %}</div>
         {% for post in posts %}
         <a class="page row" href="{{ post.get_absolute_url }}">
             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">

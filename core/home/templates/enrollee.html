@@ -2,9 +2,11 @@
 
 {% load static %}
 
-{% block title %}Абитуриенту{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Абитуриенту" %}{% endblock %}
 
 {% block content %}
 
-<div class="pages"><div class="container"><div class="page_name">Абитуриенту</div><a href="/media/media/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BE%D1%82%D1%80%D1%8B%D1%82%D1%8B%D1%85_%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B92020.pdf">Физический факультет БГУ для абитуриента - 2020</a><a href="/media/media/1956.pdf">Буклет Физического факультета</a></div></div>
+<div class="pages"><div class="container"><div class="page_name">{% trans "Абитуриенту" %}</div><a href="/media/media/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BE%D1%82%D1%80%D1%8B%D1%82%D1%8B%D1%85_%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B92020.pdf">{% trans "Физический факультет БГУ для абитуриента - 2020" %}</a><a href="/media/media/1956.pdf">{% trans "Буклет Физического факультета" %}</a></div></div>
 {% endblock %}

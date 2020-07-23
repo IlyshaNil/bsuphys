@@ -2,6 +2,10 @@
 
 {% load static %}
 
+{% block title %}{% trans "Поступление" %}{% endblock %}
+
+{% load i18n %}
+
 {% block content %}
-<div class="pages"><div class="container"><div class="page_name">Поступление</div><a href="/abitur/">Абитуриенту</a><a href="/spec/">План приема и информация о специальностях</a></div></div>
+<div class="pages"><div class="container"><div class="page_name">{% trans "Поступление" %}</div><a href="/abitur/">{% trans "Абитуриенту" %}</a><a href="/spec/">{% trans "План приёма и информация о специальностях" %}</a></div></div>
 {% endblock %}

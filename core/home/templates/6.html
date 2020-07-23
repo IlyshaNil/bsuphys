@@ -2,8 +2,11 @@
 
 {% load static %}
 
-{% block title %}Контакты{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Контакты" %}{% endblock %}
 
 {% block content %}
-<div class="pages"><div class="container"><div class="page_name">Контакты</div><a href="http://physics.bsu.by/ru/node/946">Одно окно</a><a href="http://physics.bsu.by/ru/contacts">Мы на карте</a></div></div>
+
+<div class="pages"><div class="container"><div class="page_name">{% trans "Контакты" %}</div><a href="http://www.physics.bsu.by/ru/node/946">{% trans "Одно окно" %}</a><a href="http://www.physics.bsu.by/ru/contacts">{% trans "Мы на карте" %}</a></div></div>
 {% endblock %}
