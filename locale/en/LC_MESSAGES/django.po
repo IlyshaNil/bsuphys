@@ -20,11 +20,11 @@ msgstr ""
 
 #: core/blog/templates/pagination.html:3
 msgid "Предыдущая страница"
-msgstr ""
+msgstr "Previous page"
 
 #: core/blog/templates/pagination.html:6
 msgid "Следующая страница"
-msgstr ""
+msgstr "Next page"
 
 #: core/blog/templates/templates/post/news.html:5
 #: core/blog/templates/templates/post/news.html:10
@@ -34,14 +34,12 @@ msgid "Новости"
 msgstr "News"
 
 #: core/blog/templates/templates/post/pageNews.html:14
-#, fuzzy
-#| msgid "Образование"
-msgid "Опубликованно"
+msgid "Образование"
 msgstr "Education"
 
 #: core/blog/templates/templates/post/pageNews.html:17
 msgid "Прикрепленные документы"
-msgstr ""
+msgstr "Attached documents"
 
 #: core/home/templates/1.html:7 core/home/templates/1.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
@@ -90,7 +88,7 @@ msgstr "Enrollee"
 
 #: core/home/templates/2.html:10 core/home/templates/header.html:534
 msgid "План приёма и информация о специальностях"
-msgstr ""
+msgstr "Admission plan and specialty information"
 
 #: core/home/templates/3.html:7 core/home/templates/3.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
@@ -115,7 +113,7 @@ msgstr "International cooperation"
 #: core/home/templates/4.html:11 core/home/templates/header.html:534
 #: core/home/templates/header_6.html:534
 msgid "Конференции"
-msgstr "Сonferences"
+msgstr "Conferences"
 
 #: core/home/templates/4.html:11 core/home/templates/header.html:534
 #: core/home/templates/header_6.html:534
@@ -158,16 +156,12 @@ msgid "Мы на карте"
 msgstr "We are on the map"
 
 #: core/home/templates/enrollee.html:11
-#, fuzzy
-#| msgid "Физический факультет в цифрах"
 msgid "Физический факультет БГУ для абитуриента - 2020"
-msgstr "Faculty of physics in numbers"
+msgstr "Faculty of Physics of BSU for the enrollee - 2020"
 
 #: core/home/templates/enrollee.html:11
-#, fuzzy
-#| msgid "Физический факультет"
 msgid "Буклет Физического факультета"
-msgstr "Physics faculty"
+msgstr "Faculty of Physics booklet"
 
 #: core/home/templates/header.html:1 core/home/templates/header.html:534
 #: core/home/templates/header_6.html:534
@@ -196,7 +190,7 @@ msgstr "Tel: +375 17 209-52-67 Fax: 8 (017) 209-54-45"
 
 #: core/home/templates/header_6.html:534
 msgid "План приёма"
-msgstr ""
+msgstr "Admission plan"
 
 #: core/home/templates/main.html:24
 msgid " Сотрудничество"
@@ -297,4 +291,4 @@ msgstr "Recent publication"
 
 #: core/home/templates/spex.html:8
 msgid "План набора"
-msgstr ""
+msgstr "Admission plan"
