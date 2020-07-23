@@ -45,10 +45,8 @@ msgid "Кафедры"
 msgstr "Departments"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#, fuzzy
-#| msgid "О факультете"
 msgid "Совет факультета"
-msgstr "About the faculty"
+msgstr "Faculty Council"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Новости"
@@ -72,10 +70,8 @@ msgid "Наука"
 msgstr "Science"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#, fuzzy
-#| msgid "О факультете"
 msgid "Наука на факультете"
-msgstr "About the faculty"
+msgstr "Science at the faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Международное сотрудничество"
@@ -86,20 +82,16 @@ msgid "Конференции"
 msgstr "Сonferences"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#, fuzzy
-#| msgid "Последние публикации"
 msgid "Основные публикации"
-msgstr "Recent publication"
+msgstr "Key publications"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Образование"
 msgstr "Education"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#, fuzzy
-#| msgid "Распределение"
 msgid "Расписание занятий"
-msgstr "Employment"
+msgstr "Timetable"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Учебно-астрономическая лаборатория"
@@ -188,7 +180,7 @@ msgstr "Photo/video"
 
 #: core/home/templates/main.html:68
 msgid "Физики в зелёном!"
-msgstr "Physicists in tour trail!"
+msgstr "Physicist camp!"
 
 #: core/home/templates/main.html:71
 msgid "СтудСоюз"
@@ -196,7 +188,7 @@ msgstr "Student union"
 
 #: core/home/templates/main.html:72
 msgid "ССКО"
-msgstr "Student Council for the Quality of Education"
+msgstr "SCQE"
 
 #: core/home/templates/main.html:77
 msgid "Присоединиться"
@@ -212,7 +204,7 @@ msgstr "research laboratories"
 
 #: core/home/templates/main.html:92
 msgid "преподавателей"
-msgstr "Teachers"
+msgstr "teachers"
 
 #: core/home/templates/main.html:92
 msgid "с ученой"
@@ -224,15 +216,15 @@ msgstr "degrease"
 
 #: core/home/templates/main.html:96
 msgid "выпускников- академиков НАН Беларуси"
-msgstr "Graduates-academicians of the national Academy of Sciences of Belarus"
+msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
 
 #: core/home/templates/main.html:100
 msgid "специальностей"
-msgstr "Specialties"
+msgstr "specialties"
 
 #: core/home/templates/main.html:104
 msgid "кафедр"
-msgstr "Departments"
+msgstr "departments"
 
 #: core/home/templates/main.html:111
 msgid "Последние публикации"
