@@ -44,9 +44,6 @@ msgstr "Notable alumni"
 msgid "Кафедры"
 msgstr "Departments"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-msgid "О факультете"
-msgstr "About the faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Новости"
@@ -218,8 +215,4 @@ msgstr "Specialties"
 #: core/home/templates/main.html:104
 msgid "кафедр"
 msgstr "Departments"
-
-#: core/home/templates/main.html:111
-msgid "Последние публикации"
-msgstr "Recent publication"
 
