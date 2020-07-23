@@ -7,12 +7,20 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.utils import translation
 
+
 def language_switch_en(request):
     user_language = 'en'
     translation.activate(user_language)
     response = HttpResponse()
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
     return response
+
+def language_switch_ru(request):
+    user_language = 'ru'
+    translation.activate(user_language)
+    response = HttpResponse()
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+    return response.HttpResponsePermanentRedirect('/')
 
 
 def index(request):
