@@ -70,10 +70,6 @@ msgid "Наука"
 msgstr "Science"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-msgid "О факультете"
-msgstr "About the faculty"
-
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Международное сотрудничество"
 msgstr "International cooperation"
 
@@ -162,9 +158,6 @@ msgstr "More news"
 msgid "Студенческая жизнь"
 msgstr "Student life"
 
-#: core/home/templates/main.html:64
-msgid "Каждый найдет себе занятие"
-msgstr "Everyone will find something to do"
 
 #: core/home/templates/main.html:64
 msgid "на свободное время!"
