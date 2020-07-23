@@ -20,7 +20,7 @@ def language_switch_ru(request):
     translation.activate(user_language)
     response = HttpResponse()
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
-    return response.HttpResponsePermanentRedirect('/')
+    return response
 
 
 def index(request):
