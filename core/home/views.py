@@ -3,9 +3,16 @@ from django.shortcuts import render, get_object_or_404
 from blog.models import Post
 from django.utils import timezone
 from django.utils.translation import LANGUAGE_SESSION_KEY
+from django.conf import settings
+from django.http import HttpResponse
+from django.utils import translation
 
-
-
+def language_switch_en():
+    user_language = 'en'
+    translation.activate(user_language)
+    response = HttpResponse(...)
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+    return(response)
 
 
 def index(request):
