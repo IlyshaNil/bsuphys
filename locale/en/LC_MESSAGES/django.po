@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 23:39+0300\n"
+"POT-Creation-Date: 2020-07-23 17:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: core/home/templates/header.html:1 core/home/templates/header.html:534
-#: core/home/templates/header2.html:534
 msgid "Физический факультет"
 msgstr "Physics faculty"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main.html:16 core/home/templates/main2.html:8
+#: core/home/templates/main.html:16
 msgid "О факультете"
 msgstr "About the faculty"
 
@@ -37,7 +36,7 @@ msgid "Деканат"
 msgstr "Deanery"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main.html:127 core/home/templates/main2.html:8
+#: core/home/templates/main.html:127
 msgid "Известные выпускники"
 msgstr "Notable alumni"
 
@@ -58,7 +57,7 @@ msgid "Новости"
 msgstr "News"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main.html:20 core/home/templates/main2.html:8
+#: core/home/templates/main.html:20
 msgid "Поступление"
 msgstr "Admission"
 
@@ -67,12 +66,10 @@ msgid "Абитуриенту"
 msgstr "Entrant"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main2.html:8
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main2.html:8
 msgid "Наука"
 msgstr "Science"
 
@@ -99,7 +96,6 @@ msgid "Основные публикации"
 msgstr "Recent publication"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main2.html:8
 msgid "Образование"
 msgstr "Education"
 
@@ -122,7 +118,6 @@ msgid "Распределение"
 msgstr "Entrance"
 
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main2.html:8
 msgid "Контакты"
 msgstr "Contacts"
 
@@ -134,11 +129,11 @@ msgstr "One window"
 msgid "Мы на карте"
 msgstr "We are on the map"
 
-#: core/home/templates/header.html:534 core/home/templates/header2.html:534
+#: core/home/templates/header.html:534
 msgid "Министерство Образования РБ"
 msgstr "Ministry of Education of the Republic of Belarus"
 
-#: core/home/templates/header.html:534 core/home/templates/header2.html:534
+#: core/home/templates/header.html:534
 msgid "Белорусский государственный Университет"
 msgstr "Belarusian state University"
 
@@ -146,17 +141,13 @@ msgstr "Belarusian state University"
 msgid "Журнал БГУ: физика"
 msgstr ""
 
-#: core/home/templates/header.html:534 core/home/templates/header2.html:534
+#: core/home/templates/header.html:534
 msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
 msgstr "220006, 5 babruiskaya str., Minsk, faculty of Physics"
 
-#: core/home/templates/header.html:534 core/home/templates/header2.html:534
+#: core/home/templates/header.html:534
 msgid "Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45"
 msgstr "Tel: +375 17 209-52-67 Fax: 8 (017) 209-54-45"
-
-#: core/home/templates/header2.html:534
-msgid "Журнал Белорусского государственного университета"
-msgstr "Journal of the Belarusian state University"
 
 #: core/home/templates/main.html:24
 #, fuzzy
@@ -183,23 +174,23 @@ msgid " Контакты"
 msgstr "Contacts"
 
 #: core/home/templates/main.html:51 core/home/templates/main.html:122
-#: core/home/templates/main.html:148 core/home/templates/main2.html:8
+#: core/home/templates/main.html:148
 msgid "Подробнее"
 msgstr "Details"
 
-#: core/home/templates/main.html:52 core/home/templates/main2.html:8
+#: core/home/templates/main.html:52
 msgid "Больше новостей"
 msgstr "More news"
 
-#: core/home/templates/main.html:63 core/home/templates/main2.html:8
+#: core/home/templates/main.html:63
 msgid "Студенческая жизнь"
 msgstr "Student life"
 
-#: core/home/templates/main.html:64 core/home/templates/main2.html:8
+#: core/home/templates/main.html:64
 msgid "Каждый найдет себе занятие"
 msgstr "Everyone will find something to do"
 
-#: core/home/templates/main.html:64 core/home/templates/main2.html:8
+#: core/home/templates/main.html:64
 msgid "на свободное время!"
 msgstr "in their free time"
 
@@ -207,7 +198,7 @@ msgstr "in their free time"
 msgid "Дни физика"
 msgstr ""
 
-#: core/home/templates/main.html:67 core/home/templates/main2.html:8
+#: core/home/templates/main.html:67
 msgid "Фотография/видео"
 msgstr "Photo/video"
 
@@ -223,11 +214,11 @@ msgstr ""
 msgid "ССКО"
 msgstr ""
 
-#: core/home/templates/main.html:77 core/home/templates/main2.html:8
+#: core/home/templates/main.html:77
 msgid "Присоединиться"
 msgstr "Join"
 
-#: core/home/templates/main.html:84 core/home/templates/main2.html:8
+#: core/home/templates/main.html:84
 msgid "Физический факультет в цифрах"
 msgstr "Faculty of physics in numbers"
 
@@ -243,11 +234,11 @@ msgstr "Faculty of physics in numbers"
 msgid "преподавателей"
 msgstr "Teachers"
 
-#: core/home/templates/main.html:92 core/home/templates/main2.html:8
+#: core/home/templates/main.html:92
 msgid "с ученой"
 msgstr "with scientific"
 
-#: core/home/templates/main.html:92 core/home/templates/main2.html:8
+#: core/home/templates/main.html:92
 msgid "степенью"
 msgstr "degrease"
 
@@ -273,41 +264,36 @@ msgstr "Departments"
 msgid "Последние публикации"
 msgstr "Recent publication"
 
-#: core/home/templates/main2.html:8
-msgid "Художественое декорирование"
-msgstr "Artistic decoration"
+#~ msgid "Журнал Белорусского государственного университета"
+#~ msgstr "Journal of the Belarusian state University"
 
-#: core/home/templates/main2.html:8
-msgid "Хореография"
-msgstr "Choreography"
+#~ msgid "Художественое декорирование"
+#~ msgstr "Artistic decoration"
 
-#: core/home/templates/main2.html:8
-msgid "Дизайн"
-msgstr "Design"
+#~ msgid "Хореография"
+#~ msgstr "Choreography"
 
-#: core/home/templates/main2.html:8
-msgid "Вокал"
-msgstr "Vocal"
+#~ msgid "Дизайн"
+#~ msgstr "Design"
 
-#: core/home/templates/main2.html:8
-msgid "Научно-исследовательских лабораторий"
-msgstr "Faculty of physics in numbers"
+#~ msgid "Вокал"
+#~ msgstr "Vocal"
 
-#: core/home/templates/main2.html:8
-msgid "Преподавателей"
-msgstr "Teachers"
+#~ msgid "Научно-исследовательских лабораторий"
+#~ msgstr "Faculty of physics in numbers"
 
-#: core/home/templates/main2.html:8
-msgid "Выпускников- академиков НАН Беларуси"
-msgstr "Graduates-academicians of the national Academy of Sciences of Belarus"
+#~ msgid "Преподавателей"
+#~ msgstr "Teachers"
 
-#: core/home/templates/main2.html:8
-msgid "Специальностей"
-msgstr "Specialties"
+#~ msgid "Выпускников- академиков НАН Беларуси"
+#~ msgstr ""
+#~ "Graduates-academicians of the national Academy of Sciences of Belarus"
 
-#: core/home/templates/main2.html:8
-msgid "Кафедр"
-msgstr "Departments"
+#~ msgid "Специальностей"
+#~ msgstr "Specialties"
+
+#~ msgid "Кафедр"
+#~ msgstr "Departments"
 
 #~ msgid "План приема"
 #~ msgstr "Reception plan"
