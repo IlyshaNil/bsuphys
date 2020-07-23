@@ -18,6 +18,10 @@ urlpatterns = [path("", views.index, name="index"),
 
                re_path(r'.+/language_en', views.language_switch_en, name="language_en"),
                re_path(r'.+/language_ru', views.language_switch_ru, name="language_ru"),
+               path("en_main/", views.language_switch_en_main, name="lang_en_main"),
+               path("ru_main/", views.language_switch_ru_main, name="lang_ru_main"),
+
+
 
 
                ]

@@ -30,6 +30,22 @@ def language_switch_ru(request):
     response['Location'] = refresh_path
     return response
 
+def language_switch_en_main(request):
+    user_language = 'en'
+    translation.activate(user_language)
+    response = HttpResponse(status=302)
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+    response['Location'] = "/"
+    return response
+
+def language_switch_ru_main(request):
+    user_language = 'ru'
+    translation.activate(user_language)
+    response = HttpResponse(status=302)
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+    response['Location'] = "/"
+    return response
+
 
 def index(request):
     post = Post.published.latest("publish")
