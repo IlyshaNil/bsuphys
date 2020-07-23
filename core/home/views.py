@@ -10,7 +10,7 @@ from django.utils import translation
 def language_switch_en():
     user_language = 'en'
     translation.activate(user_language)
-    response = HttpResponse(...)
+    response = HttpResponse()
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
     return(response)
 
