@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 18:14+0300\n"
+"POT-Creation-Date: 2020-07-23 23:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,100 +18,161 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: core/home/templates/header.html:1 core/home/templates/header.html:534
-msgid "Физический факультет"
-msgstr "Physics faculty"
+#: core/blog/templates/pagination.html:3
+msgid "Предыдущая страница"
+msgstr ""
 
+#: core/blog/templates/pagination.html:6
+msgid "Следующая страница"
+msgstr ""
+
+#: core/blog/templates/templates/post/news.html:5
+#: core/blog/templates/templates/post/news.html:10
+#: core/home/templates/1.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
+msgid "Новости"
+msgstr "News"
+
+#: core/blog/templates/templates/post/pageNews.html:14
+#, fuzzy
+#| msgid "Образование"
+msgid "Опубликованно"
+msgstr "Education"
+
+#: core/blog/templates/templates/post/pageNews.html:17
+msgid "Прикрепленные документы"
+msgstr ""
+
+#: core/home/templates/1.html:7 core/home/templates/1.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 #: core/home/templates/main.html:16
 msgid "О факультете"
 msgstr "About the faculty"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/1.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534 core/home/templates/mainInf.html:7
+#: core/home/templates/mainInf.html:10
 msgid "Общая информация"
 msgstr "Common information"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/1.html:10 core/home/templates/dekanat.html:7
+#: core/home/templates/dekanat.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Деканат"
 msgstr "Deanery"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-#: core/home/templates/main.html:127
+#: core/home/templates/1.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534 core/home/templates/main.html:127
 msgid "Известные выпускники"
 msgstr "Notable alumni"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/1.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Кафедры"
 msgstr "Departments"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/1.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Совет факультета"
 msgstr "Faculty Council"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
-msgid "Новости"
-msgstr "News"
-
+#: core/home/templates/2.html:5 core/home/templates/2.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 #: core/home/templates/main.html:20
 msgid "Поступление"
 msgstr "Admission"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/2.html:10 core/home/templates/enrollee.html:7
+#: core/home/templates/enrollee.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Абитуриенту"
 msgstr "Enrollee"
 
+#: core/home/templates/2.html:10 core/home/templates/header.html:534
+msgid "План приёма и информация о специальностях"
+msgstr ""
+
+#: core/home/templates/3.html:7 core/home/templates/3.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
+#: core/home/templates/4.html:7 core/home/templates/4.html:11
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Наука"
 msgstr "Science"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/4.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Наука на факультете"
 msgstr "Science at the faculty"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/4.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Международное сотрудничество"
 msgstr "International cooperation"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/4.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Конференции"
 msgstr "Сonferences"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/4.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Основные публикации"
 msgstr "Key publications"
 
+#: core/home/templates/5.html:7 core/home/templates/5.html:10
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Образование"
 msgstr "Education"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/5.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Расписание занятий"
 msgstr "Timetable"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/5.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Учебно-астрономическая лаборатория"
 msgstr "Teaching Astronomical Laboratory"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/5.html:10 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Распределение"
 msgstr "Employment"
 
+#: core/home/templates/6.html:7 core/home/templates/6.html:11
 #: core/home/templates/header.html:534 core/home/templates/header_6.html:534
 msgid "Контакты"
 msgstr "Contacts"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/6.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Одно окно"
 msgstr "One window"
 
-#: core/home/templates/header.html:534 core/home/templates/header_6.html:534
+#: core/home/templates/6.html:11 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
 msgid "Мы на карте"
 msgstr "We are on the map"
+
+#: core/home/templates/enrollee.html:11
+#, fuzzy
+#| msgid "Физический факультет в цифрах"
+msgid "Физический факультет БГУ для абитуриента - 2020"
+msgstr "Faculty of physics in numbers"
+
+#: core/home/templates/enrollee.html:11
+#, fuzzy
+#| msgid "Физический факультет"
+msgid "Буклет Физического факультета"
+msgstr "Physics faculty"
+
+#: core/home/templates/header.html:1 core/home/templates/header.html:534
+#: core/home/templates/header_6.html:534
+msgid "Физический факультет"
+msgstr "Physics faculty"
 
 #: core/home/templates/header.html:534
 msgid "Министерство Образования РБ"
@@ -132,6 +193,10 @@ msgstr "220006, 5 babruiskaya str., Minsk, faculty of Physics"
 #: core/home/templates/header.html:534
 msgid "Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45"
 msgstr "Tel: +375 17 209-52-67 Fax: 8 (017) 209-54-45"
+
+#: core/home/templates/header_6.html:534
+msgid "План приёма"
+msgstr ""
 
 #: core/home/templates/main.html:24
 msgid " Сотрудничество"
@@ -229,3 +294,7 @@ msgstr "departments"
 #: core/home/templates/main.html:111
 msgid "Последние публикации"
 msgstr "Recent publication"
+
+#: core/home/templates/spex.html:8
+msgid "План набора"
+msgstr ""
