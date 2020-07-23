@@ -15,14 +15,19 @@ def language_switch_en(request):
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
 
     refresh_path = request.path[:request.path.find("/language_en")]
+    refresh_path = refresh_path.replace('ru', 'en')
     response['Location'] = refresh_path
     return response
 
 def language_switch_ru(request):
     user_language = 'ru'
     translation.activate(user_language)
-    response = HttpResponse()
+    response = HttpResponse(status=302)
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+
+    refresh_path = request.path[:request.path.find("/language_ru")]
+    refresh_path = refresh_path.replace('en', 'ru')
+    response['Location'] = refresh_path
     return response
 
 
