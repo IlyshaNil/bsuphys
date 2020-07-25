@@ -5,3 +5,6 @@ from django.db import models
 class MainPageStatisticNumber(models.Model):
     number = models.IntegerField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = "Физический факультет в цифрах"
