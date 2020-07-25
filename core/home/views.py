@@ -57,7 +57,7 @@ def index(request):
     numbers = MainPageStatisticNumber.objects.all()
     randomNumbers = random.sample(list(numbers), 5)
     return render(request, "main.html", {"post": post,
-                                         "number":randomNumbers})
+                                         "number": dict(randomNumbers)})
 
 
 def templates(request):
