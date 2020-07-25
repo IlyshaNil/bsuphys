@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class BlogConfig(AppConfig):
-    name = "Новости"
+    name = "blog"
+    verbose_name = "Новости"
+

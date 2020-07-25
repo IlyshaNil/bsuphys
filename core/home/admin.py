@@ -4,7 +4,7 @@ from .models import MainPageStatisticNumber
 
 
 @admin.register(MainPageStatisticNumber)
-class MainPageStaticNumbersAdmin(MainPageStatisticNumber):
+class MainPageStaticNumbersAdmin(admin.ModelAdmin):
     list_display = ["number", "description"]
     list_filter = ["number", "description"]
 
