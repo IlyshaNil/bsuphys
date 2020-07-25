@@ -55,7 +55,7 @@ def index(request):
     post = Post.published.latest("publish")
 
     numbers = MainPageStatisticNumber.objects.all()
-    randomNumbers = random.sample(numbers, 5)
+    randomNumbers = random.sample(list(numbers), 5)
     return render(request, "main.html", {"post": post,
                                          "number":randomNumbers})
 
