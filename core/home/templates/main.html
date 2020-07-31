@@ -85,24 +85,24 @@
         <div class="numbers_title">{% trans "Физический факультет в цифрах" %}</div>
         <div class="row news_block center-lg center-md center-sm center-xs">
             <div class="block col-lg-3 col-md-3 col-sm-12 col-xs-11">
-                <div class="title">10</div>
-                <div class="description">{% trans "научно-исследовательских лабораторий" %}</div>
+                <div class="title">{{ stat1.number }}</div>
+                <div class="description">{{ stat1.description }}</div>
             </div>
             <div class="block col-lg-4 col-md-4 col-sm-12 col-xs-11">
-                <div class="title">186</div>
-                <div class="description">{% trans "преподавателей" %}<br>{% trans "с ученой" %}<br>{% trans "степенью" %}</div>
+                <div class="title">{{ stat2.number }}</div>
+                <div class="description">{{ stat2.description }}</div>
             </div>
             <div class="block prime_bg col-lg-3 col-md-3 col-sm-12 col-xs-11">
-                <div class="title">56</div>
-                <div class="description">{% trans "выпускников- академиков НАН Беларуси" %}</div>
+                <div class="title">{{ stat3.number }}</div>
+                <div class="description">{{ stat3.description }}</div>
             </div>
             <div class="block col-lg-3 col-md-3 col-sm-12 col-xs-11">
-                <div class="title prime_bg">6</div>
-                <div class="description">{% trans "специальностей" %}</div>
+                <div class="title prime_bg">{{ stat4.number }}</div>
+                <div class="description">{{ stat4.description }}</div>
             </div>
             <div class="block col-lg-3 col-md-3 col-sm-12 col-xs-11">
-                <div class="title">11</div>
-                <div class="description">{% trans "кафедр" %}</div>
+                <div class="title">{{ stat5.number }}</div>
+                <div class="description">{{ stat5.description }}</div>
             </div>
         </div>
     </div>

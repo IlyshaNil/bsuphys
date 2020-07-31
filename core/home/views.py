@@ -7,6 +7,7 @@ from django.utils.translation import LANGUAGE_SESSION_KEY
 from django.conf import settings
 from django.http import HttpResponse
 from django.utils import translation
+from django.db.models import Max
 import random
 
 
@@ -53,11 +54,13 @@ def language_switch_ru_main(request):
 
 def index(request):
     post = Post.published.latest("publish")
-
-    numbers = MainPageStatisticNumber.objects.all()
-    randomNumbers = random.sample(list(numbers), 5)
+    randomNumbers = get_random_statistic_number()
     return render(request, "main.html", {"post": post,
-                                         "stat": randomNumbers})
+                                         "stat1": randomNumbers[0],
+                                         "stat2": randomNumbers[1],
+                                         "stat3": randomNumbers[2],
+                                         "stat4": randomNumbers[3],
+                                         "stat5": randomNumbers[4]})
 
 
 def templates(request):
@@ -103,3 +106,22 @@ def education(request):
 
 def contacts(request):
     return render(request, "6.html")
+
+
+def get_random_statistic_number():
+    max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))['max_id']
+    value_list = []
+    pk_list = []
+    for elm in "01234":
+
+        while True:
+            pk = random.randint(1, max_id)
+            if not pk in pk_list:
+                break
+
+            
+        pk_list.append(pk)
+        value = MainPageStatisticNumber.objects.filter(pk=pk).first()
+        if value:
+            value_list.append(value)
+    return value_list
