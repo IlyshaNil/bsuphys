@@ -23,6 +23,7 @@ from django.conf.urls.i18n import  i18n_patterns
 
 
 urlpatterns = [
+    path("rosetta/", include('rosetta.urls')),
     path("admin/", admin.site.urls),
     path("images/", include("images.urls", namespace="images")),
     path("i18n/", include("django.conf.urls.i18n"))

@@ -119,7 +119,7 @@ def get_random_statistic_number():
             if not pk in pk_list:
                 break
 
-            
+
         pk_list.append(pk)
         value = MainPageStatisticNumber.objects.filter(pk=pk).first()
         if value:
