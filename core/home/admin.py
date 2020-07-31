@@ -1,10 +1,11 @@
 from django.contrib import admin
 from .models import MainPageStatisticNumber
+from modeltranslation.admin import TranslationAdmin
 # Register your models here.
 
 
 @admin.register(MainPageStatisticNumber)
-class MainPageStaticNumbersAdmin(admin.ModelAdmin):
+class MainPageStaticNumbersAdmin(TranslationAdmin):
     list_display = ["number", "description"]
     list_filter = ["number", "description"]
 
