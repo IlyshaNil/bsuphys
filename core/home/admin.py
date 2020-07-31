@@ -7,7 +7,6 @@ from modeltranslation.admin import TranslationAdmin
 @admin.register(MainPageStatisticNumber)
 class MainPageStaticNumbersAdmin(TranslationAdmin):
     list_display = ["number", "description"]
-    list_filter = ["number", "description"]
 
     class Meta:
         verbose_name_plural = "Физический факультет в цифрах"
