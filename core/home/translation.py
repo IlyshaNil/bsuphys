@@ -4,4 +4,4 @@ from .models import MainPageStatisticNumber
 
 @register(MainPageStatisticNumber)
 class NumbersTranslationOptions(TranslationOptions):
-    fields = ('description')
+    fields = ('description', )
