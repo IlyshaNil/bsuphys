@@ -79,14 +79,14 @@
         </div>
     </div>
 </div>
-{% regroup number by number as value %}
+{% regroup stat by number as value %}
 <div class="numbers wow animate__animated animate__fadeIn">
     <div class="container">
         <div class="numbers_title">{% trans "Физический факультет в цифрах" %}</div>
         <div class="row news_block center-lg center-md center-sm center-xs">
             <div class="block col-lg-3 col-md-3 col-sm-12 col-xs-11">
-                <div class="title">{{ number.grouper }}</div>
-                <div class="description">{{ number.description }}</div>
+                <div class="title">{{ value.grouper }}</div>
+                <div class="description">{{ value.description }}</div>
             </div>
             <div class="block col-lg-4 col-md-4 col-sm-12 col-xs-11">
                 <div class="title">186</div>
