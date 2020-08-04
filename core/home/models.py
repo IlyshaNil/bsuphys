@@ -8,3 +8,6 @@ class MainPageStatisticNumber(models.Model):
 
     class Meta:
         verbose_name_plural = "Физический факультет в цифрах"
+
+
+        
