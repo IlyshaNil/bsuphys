@@ -7,7 +7,7 @@ def quantumMain(request):
     return render(request, "quantumMain.html")
 
 def quantumUni(request):
-    return render(request)
+    return render(request, "quantum_spec.html")
 
 def quantumNine(request):
     return render(request)
