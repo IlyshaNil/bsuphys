@@ -10,5 +10,6 @@ urlpatterns = [
                 path("quantum-11/", views.quantumEleven, name="quantum"),
                 path("quantum-olimp/", views.quantumOlimp, name="quantum"),
 
-                path("/quantum-school2/", views.quantumUni, name="quantum"),
-               ]
+
+]
+
