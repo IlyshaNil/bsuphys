@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "Uploads",
     "staff",
     "ckeditor",
+    "quantum_School",
 ]
 
 MIDDLEWARE = [
