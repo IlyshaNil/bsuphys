@@ -1,0 +1,20 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Квант БГУ" %}{% endblock %}
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Физико-математическая школа "Квант БГУ" " %}</div>
+        <a href="quantum-olimp/">{% trans "Квант-олимпиец" %}</a>
+        <a href="quantum-9/">{% trans "Квант IX" %}</a>
+        <a href="quantum-10/">{% trans "Квант X" %}</a>
+        <a href="quantum-11">{% trans "Квант XI" %}</a>
+        <a href="quantum-uni">{% trans "Квант-юни" %}</a>
+    </div>
+</div>
+{% endblock %}
