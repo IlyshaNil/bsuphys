@@ -33,14 +33,21 @@ def quantumAdvertisement(request):
 
     if quantCourse == "quantum-11":
         object = QuantumCourse.objects.get(course = "2")
+        courseAds = object.advertisement.all()
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
     if quantCourse == "quantum-10":
         object = QuantumCourse.objects.get(course = "3")
+        courseAds = object.advertisement.all()
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
     if quantCourse == "quantum-9":
         object = QuantumCourse.objects.get(course = "4")
+        courseAds = object.advertisement.all()
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
     if quantCourse == "quantum-uni":
         object = QuantumCourse.objects.get(course = "5")
+        courseAds = object.advertisement.all()
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
-    return HttpResponse(html)

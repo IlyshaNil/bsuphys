@@ -38,6 +38,8 @@ class QuantumCourse(models.Model):
     )
     advertisement = models.ManyToManyField(Advertisement)
 
+    class Meta:
+        verbose_name_plural = "Курсы КВАНТ"
 
     def __str__(self):
         return self.name
