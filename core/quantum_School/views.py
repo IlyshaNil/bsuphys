@@ -27,20 +27,20 @@ def quantumAdvertisement(request):
     quantCourse = request.path.split("/")[3]
 
     if quantCourse == "quantum-olimp":
-        object = QuantumCourse.objects.get(COURSE_CHOICES = 1)
+        object = QuantumCourse.objects.get(course = "1")
         courseAds = object.advertisement
         return render(request, "quantumSchoolAds.html", {"courseAds": courseAds,})
 
     if quantCourse == "quantum-11":
-        object = QuantumCourse.objects.get(COURSE_CHOICES = 2)
+        object = QuantumCourse.objects.get(course = "2")
 
     if quantCourse == "quantum-10":
-        object = QuantumCourse.objects.get(COURSE_CHOICES = 3)
+        object = QuantumCourse.objects.get(course = "3")
 
     if quantCourse == "quantum-9":
-        object = QuantumCourse.objects.get(COURSE_CHOICES = 4)
+        object = QuantumCourse.objects.get(course = "4")
 
     if quantCourse == "quantum-uni":
-        object = QuantumCourse.objects.get(COURSE_CHOICES = 5)
+        object = QuantumCourse.objects.get(course = "5")
 
     return HttpResponse(html)
