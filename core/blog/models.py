@@ -5,6 +5,7 @@ from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.core.files.storage import FileSystemStorage
 from ckeditor.fields import RichTextField
+from django.utils.safestring import mark_safe
 
 
 
@@ -49,6 +50,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def admin_photo(self):
+        return  mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+    admin_photo.short_description = "Афиша"
+    admin_photo.allow_tags = True
 
     def get_absolute_url(self):
         return reverse(

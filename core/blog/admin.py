@@ -10,10 +10,11 @@ from modeltranslation.admin import TranslationAdmin
 @admin.register(Post)
 class PostAdmin(TranslationAdmin):
     # formfield_overrides = {news.title: {"widget": forms.TextInput}}
-    list_display = ("title", "slug", "author", "publish", "status")
+    list_display = ("title", "slug", "author", "publish", "status", "admin_photo")
     list_filter = ("status", "created", "publish", "author")
     search_fields = ("title", "body")
     prepopulated_fields = {"slug": ("title",)}
     raw_id_fields = ("author",)
     date_hierarchy = "publish"
     ordering = ("status", "publish")
+    readonly_fields = ("admin_photo",)
