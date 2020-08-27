@@ -11,6 +11,12 @@ class Advertisement(models.Model):
     body = models.TextField(null=True, blank=True)
     publish = models.DateTimeField(default=timezone.now)
 
+    class Meta:
+        ordering = ("-publish",)
+        verbose_name_plural = "Объявления"
+
+    def __str__(self):
+        return self.title
 
 
 class QuantumCourse(models.Model):
@@ -33,5 +39,7 @@ class QuantumCourse(models.Model):
     advertisement = models.ManyToManyField(Advertisement)
 
 
+    def __str__(self):
+        return self.name
 
 
