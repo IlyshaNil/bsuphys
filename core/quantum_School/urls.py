@@ -10,6 +10,12 @@ urlpatterns = [
                 path("quantum-11/", views.quantumEleven, name="quantum"),
                 path("quantum-olimp/", views.quantumOlimp, name="quantum"),
 
+                path("quantum-uni/ads", views.quantumAdvertisement, name="quantum"),
+                path("quantum-9/ads", views.quantumAdvertisement, name="quantum"),
+                path("quantum-10/ads", views.quantumAdvertisement, name="quantum"),
+                path("quantum-11/ads", views.quantumAdvertisement, name="quantum"),
+                path("quantum-olimp/ads", views.quantumAdvertisement, name="quantum"),
+
 
 ]
 

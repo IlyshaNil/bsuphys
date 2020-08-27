@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse, HttpRequest
 
 
 # Create your views here.
@@ -21,3 +22,8 @@ def quantumEleven(request):
 def quantumOlimp(request):
     return render(request, "quantumSchoolOlimp.html")
 
+def quantumAdvertisement(request):
+    quantCourse = request.path
+    html = "<h1>"+quantCourse+"</h1>"
+
+    return HttpResponse(html)
