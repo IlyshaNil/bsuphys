@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
+from .models import Advertisement, QuantumCourse
 
 
 # Create your views here.
@@ -23,7 +24,23 @@ def quantumOlimp(request):
     return render(request, "quantumSchoolOlimp.html")
 
 def quantumAdvertisement(request):
-    quantCourse = request.path
-    html = "<h1>"+quantCourse+"</h1>"
+    quantCourse = request.path.split("/")[3]
+
+    if quantCourse == "quantum-olimp":
+        object = QuantumCourse.objects.get(COURSE_CHOICES = 1)
+        courseAds = object.advertisement
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds,})
+
+    if quantCourse == "quantum-11":
+        object = QuantumCourse.objects.get(COURSE_CHOICES = 2)
+
+    if quantCourse == "quantum-10":
+        object = QuantumCourse.objects.get(COURSE_CHOICES = 3)
+
+    if quantCourse == "quantum-9":
+        object = QuantumCourse.objects.get(COURSE_CHOICES = 4)
+
+    if quantCourse == "quantum-uni":
+        object = QuantumCourse.objects.get(COURSE_CHOICES = 5)
 
     return HttpResponse(html)
