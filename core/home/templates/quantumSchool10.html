@@ -1,0 +1,23 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Квант БГУ" %}{% endblock %}
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Квант X" %}</div>
+        Программа «Квант X» — образовательная программа по физике и математикедля учащихся 10 классов, нацеленная на углубленное изучение предметов.
+        <br>
+        <br>
+        <a href="#">{% trans "Объявления" %}</a>
+        <a href="#">{% trans "Расписание занятий" %}</a>
+        <a href="#">{% trans "Ссылка на видео лекций" %}</a>
+        <a href="#">{% trans "Ссылка на видео консультаций" %}</a>
+        <a href="#">{% trans "Ссылка на задания" %}</a>
+    </div>
+</div>
+{% endblock %}

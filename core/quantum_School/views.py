@@ -19,5 +19,5 @@ def quantumEleven(request):
     return render(request)
 
 def quantumOlimp(request):
-    return render(request)
+    return render(request, "quantumSchoolOlimp.html")
 

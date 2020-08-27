@@ -1,0 +1,23 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Квант БГУ" %}{% endblock %}
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Квант IX" %}</div>
+        Программа «Квант IX» — образовательная программа по физике и математике для школьников 9 классов, нацеленная на углубленное изучение предметов, подготовку слушателей к поступлению в лицее и гимназии.
+        <br>
+        <br>
+        <a href="#">{% trans "Объявления" %}</a>
+        <a href="#">{% trans "Расписание занятий" %}</a>
+        <a href="#">{% trans "Ссылка на видео лекций" %}</a>
+        <a href="#">{% trans "Ссылка на видео консультаций" %}</a>
+        <a href="#">{% trans "Ссылка на задания" %}</a>
+    </div>
+</div>
+{% endblock %}
