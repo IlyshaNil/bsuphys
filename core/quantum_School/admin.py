@@ -9,6 +9,9 @@ from modeltranslation.admin import TranslationAdmin
 class AdvertisementAdmin(admin.ModelAdmin):
     list_display = ("title", "body", "publish")
 
+
+
 @admin.register(QuantumCourse)
 class QuantumCourseAdmin(admin.ModelAdmin):
     list_display = ("name",)
+    filter_horizontal = ('advertisement',)
