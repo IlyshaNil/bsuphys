@@ -34,7 +34,7 @@ class QuantumCourse(models.Model):
     consultationUrl = models.URLField(null=True, blank=True)
     taskUrl = models.URLField(null=True, blank=True)
     course = models.TextField(
-        max_length=10, choices=COURCE_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
+        max_length=10, choices=COURCE_CHOICES, null=True, blank=True, help_text="Не изменять!"
     )
     advertisement = models.ManyToManyField(Advertisement)
 
