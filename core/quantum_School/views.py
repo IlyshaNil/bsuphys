@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def quantumMain(request):
-    return render(request, "quantumMain.html")
+    return render(request, "quantumSchoolMain.html")
 
 def quantumUni(request):
     return render(request,)
