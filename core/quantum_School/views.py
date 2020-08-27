@@ -29,7 +29,7 @@ def quantumAdvertisement(request):
     if quantCourse == "quantum-olimp":
         object = QuantumCourse.objects.get(course = "1")
         courseAds = object.advertisement
-        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds,})
+        return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
     if quantCourse == "quantum-11":
         object = QuantumCourse.objects.get(course = "2")
