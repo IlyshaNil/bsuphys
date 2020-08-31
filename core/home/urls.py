@@ -21,7 +21,6 @@ urlpatterns = [path("", views.index, name="index"),
                path("en_main/", views.language_switch_en_main, name="lang_en_main"),
                path("ru_main/", views.language_switch_ru_main, name="lang_ru_main"),
 
-
-
+               path("time/", views.timetable, name="info"),
 
                ]

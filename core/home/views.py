@@ -108,6 +108,10 @@ def contacts(request):
     return render(request, "6.html")
 
 
+def timetable(request):
+    return render(request, "timetable.html")
+
+
 def get_random_statistic_number():
     max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))['max_id']
     value_list = []

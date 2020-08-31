@@ -1,0 +1,21 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Расписание занятий" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Расписание занятий" %}</div>
+        <a href="http://physics.bsu.by/media/media/Rasp1V1.pdf">{% trans "1 курс" %}</a>
+        <a href="http://physics.bsu.by/media/media/Rasp2V1.pdf">{% trans "2 курс" %}</a>
+        <a href="http://physics.bsu.by/media/media/Rasp3V1.pdf">{% trans "3 курс" %}</a>
+        <a href="http://physics.bsu.by/media/media/Rasp4V1.pdf">{% trans "4 курс" %}</a>
+        <a href="http://physics.bsu.by/media/media/Rasp5V1.pdf">{% trans "5 курс" %}</a>
+    </div>
+</div>
+{% endblock %}
