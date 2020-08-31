@@ -7,5 +7,12 @@
 {% block title %}{% trans "Образование" %}{% endblock %}
 
 {% block content %}
-<div class="pages"><div class="container"><div class="page_name">{% trans "Образование" %}</div><a href="http://www.physics.bsu.by/ru/students-timetable">{% trans "Расписание занятий" %}</a><a href="http://www.physics.bsu.by/ru/observatory/main">{% trans "Учебно-астрономическая лаборатория" %}</a><a href="http://www.physics.bsu.by/ru/for-graduate">{% trans "Распределение" %}</a></div></div>
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Образование" %}</div>
+        <a href="/time/">{% trans "Расписание занятий" %}</a>
+        <a href="http://www.physics.bsu.by/ru/observatory/main">{% trans "Учебно-астрономическая лаборатория" %}</a>
+        <a href="http://www.physics.bsu.by/ru/for-graduate">{% trans "Распределение" %}</a>
+    </div>
+</div>
 {% endblock %}
