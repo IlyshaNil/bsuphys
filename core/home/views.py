@@ -112,7 +112,7 @@ def timetable(request):
     return render(request, "timetable.html")
 
 def timofey(request):
-    return render(HttpResponse("жду html"))
+    return HttpResponse("url для Тимофея")
 
 
 def get_random_statistic_number():
