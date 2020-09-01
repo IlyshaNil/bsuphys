@@ -111,6 +111,9 @@ def contacts(request):
 def timetable(request):
     return render(request, "timetable.html")
 
+def timofey(request):
+    return render(HttpResponse("жду html"))
+
 
 def get_random_statistic_number():
     max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))['max_id']

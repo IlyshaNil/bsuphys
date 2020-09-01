@@ -23,4 +23,6 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("time/", views.timetable, name="info"),
 
+                path("timofey/", views.timofey, name="info"),
+
                ]
