@@ -15,6 +15,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("science/", views.science, name="science"),
                path("education/", views.education, name="education"),
                path("contacts/", views.contacts, name="contacts"),
+               path("departments/", views.departments, name="departments"),
 
                re_path(r'.+/language_en', views.language_switch_en, name="language_en"),
                re_path(r'.+/language_ru', views.language_switch_ru, name="language_ru"),

@@ -132,3 +132,7 @@ def get_random_statistic_number():
         if value:
             value_list.append(value)
     return value_list
+
+
+def departments(request):
+    return render(request, "Departments.html")
