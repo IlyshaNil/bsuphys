@@ -136,3 +136,7 @@ def get_random_statistic_number():
 
 def departments(request):
     return render(request, "Departments.html")
+
+
+def council(request):
+    return render(request, "Council.html")
