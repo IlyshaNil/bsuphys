@@ -2,17 +2,16 @@
 
 {% load static %}
 
-
 {% load i18n %}
 
-{% block title %}{% trans "План набора" %}{% endblock %}
+{% block title %}{% trans "Общая информация" %}{% endblock %}
 
 {% block content %}
-<div class="spec">
+<div class="mainInf">
     <div class="container">
-        <div class="page_name">План приема и информация о специальностях</div>
-        <div class="page_spec" id="pageSpec">
-            <table  cellpadding="0" cellspacing="0" width="576">
+        <div class="page_name">{% trans "Общая информация" %}</div>
+        <div class="inf center-lg row">
+            <table border="0" cellpadding="0" cellspacing="0" width="576">
 	<tbody>
 		<tr>
 			<td style="width: 265px;">
@@ -267,7 +266,9 @@
 		</tr>
 	</tbody>
 </table>
+            <div class="description"></div>
         </div>
     </div>
 </div>
+
 {% endblock %}
