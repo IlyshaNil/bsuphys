@@ -17,6 +17,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("contacts/", views.contacts, name="contacts"),
                path("departments/", views.departments, name="departments"),
                path("council/", views.council, name="council"),
+               path("one-window/", views.oneWindow, name="one window"),
 
                re_path(r'.+/language_en', views.language_switch_en, name="language_en"),
                re_path(r'.+/language_ru', views.language_switch_ru, name="language_ru"),

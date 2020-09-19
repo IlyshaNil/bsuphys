@@ -1,0 +1,47 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Одно окно" %}{% endblock %}
+
+{% block content %}
+<div class="mainInf">
+    <div class="container">
+        <div class="page_name">{% trans "Одно окно" %}</div>
+        <div class="inf center-lg row pageNews">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">Фамилия, имя, отчество, должность</td>
+                        <td style="text-align: center;">Место приема</td>
+                        <td style="text-align: center;">Дни и время приема</td>
+                    </tr>
+                    <tr>
+                        <td>Тиванов Михаил Сергеевич,<br />
+                        декан физического факультета</td>
+                        <td style="text-align: center;">к. 315</td>
+                        <td>Вторник, среда, четверг - с 14.00 до 16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Горбачук Николай Иванович,<br />
+                        заместитель декана по учебной и методической работе</td>
+                        <td style="text-align: center;">к. 315</td>
+                        <td>Понедельник, среда - с 16.00 до 17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ляшенко Людмила Сергеевна,<br />
+                        заместитель декана по учебно-воспитательной работе и социальным вопросам</td>
+                        <td style="text-align: center;">к. 332</td>
+                        <td>Понедельник - с 16.00 до 17.00,<br />
+                        четверг - с 14.00 до 16.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="description"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

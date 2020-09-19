@@ -140,3 +140,8 @@ def departments(request):
 
 def council(request):
     return render(request, "Council.html")
+
+
+
+def oneWindow(request):
+    return render(request, "OneWindow.html")
