@@ -145,3 +145,7 @@ def council(request):
 
 def oneWindow(request):
     return render(request, "OneWindow.html")
+
+
+def mapApi(request):
+    return render(request, "googleMapsApi.html")
