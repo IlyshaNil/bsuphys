@@ -149,3 +149,7 @@ def oneWindow(request):
 
 def mapApi(request):
     return render(request, "googleMapsApi.html")
+
+
+def NwordDocuments(request):
+    return render(request, "NwordDocuments.html")
