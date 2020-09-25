@@ -153,3 +153,7 @@ def mapApi(request):
 
 def NwordDocuments(request):
     return render(request, "NwordDocuments.html")
+
+
+def internationalConnection(request):
+    return render(request, "InternationalConnection.html")
