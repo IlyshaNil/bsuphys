@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "staff",
     "ckeditor",
     "quantum_School",
+    "observatory",
 ]
 
 MIDDLEWARE = [

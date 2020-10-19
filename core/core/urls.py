@@ -34,6 +34,7 @@ urlpatterns += i18n_patterns(
     path("", include("home.urls")),
     path("blog/", include("blog.urls", namespace="blog")),
     path("quantum-school/", include("quantum_School.urls", namespace="quantum")),
+    path("stars/", include("observatory.urls")),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
