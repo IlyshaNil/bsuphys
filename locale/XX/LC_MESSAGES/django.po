@@ -8,172 +8,178 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-19 12:45+0300\n"
-"PO-Revision-Date: 2020-10-19 12:47+0150\n"
-"Last-Translator: b'  <NilovIV@bsu.by>'\n"
+"POT-Creation-Date: 2020-10-19 12:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.9.4\n"
 
 #: core/blog/templates/pagination.html:3
 msgid "Предыдущая страница"
-msgstr "Previous page"
+msgstr ""
 
 #: core/blog/templates/pagination.html:6
 msgid "Следующая страница"
-msgstr "Next page"
+msgstr ""
 
 #: core/blog/templates/templates/post/news.html:7
 #: core/blog/templates/templates/post/news.html:12
 #: core/home/templates/1.html:18 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:746 core/home/templates/header_6.html:670
 msgid "Новости"
-msgstr "News"
+msgstr ""
 
 #: core/blog/templates/templates/post/pageNews.html:16
 msgid "Опубликованно"
-msgstr "Published"
+msgstr ""
 
 #: core/blog/templates/templates/post/pageNews.html:19
 msgid "Прикрепленные документы"
-msgstr "Attached documents"
+msgstr ""
+
+#: core/core/settings.py:146
+msgid "Russian"
+msgstr ""
+
+#: core/core/settings.py:147
+msgid "English"
+msgstr ""
 
 #: core/home/templates/1.html:7 core/home/templates/1.html:12
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:740 core/home/templates/header_6.html:664
 #: core/home/templates/main.html:16
 msgid "О факультете"
-msgstr "About the faculty"
+msgstr ""
 
 #: core/home/templates/1.html:13 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:741 core/home/templates/header_6.html:665
 #: core/home/templates/mainInf.html:7 core/home/templates/mainInf.html:12
 msgid "Общая информация"
-msgstr "Common information"
+msgstr ""
 
 #: core/home/templates/1.html:14 core/home/templates/dekanat.html:7
 #: core/home/templates/dekanat.html:11
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:742 core/home/templates/header_6.html:666
 msgid "Деканат"
-msgstr "Deanery"
+msgstr ""
 
 #: core/home/templates/1.html:15 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:743 core/home/templates/header_6.html:667
 #: core/home/templates/main.html:128
 msgid "Известные выпускники"
-msgstr "Notable alumni"
+msgstr ""
 
 #: core/home/templates/1.html:16 core/home/templates/Departments.html:7
 #: core/home/templates/Departments.html:13
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:744 core/home/templates/header_6.html:668
 msgid "Кафедры"
-msgstr "Departments"
+msgstr ""
 
 #: core/home/templates/1.html:17 core/home/templates/Council.html:7
 #: core/home/templates/Council.html:12
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:745 core/home/templates/header_6.html:669
 msgid "Совет факультета"
-msgstr "Faculty Council"
+msgstr ""
 
 #: core/home/templates/1.html:19 core/home/templates/enrollee.html:14
 msgid "Буклет Физического факультета"
-msgstr "Faculty of Physics booklet"
+msgstr ""
 
 #: core/home/templates/1.html:20 core/home/templates/NwordDocuments.html:7
 #: core/home/templates/NwordDocuments.html:12
 #: core/home/templates/header.html:747 core/home/templates/header_6.html:671
 msgid "Нормативные документы"
-msgstr "Regulations"
+msgstr ""
 
 #: core/home/templates/2.html:7 core/home/templates/2.html:13
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:750 core/home/templates/header_6.html:674
 #: core/home/templates/main.html:20
 msgid "Поступление"
-msgstr "Admission"
+msgstr ""
 
 #: core/home/templates/2.html:14 core/home/templates/enrollee.html:7
 #: core/home/templates/enrollee.html:13
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:751 core/home/templates/header_6.html:675
 msgid "Абитуриенту"
-msgstr "Enrollee"
+msgstr ""
 
 #: core/home/templates/2.html:15 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:752 core/home/templates/header_6.html:676
 msgid "План приёма и информация о специальностях"
-msgstr "Admission plan and specialty information"
+msgstr ""
 
 #: core/home/templates/2.html:16 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:753 core/home/templates/header_6.html:677
 #: core/home/templates/quantumSchoolMain.html:12
 msgid "Физико-математическая школа 'Квант БГУ'"
-msgstr "Physics and Mathematics School 'Quantum BSU'"
+msgstr ""
 
 #: core/home/templates/3.html:7 core/home/templates/3.html:12
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:756 core/home/templates/header_6.html:680
 msgid "Сотрудничество"
-msgstr "Cooperation"
+msgstr ""
 
 #: core/home/templates/3.html:13 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:757 core/home/templates/header_6.html:681
 msgid "Предложения"
-msgstr "Suggestions"
+msgstr ""
 
 #: core/home/templates/3.html:14 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:758 core/home/templates/header_6.html:682
 msgid "Работодателям"
-msgstr "For employers"
+msgstr ""
 
 #: core/home/templates/3.html:15 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:759 core/home/templates/header_6.html:683
 msgid "Партнеры"
-msgstr "Partners"
+msgstr ""
 
 #: core/home/templates/3.html:16 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:760 core/home/templates/header_6.html:684
 msgid "Спонсоры"
-msgstr "Sponsors"
+msgstr ""
 
 #: core/home/templates/4.html:7 core/home/templates/4.html:11
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:763 core/home/templates/header_6.html:687
 msgid "Наука"
-msgstr "Science"
+msgstr ""
 
 #: core/home/templates/4.html:11 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:764 core/home/templates/header_6.html:688
 msgid "Наука на факультете"
-msgstr "Science at the faculty"
+msgstr ""
 
 #: core/home/templates/4.html:11 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:765 core/home/templates/header_6.html:689
 msgid "Международное сотрудничество"
-msgstr "International cooperation"
+msgstr ""
 
 #: core/home/templates/4.html:11 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:766 core/home/templates/header_6.html:690
 msgid "Конференции"
-msgstr "Conferences"
+msgstr ""
 
 #: core/home/templates/4.html:11 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:767 core/home/templates/header_6.html:691
 msgid "Основные публикации"
-msgstr "Key publications"
+msgstr ""
 
 #: core/home/templates/5.html:7 core/home/templates/5.html:12
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:770 core/home/templates/header_6.html:694
 msgid "Образование"
-msgstr "Education"
+msgstr ""
 
 #: core/home/templates/5.html:13 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:771 core/home/templates/header_6.html:695
@@ -184,189 +190,164 @@ msgstr "Education"
 #: core/home/templates/quantumSchoolUni.html:18
 #: core/home/templates/timetable.html:7 core/home/templates/timetable.html:13
 msgid "Расписание занятий"
-msgstr "Timetable"
+msgstr ""
 
 #: core/home/templates/5.html:14 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:772 core/home/templates/header_6.html:696
 msgid "Учебно-астрономическая лаборатория"
-msgstr "Teaching Astronomical Laboratory"
+msgstr ""
 
 #: core/home/templates/5.html:15 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:773 core/home/templates/header_6.html:697
 msgid "Распределение"
-msgstr "Employment"
+msgstr ""
 
 #: core/home/templates/5.html:16
 msgid "Учебно-методические материалы (PhysInfo)"
-msgstr "Teaching materials (PhysInfo)"
+msgstr ""
 
 #: core/home/templates/6.html:7 core/home/templates/6.html:13
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:777 core/home/templates/header_6.html:701
 msgid "Контакты"
-msgstr "Contacts"
+msgstr ""
 
 #: core/home/templates/6.html:14 core/home/templates/OneWindow.html:7
 #: core/home/templates/OneWindow.html:12
 #: core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:778 core/home/templates/header_6.html:702
 msgid "Одно окно"
-msgstr "One window"
+msgstr ""
 
 #: core/home/templates/6.html:15 core/home/templates/googleMapsApi.html:534
 #: core/home/templates/header.html:779 core/home/templates/header_6.html:703
 msgid "Мы на карте"
-msgstr "We are on the map"
+msgstr ""
 
 #: core/home/templates/InternationalConnection.html:7
 #: core/home/templates/InternationalConnection.html:12
 msgid "Международные связи"
-msgstr "International relations"
+msgstr ""
 
 #: core/home/templates/NwordDocuments.html:13
 msgid ""
-"Правила внутреннего распорядка для обучающихся в Белорусском государственном"
-" университете"
-msgstr "Internal regulations for students at the Belarusian State University"
+"Правила внутреннего распорядка для обучающихся в Белорусском государственном "
+"университете"
+msgstr ""
 
 #: core/home/templates/NwordDocuments.html:14
 msgid "Правила внутреннего трудового распорядка БГУ"
-msgstr "Internal labor regulations of BSU"
+msgstr ""
 
 #: core/home/templates/NwordDocuments.html:15
 msgid "Коллективный договор"
-msgstr "Collective agreement"
+msgstr ""
 
 #: core/home/templates/NwordDocuments.html:16
 msgid "Этический кодекс"
-msgstr "Ethical code"
+msgstr ""
 
 #: core/home/templates/enrollee.html:14
 msgid "Физический факультет БГУ для абитуриента - 2020"
-msgstr "Faculty of Physics of BSU for the enrollee - 2020"
+msgstr ""
 
 #: core/home/templates/enrollee.html:14
 msgid "Презентация совместного белорусско-китайского института"
-msgstr "Presentation of the joint Belarusian-Chinese institute"
+msgstr ""
 
-#: core/home/templates/googleMapsApi.html:534
-#: core/home/templates/header.html:7 core/home/templates/header.html:728
-#: core/home/templates/header_6.html:652
+#: core/home/templates/googleMapsApi.html:534 core/home/templates/header.html:7
+#: core/home/templates/header.html:728 core/home/templates/header_6.html:652
 msgid "Физический факультет"
-msgstr "Physics faculty"
+msgstr ""
 
 #: core/home/templates/googleMapsApi.html:583
 msgid "220006, Минск"
-msgstr "220006, Minsk"
+msgstr ""
 
 #: core/home/templates/googleMapsApi.html:583
-#| msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
 msgid "ул. Бобруйская, 5, Физический Факультет"
-msgstr "st. Bobruiskaya, 5, Physics faculty "
+msgstr ""
 
 #: core/home/templates/googleMapsApi.html:583
 msgid "Телефон:"
-msgstr "Phone:"
+msgstr ""
 
 #: core/home/templates/googleMapsApi.html:583
-#: core/home/templates/header.html:820 core/home/templates/header_6.html:745
 msgid "Факс:"
-msgstr "Fax:"
+msgstr ""
 
 #: core/home/templates/header.html:774 core/home/templates/header_6.html:698
 msgid "Учебно-методические материалы"
-msgstr "Teaching materials "
-
-#: core/home/templates/header.html:803 core/home/templates/header_6.html:728
-msgid "Министерство Образования РБ"
-msgstr "Ministry of Education of the Republic of Belarus"
-
-#: core/home/templates/header.html:806 core/home/templates/header_6.html:731
-msgid "Белорусский государственный Университет"
-msgstr "Belarusian State University"
-
-#: core/home/templates/header.html:810 core/home/templates/header_6.html:735
-#| msgid "Белорусский государственный Университет"
-msgid "Журнал Белорусского государственного университета. Физика"
-msgstr "Journal of the Belarusian State University. Physics"
-
-#: core/home/templates/header.html:814 core/home/templates/header_6.html:739
-#| msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
-msgid "220006, Минск ул. Бобруйская, 5, Физический Факультет"
-msgstr "220006, Minsk st. Bobruiskaya, 5, Physics faculty "
-
-#: core/home/templates/header.html:819 core/home/templates/header_6.html:744
-msgid "Тел.:"
-msgstr "Tel.:"
+msgstr ""
 
 #: core/home/templates/main.html:24
 msgid " Сотрудничество"
-msgstr "Cooperation"
+msgstr ""
 
 #: core/home/templates/main.html:28
 msgid " Наука"
-msgstr "Science"
+msgstr ""
 
 #: core/home/templates/main.html:32
 msgid " Образование"
-msgstr "Education"
+msgstr ""
 
 #: core/home/templates/main.html:36
 msgid " Контакты"
-msgstr "Contacts"
+msgstr ""
 
 #: core/home/templates/main.html:51 core/home/templates/main.html:123
 #: core/home/templates/main.html:149
 msgid "Подробнее"
-msgstr "Details"
+msgstr ""
 
 #: core/home/templates/main.html:52
 msgid "Больше новостей"
-msgstr "More news"
+msgstr ""
 
 #: core/home/templates/main.html:63
 msgid "Студенческая жизнь"
-msgstr "Student life"
+msgstr ""
 
 #: core/home/templates/main.html:64
 msgid "Каждый найдет себе занятие"
-msgstr "Everyone will find something to do"
+msgstr ""
 
 #: core/home/templates/main.html:64
 msgid "на свободное время!"
-msgstr "in their free time"
+msgstr ""
 
 #: core/home/templates/main.html:66
 msgid "Дни физика"
-msgstr "Days of physics"
+msgstr ""
 
 #: core/home/templates/main.html:67
 msgid "Фотография/видео"
-msgstr "Photo/video"
+msgstr ""
 
 #: core/home/templates/main.html:68
 msgid "Физики в зелёном!"
-msgstr "Physicist camp!"
+msgstr ""
 
 #: core/home/templates/main.html:71
 msgid "СтудСоюз"
-msgstr "Student union"
+msgstr ""
 
 #: core/home/templates/main.html:72
 msgid "ССКО"
-msgstr "SCQE"
+msgstr ""
 
 #: core/home/templates/main.html:77
 msgid "Присоединиться"
-msgstr "Join"
+msgstr ""
 
 #: core/home/templates/main.html:85
 msgid "Физический факультет в цифрах"
-msgstr "Faculty of physics in numbers"
+msgstr ""
 
 #: core/home/templates/main.html:112
 msgid "Последние публикации"
-msgstr "Recent publication"
+msgstr ""
 
 #: core/home/templates/quantumMain.html:8
 #: core/home/templates/quantumSchool10.html:7
@@ -377,11 +358,11 @@ msgstr "Recent publication"
 #: core/home/templates/quantumSchoolOlimp.html:7
 #: core/home/templates/quantumSchoolUni.html:7
 msgid "Квант БГУ"
-msgstr "Quantum BSU"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:12
 msgid "Квант X"
-msgstr "Quantum X"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:16
 #: core/home/templates/quantumSchool11.html:16
@@ -390,114 +371,79 @@ msgstr "Quantum X"
 #: core/home/templates/quantumSchoolOlimp.html:16
 #: core/home/templates/quantumSchoolUni.html:16
 msgid "Объявления"
-msgstr "Ads"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:17
 #: core/home/templates/quantumSchool11.html:17
 msgid "Программа курса"
-msgstr "Course program"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:19
 #: core/home/templates/quantumSchool11.html:19
 #: core/home/templates/quantumSchool9.html:18
 msgid "Ссылка на видео лекций"
-msgstr "Link to video lectures"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:20
 #: core/home/templates/quantumSchool11.html:20
 #: core/home/templates/quantumSchool9.html:19
 msgid "Ссылка на видео консультаций"
-msgstr "Link to video consultation"
+msgstr ""
 
 #: core/home/templates/quantumSchool10.html:21
 #: core/home/templates/quantumSchool11.html:21
 #: core/home/templates/quantumSchool9.html:20
 msgid "Ссылка на задания"
-msgstr "Link to assignments"
+msgstr ""
 
 #: core/home/templates/quantumSchool11.html:12
 msgid "Квант XI"
-msgstr "Quantum XI"
+msgstr ""
 
 #: core/home/templates/quantumSchool9.html:12
 msgid "Квант IX"
-msgstr "Quantum IX"
+msgstr ""
 
 #: core/home/templates/quantumSchoolOlimp.html:12
 msgid "Квант-олимпиец"
-msgstr "Quantum-olympian"
+msgstr ""
 
 #: core/home/templates/quantumSchoolOlimp.html:17
 msgid "Краткое описание"
-msgstr "Short description"
+msgstr ""
 
 #: core/home/templates/quantumSchoolUni.html:12
 msgid "Квант-юни"
-msgstr "Quantum-uni"
+msgstr ""
 
 #: core/home/templates/quantumSchoolUni.html:17
 msgid "Фотогалерея"
-msgstr "Photo gallery"
+msgstr ""
 
 #: core/home/templates/quantumSchoolUni.html:19
 msgid "Ссылки на видео"
-msgstr "Links to videos"
+msgstr ""
 
 #: core/home/templates/spex.html:8
 msgid "План набора"
-msgstr "Admission plan"
+msgstr ""
 
 #: core/home/templates/timetable.html:15
 msgid "1 курс"
-msgstr "1 course"
+msgstr ""
 
 #: core/home/templates/timetable.html:16
 msgid "2 курс"
-msgstr "2 course"
+msgstr ""
 
 #: core/home/templates/timetable.html:17
 msgid "3 курс"
-msgstr "3 course"
+msgstr ""
 
 #: core/home/templates/timetable.html:18
 msgid "4 курс"
-msgstr "4 course"
+msgstr ""
 
 #: core/home/templates/timetable.html:19
 msgid "5 курс"
-msgstr "5 course"
-
-#: core/home/templates/timetable.html:21
-#| msgid "Последние публикации"
-msgid "последнее обновление"
-msgstr "Last update"
-
-#~ msgid "Журнал БГУ: физика"
-#~ msgstr "BSU Journal: Physics"
-
-#~ msgid "Тел.: +375 17 209-52-67 Факс: 8 (017) 209-54-45"
-#~ msgstr "Tel: +375 17 209-52-67 Fax: +375 17 209-54-45"
-
-#~ msgid "План приёма"
-#~ msgstr "Admission plan"
-
-#~ msgid "научно-исследовательских лабораторий"
-#~ msgstr "research laboratories"
-
-#~ msgid "преподавателей"
-#~ msgstr "teachers"
-
-#~ msgid "с ученой"
-#~ msgstr "with scientific"
-
-#~ msgid "степенью"
-#~ msgstr "degrease"
-
-#~ msgid "выпускников- академиков НАН Беларуси"
-#~ msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
-
-#~ msgid "специальностей"
-#~ msgstr "specialties"
-
-#~ msgid "кафедр"
-#~ msgstr "departments"
+msgstr ""
