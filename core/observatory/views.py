@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def observatoryMain(request):
+    return render(request, "Departments.html")
