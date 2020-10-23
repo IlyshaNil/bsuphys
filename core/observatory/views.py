@@ -22,3 +22,7 @@ def observatoryPopular(request):
 
 def observatoryPopularLections(request):
     return render(request, "observatoryPopularLections.html")
+
+
+def observatoryPublications(request):
+    return render(request, "observatoryPublications.html")
