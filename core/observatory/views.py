@@ -14,3 +14,7 @@ def observatoryEquipment(request):
 
 def observatoryContacts(request):
     return render(request, "observatoryContacts.html")
+
+
+def observatoryPopular(request):
+    return render(request, "observatoryPopular.html")
