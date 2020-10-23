@@ -6,3 +6,7 @@ def observatoryMain(request):
 
 def observatoryEmployee(request):
     return render(request, "observatoryEmployee.html")
+
+
+def observatoryEquipment(request):
+    return render(request, "observatoryEquipment.html")

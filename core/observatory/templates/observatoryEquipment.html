@@ -1,0 +1,71 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Оборудование" %}{% endblock %}
+
+{% block content %}
+
+<div class="dekanat">
+    <div class="container">
+        <div class="page_name">{% trans "Оборудование" %}</div>
+        <div class="page row center-lg center-md center-sm center-xs">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img
+                    src="{% static 'home/assets/images/Meadle.png' %}"></div>
+            <div class="inf col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="title">Meade LX200 ACF™ Telescope - 16"</div>
+                <div class="description">
+                    <p>Оптическая схема: Ричи-Кретьенa</p>
+                    <p>Диаметр объектива: 406 мм (16")</p>
+                    <p>Фокусное расстояние: 4064 мм</p>
+                    <p>Относительное отверстие: f/10</p>
+                    <p>Угловое разрешение: 0.28"</p>
+                    <p>Макс. полезное увеличение: 812х</p>
+                    <p>Предельная звёздная величина: 15.5m</p>
+                    <p>Монтировка: азимутальная автоматизированная</p>
+                    <p>Длина оптической трубы: 838 мм</p>
+                </div>
+            </div>
+        </div>
+        <div class="page row center-lg center-md center-sm center-xs">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img
+                    src="{% static 'home/assets/images/Celestron.jpg' %}"></div>
+            <div class="inf col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="title">Celestron CPC 800 GPS (XLT) Computerized Telescope</div>
+                <div class="description">
+                    <p>Оптическая схема: Шмидт-Кассагрена</p>
+                    <p>Диаметр объектива: 203 мм (8")</p>
+                    <p>Фокусное расстояние: 2032 мм</p>
+                    <p>Относительное отверстие: f/10</p>
+                    <p>Угловое разрешение: 0.57"</p>
+                    <p>Макс. полезное увеличение: 480х</p>
+                    <p>Предельная звёздная величина: 14m</p>
+                    <p>Монтировка: азимутальная, полностью компьютеризированная</p>
+                    <p>Длина оптической трубы: 430 мм</p>
+                </div>
+            </div>
+        </div>
+        <div class="page row center-lg center-md center-sm center-xs">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img
+                    src="{% static 'home/assets/images/Mizar.jpg' %}"></div>
+            <div class="inf col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="title">Мицар ТАЛ-1</div>
+                <div class="description">
+                    <p>Оптическая схема: система Ньютона</p>
+                    <p>Диаметр объектива: 110 мм (4.33")</p>
+                    <p>Фокусное расстояние: 806 мм</p>
+                    <p>Относительное отверстие: f/7.3</p>
+                    <p>Угловое разрешение: 1.3"</p>
+                    <p>Макс. полезное увеличение: 160х</p>
+                    <p>Предельная звёздная величина: 12m</p>
+                    <p>Монтировка: экваториальная</p>
+                    <p>Длина оптической трубы: 815 мм</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
