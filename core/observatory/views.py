@@ -26,3 +26,19 @@ def observatoryPopularLections(request):
 
 def observatoryPublications(request):
     return render(request, "observatoryPublications.html")
+
+
+def observatoryPublicationsArticle(request):
+    return render(request, "observatoryPublications.html")
+
+
+def observatoryPublicationsBooks(request):
+    return render(request, "observatoryPublicationsBooks.html")
+
+
+def observatoryPublicationsConference(request):
+    return render(request, "observatoryPublications.html")
+
+
+def observatoryPublicationsWiki(request):
+    return render(request, "observatoryPublications.html")
