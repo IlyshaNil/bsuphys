@@ -1,0 +1,27 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Мы в СМИ" %}{% endblock %}
+
+{% block content %}
+<div class="pageNews">
+    <div class="container">
+        <div class="page_name">{% trans "Мы в СМИ" %}</div>
+        {% for note in notes %}
+        <a class="page row" href="{{ note.get_absolute_url }}">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <img src="{{ note.image.url }}">
+            </div>
+            <div class="inf col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="title">{{ note.title }}</div>
+                <div class="description">{{ note.body|safe|truncatechars:240|linebreaks }}</div>
+            </div>
+        </a>
+        {% endfor %}
+        
+    </div>
+</div>
+{% endblock %}

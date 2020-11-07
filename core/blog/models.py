@@ -24,6 +24,7 @@ class Post(models.Model):
     STATUS_CHOICES = (
         ("draft", "Черновик"),
         ("published", "Опубликовать"),
+        ("media", "Мы в СМИ"),
     )
     title = models.TextField()
     slug = models.SlugField(max_length=250, unique_for_date="publish")

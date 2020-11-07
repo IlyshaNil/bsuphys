@@ -37,3 +37,8 @@ def post_list(request, tag_slug=None):
         "../templates/templates/post/news.html",
         {"page": page, "posts": posts, "tag": tag},
     )
+
+
+def weAreInMedia(request):
+    object_list = Post.media.all()
+    return render(request, "../templates/templates/post/weAreInMedia.html", {"notes": object_list},)
