@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.shortcuts import render, get_object_or_404
-from .models import Post
+from .models import Post, NoteInMedia
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from taggit.models import Tag
 
@@ -40,5 +40,5 @@ def post_list(request, tag_slug=None):
 
 
 def weAreInMedia(request):
-    object_list = Post.objects.all()
+    object_list = NoteInMedia.published.all()
     return render(request, "../templates/templates/post/weAreInMedia.html", {"notes": object_list},)

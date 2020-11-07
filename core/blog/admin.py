@@ -21,7 +21,7 @@ class PostAdmin(TranslationAdmin):
 
 
 
-#@admin.register(NoteInMedia)
-#class NoteInMediaAdmin(TranslationAdmin):
- #   list_display = ("title", "body", "status", "admin_photo")
-  #  prepopulated_fields = {"slug": ("title",)}
+@admin.register(NoteInMedia)
+class NoteInMediaAdmin(TranslationAdmin):
+    list_display = ("title", "body", "status", "admin_photo")
+    prepopulated_fields = {"slug": ("title",)}
