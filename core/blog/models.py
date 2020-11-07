@@ -24,7 +24,6 @@ class Post(models.Model):
     STATUS_CHOICES = (
         ("draft", "Черновик"),
         ("published", "Опубликовать"),
-        ("media", "Мы в СМИ"),
     )
     title = models.TextField()
     slug = models.SlugField(max_length=250, unique_for_date="publish")
@@ -63,3 +62,32 @@ class Post(models.Model):
             # "blog:post_list_by_tag",
             args=[self.publish.year, self.publish.month, self.publish.day, self.slug],
         )
+
+
+class NoteInMedia(models.Model):
+    published = PublishedManager()
+    STATUS_CHOICES = (
+        ("draft", "Черновик"),
+        ("published", "Опубликовать"),
+    )
+    title = models.TextField()
+    slug = models.SlugField(max_length=250, unique_for_date="publish")
+    image = models.ImageField(upload_to="media", null=True, blank=True)
+    body = RichTextField()
+    status = models.TextField(
+        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
+    )
+
+    class Meta:
+        ordering = ("-publish",)
+        verbose_name_plural = "Новые заметки в СМИ"
+
+    def __str__(self):
+        return self.title
+
+    def admin_photo(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+
+    admin_photo.short_description = "Афиша"
+    admin_photo.allow_tags = True
+

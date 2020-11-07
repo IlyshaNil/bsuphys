@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.db import models
 from django.contrib import admin
 from .models import Post
+from .models import NoteInMedia
 from django import forms
 from blog.models import Post as news
 from modeltranslation.admin import TranslationAdmin
@@ -17,4 +18,10 @@ class PostAdmin(TranslationAdmin):
     raw_id_fields = ("author",)
     date_hierarchy = "publish"
     ordering = ("status", "publish")
-    readonly_fields = ("admin_photo",)
+
+
+
+@admin.register(NoteInMedia)
+class NoteInMediaAdmin(TranslationAdmin):
+    list_display = ("title", "body", "status", "admin_photo")
+    prepopulated_fields = {"slug": ("title",)}
