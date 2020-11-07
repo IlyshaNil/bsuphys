@@ -77,6 +77,7 @@ class NoteInMedia(models.Model):
     status = models.TextField(
         max_length=10, choices=STATUS_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
     )
+    publish = models.DateTimeField(default=timezone.now, )
 
     class Meta:
         ordering = ("-publish",)
