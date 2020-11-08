@@ -10,8 +10,9 @@
 <div class="dekanat">
     <div class="container">
         <div class="page_name">{% trans "Мы в СМИ" %}</div>
+        {% for note in notes %}
         <div class="page row center-lg center-md center-sm center-xs">
-             {% for note in notes %}
+
             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img
                     src="{{ note.image.url }}"></div>
             <div class="inf col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -19,8 +20,9 @@
                 <div class="description">{{ note.body|safe|linebreaks }}</div>
             </div>
             <hr>
-            {% endfor %}
+
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
