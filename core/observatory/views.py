@@ -37,11 +37,11 @@ def observatoryPublicationsBooks(request):
 
 
 def observatoryPublicationsConference(request):
-    return render(request, "observatoryPublications.html")
+    return render(request, "observatoryPublicationsConferences.html")
 
 
 def observatoryPublicationsWiki(request):
-    return render(request, "observatoryPublications.html")
+    return render(request, "observatoryPublicationsWiki.html")
 
 
 def observatoryScienceDirections(request):
