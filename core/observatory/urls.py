@@ -10,6 +10,7 @@ urlpatterns = [path("", views.observatoryMain, name="observatoryMain"),
 
                 path("science-pop/", views.observatoryPopular, name="observatoryMain"),
                 path("science-pop/lections/", views.observatoryPopularLections, name="observatoryMain"),
+                path("science-pop/miff/", views.observatoryPopularMIFF, name="observatoryMain"),
 
                path("publications/", views.observatoryPublications, name="observatoryMain"),
                path("publications/articles/", views.observatoryPublicationsArticle, name="observatoryMain"),

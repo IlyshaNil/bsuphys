@@ -50,3 +50,7 @@ def observatoryScienceDirections(request):
 
 def observatoryEducationalActivities(request):
     return render(request, "observatoryEducationalActivities.html")
+
+
+def observatoryPopularMIFF(request):
+    return render(request, "observatoryPopularMIFF.html")
