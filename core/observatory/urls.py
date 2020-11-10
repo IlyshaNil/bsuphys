@@ -7,6 +7,7 @@ urlpatterns = [path("", views.observatoryMain, name="observatoryMain"),
                path("science-dir/", views.observatoryScienceDirections, name="observatoryMain"),
                path("edu-activity/", views.observatoryEducationalActivities, name="observatoryMain"),
                path("contacts/", views.observatoryContacts, name="observatoryMain"),
+               path("science-res/", views.observatoryScienceResults, name="observatoryMain"),
 
                 path("science-pop/", views.observatoryPopular, name="observatoryMain"),
                 path("science-pop/lections/", views.observatoryPopularLections, name="observatoryMain"),
