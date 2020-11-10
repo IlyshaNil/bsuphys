@@ -29,7 +29,7 @@ def observatoryPublications(request):
 
 
 def observatoryPublicationsArticle(request):
-    return render(request, "observatoryPublications.html")
+    return render(request, "observatoryPublicationsArticles.html")
 
 
 def observatoryPublicationsBooks(request):
