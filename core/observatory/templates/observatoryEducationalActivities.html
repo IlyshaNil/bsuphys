@@ -1,0 +1,32 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Учебно-методическая деятельность" %}{% endblock %}
+
+{% block content %}
+<div class="mainInf">
+    <div class="container">
+        <div class="page_name">{% trans "Учебно-методическая деятельность" %}</div>
+        <div class="inf center-lg row">
+            <div class="col-lg-12">
+                <img style="width=50%" src="{% static 'home/assets/images/Moon1.jpg' %}">
+            </div><br>
+            <div class="description"><ul>
+                <li>составление заданий для белорусских и международных астрономических олимпиад;</li>
+                <li>участие в жюри белорусских и международных астрономических олимпиад;</li>
+                <li>организация и участие в жюри астрономической секции научно-практических конференций учащихся;</li>
+                <li>обеспечение учебного процесса по астрономии на физическом и географическом факультетах БГУ; </li>
+                <li>астрономические наблюдения;</li>
+
+            </ul></div>
+            <div class="description"></div>
+            <div class="description"></div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -46,3 +46,7 @@ def observatoryPublicationsWiki(request):
 
 def observatoryScienceDirections(request):
     return render(request, "observatoryScienceDirections.html")
+
+
+def observatoryEducationalActivities(request):
+    return render(request, "observatoryEducationalActivities.html")
