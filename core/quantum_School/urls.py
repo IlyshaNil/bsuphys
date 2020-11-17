@@ -16,6 +16,8 @@ urlpatterns = [
                 path("quantum-11/ads", views.quantumAdvertisement, name="quantum"),
                 path("quantum-olimp/ads", views.quantumAdvertisement, name="quantum"),
 
+                path("quantum-olimp/urls/", views.quantumUrls, name="quantum"),
+
 
 ]
 

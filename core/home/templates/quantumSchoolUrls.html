@@ -1,0 +1,21 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Квант БГУ" %}{% endblock %}
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Ссылки на ресурсы" %}</div>
+        <a href="https://eduphys.bsu.by/course/view.php?id=493">{% trans "Материалы по физике, 10 класс" %}</a>
+        <a href="https://eduphys.bsu.by/course/view.php?id=492">{% trans "Материалы по физике, 11 класс" %}</a>
+        <a href="https://eduphys.bsu.by/course/view.php?id=495">{% trans "Материалы по математике, 10 класс" %}</a>
+        <a href="https://eduphys.bsu.by/course/view.php?id=494">{% trans "Материалы по математике, 11 класс" %}</a>
+        <br>
+
+    </div>
+</div>
+{% endblock %}

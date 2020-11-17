@@ -51,3 +51,6 @@ def quantumAdvertisement(request):
         courseAds = object.advertisement.all()
         return render(request, "quantumSchoolAds.html", {"courseAds": courseAds})
 
+
+def quantumUrls(request):
+    return render(request, "quantumSchoolUrls.html")
