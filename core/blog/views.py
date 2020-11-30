@@ -1,4 +1,3 @@
-from django.shortcuts import render, redirect
 from django.shortcuts import render, get_object_or_404
 from .models import Post, NoteInMedia
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -24,11 +23,11 @@ def post_list(request, tag_slug=None):
         tag = get_object_or_404(Tag, slug=tag_slug)
         object_list = object_list.filter(tags__in=[tag])
 
-    paginator = Paginator(object_list, 7)  # По 3 статьи на каждой странице.
+    paginator = Paginator(object_list, 7)
     page = request.GET.get("page")
     try:
         posts = paginator.page(page)
-    except PageNotAnInteger:  # Если страница не является целым числом, возвращаем первую страницу.
+    except PageNotAnInteger:
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)

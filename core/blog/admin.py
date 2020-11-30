@@ -1,16 +1,11 @@
 from django.contrib import admin
-from django.db import models
-from django.contrib import admin
 from .models import Post
 from .models import NoteInMedia
-from django import forms
-from blog.models import Post as news
 from modeltranslation.admin import TranslationAdmin
 
 
 @admin.register(Post)
 class PostAdmin(TranslationAdmin):
-    # formfield_overrides = {news.title: {"widget": forms.TextInput}}
     list_display = ("title", "slug", "author", "publish", "status", "admin_photo")
     list_filter = ("status", "created", "publish", "author")
     search_fields = ("title", "body")
