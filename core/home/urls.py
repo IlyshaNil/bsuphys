@@ -28,6 +28,8 @@ urlpatterns = [path("", views.index, name="index"),
                path("ru_main/", views.language_switch_ru_main, name="lang_ru_main"),
 
                path("time/", views.timetable, name="info"),
+               path("time-exams/", views.timetableExams, name="info"),
+
 
                path("mezzija/", views.timofey, name="info"),
 

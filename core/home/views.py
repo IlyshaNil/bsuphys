@@ -111,6 +111,11 @@ def contacts(request):
 def timetable(request):
     return render(request, "timetable.html")
 
+
+def timetableExams(request):
+    return render(request, "timetableExam.html")
+
+
 def timofey(request):
     return HttpResponse("url для Тимофея")
 
