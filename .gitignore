@@ -133,3 +133,4 @@ dmypy.json
 /media/
 
 /core/home/templates/index1.html
+.vscode/settings.json
