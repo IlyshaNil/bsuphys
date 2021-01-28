@@ -32,5 +32,6 @@ urlpatterns = [path("", views.index, name="index"),
 
 
                path("mezzija/", views.timofey, name="info"),
+               path("edi/", views.edi, name="info"),
 
                ]
