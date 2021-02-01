@@ -34,6 +34,8 @@ urlpatterns = [path("", views.index, name="index"),
                path("mezzija/", views.timofey, name="info"),
                path("edi/", views.edi, name="info"),
 
+
+               path("/ckp/", views.contacts, name="ckp"),
                path("/ckp/lines-of-researches/", views.linesOfResearches, name="ckp"),
                path("/ckp/measurement-procedures/", views.measurementProcedures, name="ckp"),
                path("/ckp/equipment/", views.equipment, name="ckp"),
