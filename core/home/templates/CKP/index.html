@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru" style="height: auto;min-width: 240px;/*overflow-x: hidden;*/max-width: 100%;">
  <head>
   <meta charset="UTF-8"/>
@@ -6,9 +7,9 @@
   <title data-langkey="a3222">
    Главная
   </title>
-  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="assets/css/styles.css" rel="stylesheet"/>
-  <link href="assets/css/untitled.css" rel="stylesheet"/>
+  <link href="{% static 'home/assets/CKP-assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'home/assets/CKP-assets/css/styles.css' %}" rel="stylesheet"/>
+  <link href="{% static 'home/assets/CKP-assets/css/untitled.css' %}" rel="stylesheet"/>
   <meta content="Информационный веб-ресурс. Создан на платформе Bootstrap" name="description"/>
   <meta content="Центр коллективного пользования, научное оборудование, исследования микро- и наноструктуры материалов" name="keywords"/>
   <meta content="Дизайн и разработка: Реентович Иван, email: iv.rchwork@gmail.com" name="author"/>
@@ -406,13 +407,13 @@
     </div>
    </div>
   </div>
-  <script src="assets/js/jquery.min.js">
+  <script src="{% static 'home/assets/CKP-assets/js/jquery.min.js' %}">
   </script>
-  <script src="assets/bootstrap/js/bootstrap.min.js">
+  <script src="{% static 'home/assets/CKP-assets/bootstrap/js/bootstrap.min.js' %}">
   </script>
-  <script src="assets/js/navigation-menu.js">
+  <script src="{% static 'home/assets/CKP-assets/js/navigation-menu.js' %}">
   </script>
-  <script src="assets/js/i18n.js">
+  <script src="{% static 'home/assets/CKP-assets/js/i18n.js' %}">
   </script>
  </body>
 </html>
