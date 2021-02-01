@@ -33,6 +33,7 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("mezzija/", views.timofey, name="info"),
                path("edi/", views.edi, name="info"),
+               path("alum/", views.alum, name="info"),
 
 
                path("ckp/", views.ckpMain, name="ckp"),
