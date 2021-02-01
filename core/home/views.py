@@ -177,7 +177,7 @@ def linesOfResearches(request):
 
 
 def measurementProcedures(request):
-    return render(request, "CKP/measurements-procedures.html")
+    return render(request, "CKP/measurement-procedures.html")
 
 
 def equipment(request):
