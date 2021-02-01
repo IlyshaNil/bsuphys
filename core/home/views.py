@@ -185,7 +185,7 @@ def equipment(request):
 
 
 def contacts(request):
-    return render(request, "CKP/conyacts.html")
+    return render(request, "CKP/contacts.html")
 
 
 def scientificServices(request):
