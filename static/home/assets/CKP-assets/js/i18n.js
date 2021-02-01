@@ -4,6 +4,7 @@ if (!filename) filename = 'index.html';
 
 console.log(filename);
 
+{% load static %}
 languages.forEach(function (value, index) {
     languages[index].addEventListener('click', function () {
         switchLanguage(this.dataset.lang);
@@ -19,7 +20,7 @@ xhttp.onload = function () {
 
 function switchLanguage(language) {
     document.cookie = "lang=" + language + "; path=/; SameSite=Lax;"
-    xhttp.open("GET", "assets/json/" + language + ".json", true);
+    xhttp.open("GET", "{% static 'home/assets/CKP-assets/json/' %}" + language + ".json", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 }
