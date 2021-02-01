@@ -166,3 +166,7 @@ def internationalConnection(request):
 
 def edi(request):
     return render(request, "edi.html")
+
+
+def ckpMain(request):
+    return render(request, "CKP/index.html")
