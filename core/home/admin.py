@@ -16,5 +16,5 @@ class MainPageStaticNumbersAdmin(TranslationAdmin):
 
 
 @admin.register(KeyPublications)
-class KeyPublications(admin)
+class KeyPublications(admin):
     list_display = ["title", "authors", "journal"]
