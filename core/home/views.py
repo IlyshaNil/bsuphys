@@ -59,8 +59,8 @@ def index(request):
                                          "stat1": randomNumbers[0],
                                          "stat2": randomNumbers[1],
                                          "stat3": randomNumbers[2],
-                                         "stat4": randomNumbers[3],
-                                         "stat5": randomNumbers[4]})
+                                         "stat4": randomNumbers[3]})
+                                         
 
 
 def templates(request):
