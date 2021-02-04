@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import MainPageStatisticNumber
+from .models import MainPageStatisticNumber, KeyPublications
 from modeltranslation.admin import TranslationAdmin
 from django.contrib.auth.models import Group
 
@@ -12,3 +12,9 @@ class MainPageStaticNumbersAdmin(TranslationAdmin):
 
     class Meta:
         verbose_name_plural = "Физический факультет в цифрах"
+
+
+
+@admin.register(KeyPublications)
+class KeyPublications(admin)
+    list_display = ["title", "authors", "journal"]
