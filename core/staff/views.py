@@ -13,3 +13,8 @@ def staff_detail(request, staff):
 
     )
     return render(request, "personTemplate.html", {"staff": staff})
+
+
+def staff_list(request):
+    object_list = Staff_unit.published.all()
+    return render(request, "staffList.html", {"staff": object_list},)

@@ -5,6 +5,7 @@ from . import views
 app_name = "staff"
 urlpatterns = [
     #path("list/", views.weAreInMedia, name="post_list"),
+    path("", views.staff_list, name="staff_list"),
     path(
         "<slug:staff>/",
         views.staff_detail,
