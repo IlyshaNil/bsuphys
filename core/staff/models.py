@@ -6,7 +6,6 @@ from ckeditor.fields import RichTextField
 
 class Staff_unit(models.Model):
     name = models.TextField()
-
     position = models.TextField(null=True, blank=True)
     position_var = models.TextField(
         max_length=30, choices=choises.POSTION_CHOISES, null=True, blank=True
