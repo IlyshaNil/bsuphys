@@ -14,8 +14,8 @@
             <div class="person_template_title">{{ staff.name }}</div>
             <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность:</span> {{ staff.position }}</p>
                 <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.academic_rank }}</p>
-                <p><span class="person_template_bold"> Специализация: {{ staff.get_specialization_display }}</span></p>
-                <p><span class="person_template_bold"> Контактная информация:</span><br>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p>
+                <p><span class="person_template_bold"> Специализация:</span> {{ staff.get_specialization_display }}</p>
+                <p><span class="person_template_bold"> Контактная информация:</span><br>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p><br><br>
                 <p><span class="person_template_bold"> Краткая информация:</span>{{ staff.description| safe  }}</p><br><br><br><br>
 
             </div>
