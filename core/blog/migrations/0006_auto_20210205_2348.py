@@ -10,25 +10,3 @@ class Migration(migrations.Migration):
         ('blog', '0005_auto_20210205_2229'),
     ]
 
-    operations = [
-        migrations.AddField(
-            model_name='noteinmedia',
-            name='body_en',
-            field=ckeditor.fields.RichTextField(null=True),
-        ),
-        migrations.AddField(
-            model_name='noteinmedia',
-            name='body_ru',
-            field=ckeditor.fields.RichTextField(null=True),
-        ),
-        migrations.AddField(
-            model_name='noteinmedia',
-            name='title_en',
-            field=models.TextField(null=True),
-        ),
-        migrations.AddField(
-            model_name='noteinmedia',
-            name='title_ru',
-            field=models.TextField(null=True),
-        ),
-    ]
