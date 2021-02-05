@@ -13,14 +13,14 @@
         <div class="page_name">{% trans "Деканат" %}</div>
         {% for unit in staff %}
         <div class="page row center-lg center-md center-sm center-xs">
-            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img src="{{ staff.image.url }}"></div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"><img src="{{ unit.image.url }}"></div>
             <div class="inf col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="title">{{ staff.name }}</div>
-                <div class="description">{{ staff.position }}<br>{{ staff.academic_rank }}</div>
+                <div class="title">{{ unit.name }}</div>
+                <div class="description">{{ unit.position }}<br>{{ unit.academic_rank }}</div>
                 <div class="description">
-                    <p>сл.тел: {{ staff.phone }}</p>
-                    <p>Адрес: {{ staff.address }}</p>
-                    <p>E-mail: {{ staff.email }}</p></div>
+                    <p>сл.тел: {{ unit.phone }}</p>
+                    <p>Адрес: {{ unit.address }}</p>
+                    <p>E-mail: {{ unit.email }}</p></div>
             </div>
         </div>
         {% endfor %}
