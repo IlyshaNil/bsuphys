@@ -16,5 +16,5 @@ def staff_detail(request, staff):
 
 
 def staff_list(request):
-    object_list = Staff_unit.published.all()
+    object_list = Staff_unit.objects.all()
     return render(request, "staffList.html", {"staff": object_list},)
