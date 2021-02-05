@@ -4,4 +4,4 @@ from .models import Staff_unit
 
 @register(Staff_unit)
 class PostTranslationOptions(TranslationOptions):
-    fields = ('name', 'position', 'description', 'address')
+    fields = ('name', 'position', 'academic_rank', 'description', 'address')
