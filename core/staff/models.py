@@ -13,7 +13,7 @@ class Staff_unit(models.Model):
     specialization = models.TextField(
         max_length=30, choices=choises.STATUS_CHOICES, null=True, blank=True
     )
-    slug = models.URLField(max_length=250)
+    slug = models.SlugField(max_length=250, unique=True)
     image = models.ImageField(upload_to="media/staff", null=True, blank=True)
     description = RichTextField(null=True, blank=True)
     address = models.TextField(null=True, blank=True)
