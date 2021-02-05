@@ -4,23 +4,18 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "О факультете" %}{% endblock %}
+{% block title %}{{ staff.name }}{% endblock %}
 
 {% block content %}
 <div class="person_template">
     <div class="container">
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12"><img
-                class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
-                src="https://physics.bsu.by/static/home/assets/images/a7ff21dbdded4230173d99f51814115b.jpg">
-            <div class="person_template_title">Ляшенко Людмила Сергеевна</div>
-            <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность:</span></p>
-                <p><span class="person_template_bold"> Степень, ученое звание:</span>кандидат физико-математических
-                    наук, доцент</p>
-                <p><span class="person_template_bold"> Контактная информация:</span>комната к. 29 (физич. корпус)
-                    телефон (375-17) 209-50-67 e-mail lyashenko@bsu.by</p>
-                <p><span class="person_template_bold"> Краткая биография:</span>Заместитель декана по
-                    учебно-воспитательной работе и социальным вопросам.
-                    Секретарь Совета физического факультета.</p><br><br><br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ staff.image.url }}">
+            <div class="person_template_title">{{ staff.name }}</div>
+            <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность: {{ staff.position }}</span></p>
+                <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.position_var }}</p>
+                <p><span class="person_template_bold"> Контактная информация:</span>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p>
+                <p><span class="person_template_bold"> Краткая информация:</span>{{ staff.description }}</p><br><br><br><br>
                 <p><span class="person_template_bold"> Читаемые курсы:</span>
                 <ul>
                     <li>Общие курсы лекций по дисциплинам "Спектры и строение молекул", "Молекулярная спектроскопия и
