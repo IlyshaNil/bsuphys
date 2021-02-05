@@ -13,9 +13,9 @@
             <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ staff.image.url }}">
             <div class="person_template_title">{{ staff.name }}</div>
             <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность: {{ staff.position }}</span></p>
-                <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.position_var }}</p>
-                <p><span class="person_template_bold"> Контактная информация:</span>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p>
-                <p><span class="person_template_bold"> Краткая информация:</span>{{ staff.description }}</p><br><br><br><br>
+                <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.get_position_var_display }}</p>
+                <p><span class="person_template_bold"> Контактная информация:</span><br>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p>
+                <p><span class="person_template_bold"> Краткая информация:</span>{{ staff.description| safe  }}</p><br><br><br><br>
                 <p><span class="person_template_bold"> Читаемые курсы:</span>
                 <ul>
                     <li>Общие курсы лекций по дисциплинам "Спектры и строение молекул", "Молекулярная спектроскопия и
