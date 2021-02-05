@@ -12,39 +12,13 @@
         <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ staff.image.url }}">
             <div class="person_template_title">{{ staff.name }}</div>
-            <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность: {{ staff.position }}</span></p>
-                <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.get_position_var_display }}</p>
+            <div class="person_template_text"><p><span class="person_template_bold">Занимаемая должность:</span> {{ staff.position }}</p>
+                <p><span class="person_template_bold"> Степень, ученое звание:</span>{{ staff.academic_rank }}</p>
+                <p><span class="person_template_bold"> Специализация: {{ staff.get_specialization_display }}</span></p>
                 <p><span class="person_template_bold"> Контактная информация:</span><br>Адрес: {{ staff.address }}<br>Телефон: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p>
                 <p><span class="person_template_bold"> Краткая информация:</span>{{ staff.description| safe  }}</p><br><br><br><br>
-                <p><span class="person_template_bold"> Читаемые курсы:</span>
-                <ul>
-                    <li>Общие курсы лекций по дисциплинам "Спектры и строение молекул", "Молекулярная спектроскопия и
-                        люминесценция"
-                    </li>
-                    <li>Спецкурс и спецлаборатория "Люминесценция"</li>
-                    <li>Спецкурс "Спектроскопия биообъектов"</li>
-                </ul>
-                </p><p><span class="person_template_bold"> Научные направления исследования::</span>
-                <ul>
-                    <li>Спектроскопия молекулярных систем и комплексов;</li>
-                    <li>Взаимодействие лазерного излучения с биоструктурами;</li>
-                    <li>Фотоника молекул органических соединений в растворах и биотканях.</li>
-                </ul>
-                </p><p><span class="person_template_bold"> Научная работа:</span>
-                <ul>
-                    <li>Спектроскопия молекулярных систем и комплексов;</li>
-                    <li>Взаимодействие лазерного излучения с биоструктурами;</li>
-                    <li>Фотоника молекул органических соединений в растворах и биотканях.</li>
-                </ul>
-                </p><p><span class="person_template_bold"> Научная работа:</span>
-                <ul>
-                    <li>
-                        <a href="https://scholar.google.com/citations?hl=ru&amp;view_op=list_works&amp;gmla=AJsN-F46oBwn6YhXUqlYmk0WNdyp9guV7FaLG_sneCuqSOv6zL1jxOD_4fFn-Y1-EdP_wRnreTpsKz1dXojN3MmvIxxGA5h3WyPrmJpwihgFabXgwraHo4kydUWbwnErNiG_ZpqX4Z5l&amp;user=ruUMzmwAAAAJ">Scholar
-                            Google</a></li>
-                    <li>Взаимодействие лазерного излучения с биоструктурами;</li>
-                    <li>Фотоника молекул органических соединений в растворах и биотканях.</li>
-                </ul>
-                </p></div>
+
+            </div>
         </div>
     </div>
 </div>
