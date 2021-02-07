@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
-from blog.models import Post
-from home.models import MainPageStatisticNumber
+from blog.models import Post,
+from home.models import MainPageStatisticNumber, KeyPublications
 from django.utils import timezone
 from django.utils.translation import LANGUAGE_SESSION_KEY
 from django.conf import settings
@@ -66,6 +66,11 @@ def index(request):
 def templates(request):
     posts = Post.published.latest("publish")
     return render(request, "template1.html", {"posts": posts})
+
+
+def keyPublications(request):
+    publications = KeyPublications.objects.all()
+    return render(request, "keyPublicationList.html", {"works": publications}, )
 
 
 def dekanat(request):
