@@ -11,9 +11,9 @@
     <div class="container">
         <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
             {% for work in works %}
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ work.image.url }}">
-            <div class="person_template_title"><a href="{{ work.publicationUrl }}">{{ work.title }}</a></div>
-            <div class="person_template_text">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:70px" src="{{ work.image.url }}">
+            <div class="person_template_title" style="font-size:9px"><a href="{{ work.publicationUrl }}">{{ work.title }}</a></div>
+            <div class="person_template_text" style="font-size:9px">
                 <p>{{ work.authors }} // {{ work.journal }}</p>
                 <br><br>
             </div>
