@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
-from blog.models import Post,
+from blog.models import Post
 from home.models import MainPageStatisticNumber, KeyPublications
 from django.utils import timezone
 from django.utils.translation import LANGUAGE_SESSION_KEY
