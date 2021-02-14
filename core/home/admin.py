@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import MainPageStatisticNumber, KeyPublications
+from .models import MainPageStatisticNumber, KeyPublications, FamousGraduates
 from modeltranslation.admin import TranslationAdmin
 from django.contrib.auth.models import Group
 
@@ -18,3 +18,12 @@ class MainPageStaticNumbersAdmin(TranslationAdmin):
 @admin.register(KeyPublications)
 class KeyPublications(admin.ModelAdmin):
     list_display = ["title", "authors", "journal"]
+
+
+@admin.register(FamousGraduates)
+class FamousGraduatesAdmin(TranslationAdmin):
+    list_display = ["name", "description"]
+    prepopulated_fields = {"slug": ("name",)}
+
+    class Meta:
+        verbose_name_plural = "Физический факультет в цифрах"

@@ -1,0 +1,26 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{{ alum.name }}{% endblock %}
+
+{% block content %}
+<div class="person_template">
+    <div class="container">
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ alum.photo.url }}">
+            <div class="person_template_title">{{ alum.name }}</div>
+            <div class="person_template_text"><p>{{ alum.shortDescription }}</p>
+                <p><span class="person_template_bold"> Факультет, специальность:</span>{{ alum.facultyAndSpeciality }}</p>
+                <p><span class="person_template_bold"> Период обучения:</span> {{ alum.periodOfStudy }}</p>
+                <p><span class="person_template_bold"> Краткая биографическая справка:</span><br>{{ alum.briefBioInfo| safe }}</p><br><br>
+                <p><span class="person_template_bold"> Род профессиональной деятельности:</span>{{ alum.typeOfProfActivity| safe  }}</p><br><br>
+                <p><span class="person_template_bold"> Достижения профессиональной деятельности:</span><br>{{ alum.professionalAchievements| safe }}</p><br><br>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

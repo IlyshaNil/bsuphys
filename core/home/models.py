@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -19,4 +20,23 @@ class KeyPublications(models.Model):
 
     class Meta:
         verbose_name_plural = "Основные публикации"
-        
+
+
+class FamousGraduates(models.Model):
+    name = models.TextField(null=True, blank=True)
+    shortDescription = models.TextField(null=True, blank=True)
+    photo = models.ImageField(upload_to="media/famousGraduates", null=True, blank=True)
+    briefBioInfo = RichTextField(null=True, blank=True)
+    typeOfProfActivity = RichTextField(null=True, blank=True)
+    periodOfStudy = models.TextField(null=True, blank=True)
+    facultyAndSpeciality = models.TextField(null=True, blank=True)
+    professionalAchievements = RichTextField(null=True, blank=True)
+    slug = models.SlugField(max_length=250, unique=True)
+
+    class Meta:
+        verbose_name_plural = "Известные выпускники"
+
+    def admin_photo(self):
+        return  mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+    admin_photo.short_description = "Афиша"
+    admin_photo.allow_tags = True

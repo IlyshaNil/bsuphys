@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
-from home.models import MainPageStatisticNumber, KeyPublications
+from home.models import MainPageStatisticNumber, KeyPublications, FamousGraduates
 from django.utils import timezone
 from django.utils.translation import LANGUAGE_SESSION_KEY
 from django.conf import settings
@@ -60,6 +60,20 @@ def index(request):
                                          "stat2": randomNumbers[1],
                                          "stat3": randomNumbers[2],
                                          "stat4": randomNumbers[3]})
+
+
+def alum_detail(request, alum):
+    alum = get_object_or_404(
+        FamousGraduates,
+        slug=alum,
+    )
+    return render(request, "alumPersonTemplate.html", {"alum": alum})
+
+
+def alums_list(request):
+    object_list = FamousGraduates.objects.all()
+    return render(request, "alumsList.html", {"alums": object_list},)
+
                                          
 
 
