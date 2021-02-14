@@ -20,7 +20,7 @@
                 <div class="description">
                     <p>Период обучения: {{ unit.periodOfStudy }}</p>
                 </div>
-                <div class="description">{{ unit.briefBioInfo| safe }}</div>
+                <div class="description">{{ unit.briefBioInfo| safe |truncatechars:60|linebreaks}}</div>
             </div>
         </div>
         </a>
