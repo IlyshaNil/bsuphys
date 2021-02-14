@@ -22,7 +22,7 @@ class KeyPublications(admin.ModelAdmin):
 
 @admin.register(FamousGraduates)
 class FamousGraduatesAdmin(TranslationAdmin):
-    list_display = ["name", "description"]
+    list_display = ["name", "shortDescription", "facultyAndSpeciality"]
     prepopulated_fields = {"slug": ("name",)}
 
     class Meta:
