@@ -9,7 +9,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("abitur/", views.abitur, name="abitur"),
                path("info/", views.info, name="info"),
 
-               path("", views.alums_list, name="alums_list"),
+               path("/alums/", views.alums_list, name="alums_list"),
                path(
                     "<slug:alum>/",
                     views.alum_detail,
