@@ -19,8 +19,9 @@
                 {% if alum.typeOfProfActivity %}
                 <p><span class="person_template_bold"> Род профессиональной деятельности:</span>{{ alum.typeOfProfActivity| safe  }}</p><br><br>
                 {% endif %}
+                {% if alum.professionalAchievements %}
                 <p><span class="person_template_bold"> Достижения профессиональной деятельности:</span><br>{{ alum.professionalAchievements| safe }}</p><br><br>
-
+                {% endif %}
             </div>
         </div>
     </div>
