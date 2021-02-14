@@ -11,7 +11,7 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("alums/", views.alums_list, name="alums_list"),
                path(
-                    "<slug:alum>/",
+                    "alums/<slug:alum>/",
                     views.alum_detail,
                     name="alum_detail",
                 ),
