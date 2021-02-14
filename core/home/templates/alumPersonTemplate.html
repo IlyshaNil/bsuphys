@@ -16,7 +16,9 @@
                 <p><span class="person_template_bold"> Факультет, специальность:</span>{{ alum.facultyAndSpeciality }}</p>
                 <p><span class="person_template_bold"> Период обучения:</span> {{ alum.periodOfStudy }}</p>
                 <p><span class="person_template_bold"> Краткая биографическая справка:</span><br>{{ alum.briefBioInfo| safe }}</p><br><br>
+                {% if alum.typeOfProfActivity %}
                 <p><span class="person_template_bold"> Род профессиональной деятельности:</span>{{ alum.typeOfProfActivity| safe  }}</p><br><br>
+                {% endif %}
                 <p><span class="person_template_bold"> Достижения профессиональной деятельности:</span><br>{{ alum.professionalAchievements| safe }}</p><br><br>
 
             </div>
