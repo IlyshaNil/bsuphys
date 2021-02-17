@@ -9,39 +9,17 @@
 {% block content %}
 <div class="publications_template">
     <div class="container">
-        <div class="publications_template_wrap"><img class="col-lg-2 col-md-2 col-sm-6 col-xs-12"
-                                                     src="http://www.issc-ras.ru/upload/iblock/a30/20200122image001.jpg">
-            <div class="publications_template_description"><a
-                    href="https://www.sciencedirect.com/science/article/abs/pii/S0925963521000182#%21">Luminescence of
-                brown CVD diamond: 468 nm luminescence center</a>
-                <div class="text">A.M. Zaitsev, N.M. Kazuchits, K.S. Moe, J.E. Butler, O.V. Korolik, M.S. Rusetsky,
-                    V.N.
-                </div>
-                <div class="text">Kazuchits // Diamond and Related Materials. – 2021. – Vol. 113. – P. 108255</div>
+        {% for work in works %}
+        <div class="publications_template_wrap">
+            <img class="col-lg-2 col-md-2 col-sm-6 col-xs-12" src="{{ work.image.url }}">
+            <div class="publications_template_description">
+                <a href="{{ work.publicationUrl }}">{{ work.title }}</a>
+                <div class="text"> {{ work.authors }} //</div>
+                <div class="text">{{ work.journal }}</div>
             </div>
         </div>
-        <div class="publications_template_wrap"><img class="col-lg-2 col-md-2 col-sm-6 col-xs-12"
-                                                     src="http://www.issc-ras.ru/upload/iblock/a30/20200122image001.jpg">
-            <div class="publications_template_description"><a
-                    href="https://www.sciencedirect.com/science/article/abs/pii/S0925963521000182#%21">Luminescence of
-                brown CVD diamond: 468 nm luminescence center</a>
-                <div class="text">A.M. Zaitsev, N.M. Kazuchits, K.S. Moe, J.E. Butler, O.V. Korolik, M.S. Rusetsky,
-                    V.N.
-                </div>
-                <div class="text">Kazuchits // Diamond and Related Materials. – 2021. – Vol. 113. – P. 108255</div>
-            </div>
-        </div>
-        <div class="publications_template_wrap"><img class="col-lg-2 col-md-2 col-sm-6 col-xs-12"
-                                                     src="http://www.issc-ras.ru/upload/iblock/a30/20200122image001.jpg">
-            <div class="publications_template_description"><a
-                    href="https://www.sciencedirect.com/science/article/abs/pii/S0925963521000182#%21">Luminescence of
-                brown CVD diamond: 468 nm luminescence center</a>
-                <div class="text">A.M. Zaitsev, N.M. Kazuchits, K.S. Moe, J.E. Butler, O.V. Korolik, M.S. Rusetsky,
-                    V.N.
-                </div>
-                <div class="text">Kazuchits // Diamond and Related Materials. – 2021. – Vol. 113. – P. 108255</div>
-            </div>
-        </div>
+        {% endfor %}
+        
     </div>
 </div>
 {% endblock %}

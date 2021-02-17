@@ -84,7 +84,7 @@ def templates(request):
 
 def keyPublications(request):
     publications = KeyPublications.objects.all()
-    return render(request, "keyPublicationList.html", {"works": publications}, )
+    return render(request, "publicationsTemplate.html", {"works": publications}, )
 
 
 def dekanat(request):
