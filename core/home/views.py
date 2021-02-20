@@ -54,12 +54,16 @@ def language_switch_ru_main(request):
 
 def index(request):
     post = Post.published.latest("publish")
+    latestPublications = KeyPublications.reverse()[:3]
     randomNumbers = get_random_statistic_number()
     return render(request, "main.html", {"post": post,
                                          "stat1": randomNumbers[0],
                                          "stat2": randomNumbers[1],
                                          "stat3": randomNumbers[2],
-                                         "stat4": randomNumbers[3]})
+                                         "stat4": randomNumbers[3],
+                                         "pub1": latestPublications[0],
+                                         "pub2": latestPublications[1],
+                                         "pub3": latestPublications[2],})
 
 
 def alum_detail(request, alum):
