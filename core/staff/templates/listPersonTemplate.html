@@ -1,0 +1,33 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Основные публикации" %}{% endblock %}
+
+{% block content %}
+
+<div class="listPersonTemplate">
+    <div class="container">
+        <div class="listPersonTemplate_title">{% trans "Сотрудники" %}</div>
+        {% for unit in staff %}
+        <div class="listPersonTemplate_wrap">
+            <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{ unit.image.url }}">
+            <div class="listPersonTemplate_description">
+                <a href="{{ unit.slug }}">{{ unit.name }}</a>
+                <div class="text">
+                    <p>{{ unit.position }}</p>
+                    <p>{{ unit.academic_rank }}</p>
+                </div>
+                <div class="text">
+                    <p>сл.тел: {{ unit.phone }}</p>
+                    <p>Адрес: {{ unit.address }}</p>
+                    <p>E-mail: {{ unit.email }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
