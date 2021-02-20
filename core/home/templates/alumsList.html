@@ -18,7 +18,7 @@
                 <div class="title">{{ unit.name }}</div>
                 <div class="description">{{ unit.shortDescription }}<br><br>{{ unit.facultyAndSpeciality }}</div>
                 <div class="description">
-                    <p>Период обучения: {{ unit.periodOfStudy }}</p>
+                    <p>{% trans "Период обучения" %}: {{ unit.periodOfStudy }}</p>
                 </div>
                 <div class="description">{{ unit.briefBioInfo| safe |truncatechars:60|linebreaks}}</div>
             </div>

@@ -215,5 +215,3 @@ def scientificServices(request):
     return render(request, "CKP/scientific-services.html")
 
 
-def alum(request):
-    return render(request, "alum.html")

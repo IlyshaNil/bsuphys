@@ -13,14 +13,14 @@
             <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ alum.photo.url }}">
             <div class="person_template_title">{{ alum.name }}</div>
             <div class="person_template_text"><p>{{ alum.shortDescription }}</p>
-                <p><span class="person_template_bold"> Факультет, специальность:</span>{{ alum.facultyAndSpeciality }}</p>
-                <p><span class="person_template_bold"> Период обучения:</span> {{ alum.periodOfStudy }}</p>
-                <p><span class="person_template_bold"> Краткая биографическая справка:</span><br>{{ alum.briefBioInfo| safe }}</p><br><br>
+                <p><span class="person_template_bold">{% trans "Факультет, специальность" %}:</span>{{ alum.facultyAndSpeciality }}</p>
+                <p><span class="person_template_bold">{% trans "Период обучения" %}:</span> {{ alum.periodOfStudy }}</p>
+                <p><span class="person_template_bold">{% trans "Краткая биографическая справка" %}:</span><br>{{ alum.briefBioInfo| safe }}</p><br><br>
                 {% if alum.typeOfProfActivity %}
-                <p><span class="person_template_bold"> Род профессиональной деятельности:</span>{{ alum.typeOfProfActivity| safe  }}</p><br><br>
+                <p><span class="person_template_bold">{% trans "Род профессиональной деятельности" %}:</span>{{ alum.typeOfProfActivity| safe  }}</p><br><br>
                 {% endif %}
                 {% if alum.professionalAchievements %}
-                <p><span class="person_template_bold"> Достижения профессиональной деятельности:</span><br>{{ alum.professionalAchievements| safe }}</p><br><br>
+                <p><span class="person_template_bold">{% trans "Достижения профессиональной деятельности" %}:</span><br>{{ alum.professionalAchievements| safe }}</p><br><br>
                 {% endif %}
             </div>
         </div>
