@@ -1,0 +1,33 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Известные выпускники" %}{% endblock %}
+
+{% block content %}
+
+<div class="listPersonTemplate">
+    <div class="container">
+        <div class="listPersonTemplate_title">{% trans "Известные выпускники" %}</div>
+        {% for unit in alums %}
+        <div class="listPersonTemplate_wrap">
+            <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{ unit.photo.url }}">
+            <div class="listPersonTemplate_description">
+                <a href="{{ unit.slug }}">{{ unit.name }}</a>
+                <div class="text">
+                    <p>{{ unit.shortDescription }}</p>
+                    <p>{{ unit.facultyAndSpeciality }}</p>
+                </div>
+                <div class="text">
+                    <p>Период обучения: {{ unit.periodOfStudy }}</p>
+                    <p>{{ unit.briefBioInfo| safe |truncatechars:60|linebreaks}}</p>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

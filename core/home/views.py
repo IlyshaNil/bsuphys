@@ -72,7 +72,7 @@ def alum_detail(request, alum):
 
 def alums_list(request):
     object_list = FamousGraduates.objects.all()
-    return render(request, "alumsList.html", {"alums": object_list},)
+    return render(request, "listPersonTemplate.html", {"alums": object_list},)
 
                                          
 
