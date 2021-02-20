@@ -111,15 +111,15 @@
     <div class="container">
         <div class="publication_title">{% trans "Последние публикации" %}</div>
         <div class="publication_page row center-lg center-md center-sm center-xs">
-            <a class="col-lg-4 col-md-4 wow animate__animated animate__fadeInLeft" href="https://aip.scitation.org/doi/10.1063/5.0004881">
+            <a class="col-lg-4 col-md-4 wow animate__animated animate__fadeInLeft" href="{{ pub1.publicationUrl }}">
                 <img src="{{ pub1.image.url }}">
-                <div class="description">Carrier recombination parameters in diamond after surface boron implantation and annealing </div></a>
-            <a class="col-lg-4 col-md-4 publication_none" href="https://www.researchgate.net/publication/338957039_Low_temperature_injected-caused_charge_carrier_instability_in_n-type_silicon_below_insulator-to-metal_transition">
+                <div class="description">{{ pub1.title }}</div></a>
+            <a class="col-lg-4 col-md-4 publication_none" href="{{ pub2.publicationUrl }}">
                 <img src="{{ pub2.image.url }}">
-                <div class="description">Low temperature injected-caused charge carrier instability in n-type silicon below insulator-to-metal transition</div></a>
-            <a class="col-lg-4 col-md-4 publication_none wow animate__animated animate__fadeInRight" href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X20302814">
-                <img src="https://ars.els-cdn.com/content/image/X0038092X.jpg">
-                <div class="description">Temperature dependence of Raman scattering in the Cu2ZnSnSe4 thin films on a Ta foil substrate</div></a>
+                <div class="description">{{ pub2.title }}</div></a>
+            <a class="col-lg-4 col-md-4 publication_none wow animate__animated animate__fadeInRight" href="{{ pub3.publicationUrl }}">
+                <img src="{{ pub3.image.url }}">
+                <div class="description">{{ pub3.title }}</div></a>
         </div><a class="button_more" href="/key-pub/">{% trans "Подробнее" %}</a>
     </div>
 </div>
