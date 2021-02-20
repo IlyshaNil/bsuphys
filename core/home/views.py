@@ -87,7 +87,7 @@ def templates(request):
 
 
 def keyPublications(request):
-    publications = reverse(KeyPublications.objects.all())
+    publications = reversed(KeyPublications.objects.all())
     return render(request, "publicationsTemplate.html", {"works": publications}, )
 
 
