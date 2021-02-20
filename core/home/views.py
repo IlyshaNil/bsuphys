@@ -54,18 +54,16 @@ def language_switch_ru_main(request):
 
 def index(request):
     post = Post.published.latest("publish")
-    #last_ten = KeyPublications.objects.reverse()[:5]
-    last_ten = KeyPublications.objects.order_by('-id')[:3]
-    #last_ten_in_ascending_order = reversed(last_ten)
+    lastKeyPub = KeyPublications.objects.order_by('-id')[:3]
     randomNumbers = get_random_statistic_number()
     return render(request, "main.html", {"post": post,
                                          "stat1": randomNumbers[0],
                                          "stat2": randomNumbers[1],
                                          "stat3": randomNumbers[2],
                                          "stat4": randomNumbers[3],
-                                         "pub1": last_ten[0],
-                                         "pub2": last_ten[1],
-                                         "pub3": last_ten[2],})
+                                         "pub1": lastKeyPub[0],
+                                         "pub2": lastKeyPub[1],
+                                         "pub3": lastKeyPub[2],})
 
 
 def alum_detail(request, alum):
@@ -89,7 +87,7 @@ def templates(request):
 
 
 def keyPublications(request):
-    publications = KeyPublications.objects.all()
+    publications = reverse(KeyPublications.objects.all())
     return render(request, "publicationsTemplate.html", {"works": publications}, )
 
 
