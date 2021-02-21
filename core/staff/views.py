@@ -17,4 +17,4 @@ def staff_detail(request, staff):
 
 def staff_list(request):
     object_list = Staff_unit.objects.all()
-    return render(request, "listPersonTemplate.html", {"staff": object_list},)
+    return render(request, "listStaffTemplate.html", {"staff": object_list},)
