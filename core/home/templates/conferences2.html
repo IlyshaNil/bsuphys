@@ -1,0 +1,30 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Известные выпускники" %}{% endblock %}
+
+{% block content %}
+
+<div class="listPersonTemplate">
+    <div class="container">
+        <div class="listPersonTemplate_title">{% trans "Известные выпускники" %}</div>
+        На физическом факультете проводятся 4 международных конференции с периодичностью 1 раз в 2 года.<br>
+        Сборники всех материалов конференций доступны в <a href="https://elib.bsu.by/handle/123456789/6011">электронной библиотеке БГУ.</a>
+        <div class="listPersonTemplate_wrap">
+            <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{% static 'home/assets/images/conf1.jpg' %}">
+            <div class="listPersonTemplate_description">
+                <a href="https://elib.bsu.by/handle/123456789/6011">Материалы и структуры современной электроники</a>
+                <div class="text">
+                    <p>Языки: русский, английский</p>
+                    <p>Материалы включены в БД РИНЦ</p>
+                    <p>Год следующего проведения: 2022</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
