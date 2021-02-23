@@ -1,0 +1,60 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Концеренции" %}{% endblock %}
+
+{% block content %}
+<div class="person_template">
+    <div class="container">
+        На физическом факультете проводятся 4 международных конференции с периодичностью 1 раз в 2 года.<br>
+        Сборники всех материалов конференций доступны в <a href="https://elib.bsu.by/handle/123456789/6011">электронной библиотеке БГУ.</a>
+
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:70px" src="{% static 'home/assets/images/conf1.jpg' %}">
+            <div class="person_template_title" style="font-size:9px"><a href="https://elib.bsu.by/handle/123456789/6011">Материалы и структуры современной электроники</a></div>
+            <div class="person_template_text" style="font-size:9px">
+                <p> Языки: русский, английский<br>
+                    Материалы включены в БД РИНЦ<br>
+                    Год следующего проведения: 2022<br>
+                </p>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:70px" src="{% static 'home/assets/images/conf2.jpg' %}">
+            <div class="person_template_title" style="font-size:9px"><a href="  ">  </a></div>
+            <div class="person_template_text" style="font-size:9px">
+                <p> </p>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:70px" src="{% static 'home/assets/images/conf3.jpg' %}">
+            <div class="person_template_title" style="font-size:9px"><a href="  ">  </a></div>
+            <div class="person_template_text" style="font-size:9px">
+                <p> </p>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:70px" src="{% static 'home/assets/images/conf4.jpg' %}">
+            <div class="person_template_title" style="font-size:9px"><a href="  ">  </a></div>
+            <div class="person_template_text" style="font-size:9px">
+                <p> </p>
+                <br><br>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

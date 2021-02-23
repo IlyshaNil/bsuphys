@@ -215,3 +215,7 @@ def scientificServices(request):
     return render(request, "CKP/scientific-services.html")
 
 
+def conferences(request):
+    return render(request, "conferences.html")
+
+
