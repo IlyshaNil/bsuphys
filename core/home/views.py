@@ -216,6 +216,6 @@ def scientificServices(request):
 
 
 def conferences(request):
-    return render(request, "conferences2.html")
+    return render(request, "conferences.html")
 
 
