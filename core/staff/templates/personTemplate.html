@@ -12,12 +12,25 @@
         <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="{{ staff.image.url }}">
             <div class="person_template_title">{{ staff.name }}</div>
-            <div class="person_template_text"><p><span class="person_template_bold">{% trans "Занимаемая должность" %}:</span> {{ staff.position }}</p>
+            <div class="person_template_text">
+                {% if staff.position %}
+                <p><span class="person_template_bold">{% trans "Занимаемая должность" %}:</span> {{ staff.position }}</p>
+                {% endif %}
+                {% if staff.academic_rank %}
                 <p><span class="person_template_bold">{% trans "Степень, учёное звание" %}:</span>{{ staff.academic_rank }}</p>
+                {% endif %}
+                {% if staff.get_specialization_display %}
                 <p><span class="person_template_bold">{% trans "Специализация" %}:</span> {{ staff.get_specialization_display }}</p>
-                <p><span class="person_template_bold">{% trans "Контактная информация" %}:</span><br>{% trans "Адрес" %}: {{ staff.address }}<br>{% trans "Телефон" %}: {{ staff.phone }}<br>E-mail: {{ staff.email }}</p><br><br>
-                <p><span class="person_template_bold">{% trans "Краткая информация" %}:</span>{{ staff.description| safe  }}</p><br><br><br><br>
+                {% endif %}
 
+                <p><span class="person_template_bold">{% trans "Контактная информация" %}:</span><br>
+                    {% if staff.address %}{% trans "Адрес" %}: {{ staff.address }}{% endif %}
+                    {% if staff.phone %}<br>{% trans "Телефон" %}: {{ staff.phone }}{% endif %}
+                    {% if staff.email %}<br>E-mail: {{ staff.email }}{% endif %}</p><br><br>
+               
+                {% if staff.description %}
+                <p><span class="person_template_bold">{% trans "Краткая информация" %}:</span>{{ staff.description| safe  }}</p><br><br><br><br>
+                {% endif %}
             </div>
         </div>
     </div>
