@@ -52,5 +52,6 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("key-pub/", views.keyPublications, name="info"),
                path("conferences/", views.conferences, name="conferences"),
+               path("science-directions/", views.nilAndScienceDirections, name="info"),
 
                ]

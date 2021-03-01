@@ -219,3 +219,7 @@ def conferences(request):
     return render(request, "conferences.html")
 
 
+def nilAndScienceDirections(request):
+    return render(request, "nilAndScienceDir.html")
+
+
