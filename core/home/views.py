@@ -223,3 +223,7 @@ def nilAndScienceDirections(request):
     return render(request, "nilAndScienceDir.html")
 
 
+def eduProcess(request):
+    return render(request, "eduProcess.html")
+
+

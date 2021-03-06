@@ -1,0 +1,18 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Расписание занятий" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "График образовательного процесса" %}</div>
+        <a href="http://physics.bsu.by/media/media/1gr20-21.pdf">{% trans "График образовательного процесса 2020-2021 1 ступень" %}</a>
+        <a href="http://physics.bsu.by/media/media/2gr20-21.pdf">{% trans "График образовательного процесса 2020-2021 2 ступень" %}</a>
+    </div>
+</div>
+{% endblock %}
