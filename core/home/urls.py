@@ -55,4 +55,6 @@ urlpatterns = [path("", views.index, name="index"),
                path("science-directions/", views.nilAndScienceDirections, name="info"),
                path("edu-proc/", views.eduProcess, name="info"),
 
+               path("test/", views.test, name="info"),
+
                ]

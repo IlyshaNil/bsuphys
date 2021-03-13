@@ -227,3 +227,7 @@ def eduProcess(request):
     return render(request, "eduProcess.html")
 
 
+def test(request):
+    return render(request, "worldwide.html")
+
+
