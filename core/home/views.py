@@ -184,7 +184,7 @@ def NwordDocuments(request):
 
 
 def internationalConnection(request):
-    return render(request, "InternationalConnection.html")
+    return render(request, "worldwide.html")
 
 
 def edi(request):
