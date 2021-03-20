@@ -231,7 +231,5 @@ def test(request):
     return render(request, "worldwide.html")
 
 
-def depEnergy(request):
-    return render(request, "depEnergy.html")
 
 

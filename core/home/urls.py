@@ -57,6 +57,6 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("test/", views.test, name="info"),
 
-               path("departments/energy/", views.depEnergy, name="departments"),
+
 
                ]
