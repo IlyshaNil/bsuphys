@@ -56,6 +56,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("edu-proc/", views.eduProcess, name="info"),
 
                path("test/", views.test, name="info"),
+               path("dod/", views.dod, name="dod"),
 
 
 

@@ -231,5 +231,10 @@ def test(request):
     return render(request, "worldwide.html")
 
 
+def dod(request):
+    return render(request, "dod.html")
+
+
+
 
 
