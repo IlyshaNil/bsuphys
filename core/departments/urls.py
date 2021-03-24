@@ -3,7 +3,7 @@ from . import views
 
 
 app_name = "departments"
-urlpatterns = [path("energy/", views.depEnergy, name="energy department"),
+urlpatterns = [path("", views.departmentList, name="energy department"),
     path(
             "/departments/<slug:department>/",
             views.department_detail,

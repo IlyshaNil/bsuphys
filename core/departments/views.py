@@ -12,6 +12,9 @@ from django.db.models import Max
 import random
 
 # Create your views here.
+def departmentList(request):
+    return render(request, "DepartmentList.html")
+
 
 def department_detail(request, department):
     department = get_object_or_404(
