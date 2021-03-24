@@ -27,5 +27,5 @@ class Staff_unit(models.Model):
     class Meta:
         verbose_name_plural = "Сотрудники"
 
-
-# Create your models here.
+    def __str__(self):
+        return self.name
