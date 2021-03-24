@@ -11,22 +11,24 @@
 <div class="listPersonTemplate">
     <div class="container">
         <div class="listPersonTemplate_title">{% trans "Сотрудники" %}</div>
-        {% for unit in dep.staff.all %}
+        {% for unit in dep %}
+            {% for staff in unit.staff.all %}
         <div class="listPersonTemplate_wrap">
-            <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{ unit.image.url }}">
+            <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{ staff.image.url }}">
             <div class="listPersonTemplate_description">
-                <a href="{{ unit.slug }}">{{ unit.name }}</a>
+                <a href="{{ staff.slug }}">{{ staff.name }}</a>
                 <div class="text">
-                    <p>{{ unit.position }}</p>
-                    <p>{{ unit.academic_rank }}</p>
+                    <p>{{ staff.position }}</p>
+                    <p>{{ staff.academic_rank }}</p>
                 </div>
                 <div class="text">
-                    {% if unit.phone %}<p>сл.тел: {{ unit.phone }}</p>{% endif %}
-                    {% if unit.address %}<p>Адрес: {{ unit.address }}</p>{% endif %}
-                    {% if unit.email %}<p>E-mail: {{ unit.email }}</p>{% endif %}
+                    {% if staff.phone %}<p>сл.тел: {{ staff.phone }}</p>{% endif %}
+                    {% if staff.address %}<p>Адрес: {{ staff.address }}</p>{% endif %}
+                    {% if staff.email %}<p>E-mail: {{ staff.email }}</p>{% endif %}
                 </div>
             </div>
         </div>
+            {% endfor %}
         {% endfor %}
     </div>
 </div>
