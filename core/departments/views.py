@@ -31,4 +31,4 @@ def department_detail_staff(request, department):
         slug=department,
 
     )
-    return render(request, "listStaffTemplate.html", {"dep": department})
+    return render(request, "departmentStaff.html", {"dep": department})
