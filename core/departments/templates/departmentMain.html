@@ -4,7 +4,7 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "Кафедра энергофизики" %}{% endblock %}
+{% block title %}{% trans "{{ dep.name }}" %}{% endblock %}
 
 {% block content %}
 <head>
@@ -32,14 +32,14 @@
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1">
-                  <img src="{% static 'home/assets/images/depEnergyPersonal.jpg' %}" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="510" data-image-height="461">
+                  <img src="{{ dep.image.url }}" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="510" data-image-height="461">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-align-center u-text u-text-1">Кафедра энергофизики&nbsp;</h2>
+                  <h2 class="u-align-center u-text u-text-1">{{ dep.name }}</h2>
                   <div class="u-border-2 u-border-custom-color-1 u-line u-line-horizontal u-line-1"></div>
-                  <p class="u-align-justify u-large-text u-text u-text-variant u-text-2">Обеспечивает подготовку высококвалифицированных специалистов, обладающих глубокими знаниями физических процессов, лежащих в основе эффективного получения и использования энергии. Выпускники кафедры являются уникальными специалистами, получившими фундаментальное образование на стыке таких научных областей как теплофизика, материаловедение, физическая химия, способными решать широкий круг фундаментальных и практических задач.&nbsp;</p>
+                  <p class="u-align-justify u-large-text u-text u-text-variant u-text-2">{{ dep.short_description }}</p>
                 </div>
               </div>
             </div>
@@ -90,195 +90,19 @@
           <div class="u-tab-content">
             <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-1">
-                <p class="u-text u-text-default u-text-1">Кафедра теплофизики организована 1 января 1966 года как базовая кафедра Института тепло- и массообмена (ИТМО) АН БССР по инициативе директора ИТМО АН БССР академика А.В. Лыкова и ректора&nbsp;<a href="https://www.bsu.by/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">БГУ</a>&nbsp;академика А.Н. Севченко.<br>В связи с началом подготовки специалистов по проблемам энергоэффективности и энергосбережения приказом ректора&nbsp;<a href="https://www.bsu.by/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">БГУ</a>&nbsp;от 3 апреля 1998 года кафедра теплофизики переименована в кафедру энергофизики.<br>В рамках реорганизации научно-исследовательских лабораторий (НИЛ) на физическом факультете 30 мая 2011 года при кафедре открыта НИЛ энергоэффективных материалов и технологий.<br>28 июня 2018 года создана совместная с&nbsp;<a href="http://www.izovac.com/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">ООО «Изовак»</a>&nbsp;студенческая научно-исследовательская лаборатория&nbsp;<a href="https://vk.com/srl_thinfilms" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">«Тонкопленочные технологии»</a>.
-                </p>
-                <p>Кафедрой заведовали:</p>
-                <ul class="u-text u-text-2">
-                  <li>
-                    <div class="class u-list-icon"></div>Лыков Алексей Васильевич (с 1966 г. по 1974 г.)
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Касперович Алла Станиславовна (с 1974 г. по 1977 г.)
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Солоухин Рем Иванович (с 1977 г. по 1987 г.)
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Мартыненко Олег Григорьевич (с 1988 г. по 1996 г.)
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Федотов Александр Кириллович (с 1996 г. по 2014 г.)
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Тиванов Михаил Сергеевич (с 2014 г. по 2018 г.)
-                  </li>
-                </ul>
+                {{ dep.description| safe }}
               </div>
             </div>
 
             <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="link-tab-7fce" role="tabpanel" aria-labelledby="tab-7fce">
               <div class="u-container-layout u-container-layout-2">
-                <p class="u-align-left u-text u-text-default u-text-3"><b>Основные публикации 2021</b></p>
-                <ul class="u-text u-text-2">
-                  <li>
-                    <div class="class u-list-icon"></div>Luminescence of brown CVD diamond: 468 nm luminescence center / A.M. Zaitsev, N.M. Kazuchits, K.S. Moe, J.E. Butler, O.V. Korolik, M.S. Rusetsky, V.N. Kazuchits // Diamond and Related Materials. – 2021. – Vol. 113. – P. 108255
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Rapid HPHT annealing of synthetic IB-TYPE diamonds /V.N. Kazuchits, N.M. Kazuchits, M.S. Rusetskiy, O.V. Korolik, A.V. Konovalova, O.V. Ignatenko // Carbon. – 2021. – Vol. 174. – P. 180–189.
-                  </li>
-                </ul>
+                {{ dep.publications| safe }}
               </div>
             </div>
 
             <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
               <div class="u-container-layout u-container-layout-3">
-                <p class="u-align-left u-text u-text-4"><b>Специализация 1-31 04 01-01 07 Энергофизика</b></p><br>
-                <ul class="u-text u-text-2">
-                  <li>
-                    <div class="class u-list-icon"></div>Основы физики твердого тела и полупроводников
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Основы теплофизики
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Основы физической химии
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Основы теплофизических измерений»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Комплексные вопросы энергетики
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Оптические и неравновесные процессы в конденсированных средах
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Экспериментальные методы исследования параметров тепло- и массообмена
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Материалы энергетики
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Атомно-молекулярные свойства современных материалов
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Теплофизические измерения»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Тепло- и массообмен в сплошных средах
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Современные методы исследования материалов
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Основы твердотельной электроники
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Диффузионные процессы в конденсированных средах
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Термодинамика систем пониженной размерности
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Экспериментальное исследование процессов тепло- и массопереноса»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Теплофизика гетерогенных сред
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Актуальные проблемы энергетики
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Гелиоэнергетика
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Физика плазмы и плазменных технологий
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Современные теплотехнические системы
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Материалы и устройства современной энергетики»
-                  </li>
-                </ul>
-                <p></p>
-
-                <p class="u-align-left u-text u-text-4"><b>Специализация 1-31 04 07 06 Функциональные наноматериалы (срок обучения 5 лет)</b></p><br>
-                <ul class="u-text u-text-2">
-                  <li>
-                    <div class="class u-list-icon"></div>Физика твердого тела
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Основы теплофизики
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Фазовые превращения
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Основы теплофизических измерений»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Физико-химия наносистем
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Атомно-молекулярные процессы
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Физика плазмы и плазменных технологий
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Диагностика материалов энергетики»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Термодинамика малых систем
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Теория переноса
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Измерительная техника в теплофизических экспериментах»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Тепло- и массообмен в наноструктурированных многофазных средах
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Наноматериалы в энергетике
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Оптика наноструктур
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Композиционные наноструктурированные материалы
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Опто- и микроэлектроника
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Электроника и оптоэлектроника в современной энергетике»
-                  </li>
-                </ul>
-                <p></p>
-                <p class="u-align-left u-text u-text-4"><b>Специализация 1-31 04 01-02 13 Рациональная энергетика (срок обучения 4 года)</b></p><br>
-                <ul class="u-text u-text-2">
-                  <li>
-                    <div class="class u-list-icon"></div>Введение в специализацию: Основы теплофизики и Основы физики твердого тела
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Основы тепло- и массообмена
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Основы теплофизических измерений»
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Техническая термодинамика
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Рациональная энергетика
-                  </li>
-                  <li>
-                    <div class="class u-list-icon"></div>Лаборатория специализации «Диагностика материалов энергетики»
-                  </li>
-                </ul>
+                {{ dep.courses| safe }}
               </div>
             </div>
           </div>
