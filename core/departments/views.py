@@ -23,3 +23,12 @@ def department_detail(request, department):
 
     )
     return render(request, "departmentMain.html", {"dep": department})
+
+
+def department_detail_staff(request, department):
+    department = get_object_or_404(
+        Department,
+        slug=department,
+
+    )
+    return render(request, "listStaffTemplate.html", {"dep": department})
