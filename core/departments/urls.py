@@ -14,5 +14,15 @@ urlpatterns = [path("", views.departmentList, name="energy department"),
             views.department_detail_staff,
             name="department_detail",
     ),
+    path(
+            "<slug:department>/thesis/",
+            views.department_detail_thesis,
+            name="department_detail",
+    ),
+    path(
+            "<slug:department>/directions/",
+            views.department_detail_directions,
+            name="department_detail",
+    ),
 
 ]

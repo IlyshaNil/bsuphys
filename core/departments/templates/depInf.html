@@ -1,0 +1,21 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{{ dep.name }}{% endblock %}
+
+{% block content %}
+<div class="mainInf">
+    <div class="container">
+        <div class="page_name">{{ dep.name }}. {% trans "Основные направления научных исследований" %}</div>
+        <div class="inf center-lg row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="description">
+                {{ dep.science_directions | safe }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
