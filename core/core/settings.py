@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     "quantum_School",
     "observatory",
     "departments",
-    "autotranslate",
+
 ]
 
 MIDDLEWARE = [
@@ -174,4 +174,3 @@ ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
-AUTOTRANSLATE_TRANSLATOR_SERVICE = 'autotranslate.services.GoogleAPITranslatorService'
