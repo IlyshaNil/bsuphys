@@ -50,13 +50,14 @@ urlpatterns = [path("", views.index, name="index"),
                path("ckp/contacts/", views.contacts, name="ckp"),
                path("ckp/scientific-services/", views.scientificServices, name="ckp"),
 
-               path("key-pub/", views.keyPublications, name="info"),
+               path("key-pub/", views.keyPublicationsListAll, name="info"),
                path("conferences/", views.conferences, name="conferences"),
                path("science-directions/", views.nilAndScienceDirections, name="info"),
                path("edu-proc/", views.eduProcess, name="info"),
 
                path("test/", views.test, name="info"),
                path("dod/", views.dod, name="dod"),
+               path("second-stage/", views.secondStage, name="second stage"),
 
 
 

@@ -235,6 +235,14 @@ def dod(request):
     return render(request, "dod.html")
 
 
+def secondStage(request):
+    return render(request, "secondStage.html")
+
+
+def keyPublicationsListAll(request):
+    return render(request, "PublicationsAll.html")
+
+
 
 
 
