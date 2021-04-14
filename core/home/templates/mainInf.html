@@ -14,6 +14,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <img src="{% static 'home/assets/images/f6f02ea1fb3745e8e3246157fdca3183.jpg' %}">
             </div>
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == "ru"%}
             <div class="description">
                 Развитие физико-математического образования в Беларуси началось с открытия в 1932 году физико-математического отделения педагогического факультета БГУ.
             </div>
@@ -39,6 +41,34 @@
                 и членов-корреспондентов АН СССР, АН БССР и НАН Беларуси, 6 лауреатов Ленинской премии, более 50 лауреатов Государственных премий СССР,
                 БССР и Республики Беларусь.
             </div>
+            {% endif %}
+            {% if LANGUAGE_CODE == "en"%}
+            <div class = "description">
+                The development of physics and mathematics education in Belarus began with the opening in 1932 of the physics and mathematics department of the pedagogical faculty of the Belarusian State University.
+            </div>
+            <div class = "description">
+                In 1933, the Physics and Mathematics Department was reorganized into the Physics and Mathematics Faculty.
+                In 1938, the Faculty of Physics and Mathematics included 4 departments: General Physics,
+                theoretical physics, X-ray physics, electromagnetic oscillations.
+            </div>
+            <div class = "description">
+                In October 1958, the Faculty of Physics and Mathematics was divided into two independent faculties - Physics and
+                mathematical. The first dean of the Faculty of Physics was M.P. Halimanovich. In the 60s-70s, the Faculty of Physics experienced rapid growth. In 1976, on the basis of 4 departments of the Faculty of Physics, a faculty was opened
+                radio physics and electronics. A little later, the Institute of Nuclear Problems was opened, which was headed by a professor of the Department of Nuclear
+                Physicists V.G. Baryshevsky.
+            </div>
+            <div class = "description">
+                <iframe class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" width = "1100" height = "619" src = "https://www.youtube.com/embed / 1FSmf6enNxo "frameborder =" 0 "allow =" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "allowfullscreen> </iframe>
+            </div>
+            <div class = "description">
+                Today, the structure of the faculty includes 11 departments, 10 research laboratories, educational and scientific
+                observatory. Training is carried out in the specialties: "Computer Physics", "Nuclear Physics and Technologies", "Physics of Nanomaterials
+                and nanotechnology ”,“ Physics ”(majors in). The educational process is provided by more than 300 employees and teachers, including
+                31 doctors of sciences and 165 candidates of sciences. There are more than 50 academicians among the graduates of the faculty
+                and Corresponding Members of the Academy of Sciences of the USSR, the Academy of Sciences of the BSSR and the National Academy of Sciences of Belarus, 6 laureates of the Lenin Prize, more than 50 laureates of the State Prizes of the USSR,
+                BSSR and the Republic of Belarus.
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
