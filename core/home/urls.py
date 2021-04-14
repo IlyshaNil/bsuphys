@@ -58,6 +58,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("test/", views.test, name="info"),
                path("dod/", views.dod, name="dod"),
                path("second-stage/", views.secondStage, name="second stage"),
+               path("aver/", views.servicePage, name="service"),
 
 
 

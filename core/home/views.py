@@ -243,6 +243,9 @@ def keyPublicationsListAll(request):
     return render(request, "PublicationsAll.html")
 
 
+def servicePage(request):
+    return render(request, "servicePage.html")
+
 
 
 

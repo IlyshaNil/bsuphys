@@ -1,0 +1,21 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Поступление" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Поступление" %}</div>
+        <a href="/abitur/">{% trans "Абитуриенту" %}</a>
+        <a href="/dod/">{% trans "День открытых дверей" %}</a>
+        <a href="/spec/">{% trans "План приёма и информация о специальностях" %}</a>
+        <a href="/quantum-school/">{% trans "Физико-математическая школа 'Квант БГУ'" %}</a>
+        <a href="/second-stage/">{% trans "Магистратура" %}</a>
+    </div>
+</div>
+{% endblock %}
