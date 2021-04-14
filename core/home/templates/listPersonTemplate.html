@@ -21,7 +21,7 @@
                     <p>{{ unit.facultyAndSpeciality }}</p>
                 </div>
                 <div class="text">
-                    <p>Период обучения: {{ unit.periodOfStudy }}</p>
+                    <p>{% trans "Период обучения" %}: {{ unit.periodOfStudy }}</p>
                     <p>{{ unit.briefBioInfo| safe |truncatechars:60|linebreaks}}</p>
 
                 </div>
