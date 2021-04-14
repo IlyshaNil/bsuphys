@@ -4,15 +4,18 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "Service page" %}{% endblock %}
+{% block title %}{% trans "Поступление" %}{% endblock %}
 
 
 {% block content %}
 <div class="pages">
     <div class="container">
-        <div class="page_name">{% trans "Service page" %}</div>
-        <a href="10.183.0.100">10.183.0.100</a>
-        
+        <div class="page_name">{% trans "Поступление" %}</div>
+        <a href="/abitur/">{% trans "Абитуриенту" %}</a>
+        <a href="/dod/">{% trans "День открытых дверей" %}</a>
+        <a href="/spec/">{% trans "План приёма и информация о специальностях" %}</a>
+        <a href="/quantum-school/">{% trans "Физико-математическая школа 'Квант БГУ'" %}</a>
+        <a href="/second-stage/">{% trans "Магистратура" %}</a>
     </div>
 </div>
 {% endblock %}
