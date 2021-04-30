@@ -1,0 +1,18 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Студенческая олимпиада 2021" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Студенческая олимпиада 2021" %}</div>
+        <a href="https://physics.bsu.by/media/media/FOFF2021_uslovia_zadach.pdf">{% trans "Условия задач" %}</a>
+        <a href="https://physics.bsu.by/media/media/FOFF2021_reshenia_zadach.pdf">{% trans "Решения задач" %}</a><br><br><br><br>
+    </div>
+</div>
+{% endblock %}

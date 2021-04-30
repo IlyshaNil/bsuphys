@@ -247,5 +247,9 @@ def servicePage(request):
     return render(request, "servicePage.html")
 
 
+def studOlimp2021(request):
+    return render(request, "studOlimp2021.html")
+
+
 
 
