@@ -75,7 +75,7 @@ def alum_detail(request, alum):
 
 
 def alums_list(request):
-    object_list = FamousGraduates.objects.all()
+    object_list = FamousGraduates.objects.all().order_by('shortDescription')
     return render(request, "listPersonTemplate.html", {"alums": object_list},)
 
                                          
