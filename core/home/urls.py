@@ -47,7 +47,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("ckp/lines-of-researches/", views.linesOfResearches, name="ckp"),
                path("ckp/measurement-procedures/", views.measurementProcedures, name="ckp"),
                path("ckp/equipment/", views.equipment, name="ckp"),
-               path("ckp/contacts/", views.contacts, name="ckp"),
+               path("ckp/contacts/", views.contactsCKP, name="ckp"),
                path("ckp/scientific-services/", views.scientificServices, name="ckp"),
 
                path("key-pub/", views.keyPublicationsListAll, name="info"),

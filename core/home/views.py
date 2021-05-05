@@ -207,7 +207,7 @@ def equipment(request):
     return render(request, "CKP/equipment.html")
 
 
-def contacts(request):
+def contactsCKP(request):
     return render(request, "CKP/contacts.html")
 
 
