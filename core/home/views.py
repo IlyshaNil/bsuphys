@@ -251,5 +251,9 @@ def studOlimp2021(request):
     return render(request, "studOlimp2021.html")
 
 
+def abiturOlimp2021(request):
+    return render(request, "abiturOlimp.html")
+
+
 
 
