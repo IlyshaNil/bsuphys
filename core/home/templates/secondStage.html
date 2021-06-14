@@ -31,6 +31,8 @@
   <body class="u-body">
     <section class="u-clearfix u-section-1" id="sec-5184">
       <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == "ru"%}
         <h2 class="u-text u-text-1">Магистратура</h2>
         <div class="u-container-style u-expanded-width u-group u-white u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
@@ -58,6 +60,21 @@
             </ul>
           </div>
         </div>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        <h2 class="u-text u-text-1">Master's degree brochure</h2>
+        <div class="u-container-style u-expanded-width u-group u-white u-group-1">
+          <div class="u-container-layout u-valign-top u-container-layout-1">
+            <ul class="u-text u-text-2">
+              <li>
+                <a href="https://physics.bsu.by/media/media/_masters_ad.pdf" target="_blank" rel="noopener noreferrer" class="u-active-none u-border-1 u-border-active-custom-color-2 u-border-custom-color-2 u-border-hover-white u-btn u-button-link u-button-style u-hover-none u-none u-text-active-black u-text-body-color u-text-hover-custom-color-2 u-btn-1">Master's degree brochure</a>
+                <br>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        {% endif %}
       </div>
     </section>
     
