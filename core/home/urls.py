@@ -62,6 +62,8 @@ urlpatterns = [path("", views.index, name="index"),
                path("olimp2021/", views.studOlimp2021, name="service"),
                path("abiturOlimp2021/", views.abiturOlimp2021, name="service"),
 
+               path("raspred/", views.raspred, name="raspred"),
+
 
 
                ]

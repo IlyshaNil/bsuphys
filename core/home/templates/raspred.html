@@ -1,0 +1,23 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Абитуриенту" %}{% endblock %}
+
+{% block content %}
+
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Абитуриенту" %}</div>
+        <a href="https://physics.bsu.by/media/media/mr-2020.pdf">{% trans "Места распределения выпускников физического факультета 2020 года" %}</a>
+        <a href="https://physics.bsu.by/media/media/mr-2019.pdf">{% trans "Места распределения выпускников физического факультета 2019 года" %}</a>
+        <a href="https://physics.bsu.by/media/media/mr-2018.pdf">{% trans "Места распределения выпускников физического факультета 2018 года" %}</a>
+        <a href="https://physics.bsu.by/media/media/mr-2017.pdf">{% trans "Места распределения выпускников физического факультета 2017 года" %}</a> 
+        <a href="https://physics.bsu.by/media/media/mr-2016.pdf">{% trans "Места распределения выпускников физического факультета 2016 года" %}</a>
+        
+        <a href="http://www.physics.bsu.by/sites/default/files/files/docs/Documents.zip">{% trans "Нормативные документы, регулирующие вопросы распределения" %}</a>
+    </div>
+</div>
+{% endblock %}

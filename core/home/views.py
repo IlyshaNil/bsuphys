@@ -255,5 +255,6 @@ def abiturOlimp2021(request):
     return render(request, "abiturOlimp.html")
 
 
-
+def raspred(request):
+    return render(request, "raspredp.html")
 
