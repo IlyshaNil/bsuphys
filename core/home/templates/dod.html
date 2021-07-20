@@ -31,8 +31,20 @@
   <body class="u-body">
     <section class="u-align-center u-clearfix u-section-1" id="sec-5afe">
       <div class="u-clearfix u-sheet u-sheet-1">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == "ru" %}
         <h2 class="u-text u-text-1">Зимний "День открытых дверей"</h2>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en" %}
+        <h2 class="u-text u-text-1">Winter "Open Day"</h2>
+        {% endif %}
+
+        {% if LANGUAGE_CODE == "ru" %}
         <p class="u-text u-text-2">Запись трансляции мероприятия "День открытых дверей 2021" - 6 января 2021</p>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en" %}
+        <p class="u-text u-text-2">Recording of the broadcast of the event "Open Day 2021" - January 6, 2021</p>
+        {% endif %}
         <div class="u-expanded-width-sm u-expanded-width-xs u-video u-video-1">
           <div class="embed-responsive embed-responsive-1">
             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/VpoRG92ebYk?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
@@ -43,8 +55,20 @@
     </section>
     <section class="u-align-center u-clearfix u-section-1" id="sec-5afe">
       <div class="u-clearfix u-sheet u-sheet-1">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == "ru" %}
         <h2 class="u-text u-text-1">Весенний "День открытых дверей"</h2>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en" %}
+        <h2 class="u-text u-text-1">Spring "Open Day"</h2>
+        {% endif %}
+
+        {% if LANGUAGE_CODE == "ru" %}
         <p class="u-text u-text-2">Видео с мероприятия "День открытых дверей 2021" - 3 апреля 2021</p>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en" %}
+        <p class="u-text u-text-2">Video from the event "Open Day 2021" - April 3, 2021</p>
+        {% endif %}
         <div class="u-expanded-width-sm u-expanded-width-xs u-video u-video-1">
           <div class="embed-responsive embed-responsive-1">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RvqyhV2b4Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
