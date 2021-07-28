@@ -33,7 +33,13 @@
 <body class="u-body">
 <section class="u-clearfix u-section-1" id="sec-3502">
     <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == "ru"%}
         <h3 class="u-text u-text-1">Публикации</h3>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        <h3 class="u-text u-text-1">Publications</h3>
+        {% endif %}
     </div>
 </section>
 <section class="u-align-center u-clearfix u-section-2" id="sec-8162">
@@ -43,24 +49,45 @@
                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span
                         class="u-file-icon u-icon u-icon-rounded u-spacing-5 u-white u-icon-1"><img
                         src="{% static 'home/assets/images/1_scopus.jpg' %}" alt=""></span>
+                    {% if LANGUAGE_CODE == "ru"%}
                     <p class="u-text u-text-1"><b>более 140 публикаций в БД SCOPUS ежегодно</b>
                     </p>
+                    {% endif %}
+                    {% if LANGUAGE_CODE == "en"%}
+                    <p class="u-text u-text-1"><b>more than 140 publications in the SCOPUS DataBase annually</b>
+                    </p>
+                    {% endif %}
                 </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span
                         class="u-file-icon u-icon u-icon-rounded u-spacing-5 u-white u-icon-2"><img
                         src="{% static 'home/assets/images/2_quartile.jpg' %}" alt=""></span>
+                    {% if LANGUAGE_CODE == "ru"%}
                     <p class="u-text u-text-2"><b>более 20% ­– в журналах Q1</b>
                     </p>
+                    {% endif %}
+                    {% if LANGUAGE_CODE == "en"%}
+                    <p class="u-text u-text-2"><b>more than 20% ­- in Q1 Journals</b>
+                    </p>
+                    {% endif %}
                 </div>
             </div>
         </div>
+        {% if LANGUAGE_CODE == "ru"%}
         <h5 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3">Тексты
             статей загружаются в <a href="https://elib.bsu.by/handle/123456789/185740"
                                     class="u-active-none u-border-1 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-btn u-button-link u-button-style u-hover-none u-none u-btn-1">электронную
                 библиотеку БГУ</a>&nbsp;&nbsp;
         </h5>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        <h5 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3">The texts
+            of articles are uploaded to <a href="https://elib.bsu.by/handle/123456789/185740"
+                                    class="u-active-none u-border-1 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-btn u-button-link u-button-style u-hover-none u-none u-btn-1">the electronic
+                library of BSU</a>&nbsp;&nbsp;
+        </h5>
+        {% endif %}
     </div>
 </section>
 <section class="u-align-center u-clearfix u-white u-section-3" id="sec-53b2">
