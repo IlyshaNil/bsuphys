@@ -22,8 +22,8 @@ class PublishedManager(models.Manager):
 class Post(models.Model):
     published = PublishedManager()
     STATUS_CHOICES = (
-        ("draft", "Черновик"),
-        ("published", "Опубликовать"),
+        ("draft", "draft"),
+        ("published", "published"),
     )
     title = models.TextField()
     slug = models.SlugField(max_length=250, unique_for_date="publish")
@@ -45,7 +45,7 @@ class Post(models.Model):
     tags = TaggableManager()
 
     class Meta:
-        ordering = ("-publish",)
+        ordering = ("publish",)
         verbose_name_plural = "Добавление новостей"
 
     def __str__(self):
