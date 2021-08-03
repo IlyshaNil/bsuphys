@@ -45,7 +45,7 @@ class Post(models.Model):
     tags = TaggableManager()
 
     class Meta:
-        ordering = ("publish",)
+        ordering = ("-publish",)
         verbose_name_plural = "Добавление новостей"
 
     def __str__(self):
