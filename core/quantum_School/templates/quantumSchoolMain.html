@@ -8,9 +8,9 @@
 
 {% block content %}
 <div class="noHeight pages pageNews">
+    {% get_current_language as LANGUAGE_CODE %}
     <div class="container">
         <div class="page_name">{% trans "Физико-математическая школа 'Квант БГУ'" %}</div>
-        {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE == "ru"%}
 
             <!--<p>Занятия в Физико-математической школе «Квант БГУ» проходят <b>на физическом факультете</b> по адресу г. Минск, ул. Бобруйская 5 ауд.319, 222. <b>Расписание размещено на сайте факультета</b>.</p><br>
@@ -74,11 +74,6 @@
                 <div class="description"></div>
             </div>
         </a>
-
-
-        <br>
-
-        <br>
         {% endif %}
         {% if LANGUAGE_CODE == "en"%}
         <!--<p>Classes at the Physics and Mathematics School "Quantum BSU" are held <b>at the Faculty of Physics</b> at the address: Minsk, 5 Bobruiskaya 5, st., room 319, 222. <b>The schedule is posted on the website of the faculty</b>.</p><br>
@@ -142,12 +137,12 @@
                 <div class="description"></div>
             </div>
         </a>
-
-
-        <br>
-
-        <br>
         {% endif %}
+        
+        <br>
+
+        <br>
+        
     </div>
 </div>
 {% endblock %}
