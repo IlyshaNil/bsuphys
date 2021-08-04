@@ -8,17 +8,38 @@
 
 {% block content %}
 <div class="pages">
+    {% get_current_language as LANGUAGE_CODE %}
     <div class="container">
         <div class="page_name">{% trans "Квант" %}</div>
-         На физическом факультете БГУ работает Физико-математическая школа «Квант». Образовательная программа направлена на углубленное изучение физики и математики, подготовку слушателей к участию в олимпиадах. Программа рассчитана для учащихся 10-х и 11-х классов разработаны для старшеклассников, желающих на повышенном уровне изучать физику и математику с целью поступления в университеты. Кроме того, слушателям расскажут про специальности и научную работу физического факультета БГУ.<br><br>
-Занятия проводятся на физическом факультете БГУ: ул. Бобруйская, 5 а.319, 222.<br>
-Телефон: 209-52-67
-
+        {% if LANGUAGE_CODE == "ru"%}
+        <p>
+            На физическом факультете БГУ работает Физико-математическая школа «Квант». Образовательная программа
+            направлена на углубленное изучение физики и математики, подготовку слушателей к участию в олимпиадах.
+            Программа рассчитана для учащихся 10-х и 11-х классов разработаны для старшеклассников, желающих на
+            повышенном уровне изучать физику и математику с целью поступления в университеты. Кроме того, слушателям
+            расскажут про специальности и научную работу физического факультета БГУ.<br><br>
+            Занятия проводятся на физическом факультете БГУ: ул. Бобруйская, 5 а.319, 222.<br>
+            Телефон: 209-52-67
+        </p>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        <p>
+            The Physics and Mathematics School "Quantum" operates at the Faculty of Physics of BSU. The educational
+            program is aimed at in-depth study of physics and mathematics, training students for participation in the
+            Olympiads. The program is designed for students in the 10th and 11th grades, developed for high school
+            students who want to study physics and mathematics at an advanced level in order to enter universities. In
+            addition, the audience will be told about the specialties and scientific work of the Faculty of Physics of
+            BSU.<br><br>
+            Classes are held at the Faculty of Physics of BSU: 5 Bobruiskaya, st., auditoriums 319, 222.<br>
+            Phone: 209-52-67
+        </p>
+        {% endif %}
 
         <br>
         <br>
         <a href="ads">{% trans "Объявления" %}</a>
-        <a href="https://physics.bsu.by/media/media/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82-%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%B8%D0%B9_%D0%BF%D0%BB%D0%B0%D0%BD.pdf">{% trans "Краткий план занятий" %}</a>
+        <a href="https://physics.bsu.by/media/media/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82-%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%B8%D0%B9_%D0%BF%D0%BB%D0%B0%D0%BD.pdf">{%
+            trans "Краткий план занятий" %}</a>
         <a href="urls/">{% trans "Ссылки на портал" %}</a>
         <br>
 

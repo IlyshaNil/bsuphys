@@ -8,29 +8,75 @@
 
 {% block content %}
 <div class="somePage">
+    {% get_current_language as LANGUAGE_CODE %}
     <div class="container">
         <div class="page_name">{% trans "Квант-юни" %}</div>
-        <p>Программа «Квант-юни» — научно-популярная программа внеучебных мероприятий для профориентации школьников 5-8 классов, рассчитанная на популяризацию физики и естественно-научных знаний, развитие физико-математического мышления и логики.</p><br>
+        {% if LANGUAGE_CODE == "ru"%}
+        <p>Программа «Квант-юни» — научно-популярная программа внеучебных мероприятий для профориентации школьников 5-8
+            классов, рассчитанная на популяризацию физики и естественно-научных знаний, развитие физико-математического
+            мышления и логики.</p><br>
 
-        <p>Физический факультет БГУ и «TutorOnline» запустили программу «Квант-юни». Для участия приглашаются школьники 5-8 классов.
-Вниманию зрителей представлена серия видеороликов с демонстрационными экспериментами.
-Участникам необходимо объяснить наблюдаемые в ходе эксперимента эффекты и выслать письмо с пометкой «Квант-юни» на адрес bsuphysfaculty@gmail.com<br>
-            Лучшие ответы будут поощрены призами от физического факультета БГУ.</p><br><hr>
+        <p>Физический факультет БГУ и «TutorOnline» запустили программу «Квант-юни». Для участия приглашаются школьники
+            5-8 классов.
+            Вниманию зрителей представлена серия видеороликов с демонстрационными экспериментами.
+            Участникам необходимо объяснить наблюдаемые в ходе эксперимента эффекты и выслать письмо с пометкой
+            «Квант-юни» на адрес bsuphysfaculty@gmail.com<br>
+            Лучшие ответы будут поощрены призами от физического факультета БГУ.</p><br>
+        <hr>
+        <p>Порядок работы в рамках программы «Квант-юни» для блока экспериментов следующий:</p>
+        <ol>
+            <li>Просмотр ролика с экспериментами.</li>
+            <li>Подготовка и отправление ответа bsuphysfaculty@gmail.com с пометкой «Квант-юни» (не позднее
+                12.12.2020).
+            </li>
+            <li>Просмотр ролика с объяснением преподавателей.</li>
+            <li>Сравнение своего объяснения и объяснения преподавателя, подготовка вопросов. Вопросы можно отправить по
+                адресу bsuphysfaculty@gmail.com с пометкой «Вопрос для Кванта-юни» (не позднее 23.12.2020) или задать в
+                чате во время online-конференции.
+            </li>
+        </ol>
+        <br>
+        <p>Ссылки на видеоролики Квант юни:</p>
+        <ol>
+            <li><a href="https://youtu.be/RugduzdMRzw">Квант юни 1</a></li>
+            <li><a href="https://youtu.be/OLb85sae6Gg">Квант юни 2</a></li>
+            <li><a href="https://youtu.be/r_Kzwj9Fl9c">Видеоконференция по первому блоку Квант юни</a></li>
+            <li><a href="https://youtu.be/M3jDfA5KF1c">Квант юни 3</a></li>
+        </ol>
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        <p>The Quantum-Uni program is a popular science program of extracurricular activities for vocational guidance of
+            students in grades 5-8, designed to popularize physics and natural science knowledge, develop physical and
+            mathematical thinking and logic.</p><br>
 
-<p>Порядок работы в рамках программы «Квант-юни» для блока экспериментов следующий:
-    <ol>
-        <li>Просмотр ролика с экспериментами.</li>
-        <li>Подготовка и отправление ответа bsuphysfaculty@gmail.com с пометкой «Квант-юни» (не позднее 12.12.2020).</li>
-        <li>Просмотр ролика с объяснением преподавателей.</li>
-        <li>Сравнение своего объяснения и объяснения преподавателя, подготовка вопросов. Вопросы можно отправить по адресу bsuphysfaculty@gmail.com с пометкой «Вопрос для Кванта-юни» (не позднее 23.12.2020) или задать в чате во время online-конференции.</li>
-    </ol></p><br>
-<p>Ссылки на видеоролики Квант юни:
-    <ol>
-        <li><a href="https://youtu.be/RugduzdMRzw">Квант юни 1</a></li>
-        <li><a href="https://youtu.be/OLb85sae6Gg">Квант юни 2</a></li>
-        <li><a href="https://youtu.be/r_Kzwj9Fl9c">Видеоконференция по первому блоку Квант юни</a></li>
-        <li><a href="https://youtu.be/M3jDfA5KF1c">Квант юни 3</a></li>
-    </ol></p>
+        <p>The Faculty of Physics of BSU and "TutorOnline" launched the Quantum-Uni program. Students in grades 5-8 are
+            invited to participate. A series of videos with demonstration experiments is presented to the attention of
+            viewers. Participants should explain the effects observed during the experiment and send a letter marked
+            "Quantum-Uni" to bsuphysfaculty@gmail.com<br>
+            The best answers will be rewarded with prizes from the Faculty of Physics of BSU.</p><br>
+        <hr>
+        <p>The order of work within the framework of the Quantum-Uni program for the block of experiments is as
+            follows:</p>
+        <ol>
+            <li>Watching a video with experiments.</li>
+            <li>Preparing and sending a response to bsuphysfaculty@gmail.com marked "Quantum-Uni" (no later than
+                12.12.2020).
+            </li>
+            <li>Watching a video with an explanation of the teachers.</li>
+            <li>Comparison of your explanation and that of the teacher, preparation of questions. Questions can be sent
+                to bsuphysfaculty@gmail.com marked "Question for Quantum-Uni" (no later than 23.12.2020) or asked in the
+                chat during an online conference.
+            </li>
+        </ol>
+        <br>
+        <p>Links to videos of Quantum Uni:</p>
+        <ol>
+            <li><a href="https://youtu.be/RugduzdMRzw">Quantum Uni 1</a></li>
+            <li><a href="https://youtu.be/OLb85sae6Gg">Quantum Uni 2</a></li>
+            <li><a href="https://youtu.be/r_Kzwj9Fl9c">Videoconference on the first block of Quantum Uni</a></li>
+            <li><a href="https://youtu.be/M3jDfA5KF1c">Quantum Uni 3</a></li>
+        </ol>
+        {% endif %}
 
         <br>
         <br>
