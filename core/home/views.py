@@ -258,3 +258,8 @@ def abiturOlimp2021(request):
 def raspred(request):
     return render(request, "raspred.html")
 
+
+def wellcome(request):
+    ...
+    return redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+
