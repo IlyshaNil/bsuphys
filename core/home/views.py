@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.utils import translation
 from django.db.models import Max
 import random
+from django.shortcuts import redirect
 
 
 def language_switch_en(request):
