@@ -52,17 +52,32 @@
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-valign-top u-container-layout-3">
-                  <a href="staff/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-1">{% trans сотрудники %}</a>
+                  {% if LANGUAGE_CODE == "ru"%}
+                  <a href="staff/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-1">сотрудники</a>
+                  {% endif %}
+                  {% if LANGUAGE_CODE == "en"%}
+                  <a href="staff/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-1">employees</a>
+                  {% endif %}
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <a href="thesis/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-2">{% trans Тематика дипломных работ и&nbsp;<br>магистерских диссертаций %}</a>
+                  {% if LANGUAGE_CODE == "ru"%}
+                  <a href="thesis/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-2">Тематика дипломных работ и&nbsp;<br>магистерских диссертаций</a>
+                  {% endif %}
+                  {% if LANGUAGE_CODE == "en"%}
+                  <a href="thesis/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-2">Themes of degree and&nbsp;<br> master's theses</a>
+                  {% endif %}
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
                 <div class="u-container-layout u-valign-top u-container-layout-5">
-                  <a href="directions/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-3">{% trans Основные направления&nbsp;<br>научных исследований %}</a>
+                  {% if LANGUAGE_CODE == "ru"%}
+                  <a href="directions/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-3">Основные направления&nbsp;<br>научных исследований</a>
+                  {% endif %}
+                  {% if LANGUAGE_CODE == "en"%}
+                  <a href="directions/" class="u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-custom-color-1 u-btn-3">Main directions&nbsp;<br>of scientific research</a>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -77,13 +92,28 @@
         <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
           <ul class="u-tab-list u-unstyled" role="tablist">
             <li class="u-tab-item" role="presentation">
-              <a class="active u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">{% trans Общие сведения %}</a>
+              {% if LANGUAGE_CODE == "ru"%}
+              <a class="active u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Общие сведения</a>
+              {% endif %}
+              {% if LANGUAGE_CODE == "en"%}
+              <a class="active u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">General information</a>
+              {% endif %}
             </li>
             <li class="u-tab-item u-tab-item-2" role="presentation">
-              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-2" id="tab-7fce" href="#link-tab-7fce" role="tab" aria-controls="link-tab-7fce" aria-selected="false">{% trans Публикации %}</a>
+              {% if LANGUAGE_CODE == "ru"%}
+              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-2" id="tab-7fce" href="#link-tab-7fce" role="tab" aria-controls="link-tab-7fce" aria-selected="false">Публикации</a>
+              {% endif %}
+              {% if LANGUAGE_CODE == "en"%}
+              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-2" id="tab-7fce" href="#link-tab-7fce" role="tab" aria-controls="link-tab-7fce" aria-selected="false">Publications</a>
+              {% endif %}
             </li>
             <li class="u-tab-item" role="presentation">
-              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">{% trans Дисциплины %}</a>
+              {% if LANGUAGE_CODE == "ru"%}
+              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Дисциплины</a>
+              {% endif %}
+              {% if LANGUAGE_CODE == "en"%}
+              <a class="u-active-custom-color-1 u-black u-button-style u-hover-black u-tab-link u-text-active-black u-text-custom-color-1 u-text-hover-white u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Disciplines</a>
+              {% endif %}
             </li>
           </ul>
           <div class="u-tab-content">
