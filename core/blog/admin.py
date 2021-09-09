@@ -8,7 +8,7 @@ from django.contrib.admin import SimpleListFilter, ModelAdmin
 @admin.register(Post)
 class PostAdmin(TranslationAdmin):
     list_display = ("title", "slug", "author", "publish", "status", "admin_photo")
-    list_filter = (PostFilter, )
+    list_filter = ("publish", "status" )
     search_fields = ("title", "body")
     prepopulated_fields = {"slug": ("title",)}
     raw_id_fields = ("author",)
@@ -23,21 +23,21 @@ class NoteInMediaAdmin(TranslationAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
 
-class PostFilter(SimpleListFilter):
-    title = 'Status' # or use _('country') for translated title
-    parameter_name = 'status'
+# class PostFilter(SimpleListFilter):
+#     title = 'Status' # or use _('country') for translated title
+#     parameter_name = 'status'
 
-    def lookups(self, request, model_admin):
-        return [
-            ("draft", "Draft"),
-            ("published", "Published"),
-        ]
+#     def lookups(self, request, model_admin):
+#         return [
+#             ("draft", "Draft"),
+#             ("published", "Published"),
+#         ]
 
-    def queryset(self, request, queryset):
-        if self.value() == 'draft':
-            return queryset.filter(status__status='draft')
-        if self.value() == 'published':
-            return queryset.filter(status__status='published')
+#     def queryset(self, request, queryset):
+#         if self.value() == 'draft':
+#             return queryset.filter(status__status='draft')
+#         if self.value() == 'published':
+#             return queryset.filter(status__status='published')
 
 # class PostFilter(SimpleListFilter):
 #     title = 'Status' # or use _('country') for translated title
