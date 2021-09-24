@@ -54,3 +54,7 @@ def quantumAdvertisement(request):
 
 def quantumUrls(request):
     return render(request, "quantumSchoolUrls.html")
+
+
+def schedule(request):
+    return render(request, "quantumSchedule.html")

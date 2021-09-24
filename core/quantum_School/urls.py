@@ -18,6 +18,8 @@ urlpatterns = [
 
                 path("quantum-olimp/urls/", views.quantumUrls, name="quantum"),
 
+                path("all-quantum-lessons-schedule/", views.schedule, name="quantum"),
+
 
 ]
 
