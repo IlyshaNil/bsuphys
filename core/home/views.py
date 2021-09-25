@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.utils import translation
 from django.db.models import Max
 import random
+from django.shortcuts import redirect
 
 
 def language_switch_en(request):
@@ -257,4 +258,8 @@ def abiturOlimp2021(request):
 
 def raspred(request):
     return render(request, "raspred.html")
+
+
+def wellcome(request):
+    return redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 
