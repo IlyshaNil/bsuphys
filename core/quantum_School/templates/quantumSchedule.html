@@ -9,7 +9,7 @@
 
 {% block content %}
 
-<div class="spec" style="cursor:auto!important;">
+<div class="spec" style="margin:0 5%; cursor:auto!important;">
     {% get_current_language as LANGUAGE_CODE %}
     <div class="container">
         <div class="page_name">{% trans "Расписание физико-математической школы 'Квант БГУ'" %}</div>  <!-- Вариант перевода на английский язык: The Schedule of the Physics and Mathematics School 'Quantum BSU' -->
@@ -258,8 +258,10 @@
                 </tr>
                 </tbody>
             </table>
+            
+            <p>&nbsp;</p>
 
-            <p><strong>Расписание</strong> также доступно по <a style="text-decoration: underline!important;" href="https://physics.bsu.by/media/media/Raspisaniye_Kvant_2021.pdf" download="">ссылке</a>.</p>
+            <p><strong>Расписание</strong> также доступно по <strong><a style="color:#f39c12; text-decoration: underline!important;" href="https://physics.bsu.by/media/media/Raspisaniye_Kvant_2021.pdf" download="">ссылке</a></strong>.</p>
 
         </div>
         {% endif %}
@@ -509,8 +511,10 @@
                 </tbody>
             </table>
         </div>
+        
+        <p>&nbsp;</p>
 
-        <p>The <strong>schedule</strong> is also available through the <a style="text-decoration: underline!important;" href="https://physics.bsu.by/media/media/Raspisaniye_Kvant_2021.pdf" download="">link</a>.</p>
+        <p>The <strong>schedule</strong> is also available through the <strong><a style="color:#f39c12; text-decoration:underline!important;" href="https://physics.bsu.by/media/media/Raspisaniye_Kvant_2021.pdf" download="">link</a></strong>.</p>
 
         {% endif %}
     </div>
