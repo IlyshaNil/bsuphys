@@ -66,6 +66,8 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("wellcome/", views.wellcome, name="raspred"),
 
+               path("tutor/", views.tutor, name="raspred"),
+
 
 
                ]
