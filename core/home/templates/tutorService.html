@@ -11,7 +11,7 @@
 <div class="pages">
   {% get_current_language as LANGUAGE_CODE %}
   <div class="container">
-      <div class="page_name">{% trans "Тьюторская служба факультета" %}</div>
+      <div class="page_name">{% trans "Тьюторская служба факультета" %}</div><!-- Вариант перевода на английский язык: 'Tutor service of the Faculty' -->
     
   {% if LANGUAGE_CODE == "ru"%}
       <p>
@@ -19,23 +19,22 @@
 
         Тьютор факультета призван осуществлять консультативную студентов поддержку с учетом их персональных интересов 
         и потребностей, содействовать в разработке индивидуальной траектории профессионального и личностного роста студентов.
-      </p>
+      </p><br>
 
-      <p>В <strong>функции</strong> тьютора факультета входит проведение индивидуальных и коллективных консультаций по <strong>вопросам</strong>:</p>
-      <p>
-        <ul>
-          <li>адаптации на факультете;</li>
-          <li>проведения промежуточной и итоговой аттестации;</li>
-          <li>выбора специализации;</li>
-          <li>изучения дополнительных дисциплин;</li>
-          <li>участия в научно-исследовательской работе;</li>
-          <li>академической мобильности;</li>
-          <li>оказания психологической помощи;</li>
-          <li>по иным вопросам.</li>
-        </ul>
-      </p>
-    
-      
+      <p style="margin-bottom:9px!important;">В <strong>функции</strong> тьютора факультета входит проведение индивидуальных и коллективных консультаций по <strong>вопросам</strong>:</p>
+      <ul style="font-style:italic!important;">
+        <li>адаптации на факультете;</li>
+        <li>проведения промежуточной и итоговой аттестации;</li>
+        <li>выбора специализации;</li>
+        <li>изучения дополнительных дисциплин;</li>
+        <li>участия в научно-исследовательской работе;</li>
+        <li>академической мобильности;</li>
+        <li>оказания психологической помощи;</li>
+        <li>по иным вопросам.</li>
+       </ul>
+
+
+
 <!--    <p></p> -->
  {% endif %}
  {% if LANGUAGE_CODE == "en"%}
@@ -44,22 +43,21 @@
 
         The Faculty tutor is called upon to provide advisory support to students, taking into account their personal interests 
         and needs, to assist in the development of an individual trajectory of professional and personal growth of students.
-      </p>
+      </p><br>
 
-      <p>The <strong>functions</strong> of the Faculty tutor include conducting individual and collective consultations on the following <strong>issues</strong>:</p>
-      <p>
-        <ul>
-          <li>adaptation at the Faculty;</li>
-          <li>conducting intermediate and final certification;</li>
-          <li>choice of specialization;</li>
-          <li>studying additional disciplines;</li>
-          <li>participation in research work;</li>
-          <li>academic mobility;</li>
-          <li>providing psychological assistance;</li>
-          <li>on other issues.</li>
-        </ul>
-      </p>
-      
+      <p style="margin-bottom:9px!important;">The <strong>functions</strong> of the Faculty tutor include conducting individual and collective consultations on the following <strong>issues</strong>:</p> 
+      <ul style="font-style:italic!important;">
+        <li>adaptation at the Faculty;</li>
+        <li>conducting intermediate and final certification;</li>
+        <li>choice of specialization;</li>
+        <li>studying additional disciplines;</li>
+        <li>participation in research work;</li>
+        <li>academic mobility;</li>
+        <li>providing psychological assistance;</li>
+        <li>on other issues.</li>
+      </ul>
+
+
 <!--    <p></p> -->
  {% endif %}
       
