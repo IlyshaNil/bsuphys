@@ -4,21 +4,21 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "НИЛ и направления исследований" %}{% endblock %}
+{% block title %}{% trans "НИЛ и направления исследований" %}{% endblock %} <!-- Вариант для перевода на английский язык: 'Research Areas and Laboratories' -->
 
 {% block content %}
 
 <div class="person_template">
     <div class="container">
-        <div class="page_name">{% trans "НИЛ и направления исследований" %}</div>
+<!--        <div class="page_name">{% trans "НИЛ и направления исследований" %}</div> &lt;!&ndash; Вариант для перевода на английский язык: 'Research Areas and Laboratories' &ndash;&gt;-->
 
-        <div class="description">
-            <b>{% trans "НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЕ ЛАБОРАТОРИИ" %}<br></b>
+        <div class="description" style="font-size:30px!important;">
+            {% trans "НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЕ ЛАБОРАТОРИИ" %}<br>
         </div>
         <p><br><br></p>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ биофизики и биотехнологий" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_1_BIO_LAB1.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_1_BIO_LAB1.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "медицинская биофизика и биофизические методы в диагностике заболеваний." %}<br>
@@ -31,7 +31,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ клеточной инженерии и нанобиотехнологий" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_2_BIO_LAB2.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_2_BIO_LAB2.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "разработка аппаратуры и методов анализа для изучения клеточных процессов." %}<br>
@@ -44,7 +44,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ высокоэнергетичной ионной имплантации и функциональной диагностики" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_3_ION_LAB3.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_3_ION_LAB3.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "модификация электрофизических, структурных свойств алмаза и других полупроводников для создания на их основе электронных приборов; разработка методов исследования полупроводниковых материалов, автоматизация измерительных систем" %}<br>
@@ -57,7 +57,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ физики электронных материалов" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_4_ELEC_LAB4.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_4_ELEC_LAB4.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "физика полупроводников и полупроводниковых приборов, физика низкоразмерных систем, физика углеродных наноструктур." %}<br>
@@ -70,7 +70,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ спектроскопии полупроводников" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_5_SEMIC_LAB5.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_5_SEMIC_LAB5.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "физика полупроводников и полупроводниковых приборов и структур, радиационное материаловедение структур диэлектрик-полупроводник." %}<br>
@@ -83,7 +83,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ спектроскопических систем" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_6_SPEC_LAB6.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_6_SPEC_LAB6.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "разработка спектральных приборов, оптическое приборостроение." %}<br>
@@ -96,7 +96,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ нелинейной оптики и спектроскопии" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_7_NONLIN_LAB7.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_7_NONLIN_LAB7.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "разработка лазерных спектроскопических методов и препаратов для медицинской диагностики; разработка оптических материалов, технологий и создание на их основе управляемых дифракционных и волноводных элементов. " %}<br>
@@ -109,7 +109,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ физики ионно-плазменной модификации твердых тел" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_8_IONPLASM_LAB8.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_8_IONPLASM_LAB8.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "радиационная физика твердого тела и полупроводников; воздействие импульсных плазменных потоков на материалы; защитные покрытия; тонкие пленки; электронная структура твердых тел; высокоскоростная кристаллизация." %}<br>
@@ -122,7 +122,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ энергоэффективных материалов и технологий" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_9_ENERG_LAB9.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_9_ENERG_LAB9.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "материалы солнечной энергетики, двумерные материалы и наноматериаловедение, диагностика полупроводниковых материалов и разработка способов анализа их свойств." %}<br>
@@ -135,7 +135,7 @@
         </div><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "НИЛ физики и техники полупроводников" %}</a></div>
-            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_10_SEMI_LAB10.jpg' %}"></div>
+            <div><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0!important; height:50px; max-width: 100%;" src="{% static 'home/assets/images/IMAGES_SCI/_10_SEMI_LAB10.jpg' %}" alt=""></div>
             <div class="person_template_text">
                 <p>
                     <b>{% trans "Тематика исследований: " %}</b>{% trans "физика конденсированных сред, приборостроение." %}<br>
@@ -146,150 +146,170 @@
                 <br><br>
             </div>
         </div><br><br>
-        <div class="description">
-            <b>{% trans "НАПРАВЛЕНИЯ ИССЛЕДОВАНИЙ" %}<br></b>
+        <div class="description" style="font-size:30px!important;">
+            {% trans "НАПРАВЛЕНИЯ ИССЛЕДОВАНИЙ" %}<br>
         </div>
         <p><br><br></p>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_11_BIO.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "БИОФИЗИКА" %}</a></div>
-            <div class="person_template_text">
-                <p>
-                    {% trans "· биофизика клетки и клеточная инженерия" %}<br>
-                    {% trans "· редокс-сигнализация и редокс-регуляция в биосистемах" %}<br>
-                    {% trans "· медицинская биофизика и биофизические методы в диагностике заболеваний" %}: 2022<br>
-                    {% trans "· нанобиотехнологии и наномедицинские технологии" %}<br>
-                    {% trans "· биосенсоры, нейросенсоры и биопреобразователи" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_11_BIO.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "БИОФИЗИКА" %}</a></div>
+                <div class="person_template_text">
+                    <p>
+                        {% trans "· биофизика клетки и клеточная инженерия" %}<br>
+                        {% trans "· редокс-сигнализация и редокс-регуляция в биосистемах" %}<br>
+                        {% trans "· медицинская биофизика и биофизические методы в диагностике заболеваний" %}<br>
+                        {% trans "· нанобиотехнологии и наномедицинские технологии" %}<br>
+                        {% trans "· биосенсоры, нейросенсоры и биопреобразователи" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_12_MATH.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "МАТЕМАТИЧЕСКАЯ ФИЗИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· рациональная аппроксимация и ее приложения к решению задач математической физики" %}<br>
-                    {% trans "· вычислительная математика" %}<br>
-                    {% trans "· интегральные уравнения и краевые задачи" %}<br>
-                    {% trans "· уравнения с частными производными дробного порядка" %}<br>
-                    {% trans "·  математическое моделирование динамических биосистем" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_12_MATH.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "МАТЕМАТИЧЕСКАЯ ФИЗИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· рациональная аппроксимация и ее приложения к решению задач математической физики" %}<br>
+                        {% trans "· вычислительная математика" %}<br>
+                        {% trans "· интегральные уравнения и краевые задачи" %}<br>
+                        {% trans "· уравнения с частными производными дробного порядка" %}<br>
+                        {% trans "·  математическое моделирование динамических биосистем" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_13_SIMUL.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "КОМПЬЮТЕРНОЕ МОДЕЛИРОВАНИЕ" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· самоорганизация в сложных системах, нелинейная динамика, биоинформатика" %}<br>
-                    {% trans "· квантовый транспорт в неупорядоченных системах пониженной размерности, точно решаемые задачи в квантовой механике и стохастической динамике" %}<br>
-                    {% trans "· суперкомпьютерные и ГРИД-технологии" %}<br>
-                    {% trans "· теоретическая и математическая физика диффузионных процессов, контролируемый транспорт на наноуровне, броуновские моторы" %}<br>
-                    {% trans "· нелинейная оптика световых пучков и импульсов, взаимодействие лазерного излучения с веществом, нанофотоника" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_13_SIMUL.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "КОМПЬЮТЕРНОЕ МОДЕЛИРОВАНИЕ" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· самоорганизация в сложных системах, нелинейная динамика, биоинформатика" %}<br>
+                        {% trans "· квантовый транспорт в неупорядоченных системах пониженной размерности, точно решаемые задачи в квантовой механике и стохастической динамике" %}<br>
+                        {% trans "· суперкомпьютерные и ГРИД-технологии" %}<br>
+                        {% trans "· теоретическая и математическая физика диффузионных процессов, контролируемый транспорт на наноуровне, броуновские моторы" %}<br>
+                        {% trans "· нелинейная оптика световых пучков и импульсов, взаимодействие лазерного излучения с веществом, нанофотоника" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_14_LASER.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ЛАЗЕРНАЯ ФИЗИКА И СПЕКТРОСКОПИЯ" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· лазерная физика, нелинейная оптика и голография" %}<br>
-                    {% trans "· фотофизика и нелинейная спектроскопия конденсированных сред" %}<br>
-                    {% trans "· физика жидкокристаллических оптоэлектронных систем" %}<br>
-                    {% trans "· методы и препараты для биомедицинских применений" %}<br>
-                    {% trans "· методы и аппаратно-программные средства спектрально-люминесцентного анализа" %}<br>
-                    {% trans "· сложная динамика лазерных систем с быстрой фазовой релаксацией" %}<br>
-                    {% trans "· пространственно-динамические модели формирования излучения в лазерных системах" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_14_LASER.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ЛАЗЕРНАЯ ФИЗИКА И СПЕКТРОСКОПИЯ" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· лазерная физика, нелинейная оптика и голография" %}<br>
+                        {% trans "· фотофизика и нелинейная спектроскопия конденсированных сред" %}<br>
+                        {% trans "· физика жидкокристаллических оптоэлектронных систем" %}<br>
+                        {% trans "· методы и препараты для биомедицинских применений" %}<br>
+                        {% trans "· методы и аппаратно-программные средства спектрально-люминесцентного анализа" %}<br>
+                        {% trans "· сложная динамика лазерных систем с быстрой фазовой релаксацией" %}<br>
+                        {% trans "· пространственно-динамические модели формирования излучения в лазерных системах" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_15_THEOR.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ТЕОРЕТИЧЕСКАЯ ФИЗИКА И АСТРОФИЗИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· теория гравитации и электромагнетизма" %}<br>
-                    {% trans "· космология и астрофизика" %}<br>
-                    {% trans "· физика элементарных частиц и высоких энергий" %}<br>
-                    {% trans "· когерентные и квантовые эффекты в конденсированных средах" %}<br>
-                    {% trans "·  оптика и акустика сложных сред" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_15_THEOR.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ТЕОРЕТИЧЕСКАЯ ФИЗИКА И АСТРОФИЗИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· теория гравитации и электромагнетизма" %}<br>
+                        {% trans "· космология и астрофизика" %}<br>
+                        {% trans "· физика элементарных частиц и высоких энергий" %}<br>
+                        {% trans "· когерентные и квантовые эффекты в конденсированных средах" %}<br>
+                        {% trans "·  оптика и акустика сложных сред" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_16_SEMIC.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ФИЗИКА ПОЛУПРОВОДНИКОВ И НАНОЭЛЕКТРОНИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· разработка элементной базы микро- и наноэлектроники" %}<br>
-                    {% trans "· физика углеродных материалов" %}<br>
-                    {% trans "· проектирование и программирование микроконтроллерных систем" %}<br>
-                    {% trans "· программируемые интеллектуальные датчики" %}<br>
-                    {% trans "· разработка методов неразрушающего контроля, экспресс-диагностики материалов и структур" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_16_SEMIC.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ФИЗИКА ПОЛУПРОВОДНИКОВ И НАНОЭЛЕКТРОНИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· разработка элементной базы микро- и наноэлектроники" %}<br>
+                        {% trans "· физика углеродных материалов" %}<br>
+                        {% trans "· проектирование и программирование микроконтроллерных систем" %}<br>
+                        {% trans "· программируемые интеллектуальные датчики" %}<br>
+                        {% trans "· разработка методов неразрушающего контроля, экспресс-диагностики материалов и структур" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_17_SOLID.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ФИЗИКА ТВЁРДОГО ТЕЛА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· взаимодействие заряженных частиц и плазмы с твердым телом" %}<br>
-                    {% trans "· компьютерное моделирование электронной структуры твердых тел" %}<br>
-                    {% trans "· разработка перспективных материалов и защитных покрытий" %}<br>
-                    {% trans "· разработка и изготовление эталонных термостатирующих устройств" %}<br>
-                    {% trans "· ультразвуковой неразрушающий контроль" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_17_SOLID.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ФИЗИКА ТВЁРДОГО ТЕЛА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· взаимодействие заряженных частиц и плазмы с твердым телом" %}<br>
+                        {% trans "· компьютерное моделирование электронной структуры твердых тел" %}<br>
+                        {% trans "· разработка перспективных материалов и защитных покрытий" %}<br>
+                        {% trans "· разработка и изготовление эталонных термостатирующих устройств" %}<br>
+                        {% trans "· ультразвуковой неразрушающий контроль" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_18_PHYSOPT.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ФИЗИЧЕСКАЯ ОПТИКА И ПРИКЛАДНАЯ ИНФОРМАТИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· системы оптической памяти и преобразования информации" %}<br>
-                    {% trans "· физика атомно-молекулярных процессов и наноразмерных систем" %}<br>
-                    {% trans "· физика атмосферы и аэрокосмическое дистанционное зондирование" %}<br>
-                    {% trans "· оптоэлектроника" %}<br>
-                    {% trans "· фотофизика и фотохимия стеклообразных полимеров" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_18_PHYSOPT.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ФИЗИЧЕСКАЯ ОПТИКА И ПРИКЛАДНАЯ ИНФОРМАТИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· системы оптической памяти и преобразования информации" %}<br>
+                        {% trans "· физика атомно-молекулярных процессов и наноразмерных систем" %}<br>
+                        {% trans "· физика атмосферы и аэрокосмическое дистанционное зондирование" %}<br>
+                        {% trans "· оптоэлектроника" %}<br>
+                        {% trans "· фотофизика и фотохимия стеклообразных полимеров" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_19_ENERG.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ЭНЕРГОФИЗИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· материалы солнечной энергетики" %}<br>
-                    {% trans "· наноструктурированные материалы и их применения" %}<br>
-                    {% trans "· электрохимические накопители энергии" %}<br>
-                    {% trans "· тонкопленочные технологии" %}<br>
-                    {% trans "· теплопередающие и измерительные устройства для энергетических систем" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_19_ENERG.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ЭНЕРГОФИЗИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· материалы солнечной энергетики" %}<br>
+                        {% trans "· наноструктурированные материалы и их применения" %}<br>
+                        {% trans "· электрохимические накопители энергии" %}<br>
+                        {% trans "· тонкопленочные технологии" %}<br>
+                        {% trans "· теплопередающие и измерительные устройства для энергетических систем" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
-        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_20_NUCL.jpg' %}">
-            <div class="person_template_title" ><a href="#" style="font-size:23px">{% trans "ЯДЕРНАЯ ФИЗИКА" %}</a></div>
-            <div class="person_template_text" >
-                <p>
-                    {% trans "· детектирование, спектрометрия и радиометрия ионизирующего излучения" %}<br>
-                    {% trans "· взаимодействие пучков заряженных частиц с периодическими структурами" %}<br>
-                    {% trans "· теплофизика ядерных реакторов и реакторных установок" %}<br>
-                    {% trans "· информационно-измерительные системы " %}<br>
-                    {% trans "· методы радиационного контроля" %}<br>
-                </p>
-                <br><br>
+        <div class="person_template_float_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 box_research-dir-info" style="display:flex;">
+            <img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 directions-img" style="max-width:172px!important; align-self:center!important; height:140px" src="{% static 'home/assets/images/IMAGES_SCI/_20_NUCL.jpg' %}" alt="">
+            <div>
+                <div class="person_template_title direction-title" ><a href="#" style="font-size:23px">{% trans "ЯДЕРНАЯ ФИЗИКА" %}</a></div>
+                <div class="person_template_text" >
+                    <p>
+                        {% trans "· детектирование, спектрометрия и радиометрия ионизирующего излучения" %}<br>
+                        {% trans "· взаимодействие пучков заряженных частиц с периодическими структурами" %}<br>
+                        {% trans "· теплофизика ядерных реакторов и реакторных установок" %}<br>
+                        {% trans "· информационно-измерительные системы " %}<br>
+                        {% trans "· методы радиационного контроля" %}<br>
+                    </p>
+                    <br><br>
+                </div>
             </div>
         </div>
     </div>
