@@ -1,0 +1,18 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Воспитательная работа" %}{% endblock %}
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Воспитательная работа" %}</div>
+        <a href="https://physics.bsu.by/edi">{% trans "Единый день информирования" %}</a>
+        <a href="https://physics.bsu.by/ru/faculty/documents/">{% trans "Нормативные документы" %}</a> 
+<!--         <a href="https://minsk.gov.by/ru/actual/view/209/2021.shtml">{% trans "Единый день информирования" %}</a> -->
+    </div>
+</div>
+{% endblock %}
