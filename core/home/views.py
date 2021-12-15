@@ -268,6 +268,6 @@ def tutor(request):
     return render(request, "tutorService.html")
 
 
-def tutor(request):
+def educations(request):
     return render(request, "EducationalWork.html")
 
