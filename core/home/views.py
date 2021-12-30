@@ -267,3 +267,7 @@ def wellcome(request):
 def tutor(request):
     return render(request, "tutorService.html")
 
+
+def educations(request):
+    return render(request, "EducationalWork.html")
+

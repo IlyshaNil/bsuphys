@@ -13,7 +13,6 @@
         <div class="listPersonTemplate_title">{% trans "Сотрудники" %}</div>
         {% for unit in dep.staff.all %}
 
-
         <div class="listPersonTemplate_wrap">
             <img class="col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{ unit.image.url }}">
             <div class="listPersonTemplate_description">
@@ -33,4 +32,5 @@
         {% endfor %}
     </div>
 </div>
+
 {% endblock %}

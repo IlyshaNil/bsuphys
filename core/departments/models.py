@@ -2,7 +2,7 @@ from ckeditor.fields import RichTextField
 from django.db import models
 from staff.models import Staff_unit
 
-# Create your models here.
+
 class Department(models.Model):
     name = models.TextField()
     image = models.ImageField(upload_to="media", null=True, blank=True)

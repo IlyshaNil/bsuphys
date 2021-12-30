@@ -68,6 +68,8 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("tutor/", views.tutor, name="raspred"),
 
+               path("educations/", views.educations, name="raspred"),
+
 
 
                ]
