@@ -1,0 +1,22 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Расписание занятий" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Расписание для магистратуры" %}</div>
+        <a href="https://physics.bsu.by/media/media/exam_Physics.pdf">{% trans "Экзамены" %}</a>
+        <a href="https://physics.bsu.by/media/media/exam_Applied_Physics.pdf">{% trans "Экзамены" %}</a>
+        <a href="https://physics.bsu.by/media/media/consultations_Physics.pdf">{% trans "Консультации" %}</a>
+        <a href="https://physics.bsu.by/media/media/consultations_Applied_Physics.pdf">{% trans "Консультации" %}</a>
+       
+        {% trans "последнее обновление" %}: 03.01.2022, 10:35
+    </div>
+</div>
+{% endblock %}
