@@ -136,6 +136,10 @@ def timetable(request):
     return render(request, "timetable.html")
 
 
+def timetableMag(request):
+    return render(request, "timetablemag.html")
+
+
 def timetableExams(request):
     return render(request, "timetableExam.html")
 
@@ -266,4 +270,8 @@ def wellcome(request):
 
 def tutor(request):
     return render(request, "tutorService.html")
+
+
+def educations(request):
+    return render(request, "EducationalWork.html")
 

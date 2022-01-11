@@ -35,6 +35,7 @@ urlpatterns = [path("", views.index, name="index"),
                path("ru_main/", views.language_switch_ru_main, name="lang_ru_main"),
 
                path("time/", views.timetable, name="info"),
+               path("time/mag/", views.timetableMag, name="info"),
                path("time-exams/", views.timetableExams, name="info"),
 
 
@@ -67,6 +68,8 @@ urlpatterns = [path("", views.index, name="index"),
                path("wellcome/", views.wellcome, name="raspred"),
 
                path("tutor/", views.tutor, name="raspred"),
+
+               path("educations/", views.educations, name="raspred"),
 
 
 
