@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://physics.bsu.by">
-    <img src="static/static/screen.PNG" alt="Logo" width="100" height="100">
+    <img src="static/static/favicon.ico" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Physics faculty website</h3>
@@ -231,4 +231,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/IlyshaNil/bsuphys/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ilya-nilov-b7b9201b4/
-[product-screenshot]: static/screen.png
+[product-screenshot]: https://raw.githubusercontent.com/IlyshaNil/bsuphys/master/static/screen.PNG
