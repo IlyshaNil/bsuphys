@@ -275,3 +275,9 @@ def tutor(request):
 def educations(request):
     return render(request, "EducationalWork.html")
 
+
+
+
+
+    
+
