@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://physics.bsu.by">
-    <img src="static/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="static/favicon.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Physics faculty website</h3>
@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://physics.bsu.by)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
