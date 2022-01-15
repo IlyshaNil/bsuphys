@@ -13,13 +13,13 @@
 <br />
 <div align="center">
   <a href="https://physics.bsu.by">
-    <img src="static/favicon.png" alt="Logo" width="100" height="100">
+    <img src="static/FUL_LOGO_FFbolshoy.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Physics faculty website</h3>
 
   <p align="center">
-    <a href="https://physics.bsu.by"><strong>Explore!»</strong></a>
+    <a href="https://physics.bsu.by"><strong>Explore »</strong></a>
     <br />
     <br />
     <a href="https://github.com/IlyshaNil/bsuphys">View Demo</a>
@@ -220,15 +220,15 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/IlyshaNil/bsuphys/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/IlyshaNil/bsuphys/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/IlyshaNil/bsuphys/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/IlyshaNil/bsuphys/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/IlyshaNil/bsuphys/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://t.me/sycld
+[product-screenshot]: static/screen.png
