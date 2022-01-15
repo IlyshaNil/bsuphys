@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://physics.bsu.by">
-    <img src="static/FUL_LOGO_FFbolshoy.png" alt="Logo" width="100" height="100">
+    <img src="static/static/screen.PNG" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Physics faculty website</h3>
