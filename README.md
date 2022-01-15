@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://physics.bsu.by">
-    <img src="static/static/favicon.ico" alt="Logo" width="100" height="100">
+    <img src="static/FUL_LOGO_FFbolshoy.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Physics faculty website</h3>
@@ -82,12 +82,10 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
+* [Nginx](https://nextjs.org/)
+* [Django](https://reactjs.org/)
+* [PostgreSQL](https://vuejs.org/)
+* [Gunicorn](https://angular.io/)
 * [Svelte](https://svelte.dev/)
 * [Laravel](https://laravel.com)
 * [Bootstrap](https://getbootstrap.com)
