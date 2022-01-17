@@ -82,14 +82,12 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-* [Nginx](https://nextjs.org/)
-* [Django](https://reactjs.org/)
-* [PostgreSQL](https://vuejs.org/)
-* [Gunicorn](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Nginx](https://nginx.org/ru/)
+* [Django](https://www.djangoproject.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Gunicorn](https://gunicorn.org/)
+* [Jenkins](https://www.jenkins.io/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
