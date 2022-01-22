@@ -1,0 +1,22 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Услуги" %}{% endblock %}  <!-- Вариант перевода на английский язык: 'Services' -->
+
+{% block content %}
+<div class="pages">
+    <div class="container">
+        <div class="page_name">{% trans "Услуги" %}</div>  <!-- Вариант перевода на английский язык: 'Services' -->
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == "ru"%}
+        
+        {% endif %}
+        {% if LANGUAGE_CODE == "en"%}
+        
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
