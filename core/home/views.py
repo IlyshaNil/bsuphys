@@ -276,6 +276,10 @@ def educations(request):
     return render(request, "EducationalWork.html")
 
 
+def services(request):
+    return render(request, "theFacultyServices.html")
+
+
 
 
 

@@ -71,6 +71,6 @@ urlpatterns = [path("", views.index, name="index"),
 
                path("educations/", views.educations, name="raspred"),
 
-
+               path("services/", views.services, name="raspred"),
 
                ]
