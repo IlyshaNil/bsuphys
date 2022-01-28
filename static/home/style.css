@@ -901,12 +901,16 @@
   font-weight: 500;
   text-decoration: underline !important;
   text-decoration-color: #e5bc29 !important;
-  text-decoration-thickness: 2px !important;
+  text-decoration-thickness: 3px !important;
 }
 
 @media (max-width: 550px) {
   #services-special table a {
     font-size: 16px!important;
+  }
+  
+  #services-special a#link-services {
+    font-size: 18px!important;
   }
 
   div.responsible-person {
@@ -917,8 +921,16 @@
   div.responsible-person p {
     font-size: 16px !important;
   }
+  
+  #services-special a {
+    font-size: 16px!important;
+  }
 
   #services-special table {
+    font-size: 16px!important;
+  }
+  
+    #services-special a {
     font-size: 16px!important;
   }
 }
