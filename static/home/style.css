@@ -897,12 +897,52 @@
 /* ------------------------------------------------------------ */
 
 #services-special a {
+  display: inline;
+  padding-bottom: 0 !important;
+  width: fit-content !important;
+  border-bottom: 2px solid #e5bc29;
   font-size: 18px!important;
   font-weight: 500;
-  text-decoration: underline !important;
-  text-decoration-color: #e5bc29 !important;
-  text-decoration-thickness: 3px !important;
 }
+
+div.responsible-person > p:nth-of-type(4) a,
+div.responsible-person > p:nth-of-type(5) a {
+  border-bottom: none !important;
+}
+
+table.Table {
+  position: relative;
+  padding-bottom: 25px!important;
+};
+
+table.Table > tbody > tr:first-of-type {
+  vertical-align: center !important;
+}
+
+table.Table > tbody > tr:first-of-type > td p,
+table.Table > tbody > tr:first-of-type > td a,
+table.Table > tbody > tr:first-of-type > td strong,
+table.Table > tbody > tr:first-of-type > td span,
+table.Table > tbody > tr:first-of-type > td em {
+  text-align: center !important;
+  word-break: keep-all !important;
+}
+
+table.Table > tbody > tr > td p,
+table.Table > tbody > tr > td a,
+table.Table > tbody > tr > td strong,
+table.Table > tbody > tr > td span,
+table.Table > tbody > tr > td em {
+  text-align: justify !important;
+  word-break: keep-all;
+  white-space: pre-wrap;
+}
+
+table.Table > tbody > tr > td:last-child {
+/*   vertical-align: top !important; */
+}
+
+/* -------------------------------------------------- */
 
 @media (max-width: 550px) {
   #services-special table a {
@@ -925,12 +965,18 @@
   #services-special a {
     font-size: 16px!important;
   }
+  
+  div.table-box {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    width: calc(100% - 40px) !important;
+  }
 
   #services-special table {
     font-size: 16px!important;
   }
   
-    #services-special a {
+  #services-special a {
     font-size: 16px!important;
   }
 }
