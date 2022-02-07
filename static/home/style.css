@@ -899,15 +899,30 @@
 #services-special a {
   display: inline;
   padding-bottom: 0 !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
   width: fit-content !important;
   border-bottom: 2px solid #e5bc29;
-  font-size: 18px!important;
+  font-size: 18px !important;
   font-weight: 500;
 }
 
 div.responsible-person > p:nth-of-type(4) a,
 div.responsible-person > p:nth-of-type(5) a {
   border-bottom: none !important;
+}
+
+div.table-box::-webkit-scrollbar {
+    visibility: hidden !important;
+}
+
+div.table-box {
+  position: relative;
+}
+
+span.table-tooltip {
+  position: absolute;
+  display: none !important;
 }
 
 table.Table {
@@ -933,7 +948,6 @@ table.Table > tbody > tr > td a,
 table.Table > tbody > tr > td strong,
 table.Table > tbody > tr > td span,
 table.Table > tbody > tr > td em {
-  text-align: justify !important;
   word-break: keep-all;
   white-space: pre-wrap;
 }
@@ -943,6 +957,22 @@ table.Table > tbody > tr > td:last-child {
 }
 
 /* -------------------------------------------------- */
+
+@media (max-width: 1215px) {
+  div.table-box:hover > span.table-tooltip {
+    top: 3px;
+    left: 3px;
+    display: block !important;
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  span.table-tooltip,
+  div.table-box:hover > span.table-tooltip {
+    display: none !important;
+  }
+}
 
 @media (max-width: 550px) {
   #services-special table a {
