@@ -1078,3 +1078,54 @@ div.listPersonTemplate_wrap > img {
     margin-right: 0;
   }
 }
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+div.special-content-block > div:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+
+div.image-block > img {
+  width: 100%;
+}
+
+div.image-block > div > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.image-block > div:first-of-type {
+  margin-bottom: 30px;
+}
+
+div.image-block > div > img {
+  width: 100%;
+}
+
+div.image-block > div > div:first-of-type > img:nth-of-type(2) {
+  width: 100%;
+}
+
+figure.announcement-block {
+  display: flex;
+  flex-direction: row;
+}
+
+figure.announcement-block > img {
+  flex: 50%;
+  width: 50%;
+}
+
+figure.announcement-block > img:first-of-type {
+  margin-right: 12px;
+}
+
+
+@media (min-width: 974px) {
+  div.image-block {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+}
