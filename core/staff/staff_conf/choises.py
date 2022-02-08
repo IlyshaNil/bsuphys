@@ -1,3 +1,6 @@
+from django.utils.translation import ugettext_lazy as _
+
+
 STATUS_CHOICES = (
     ("k_math", _("Кафедра высшей математики и математической физики")),
     ("k_common_phys", _("Кафедра общей физики")),
