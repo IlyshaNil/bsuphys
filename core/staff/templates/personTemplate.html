@@ -20,7 +20,7 @@
                 <p><span class="person_template_bold">{% trans "Степень, учёное звание" %}:</span>{{ staff.academic_rank }}</p>
                 {% endif %}
                 {% if staff.get_specialization_display %}
-                <p><span class="person_template_bold">{% trans "Специализация" %}:</span>{% blocktrans %} {{ staff.get_specialization_display }} {% endblocktrans %}</p>
+                <p><span class="person_template_bold">{% trans "Специализация" %}:</span>{{ staff.get_specialization_display }} </p>
                 {% endif %}
 
                 <p><span class="person_template_bold">{% trans "Контактная информация" %}:</span><br>
