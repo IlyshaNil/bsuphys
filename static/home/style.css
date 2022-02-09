@@ -1122,10 +1122,26 @@ figure.announcement-block > img:first-of-type {
   margin-right: 12px;
 }
 
+figure.announcement-block > img:last-of-type {
+  width: calc(50% - 12px);
+}
+
+
+
 
 @media (min-width: 974px) {
   div.image-block {
     max-width: 840px;
     margin: 0 auto;
   }
+}
+
+
+div.special-content-block > div > details > summary::marker {
+   content: '' !important;
+}
+
+div.special-content-block > div > details > summary:hover {
+  color: #e5bc29;
+  font-weight: 600;
 }
