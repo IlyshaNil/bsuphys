@@ -1145,3 +1145,62 @@ div.special-content-block > div > details > summary:hover {
   color: #e5bc29;
   font-weight: 600;
 }
+
+
+/* ------------------------------------------------------------ */
+
+
+div#vb-proj a {
+  color: #000 !important;
+  text-decoration: none!important;
+  border-bottom: 2px solid #e5bc29;
+  padding-bottom: 0 !important;
+  display: inline !important;
+}
+
+div#vb-proj a, div#vb-proj p,
+div#vb-proj ul li, div#vb-proj em
+{
+  font-size: 18px;
+}
+
+div#vb-proj ul {
+  margin-top: 10px;
+}
+
+div#vb-proj table {
+  margin-top: 15px!important;
+}
+
+div#vb-proj div.vb_table-box {
+  overflow: auto!important;
+}
+
+a#the-wb, a#ministry-edu-rb {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+
+
+@media (max-width: 995px) { 
+  div#vb-proj p > img {
+    width: 100% !important;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 972px) { 
+  div#vb-proj > div.vb_table-box > table tr td p {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 570px) {
+  p.main-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-content: center!important;
+  }
+}
