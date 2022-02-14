@@ -280,6 +280,10 @@ def services(request):
     return render(request, "theFacultyServices.html")
 
 
+def worldbank(request):
+    return render(request, "theWorldBankProj.html")
+
+
 
 
 
