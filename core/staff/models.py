@@ -2,6 +2,7 @@ from django.db import models
 from Uploads.models import Uploads
 from staff.staff_conf import choises
 from ckeditor.fields import RichTextField
+from django.utils.translation import ugettext_lazy as _
 
 
 class Staff_unit(models.Model):
