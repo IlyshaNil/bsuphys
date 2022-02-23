@@ -1158,6 +1158,11 @@ div#vb-proj a {
   display: inline !important;
 }
 
+div#vb-proj a:hover {
+  color: #e5bc29 !important;
+  font-weight: normal !important;
+}
+
 div#vb-proj a, div#vb-proj p,
 div#vb-proj ul li, div#vb-proj em
 {
