@@ -1208,4 +1208,30 @@ a#the-wb, a#ministry-edu-rb {
     align-content: center !important;
     justify-content: center!important;
   }
+  
+  table.table-p-special {
+    width: 100% !important;
+  }
+  
+  table.table-p-special > tbody tr {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  
+  table.table-p-special > tbody td {
+    width: 100% !important;
+  }
+  
+  table.table-p-special > tbody tr:first-of-type {
+    margin-bottom: 25px;
+  }
+  
+  table.table-p-special > tbody img {
+    width: 90% !important;
+  }
 }
