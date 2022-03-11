@@ -1201,14 +1201,7 @@ a#the-wb, a#ministry-edu-rb {
   }
 }
 
-@media (max-width: 570px) {
-  p.main-links {
-    flex-direction: column !important;
-    align-items: center !important;
-    align-content: center !important;
-    justify-content: center!important;
-  }
-  
+@media (max-width: 650px) {
   table.table-p-special {
     width: 100% !important;
   }
@@ -1233,5 +1226,14 @@ a#the-wb, a#ministry-edu-rb {
   
   table.table-p-special > tbody img {
     width: 90% !important;
+  }
+}
+
+@media (max-width: 570px) {
+  p.main-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-content: center!important;
   }
 }
