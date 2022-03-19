@@ -1201,6 +1201,14 @@ a#the-wb, a#ministry-edu-rb {
   }
 }
 
+table.table-p-special > tbody > tr > td:nth-of-type(1) > p:nth-of-type(2) > a {
+  display: inline;
+  padding-bottom: 0 !important;
+  width: fit-content !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid #e5bc29;
+}
+
 @media (max-width: 650px) {
   table.table-p-special {
     width: 100% !important;
