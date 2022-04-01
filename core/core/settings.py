@@ -181,7 +181,7 @@ JAZZMIN_SETTINGS = {
     "show_ui_builder": True,
     "site_title" : "Физический факультет БГУ",
     "site_header": "Физический факультет БГУ",
-    "site_logo": "./FUL_LOGO_FFbolshoy.png",
+    "site_logo": "./login-logo.png",
     "site_icon": "./favicon.ico",
     }
 
