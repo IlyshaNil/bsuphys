@@ -35,6 +35,7 @@ ALLOWED_HOSTS = _settings.ALLOWED_HOSTS
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
     "rosetta",
     "modeltranslation",
     "django.contrib.admin",
