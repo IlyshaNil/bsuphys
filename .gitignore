@@ -134,3 +134,6 @@ dmypy.json
 
 /core/home/templates/index1.html
 .vscode/settings.json
+Pipfile.lock
+core/blog/migrations/0010_auto_20220401_0951.py
+core/staff/migrations/0005_alter_staff_unit_options.py
