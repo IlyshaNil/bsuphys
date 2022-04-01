@@ -177,5 +177,11 @@ ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
-
+JAZZMIN_SETTINGS = {
+    "show_ui_builder": True,
+    "site_title" : "Физический факультет БГУ",
+    "site_header": "Физический факультет БГУ",
+    "site_logo": "./FUL_LOGO_FFbolshoy.png",
+    "site_icon": "./favicon.ico",
+    }
 
