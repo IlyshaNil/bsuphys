@@ -16,6 +16,7 @@ from dynaconf import settings as _settings
 from pathlib import Path
 
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
@@ -131,7 +132,7 @@ FILE_UPLOAD_HANDLERS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 
-JAZZMIN_SETTINGS["show_ui_builder"] = True
+
 
 LANGUAGE_CODE = "ru"
 
@@ -175,5 +176,7 @@ STATICFILES_FINDERS = (
 ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+
+
 
 
