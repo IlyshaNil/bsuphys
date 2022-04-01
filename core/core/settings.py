@@ -131,6 +131,7 @@ FILE_UPLOAD_HANDLERS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 
+JAZZMIN_SETTINGS["show_ui_builder"] = True
 
 LANGUAGE_CODE = "ru"
 
