@@ -174,3 +174,4 @@ ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
+
