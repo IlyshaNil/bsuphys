@@ -34,5 +34,6 @@ class TestViews:
 
         response = post_detail(request, post.year, post.month, post.day, post.slug)
         assert response.status_code == 200
-        
+
+
 
