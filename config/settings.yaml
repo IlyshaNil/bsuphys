@@ -9,3 +9,5 @@ default:
   SECURE_SSL_REDIRECT: True
   CSRF_COOKIE_SECURE: True
 
+  JAZZMIN_SETTINGS["show_ui_builder"] : True
+
