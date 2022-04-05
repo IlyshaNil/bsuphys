@@ -100,7 +100,7 @@ if _settings.ENV_FOR_DYNACONF == "heroku":
     db_url = os.getenv("DATABASE_URL")
 
 if _settings.ENV_FOR_DYNACONF == "GITHUB_WORKFLOW":
-    db_url = os.getenv("DATABASE_URL")
+    db_url = os.getenv("DATABASE_GITHUB_URL")
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

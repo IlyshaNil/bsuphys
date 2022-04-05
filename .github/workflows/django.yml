@@ -23,7 +23,7 @@ jobs:
         image: postgres:14
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: bsuphys
         ports:
           - 5432:5432
