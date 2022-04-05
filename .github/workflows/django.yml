@@ -26,13 +26,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r ./requirements.txt
 
-    - name: Run migrations
-      working-directory: ./core
-      run: | 
-        python manage.py makemigrations
-        python manage.py migrate
-
     - name: Test with pytest
+      env:
+        SECRET_KEY: ${{secrets.SECRET_KEY}}
+        DATABASE_URL: ${{secrets.DATABASE_URL}}
       working-directory: ./core
       run: pytest
     
