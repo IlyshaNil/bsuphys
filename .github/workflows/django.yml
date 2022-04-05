@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  ENV_FOR_DYNACONF: GITHUB_WORKFLOW
+
 jobs:
   build:
 
