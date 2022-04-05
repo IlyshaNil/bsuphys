@@ -11,3 +11,9 @@ default:
 
   JAZZMIN_SETTINGS["show_ui_builder"] : True
 
+GITHUB_WORKFLOW:
+  SECRET_KEY: ''
+  DEBUG: False
+  ALLOWED_HOSTS: '*'
+  DATABASE_URL: ""
+
