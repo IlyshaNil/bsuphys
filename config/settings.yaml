@@ -23,5 +23,5 @@ github_actions:
   DEBUG: True
   ALLOWED_HOSTS: '*'
   SECRET_KEY: "xxx"
-  DATABASE_URL: "postgresql://postgres@localhost:5432/bsuphys"
+  DATABASE_URL: "postgresql://postgres:1234@localhost:5432/bsuphys"
 
