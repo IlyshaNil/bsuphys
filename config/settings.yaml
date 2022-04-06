@@ -11,9 +11,17 @@ default:
 
   JAZZMIN_SETTINGS["show_ui_builder"] : True
 
-GITHUB_WORKFLOW:
-  SECRET_KEY: ''
-  DEBUG: False
+
+development:
+  DEBUG: True
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost
+
+
+github_actions:
+  DEBUG: True
   ALLOWED_HOSTS: '*'
-  DATABASE_GITHUB_URL: "postgresql://postgres:postgres@localhost:5432/bsuphys"
+  SECRET_KEY: "xxx"
+  DATABASE_GITHUB_URL: "postgresql://postgres@localhost:5432/bsuphys"
 
