@@ -12,6 +12,11 @@ default:
   JAZZMIN_SETTINGS["show_ui_builder"] : True
 
 
+development:
+  DEBUG: True
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost
 
 
 github_actions:
