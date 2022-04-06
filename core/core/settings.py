@@ -16,7 +16,6 @@ from dynaconf import settings as _settings
 from pathlib import Path
 
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
@@ -55,7 +54,6 @@ INSTALLED_APPS = [
     "quantum_School",
     "observatory",
     "departments",
-
 ]
 
 MIDDLEWARE = [
@@ -63,16 +61,12 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
-
-
 
 
 ROOT_URLCONF = "core.urls"
@@ -126,8 +120,6 @@ FILE_UPLOAD_HANDLERS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 
-
-
 LANGUAGE_CODE = "ru"
 
 prefix_default_language = False
@@ -146,9 +138,7 @@ LANGUAGES = (
     ("en", gettext("English")),
 )
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
-)
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -173,9 +163,8 @@ CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
 JAZZMIN_SETTINGS = {
     "show_ui_builder": True,
-    "site_title" : "Физический факультет БГУ",
+    "site_title": "Физический факультет БГУ",
     "site_header": "Физический факультет БГУ",
     "site_logo": "./login-logo.png",
     "site_icon": "./favicon.ico",
-    }
-
+}

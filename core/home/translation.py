@@ -4,9 +4,16 @@ from .models import MainPageStatisticNumber, FamousGraduates
 
 @register(MainPageStatisticNumber)
 class NumbersTranslationOptions(TranslationOptions):
-    fields = ('description', )
+    fields = ("description",)
 
 
 @register(FamousGraduates)
 class GraduatesTranslationOptions(TranslationOptions):
-    fields = ('name', 'shortDescription', 'briefBioInfo', 'typeOfProfActivity', 'facultyAndSpeciality', 'professionalAchievements')   
+    fields = (
+        "name",
+        "shortDescription",
+        "briefBioInfo",
+        "typeOfProfActivity",
+        "facultyAndSpeciality",
+        "professionalAchievements",
+    )

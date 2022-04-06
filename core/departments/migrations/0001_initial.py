@@ -9,38 +9,82 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('staff', '0004_auto_20210205_2348'),
+        ("staff", "0004_auto_20210205_2348"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Department',
+            name="Department",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.TextField()),
-                ('name_ru', models.TextField(null=True)),
-                ('name_en', models.TextField(null=True)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='media')),
-                ('short_description', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('short_description_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('short_description_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('description', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('description_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('description_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('thesis_themes', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('thesis_themes_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('thesis_themes_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('science_directions', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('science_directions_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('science_directions_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('publications', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('publications_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('publications_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('courses', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('courses_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('courses_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('slug', models.SlugField(max_length=250)),
-                ('staff', models.ManyToManyField(to='staff.Staff_unit')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.TextField()),
+                ("name_ru", models.TextField(null=True)),
+                ("name_en", models.TextField(null=True)),
+                ("image", models.ImageField(blank=True, null=True, upload_to="media")),
+                (
+                    "short_description",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "short_description_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "short_description_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("description", ckeditor.fields.RichTextField(blank=True, null=True)),
+                (
+                    "description_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "description_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("thesis_themes", ckeditor.fields.RichTextField(blank=True, null=True)),
+                (
+                    "thesis_themes_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "thesis_themes_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "science_directions",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "science_directions_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "science_directions_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("publications", ckeditor.fields.RichTextField(blank=True, null=True)),
+                (
+                    "publications_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "publications_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("courses", ckeditor.fields.RichTextField(blank=True, null=True)),
+                ("courses_ru", ckeditor.fields.RichTextField(blank=True, null=True)),
+                ("courses_en", ckeditor.fields.RichTextField(blank=True, null=True)),
+                ("slug", models.SlugField(max_length=250)),
+                ("staff", models.ManyToManyField(to="staff.Staff_unit")),
             ],
         ),
     ]

@@ -6,22 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0001_initial'),
+        ("home", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='mainpagestatisticnumber',
-            options={'verbose_name_plural': 'Физический факультет в цифрах'},
+            name="mainpagestatisticnumber",
+            options={"verbose_name_plural": "Физический факультет в цифрах"},
         ),
         migrations.AddField(
-            model_name='mainpagestatisticnumber',
-            name='description_en',
+            model_name="mainpagestatisticnumber",
+            name="description_en",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='mainpagestatisticnumber',
-            name='description_ru',
+            model_name="mainpagestatisticnumber",
+            name="description_ru",
             field=models.TextField(blank=True, null=True),
         ),
     ]

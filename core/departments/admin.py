@@ -8,5 +8,4 @@ from modeltranslation.admin import TranslationAdmin
 class DepartmentAdmin(TranslationAdmin):
     list_display = ("name", "short_description")
     prepopulated_fields = {"slug": ("name",)}
-    filter_horizontal = ('staff',)
-    
+    filter_horizontal = ("staff",)

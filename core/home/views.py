@@ -13,73 +13,76 @@ from django.shortcuts import redirect
 
 
 def language_switch_en(request):
-    user_language = 'en'
+    user_language = "en"
     translation.activate(user_language)
     response = HttpResponse(status=302)
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
 
-    refresh_path = request.path[:request.path.find("/language_en")]
+    refresh_path = request.path[: request.path.find("/language_en")]
 
-
-    refresh_path = refresh_path.replace('/ru/', '/en/')
-    response['Location'] = refresh_path
+    refresh_path = refresh_path.replace("/ru/", "/en/")
+    response["Location"] = refresh_path
     return response
+
 
 def language_switch_ru(request):
-    user_language = 'ru'
+    user_language = "ru"
     translation.activate(user_language)
     response = HttpResponse(status=302)
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
 
-    refresh_path = request.path[:request.path.find("/language_ru")]
-    refresh_path = refresh_path.replace('/en/', '/ru/')
-    response['Location'] = refresh_path
+    refresh_path = request.path[: request.path.find("/language_ru")]
+    refresh_path = refresh_path.replace("/en/", "/ru/")
+    response["Location"] = refresh_path
     return response
+
 
 def language_switch_en_main(request):
-    user_language = 'en'
+    user_language = "en"
     translation.activate(user_language)
     response = HttpResponse(status=302)
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
-    response['Location'] = "/"
+    response["Location"] = "/"
     return response
 
+
 def language_switch_ru_main(request):
-    user_language = 'ru'
+    user_language = "ru"
     translation.activate(user_language)
     response = HttpResponse(status=302)
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
-    response['Location'] = "/"
+    response["Location"] = "/"
     return response
 
 
 def index(request):
     post = Post.published.latest("publish")
-    lastKeyPub = KeyPublications.objects.order_by('-id')[:3]
+    lastKeyPub = KeyPublications.objects.order_by("-id")[:3]
     randomNumbers = get_random_statistic_number()
-    return render(request, "main.html", {"post": post,
-                                         "stat1": randomNumbers[0],
-                                         "stat2": randomNumbers[1],
-                                         "stat3": randomNumbers[2],
-                                         "stat4": randomNumbers[3],
-                                         "pub1": lastKeyPub[0],
-                                         "pub2": lastKeyPub[1],
-                                         "pub3": lastKeyPub[2],})
+    return render(
+        request,
+        "main.html",
+        {
+            "post": post,
+            "stat1": randomNumbers[0],
+            "stat2": randomNumbers[1],
+            "stat3": randomNumbers[2],
+            "stat4": randomNumbers[3],
+            "pub1": lastKeyPub[0],
+            "pub2": lastKeyPub[1],
+            "pub3": lastKeyPub[2],
+        },
+    )
 
 
 def alum_detail(request, alum):
-    alum = get_object_or_404(
-        FamousGraduates,
-        slug=alum,
-    )
+    alum = get_object_or_404(FamousGraduates, slug=alum,)
     return render(request, "alumPersonTemplate.html", {"alum": alum})
 
 
 def alums_list(request):
-    object_list = FamousGraduates.objects.all().order_by('shortDescription')
+    object_list = FamousGraduates.objects.all().order_by("shortDescription")
     return render(request, "listPersonTemplate.html", {"alums": object_list},)
-
-                                         
 
 
 def templates(request):
@@ -89,7 +92,7 @@ def templates(request):
 
 def keyPublications(request):
     publications = reversed(KeyPublications.objects.all())
-    return render(request, "publicationsTemplate.html", {"works": publications}, )
+    return render(request, "publicationsTemplate.html", {"works": publications},)
 
 
 def dekanat(request):
@@ -149,7 +152,7 @@ def timofey(request):
 
 
 def get_random_statistic_number():
-    max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))['max_id']
+    max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))["max_id"]
     value_list = []
     pk_list = []
     for elm in "01234":
@@ -158,7 +161,6 @@ def get_random_statistic_number():
             pk = random.randint(1, max_id)
             if not pk in pk_list:
                 break
-
 
         pk_list.append(pk)
         value = MainPageStatisticNumber.objects.filter(pk=pk).first()
@@ -173,7 +175,6 @@ def departments(request):
 
 def council(request):
     return render(request, "Council.html")
-
 
 
 def oneWindow(request):
@@ -265,7 +266,7 @@ def raspred(request):
 
 
 def wellcome(request):
-    return redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+    return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 
 def tutor(request):
@@ -282,13 +283,3 @@ def services(request):
 
 def worldbank(request):
     return render(request, "theWorldBankProj.html")
-
-
-
-
-
-    
-
-
-
-

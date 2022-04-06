@@ -40,4 +40,8 @@ def post_list(request, tag_slug=None):
 
 def weAreInMedia(request):
     object_list = NoteInMedia.published.all()
-    return render(request, "../templates/templates/post/weAreInMedia.html", {"notes": object_list},)
+    return render(
+        request,
+        "../templates/templates/post/weAreInMedia.html",
+        {"notes": object_list},
+    )

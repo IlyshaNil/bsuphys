@@ -8,7 +8,7 @@ from django.contrib.admin import SimpleListFilter, ModelAdmin
 @admin.register(Post)
 class PostAdmin(TranslationAdmin):
     list_display = ("title", "slug", "author", "publish", "status", "admin_photo")
-    list_filter = ("publish", "status" )
+    list_filter = ("publish", "status")
     search_fields = ("title", "body")
     prepopulated_fields = {"slug": ("title",)}
     raw_id_fields = ("author",)
@@ -16,10 +16,7 @@ class PostAdmin(TranslationAdmin):
     ordering = ("status", "publish")
 
 
-
 @admin.register(NoteInMedia)
 class NoteInMediaAdmin(TranslationAdmin):
     list_display = ("title", "body", "status", "admin_photo")
     prepopulated_fields = {"slug": ("title",)}
-
-

@@ -6,6 +6,7 @@ from taggit.managers import TaggableManager
 from django.core.files.storage import FileSystemStorage
 from ckeditor.fields import RichTextField
 
+
 class Advertisement(models.Model):
     title = models.TextField(null=True, blank=True)
     body = models.TextField(null=True, blank=True)
@@ -34,7 +35,11 @@ class QuantumCourse(models.Model):
     consultationUrl = models.URLField(null=True, blank=True)
     taskUrl = models.URLField(null=True, blank=True)
     course = models.TextField(
-        max_length=10, choices=COURCE_CHOICES, null=True, blank=True, help_text="Не изменять!"
+        max_length=10,
+        choices=COURCE_CHOICES,
+        null=True,
+        blank=True,
+        help_text="Не изменять!",
     )
     advertisement = models.ManyToManyField(Advertisement)
 
@@ -43,5 +48,3 @@ class QuantumCourse(models.Model):
 
     def __str__(self):
         return self.name
-
-
