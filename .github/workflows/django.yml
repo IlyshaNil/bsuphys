@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 env:
-  ENV_FOR_DYNACONF: GITHUB_WORKFLOW
+  ENV_FOR_DYNACONF: github_actions
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         image: postgres:14
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_PASSWORD: 
           POSTGRES_DB: bsuphys
         ports:
           - 5432:5432
