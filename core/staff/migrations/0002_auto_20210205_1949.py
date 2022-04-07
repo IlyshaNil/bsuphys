@@ -7,28 +7,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('staff', '0001_initial'),
+        ("staff", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='staff_unit',
-            name='address',
+            model_name="staff_unit",
+            name="address",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='staff_unit',
-            name='email',
+            model_name="staff_unit",
+            name="email",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='staff_unit',
-            name='phone',
+            model_name="staff_unit",
+            name="phone",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='staff_unit',
-            name='description',
+            model_name="staff_unit",
+            name="description",
             field=ckeditor.fields.RichTextField(blank=True, null=True),
         ),
     ]

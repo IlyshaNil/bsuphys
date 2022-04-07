@@ -7,33 +7,35 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0002_auto_20200718_1403'),
+        ("blog", "0002_auto_20200718_1403"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='post',
-            name='body_en',
+            model_name="post",
+            name="body_en",
             field=ckeditor.fields.RichTextField(null=True),
         ),
         migrations.AddField(
-            model_name='post',
-            name='body_ru',
+            model_name="post",
+            name="body_ru",
             field=ckeditor.fields.RichTextField(null=True),
         ),
         migrations.AddField(
-            model_name='post',
-            name='title_en',
-            field=models.TextField(null=True),
+            model_name="post", name="title_en", field=models.TextField(null=True),
         ),
         migrations.AddField(
-            model_name='post',
-            name='title_ru',
-            field=models.TextField(null=True),
+            model_name="post", name="title_ru", field=models.TextField(null=True),
         ),
         migrations.AlterField(
-            model_name='post',
-            name='status',
-            field=models.TextField(blank=True, choices=[('draft', 'Черновик'), ('published', 'Опубликовать')], help_text='Обязательное поле!', max_length=10, null=True),
+            model_name="post",
+            name="status",
+            field=models.TextField(
+                blank=True,
+                choices=[("draft", "Черновик"), ("published", "Опубликовать")],
+                help_text="Обязательное поле!",
+                max_length=10,
+                null=True,
+            ),
         ),
     ]

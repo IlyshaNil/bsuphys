@@ -7,7 +7,5 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0006_auto_20210205_2348'),
+        ("blog", "0006_auto_20210205_2348"),
     ]
-
-    

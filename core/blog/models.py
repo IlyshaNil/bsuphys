@@ -8,7 +8,6 @@ from ckeditor.fields import RichTextField
 from django.utils.safestring import mark_safe
 
 
-
 from Uploads.models import Uploads
 
 fs = FileSystemStorage(location="/files")
@@ -39,7 +38,11 @@ class Post(models.Model):
         Uploads, null=True, blank=True, on_delete=models.CASCADE
     )
     status = models.TextField(
-        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
+        max_length=10,
+        choices=STATUS_CHOICES,
+        null=True,
+        blank=True,
+        help_text="Обязательное поле!",
     )
 
     tags = TaggableManager()
@@ -52,7 +55,8 @@ class Post(models.Model):
         return self.title
 
     def admin_photo(self):
-        return  mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+        return mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+
     admin_photo.short_description = "Афиша"
     admin_photo.allow_tags = True
 
@@ -74,9 +78,13 @@ class NoteInMedia(models.Model):
     image = models.ImageField(upload_to="media", null=True, blank=True)
     body = RichTextField()
     status = models.TextField(
-        max_length=10, choices=STATUS_CHOICES, null=True, blank=True, help_text="Обязательное поле!"
+        max_length=10,
+        choices=STATUS_CHOICES,
+        null=True,
+        blank=True,
+        help_text="Обязательное поле!",
     )
-    publish = models.DateTimeField(default=timezone.now, )
+    publish = models.DateTimeField(default=timezone.now,)
 
     class Meta:
         ordering = ("-publish",)
@@ -90,4 +98,3 @@ class NoteInMedia(models.Model):
 
     admin_photo.short_description = "Афиша"
     admin_photo.allow_tags = True
-

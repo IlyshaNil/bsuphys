@@ -27,7 +27,7 @@ class Staff_unit(models.Model):
 
     class Meta:
         verbose_name_plural = "Сотрудники"
-        ordering = ['position_var']
+        ordering = ["position_var"]
 
     def __str__(self):
         return self.name

@@ -35,6 +35,7 @@ ALLOWED_HOSTS = _settings.ALLOWED_HOSTS
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
     "rosetta",
     "modeltranslation",
     "django.contrib.admin",
@@ -53,7 +54,6 @@ INSTALLED_APPS = [
     "quantum_School",
     "observatory",
     "departments",
-
 ]
 
 MIDDLEWARE = [
@@ -61,16 +61,12 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
-
-
 
 
 ROOT_URLCONF = "core.urls"
@@ -100,13 +96,7 @@ if _settings.ENV_FOR_DYNACONF == "heroku":
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    # "default": {
-    #   "ENGINE": "django.db.backends.sqlite3",
-    #  "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    # }
-    "default": dj_database_url.parse(db_url, conn_max_age=600)
-}
+DATABASES = {"default": dj_database_url.parse(db_url, conn_max_age=600)}
 
 
 # Password validation
@@ -130,7 +120,6 @@ FILE_UPLOAD_HANDLERS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 
-
 LANGUAGE_CODE = "ru"
 
 prefix_default_language = False
@@ -149,9 +138,7 @@ LANGUAGES = (
     ("en", gettext("English")),
 )
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
-)
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -174,3 +161,10 @@ ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
+JAZZMIN_SETTINGS = {
+    "show_ui_builder": True,
+    "site_title": "Физический факультет БГУ",
+    "site_header": "Физический факультет БГУ",
+    "site_logo": "./login-logo.png",
+    "site_icon": "./favicon.ico",
+}

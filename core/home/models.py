@@ -3,6 +3,7 @@ from ckeditor.fields import RichTextField
 
 # Create your models here.
 
+
 class MainPageStatisticNumber(models.Model):
     number = models.IntegerField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
@@ -14,7 +15,7 @@ class MainPageStatisticNumber(models.Model):
 class KeyPublications(models.Model):
     title = models.TextField(null=True, blank=True)
     authors = models.TextField(null=True, blank=True)
-    journal= models.TextField(null=True, blank=True)
+    journal = models.TextField(null=True, blank=True)
     publicationUrl = models.URLField(max_length=250)
     image = models.ImageField(upload_to="media/keypublications", null=True, blank=True)
 
@@ -37,6 +38,7 @@ class FamousGraduates(models.Model):
         verbose_name_plural = "Известные выпускники"
 
     def admin_photo(self):
-        return  mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+        return mark_safe('<img src="{}" width="100" />'.format(self.image.url))
+
     admin_photo.short_description = "Афиша"
     admin_photo.allow_tags = True

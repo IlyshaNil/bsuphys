@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 09:06+0300\n"
-"PO-Revision-Date: 2022-01-10 09:11+0150\n"
-"Last-Translator: b'  <NilovIV@bsu.by>'\n"
+"POT-Creation-Date: 2022-03-28 13:14+0300\n"
+"PO-Revision-Date: 2022-03-28 13:00+0150\n"
+"Last-Translator: b'  <iv.rchwork@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -78,8 +78,7 @@ msgstr "Subject of theses and master's theses"
 #: core/observatory/templates/observatoryEmployee.html:13
 #: core/staff/templates/listStaffTemplate.html:7
 #: core/staff/templates/listStaffTemplate.html:13
-#: core/staff/templates/staffList.html:7
-#: core/staff/templates/staffList.html:13
+#: core/staff/templates/staffList.html:7 core/staff/templates/staffList.html:13
 msgid "Сотрудники"
 msgstr "Employees"
 
@@ -131,6 +130,7 @@ msgstr "Faculty of Physics booklet"
 
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
+#: core/home/templates/EducationalWork.html:27
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
 msgid "Воспитательная работа"
 msgstr "Educational work"
@@ -169,8 +169,7 @@ msgid "Физико-математическая школа 'Квант БГУ'"
 msgstr "Physics and Mathematics School 'Quantum BSU'"
 
 #: core/home/templates/2.html:18 core/home/templates/header.html:758
-#: core/home/templates/header_6.html:680
-#: core/home/templates/secondStage.html:7
+#: core/home/templates/header_6.html:680 core/home/templates/secondStage.html:7
 msgid "Магистратура"
 msgstr "Master's degree"
 
@@ -181,71 +180,85 @@ msgstr "Cooperation"
 
 #: core/home/templates/3.html:13 core/home/templates/header.html:762
 #: core/home/templates/header_6.html:684
-msgid "Предложения"
-msgstr "Suggestions"
+#: core/home/templates/theFacultyServices.html:7
+#: core/home/templates/theFacultyServices.html:12
+msgid "Услуги"
+msgstr "Services"
 
 #: core/home/templates/3.html:14 core/home/templates/header.html:763
 #: core/home/templates/header_6.html:685
-msgid "Работодателям"
-msgstr "For employers"
+msgid "Предложения"
+msgstr "Suggestions"
 
 #: core/home/templates/3.html:15 core/home/templates/header.html:764
 #: core/home/templates/header_6.html:686
-msgid "Партнеры"
-msgstr "Partners"
+msgid "Работодателям"
+msgstr "For employers"
 
 #: core/home/templates/3.html:16 core/home/templates/header.html:765
 #: core/home/templates/header_6.html:687
+msgid "Партнеры"
+msgstr "Partners"
+
+#: core/home/templates/3.html:17 core/home/templates/header.html:766
+#: core/home/templates/header_6.html:688
 msgid "Спонсоры"
 msgstr "Sponsors"
 
 #: core/home/templates/4.html:7 core/home/templates/4.html:12
-#: core/home/templates/header.html:768 core/home/templates/header_6.html:690
+#: core/home/templates/header.html:769 core/home/templates/header_6.html:691
 msgid "Наука"
 msgstr "Science"
 
-#: core/home/templates/4.html:13 core/home/templates/header.html:769
-#: core/home/templates/header_6.html:691
+#: core/home/templates/4.html:13 core/home/templates/header.html:770
+#: core/home/templates/header_6.html:692
 msgid "Исследования и лаборатории"
 msgstr "Research areas and laboratories"
 
-#: core/home/templates/4.html:14 core/home/templates/header.html:770
-#: core/home/templates/header_6.html:692 core/home/templates/worldwide.html:7
+#: core/home/templates/4.html:14 core/home/templates/header.html:771
+#: core/home/templates/header_6.html:693 core/home/templates/worldwide.html:7
 #: core/home/templates/worldwide.html:36
 msgid "Международное сотрудничество"
 msgstr "International cooperation"
 
 #: core/home/templates/4.html:15 core/home/templates/conferences.html:7
-#: core/home/templates/conferences.html:12 core/home/templates/header.html:771
-#: core/home/templates/header_6.html:693
+#: core/home/templates/conferences.html:12 core/home/templates/header.html:772
+#: core/home/templates/header_6.html:694
 msgid "Конференции"
 msgstr "Conferences"
 
 #: core/home/templates/4.html:16 core/home/templates/PublicationsAll.html:7
-#: core/home/templates/header.html:772 core/home/templates/header_6.html:694
+#: core/home/templates/header.html:773 core/home/templates/header_6.html:695
 #: core/home/templates/main.html:112
 #: core/observatory/templates/observatoryPublications.html:7
 #: core/observatory/templates/observatoryPublications.html:12
 msgid "Публикации"
 msgstr "Publications"
 
-#: core/home/templates/4.html:17 core/home/templates/header.html:773
-#: core/home/templates/header_6.html:695
+#: core/home/templates/4.html:17 core/home/templates/header.html:774
+#: core/home/templates/header_6.html:696
 msgid "Центр коллективного пользования уникальным научным оборудованием"
 msgstr "Center for collective use of unique scientific equipment"
 
-#: core/home/templates/4.html:18 core/home/templates/header.html:774
-#: core/home/templates/header_6.html:696
+#: core/home/templates/4.html:18 core/home/templates/header.html:775
+#: core/home/templates/header_6.html:697
+#: core/home/templates/theWorldBankProj.html:7
+#: core/home/templates/theWorldBankProj.html:12
+msgid "Проект «Модернизация высшего образования Республики Беларусь»"
+msgstr ""
+
+#: core/home/templates/4.html:19 core/home/templates/header.html:776
+#: core/home/templates/header_6.html:698
 msgid "Журнал БГУ. Физика"
 msgstr "BSU Journal: Physics"
 
 #: core/home/templates/5.html:7 core/home/templates/5.html:12
-#: core/home/templates/header.html:777 core/home/templates/header_6.html:699
+#: core/home/templates/header.html:779 core/home/templates/header_6.html:701
 msgid "Образование"
 msgstr "Education"
 
-#: core/home/templates/5.html:13 core/home/templates/header.html:778
-#: core/home/templates/header_6.html:700 core/home/templates/timetable.html:7
+#: core/home/templates/5.html:13 core/home/templates/header.html:780
+#: core/home/templates/header_6.html:702 core/home/templates/timetable.html:7
 #: core/home/templates/timetable.html:13
 #: core/home/templates/timetablemag.html:7
 #: core/quantum_School/templates/quantumSchool10.html:18
@@ -255,32 +268,32 @@ msgstr "Education"
 msgid "Расписание занятий"
 msgstr "Class schedule"
 
-#: core/home/templates/5.html:14 core/home/templates/header.html:779
-#: core/home/templates/header_6.html:701
+#: core/home/templates/5.html:14 core/home/templates/header.html:781
+#: core/home/templates/header_6.html:703
 #: core/home/templates/timetableExam.html:7
 msgid "Расписание экзаменов"
 msgstr "Exam Schedule"
 
 #: core/home/templates/5.html:15 core/home/templates/eduProcess.html:7
-#: core/home/templates/eduProcess.html:13 core/home/templates/header.html:780
-#: core/home/templates/header_6.html:702
+#: core/home/templates/eduProcess.html:13 core/home/templates/header.html:782
+#: core/home/templates/header_6.html:704
 msgid "График образовательного процесса"
 msgstr "Schedule of the educational process"
 
-#: core/home/templates/5.html:16 core/home/templates/header.html:781
-#: core/home/templates/header_6.html:703
+#: core/home/templates/5.html:16 core/home/templates/header.html:783
+#: core/home/templates/header_6.html:705
 #: core/observatory/templates/observatoryMain.html:8
 msgid "Учебно-научная астрономическая лаборатория"
 msgstr "Educational and scientific astronomical laboratory"
 
-#: core/home/templates/5.html:17 core/home/templates/header.html:782
-#: core/home/templates/header_6.html:704 core/home/templates/raspred.html:7
+#: core/home/templates/5.html:17 core/home/templates/header.html:784
+#: core/home/templates/header_6.html:706 core/home/templates/raspred.html:7
 #: core/home/templates/raspred.html:13
 msgid "Распределение"
 msgstr "Employment"
 
-#: core/home/templates/5.html:18 core/home/templates/header.html:783
-#: core/home/templates/header_6.html:705
+#: core/home/templates/5.html:18 core/home/templates/header.html:785
+#: core/home/templates/header_6.html:707
 #: core/home/templates/tutorService.html:7
 #: core/home/templates/tutorService.html:14
 msgid "Тьюторская служба факультета"
@@ -290,40 +303,43 @@ msgstr "Tutor service of the Faculty"
 msgid "Учебно-методические материалы (PhysInfo)"
 msgstr "Teaching materials (PhysInfo)"
 
-#: core/home/templates/5.html:20 core/home/templates/header.html:785
-#: core/home/templates/header_6.html:707
+#: core/home/templates/5.html:20 core/home/templates/header.html:787
+#: core/home/templates/header_6.html:709
 msgid "Студенческая олимпиада"
 msgstr "Student Olympiad"
 
 #: core/home/templates/6.html:7 core/home/templates/6.html:12
-#: core/home/templates/header.html:788 core/home/templates/header_6.html:710
+#: core/home/templates/header.html:790 core/home/templates/header_6.html:712
 #: core/observatory/templates/observatoryContacts.html:7
 msgid "Контакты"
 msgstr "Contacts"
 
 #: core/home/templates/6.html:13 core/home/templates/OneWindow.html:7
-#: core/home/templates/OneWindow.html:12 core/home/templates/header.html:789
-#: core/home/templates/header_6.html:711
+#: core/home/templates/OneWindow.html:12 core/home/templates/header.html:791
+#: core/home/templates/header_6.html:713
 msgid "Одно окно"
 msgstr "One window"
 
 #: core/home/templates/6.html:14 core/home/templates/googleMapsApi.html:7
-#: core/home/templates/header.html:790 core/home/templates/header_6.html:712
+#: core/home/templates/header.html:792 core/home/templates/header_6.html:714
 msgid "Мы на карте"
 msgstr "We are on the map"
 
-#: core/home/templates/EducationalWork.html:13
 #: core/home/templates/EducationalWork.html:16
+#: core/home/templates/EducationalWork.html:28
+#: core/home/templates/EducationalWork.html:31
 msgid "Единый день информирования"
 msgstr "Single day of information"
 
-#: core/home/templates/EducationalWork.html:14
+#: core/home/templates/EducationalWork.html:17
+#: core/home/templates/EducationalWork.html:29
 #: core/home/templates/NwordDocuments.html:7
 #: core/home/templates/NwordDocuments.html:12
 msgid "Нормативные документы"
 msgstr "Regulations"
 
-#: core/home/templates/EducationalWork.html:15
+#: core/home/templates/EducationalWork.html:18
+#: core/home/templates/EducationalWork.html:30
 msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
 
@@ -334,8 +350,8 @@ msgstr "International relations"
 
 #: core/home/templates/NwordDocuments.html:13
 msgid ""
-"Правила внутреннего распорядка для обучающихся в Белорусском государственном"
-" университете"
+"Правила внутреннего распорядка для обучающихся в Белорусском государственном "
+"университете"
 msgstr "Internal regulations for students at the Belarusian State University"
 
 #: core/home/templates/NwordDocuments.html:14
@@ -439,7 +455,7 @@ msgstr ""
 "Based on the conference results, papers can be published in “Nonlinear "
 "Phenomena in Complex Systems” journal (indexed in SCOPUS, WoS)"
 
-#: core/home/templates/depEnergy.html:7
+#: core/home/templates/depEnergy.html:7 core/staff/staff_conf/choises.py:10
 msgid "Кафедра энергофизики"
 msgstr "Department of Energy Physics"
 
@@ -447,10 +463,16 @@ msgstr "Department of Energy Physics"
 msgid "Материалы Единого дня информирования"
 msgstr "Materials of the Single Information Day"
 
-#: core/home/templates/edi.html:13
+#: core/home/templates/edi.html:13 core/home/templates/edi.html:19
 msgid ""
 "Минский городской исполнительный комитет - МАТЕРИАЛЫ К ЕДИНОМУ ДНЮ "
 "ИНФОРМИРОВАНИЯ НАСЕЛЕНИЯ 2021 ГОД"
+msgstr ""
+
+#: core/home/templates/edi.html:14 core/home/templates/edi.html:16
+msgid ""
+"Минский городской исполнительный комитет - МАТЕРИАЛЫ К ЕДИНОМУ ДНЮ "
+"ИНФОРМИРОВАНИЯ НАСЕЛЕНИЯ 2022 ГОД"
 msgstr ""
 
 #: core/home/templates/eduProcess.html:14
@@ -462,7 +484,6 @@ msgid "График образовательного процесса 2020-2021 
 msgstr "Schedule of the educational process 2020-2021 2 stage"
 
 #: core/home/templates/enrollee.html:15
-#| msgid "Физический факультет БГУ для абитуриента - 2021"
 msgid "Физический факультет БГУ для абитуриента - 2022"
 msgstr "Faculty of Physics of BSU for the enrollee - 2022"
 
@@ -479,35 +500,35 @@ msgstr "Analysis of the tasks of the CT in physics"
 msgid "Физический факультет"
 msgstr "Physics faculty"
 
-#: core/home/templates/header.html:784 core/home/templates/header_6.html:706
+#: core/home/templates/header.html:786 core/home/templates/header_6.html:708
 msgid "Учебно-методические материалы"
 msgstr "Teaching materials "
 
-#: core/home/templates/header.html:814 core/home/templates/header_6.html:737
+#: core/home/templates/header.html:816 core/home/templates/header_6.html:739
 msgid "Министерство Образования РБ"
 msgstr "Ministry of Education of the Republic of Belarus"
 
-#: core/home/templates/header.html:817 core/home/templates/header_6.html:740
+#: core/home/templates/header.html:819 core/home/templates/header_6.html:742
 msgid "Белорусский государственный Университет"
 msgstr "Belarusian State University"
 
-#: core/home/templates/header.html:821 core/home/templates/header_6.html:744
+#: core/home/templates/header.html:823 core/home/templates/header_6.html:746
 msgid "Журнал Белорусского государственного университета. Физика"
 msgstr "Journal of the Belarusian State University. Physics"
 
-#: core/home/templates/header.html:825 core/home/templates/header_6.html:748
+#: core/home/templates/header.html:827 core/home/templates/header_6.html:750
 msgid "220006, Минск"
 msgstr "220006, Minsk"
 
-#: core/home/templates/header.html:825 core/home/templates/header_6.html:748
+#: core/home/templates/header.html:827 core/home/templates/header_6.html:750
 msgid "ул. Бобруйская, 5, Физический Факультет"
 msgstr "st. Bobruiskaya, 5, Physics faculty "
 
-#: core/home/templates/header.html:830 core/home/templates/header_6.html:753
+#: core/home/templates/header.html:832 core/home/templates/header_6.html:755
 msgid "Тел.:"
 msgstr "Tel.:"
 
-#: core/home/templates/header.html:831 core/home/templates/header_6.html:754
+#: core/home/templates/header.html:833 core/home/templates/header_6.html:756
 msgid "Факс:"
 msgstr "Fax:"
 
@@ -554,12 +575,10 @@ msgid "на свободное время!"
 msgstr "in their free time"
 
 #: core/home/templates/main.html:66
-#| msgid "Дни физика"
 msgid "Дни Физика"
 msgstr "Days of Physicist"
 
 #: core/home/templates/main.html:67
-#| msgid "Фотография/видео"
 msgid "Фотографии/видео"
 msgstr "Photo/video"
 
@@ -614,8 +633,7 @@ msgid "Тематика исследований: "
 msgstr "Research topics:"
 
 #: core/home/templates/nilAndScienceDir.html:24
-msgid ""
-"медицинская биофизика и биофизические методы в диагностике заболеваний."
+msgid "медицинская биофизика и биофизические методы в диагностике заболеваний."
 msgstr ""
 "medical biophysics and biophysical methods in the diagnosis of diseases."
 
@@ -721,8 +739,8 @@ msgstr "Research Laboratory of Semiconductor Spectroscopy"
 
 #: core/home/templates/nilAndScienceDir.html:76
 msgid ""
-"физика полупроводников и полупроводниковых приборов и структур, радиационное"
-" материаловедение структур диэлектрик-полупроводник."
+"физика полупроводников и полупроводниковых приборов и структур, радиационное "
+"материаловедение структур диэлектрик-полупроводник."
 msgstr ""
 "physics of semiconductors and semiconductor devices and structures, "
 "radiation materials science of dielectric-semiconductor structures."
@@ -760,8 +778,7 @@ msgstr ""
 #: core/home/templates/nilAndScienceDir.html:103
 msgid "д.ф.-м.н. проф. Евгений Семёнович Воропай"
 msgstr ""
-"Doctor of Physical and Mathematical Sciences prof. Evgeny Semyonovich "
-"Voropai"
+"Doctor of Physical and Mathematical Sciences prof. Evgeny Semyonovich Voropai"
 
 #: core/home/templates/nilAndScienceDir.html:111
 msgid "НИЛ физики ионно-плазменной модификации твердых тел"
@@ -774,8 +791,8 @@ msgid ""
 "электронная структура твердых тел; высокоскоростная кристаллизация."
 msgstr ""
 "radiation physics of solids and semiconductors; impact of pulsed plasma "
-"flows on materials; protective coatings; thin films; electronic structure of"
-" solids; high speed crystallization."
+"flows on materials; protective coatings; thin films; electronic structure of "
+"solids; high speed crystallization."
 
 #: core/home/templates/nilAndScienceDir.html:116
 msgid "к.ф.-м.н. Андрей Константинович Кулешов"
@@ -791,8 +808,8 @@ msgid ""
 "диагностика полупроводниковых материалов и разработка способов анализа их "
 "свойств."
 msgstr ""
-"solar energy materials, two-dimensional materials and nanomaterials science,"
-" diagnostics of semiconductor materials and development of methods for "
+"solar energy materials, two-dimensional materials and nanomaterials science, "
+"diagnostics of semiconductor materials and development of methods for "
 "analyzing their properties."
 
 #: core/home/templates/nilAndScienceDir.html:129
@@ -929,8 +946,7 @@ msgstr "· Methods and drugs for biomedical applications"
 
 #: core/home/templates/nilAndScienceDir.html:211
 msgid ""
-"· методы и аппаратно-программные средства спектрально-люминесцентного "
-"анализа"
+"· методы и аппаратно-программные средства спектрально-люминесцентного анализа"
 msgstr "· Methods and hardware and software luminescence analysis"
 
 #: core/home/templates/nilAndScienceDir.html:212
@@ -1209,7 +1225,6 @@ msgstr "Consultation schedule 5 course"
 
 #: core/home/templates/timetableExam.html:29
 #: core/home/templates/timetablemag.html:13
-#| msgid "Расписание магистратуры"
 msgid "Расписание для магистратуры"
 msgstr "Master's Degree Schedule "
 
@@ -1224,7 +1239,6 @@ msgstr "Exams"
 #: core/home/templates/timetableExam.html:33
 #: core/home/templates/timetablemag.html:16
 #: core/home/templates/timetablemag.html:17
-#| msgid "Результаты"
 msgid "Консультации"
 msgstr "Сonsultations"
 
@@ -1626,6 +1640,66 @@ msgstr "Materials in mathematics, grade 10"
 msgid "Материалы по математике, 11 класс"
 msgstr "Materials in mathematics, grade 11"
 
+#: core/staff/staff_conf/choises.py:5
+#, fuzzy
+#| msgid "Расписание физико-математической школы 'Квант БГУ'"
+msgid "Кафедра высшей математики и математической физики"
+msgstr "Physics and Mathematics School 'Quantum BSU' schedule "
+
+#: core/staff/staff_conf/choises.py:6
+#, fuzzy
+#| msgid "Кафедра энергофизики"
+msgid "Кафедра общей физики"
+msgstr "Department of Energy Physics"
+
+#: core/staff/staff_conf/choises.py:7
+#, fuzzy
+#| msgid "· космология и астрофизика"
+msgid "Кафедра теоретической физики и астрофизики"
+msgstr "· cosmology and astrophysics"
+
+#: core/staff/staff_conf/choises.py:8
+#, fuzzy
+#| msgid "Кафедра энергофизики"
+msgid "Кафедра физики твердого тела"
+msgstr "Department of Energy Physics"
+
+#: core/staff/staff_conf/choises.py:9
+#, fuzzy
+#| msgid "· разработка элементной базы микро- и наноэлектроники"
+msgid "Кафедра физики полупроводников и наноэлектроники"
+msgstr "· development of element base for micro- and nanoelectronics"
+
+#: core/staff/staff_conf/choises.py:11
+#, fuzzy
+#| msgid "Кафедра энергофизики"
+msgid "Кафедра ядерной физики"
+msgstr "Department of Energy Physics"
+
+#: core/staff/staff_conf/choises.py:12
+#, fuzzy
+#| msgid "НИЛ нелинейной оптики и спектроскопии"
+msgid "Кафедра лазерной физики и спектроскопии"
+msgstr "Research Laboratory of Nonlinear Optics and Spectroscopy"
+
+#: core/staff/staff_conf/choises.py:13
+#, fuzzy
+#| msgid "· системы оптической памяти и преобразования информации"
+msgid "Кафедра физической оптики и прикладной информатики"
+msgstr "· optical memory and information conversion systems"
+
+#: core/staff/staff_conf/choises.py:14
+#, fuzzy
+#| msgid "Материалы Единого дня информирования"
+msgid "Кафедра компьютерного моделирования"
+msgstr "Materials of the Single Information Day"
+
+#: core/staff/staff_conf/choises.py:15
+#, fuzzy
+#| msgid "Кафедра энергофизики"
+msgid "Кафедра биофизики"
+msgstr "Department of Energy Physics"
+
 #: core/staff/templates/personTemplate.html:17
 msgid "Занимаемая должность"
 msgstr "Position held"
@@ -1687,7 +1761,8 @@ msgstr "Brief information"
 #~ msgstr "degrease"
 
 #~ msgid "выпускников- академиков НАН Беларуси"
-#~ msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
+#~ msgstr ""
+#~ "graduates-academicians of the national Academy of Sciences of Belarus"
 
 #~ msgid "кафедр"
 #~ msgstr "departments"

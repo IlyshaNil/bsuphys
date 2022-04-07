@@ -9,3 +9,19 @@ default:
   SECURE_SSL_REDIRECT: True
   CSRF_COOKIE_SECURE: True
 
+  JAZZMIN_SETTINGS["show_ui_builder"] : True
+
+
+development:
+  DEBUG: True
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost
+
+
+github_actions:
+  DEBUG: True
+  ALLOWED_HOSTS: '*'
+  SECRET_KEY: "xxx"
+  DATABASE_URL: "postgresql://postgres:1234@localhost:5432/bsuphys"
+

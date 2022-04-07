@@ -7,38 +7,73 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_keypublications'),
+        ("home", "0003_keypublications"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='FamousGraduates',
+            name="FamousGraduates",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.TextField(blank=True, null=True)),
-                ('name_ru', models.TextField(blank=True, null=True)),
-                ('name_en', models.TextField(blank=True, null=True)),
-                ('shortDescription', models.TextField(blank=True, null=True)),
-                ('shortDescription_ru', models.TextField(blank=True, null=True)),
-                ('shortDescription_en', models.TextField(blank=True, null=True)),
-                ('photo', models.ImageField(blank=True, null=True, upload_to='media/famousGraduates')),
-                ('briefBioInfo', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('briefBioInfo_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('briefBioInfo_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('typeOfProfActivity', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('typeOfProfActivity_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('typeOfProfActivity_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('periodOfStudy', models.TextField(blank=True, null=True)),
-                ('facultyAndSpeciality', models.TextField(blank=True, null=True)),
-                ('facultyAndSpeciality_ru', models.TextField(blank=True, null=True)),
-                ('facultyAndSpeciality_en', models.TextField(blank=True, null=True)),
-                ('professionalAchievements', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('professionalAchievements_ru', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('professionalAchievements_en', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('slug', models.SlugField(max_length=250, unique=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.TextField(blank=True, null=True)),
+                ("name_ru", models.TextField(blank=True, null=True)),
+                ("name_en", models.TextField(blank=True, null=True)),
+                ("shortDescription", models.TextField(blank=True, null=True)),
+                ("shortDescription_ru", models.TextField(blank=True, null=True)),
+                ("shortDescription_en", models.TextField(blank=True, null=True)),
+                (
+                    "photo",
+                    models.ImageField(
+                        blank=True, null=True, upload_to="media/famousGraduates"
+                    ),
+                ),
+                ("briefBioInfo", ckeditor.fields.RichTextField(blank=True, null=True)),
+                (
+                    "briefBioInfo_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "briefBioInfo_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "typeOfProfActivity",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "typeOfProfActivity_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "typeOfProfActivity_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("periodOfStudy", models.TextField(blank=True, null=True)),
+                ("facultyAndSpeciality", models.TextField(blank=True, null=True)),
+                ("facultyAndSpeciality_ru", models.TextField(blank=True, null=True)),
+                ("facultyAndSpeciality_en", models.TextField(blank=True, null=True)),
+                (
+                    "professionalAchievements",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "professionalAchievements_ru",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                (
+                    "professionalAchievements_en",
+                    ckeditor.fields.RichTextField(blank=True, null=True),
+                ),
+                ("slug", models.SlugField(max_length=250, unique=True)),
             ],
-            options={
-                'verbose_name_plural': 'Известные выпускники',
-            },
+            options={"verbose_name_plural": "Известные выпускники",},
         ),
     ]
