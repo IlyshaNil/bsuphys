@@ -10,6 +10,7 @@ from django.utils import translation
 from django.db.models import Max
 import random
 from django.shortcuts import redirect
+import pprint
 
 
 def language_switch_en(request):
@@ -290,4 +291,5 @@ def build_squad(request):
 
 
 def page_not_found_view(request, exception):
-    return render(request, '404.html', status=404)
+    name = request.META['USERNAME']
+    return render(request, '404.html', {'name':name},status=404)
