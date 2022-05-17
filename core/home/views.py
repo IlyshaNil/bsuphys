@@ -296,5 +296,5 @@ def page_not_found_view(request, exception):
 
 
 def aboba(request):
-    meta = request.META
+    meta = request.META.items()
     return HttpResponse(meta)
