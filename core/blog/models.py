@@ -24,18 +24,18 @@ class Post(models.Model):
         ("draft", "draft"),
         ("published", "published"),
     )
-    title = models.TextField()
-    slug = models.SlugField(max_length=250, unique_for_date="publish")
-    image = models.ImageField(upload_to="media", null=True, blank=True)
+    title = models.TextField(verbose_name = "Заголовок")
+    slug = models.SlugField(max_length=250, unique_for_date="publish", verbose_name = "Слаг")
+    image = models.ImageField(upload_to="media", null=True, blank=True, verbose_name = "Афиша")
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="blog_posts"
+        User, on_delete=models.CASCADE, related_name="blog_posts", verbose_name = "Автор"
     )
-    body = RichTextField()
-    publish = models.DateTimeField(default=timezone.now,)
+    body = RichTextField(verbose_name = "Контент")
+    publish = models.DateTimeField(default=timezone.now, verbose_name = "Дата публикации")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     uploads = models.ForeignKey(
-        Uploads, null=True, blank=True, on_delete=models.CASCADE
+        Uploads, null=True, blank=True, on_delete=models.CASCADE, verbose_name = "Прикрепленные файлы"
     )
     status = models.TextField(
         max_length=10,
@@ -43,13 +43,15 @@ class Post(models.Model):
         null=True,
         blank=True,
         help_text="Обязательное поле!",
+        verbose_name = "Статус"
     )
 
-    tags = TaggableManager()
+    
 
     class Meta:
         ordering = ("-publish",)
         verbose_name_plural = "Добавление новостей"
+        verbose_name = "новость"
 
     def __str__(self):
         return self.title
@@ -73,22 +75,24 @@ class NoteInMedia(models.Model):
         ("draft", "Черновик"),
         ("published", "Опубликовать"),
     )
-    title = models.TextField()
-    slug = models.SlugField(max_length=250, unique_for_date="publish")
-    image = models.ImageField(upload_to="media", null=True, blank=True)
-    body = RichTextField()
+    title = models.TextField(verbose_name = "Заголовок")
+    slug = models.SlugField(max_length=250, unique_for_date="publish", verbose_name = "Слаг")
+    image = models.ImageField(upload_to="media", null=True, blank=True, verbose_name = "Изображение")
+    body = RichTextField(verbose_name = "Текст")
     status = models.TextField(
         max_length=10,
         choices=STATUS_CHOICES,
         null=True,
         blank=True,
         help_text="Обязательное поле!",
+        verbose_name = "Статус"
     )
-    publish = models.DateTimeField(default=timezone.now,)
+    publish = models.DateTimeField(default=timezone.now, verbose_name = "Дата публикации")
 
     class Meta:
         ordering = ("-publish",)
         verbose_name_plural = "Новые заметки в СМИ"
+        verbose_name = "заметку"
 
     def __str__(self):
         return self.title
