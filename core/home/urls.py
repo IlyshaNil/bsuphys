@@ -53,4 +53,5 @@ urlpatterns = [
     path("educations/", views.educations, name="raspred"),
     path("services/", views.services, name="raspred"),
     path("wbg-project/", views.worldbank, name="raspred"),
+    path("/educations/build-squad/", views.build_squad, name="build-squad")
 ]

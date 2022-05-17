@@ -283,3 +283,7 @@ def services(request):
 
 def worldbank(request):
     return render(request, "theWorldBankProj.html")
+
+
+def build_squad(request):
+    return render(request, "build-suqad.html")
