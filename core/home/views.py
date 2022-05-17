@@ -287,3 +287,7 @@ def worldbank(request):
 
 def build_squad(request):
     return render(request, "build-suqad.html")
+
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
