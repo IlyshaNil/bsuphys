@@ -11,6 +11,7 @@ from django.db.models import Max
 import random
 from django.shortcuts import redirect
 import pprint
+from django.http import HttpResponse
 
 
 def language_switch_en(request):
@@ -291,5 +292,9 @@ def build_squad(request):
 
 
 def page_not_found_view(request, exception):
-    name = request.META['USERNAME']
-    return render(request, '404.html', {'name':name},status=404)
+    return render(request, '404.html', status=404)
+
+
+def aboba(request):
+    meta = request.META
+    return HttpResponse(meta)
