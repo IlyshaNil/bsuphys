@@ -60,7 +60,8 @@ def language_switch_ru_main(request):
 def index(request):
     post = Post.published.latest("publish")
     lastKeyPub = KeyPublications.objects.order_by("-id")[:3]
-    randomNumbers = get_random_statistic_number()
+    randomNumbers = get_random_statistic_number(MainPageStatisticNumber, 4)
+    random_alumnu = get_random_statistic_number(FamousGraduates, 3)
     return render(
         request,
         "main.html",
@@ -73,6 +74,7 @@ def index(request):
             "pub1": lastKeyPub[0],
             "pub2": lastKeyPub[1],
             "pub3": lastKeyPub[2],
+            "graduates": random_alumnu,
         },
     )
 
@@ -153,11 +155,11 @@ def timofey(request):
     return HttpResponse("url для Тимофея")
 
 
-def get_random_statistic_number():
-    max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))["max_id"]
+def get_random_statistic_number(model_class, amount):
+    max_id = model_class.objects.all().aggregate(max_id=Max("id"))["max_id"]
     value_list = []
     pk_list = []
-    for elm in "01234":
+    for elm in range(0, amount+1):
 
         while True:
             pk = random.randint(1, max_id)
@@ -165,7 +167,7 @@ def get_random_statistic_number():
                 break
 
         pk_list.append(pk)
-        value = MainPageStatisticNumber.objects.filter(pk=pk).first()
+        value = model_class.objects.get(pk=pk)
         if value:
             value_list.append(value)
     return value_list

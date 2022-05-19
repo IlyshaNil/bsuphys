@@ -126,59 +126,16 @@
 <div class="people">
     <div class="container">
         <div class="people_title">{% trans "Известные выпускники" %}</div>
-        {% get_current_language as LANGUAGE_CODE %}
-        {% if LANGUAGE_CODE == "ru"%}
         <div class="people_page row between-lg between-md center-sm center-xs">
+            {% for elm in graduates %}
             <div class="block col-lg-3 col-md-3 col-sm-9 col-xs-9 wow animate__animated animate__fadeInLeft">
-                <img src="{% static 'home/assets/images/5ce1093bf86a16b3742ef14b7f98db64.png' %}">
-                <div class="title">Кислый Виктор Владимирович</div>
-                <div class="about">выпускник 1999 года</div>
-                <div class="description">Основатель компании «Game Stream» (1998 г.). В том же году зарегистрировал
-                    компанию Wargaming, стал ее генеральным директором. Создатель знаменитой игры «World of Tanks».</div>
+                <img src="{{ elm.photo.url }}">
+                <div class="title">{{ elm.name }}</div>
+                <div class="about">{{ elm.shortDescription }}</div>
+                <div class="description">{{ elm.typeOfProfActivity }}</div>
             </div>
-            <div class="block col-lg-3 col-md-3 publication_none wow animate__animated animate__fadeIn">
-                <img src="{% static 'home/assets/images/dccdfb39c30a45e5751b026db7f0ceb6.png' %}">
-                <div class="title">Румянцев Михаил Леонидович</div>
-                <div class="about">выпускник 2011 года</div>
-                <div class="description">Основатель и генеральный директор стартап-компании «FriendlyData» (с 2016 г.);
-                    вошел в рейтинг молодых бизнесменов «2019 Европа 30 до 30», составленный журналом Forbes в
-                    категории «Технологии».</div>
-            </div>
-            <div class="block col-lg-3 col-md-3 publication_none wow animate__animated animate__fadeInRight">
-                <img src="{% static 'home/assets/images/0bed092b85204adbfadc82acb47a0468.png' %}">
-                <div class="title">Кондрашов Олег Владимирович</div>
-                <div class="about">выпускник 2007 года</div>
-                <div class="description">Генеральный директор компании EnCata - инжинирингового центра по разработке и
-                    производству промышленных прототипов; «Минчанин года — 2016» в области промышленности.</div>
-            </div>
+            {% endfor %}
         </div>
-        {% endif %}
-        {% if LANGUAGE_CODE == "en"%}
-        <div class="people_page row between-lg between-md center-sm center-xs">
-            <div class="block col-lg-3 col-md-3 col-sm-9 col-xs-9 wow animate__animated animate__fadeInLeft">
-                <img src="{% static 'home/assets/images/5ce1093bf86a16b3742ef14b7f98db64.png' %}">
-                <div class="title">Viktor V. Kisly</div>
-                <div class="about">graduate of 1999</div>
-                <div class="description">The Founder of Game Stream (1998). In the same year he registered the
-                    Wargaming company and became its CEO. The creator of the famous game "World of Tanks".</div>
-            </div>
-            <div class="block col-lg-3 col-md-3 publication_none wow animate__animated animate__fadeIn">
-                <img src="{% static 'home/assets/images/dccdfb39c30a45e5751b026db7f0ceb6.png' %}">
-                <div class="title">Mikhail L. Rumyantsev</div>
-                <div class="about">graduate of 2011</div>
-                <div class="description">The Founder and CEO of the start-up company "FriendlyData" (since 2016);
-                    entered the rating of young businessmen "2019 Europe 30 under 30", compiled by Forbes magazine
-                    in the category "Technology".</div>
-            </div>
-            <div class="block col-lg-3 col-md-3 publication_none wow animate__animated animate__fadeInRight">
-                <img src="{% static 'home/assets/images/0bed092b85204adbfadc82acb47a0468.png' %}">
-                <div class="title">Oleg V. Kondrashov</div>
-                <div class="about">graduate of 2007</div>
-                <div class="description">CEO of EnCata, an engineering center for the development and production of
-                    industrial prototypes; "Minsk native of the year - 2016" in the field of industry.</div>
-            </div>
-        </div>
-        {% endif %}
         <a class="button_more" href="/alums/">{% trans "Подробнее" %}</a>
     </div>
 </div>
