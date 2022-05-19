@@ -159,7 +159,7 @@ def get_random_statistic_number(model_class, amount):
     max_id = model_class.objects.all().aggregate(max_id=Max("pk"))["max_id"]
     value_list = []
     pk_list = []
-    for elm in range(0, amount+1):
+    for elm in range(0, amount):
 
         while True:
             pk = random.randint(1, max_id)
