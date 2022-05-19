@@ -132,7 +132,13 @@
                 <img src="{{ elm.photo.url }}">
                 <div class="title">{{ elm.name }}</div>
                 <div class="about">{{ elm.shortDescription }}</div>
+                {% if elm.typeOfProfActivity %}
                 <div class="description">{{ elm.typeOfProfActivity|safe|truncatechars:240|linebreaks }}</div>
+                {% elif elm.professionalAchievements %}
+                <div class="description">{{ elm.professionalAchievements|safe|truncatechars:240|linebreaks }}</div>
+                {% else %}
+                <div class="description">{{ elm.briefBioInfo|safe|truncatechars:240|linebreaks }}</div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
