@@ -132,7 +132,7 @@
                 <img src="{{ elm.photo.url }}">
                 <div class="title">{{ elm.name }}</div>
                 <div class="about">{{ elm.shortDescription }}</div>
-                <div class="description">{{ elm.typeOfProfActivity }}</div>
+                <div class="description">{{ elm.typeOfProfActivity|safe|truncatechars:240|linebreaks }}</div>
             </div>
             {% endfor %}
         </div>
