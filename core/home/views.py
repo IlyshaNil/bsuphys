@@ -156,18 +156,18 @@ def timofey(request):
 
 
 def get_random_statistic_number(model_class, amount):
-    max_id = model_class.objects.value_list('id')
+    max_id = list(model_class.objects.values('id'))
+    value_list = []
     pk_list = []
-    for elm in max_id:
+    for elm in range(0, amount):
         while True:
-            pk = random.randint(min(max_id), max(max_id))
+            pk = random.randint(0, len(max_id)-1)
             if not pk in pk_list:
                 break
 
-        pk_list.append(pk)
-        value = model_class.objects.get(pk=pk)
-        if value:
-            value_list.append(value)
+        pk_list.append(max_id[pk])
+        value = model_class.objects.get(pk=max_id[pk]['id'])
+        value_list.append(value)
     return value_list
 
 
