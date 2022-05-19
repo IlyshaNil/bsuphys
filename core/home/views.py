@@ -156,7 +156,7 @@ def timofey(request):
 
 
 def get_random_statistic_number(model_class, amount):
-    max_id = model_class.objects.all().aggregate(max_id=Max("id"))["max_id"]
+    max_id = model_class.objects.all().aggregate(max_id=Max("pk"))["max_id"]
     value_list = []
     pk_list = []
     for elm in range(0, amount+1):
