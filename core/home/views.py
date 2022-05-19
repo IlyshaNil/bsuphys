@@ -165,7 +165,7 @@ def get_random_statistic_number(model_class, amount):
             if not pk in pk_list:
                 break
 
-        pk_list.append(max_id[pk])
+        pk_list.append(pk)
         value = model_class.objects.get(pk=max_id[pk]['id'])
         value_list.append(value)
     return value_list
