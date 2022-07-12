@@ -3,13 +3,14 @@ from django.shortcuts import render, get_object_or_404
 from blog.models import Post
 from home.models import MainPageStatisticNumber, KeyPublications, FamousGraduates
 from django.utils import timezone
-from django.utils.translation import LANGUAGE_SESSION_KEY
 from django.conf import settings
 from django.http import HttpResponse
 from django.utils import translation
 from django.db.models import Max
 import random
 from django.shortcuts import redirect
+import pprint
+from django.http import HttpResponse
 
 
 def language_switch_en(request):
@@ -58,7 +59,8 @@ def language_switch_ru_main(request):
 def index(request):
     post = Post.published.latest("publish")
     lastKeyPub = KeyPublications.objects.order_by("-id")[:3]
-    randomNumbers = get_random_statistic_number()
+    randomNumbers = get_random_statistic_number(MainPageStatisticNumber, 4)
+    random_alumnu = get_random_statistic_number(FamousGraduates, 3)
     return render(
         request,
         "main.html",
@@ -71,6 +73,7 @@ def index(request):
             "pub1": lastKeyPub[0],
             "pub2": lastKeyPub[1],
             "pub3": lastKeyPub[2],
+            "graduates": random_alumnu,
         },
     )
 
@@ -151,21 +154,19 @@ def timofey(request):
     return HttpResponse("url для Тимофея")
 
 
-def get_random_statistic_number():
-    max_id = MainPageStatisticNumber.objects.all().aggregate(max_id=Max("id"))["max_id"]
+def get_random_statistic_number(model_class, amount):
+    max_id = list(model_class.objects.values('id'))
     value_list = []
     pk_list = []
-    for elm in "01234":
-
+    for elm in range(0, amount):
         while True:
-            pk = random.randint(1, max_id)
+            pk = random.randint(0, len(max_id)-1)
             if not pk in pk_list:
                 break
 
         pk_list.append(pk)
-        value = MainPageStatisticNumber.objects.filter(pk=pk).first()
-        if value:
-            value_list.append(value)
+        value = model_class.objects.get(pk=max_id[pk]['id'])
+        value_list.append(value)
     return value_list
 
 
@@ -283,3 +284,16 @@ def services(request):
 
 def worldbank(request):
     return render(request, "theWorldBankProj.html")
+
+
+def build_squad(request):
+    return render(request, "build-suqad.html")
+
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
+
+
+def aboba(request):
+    meta = request.META.items()
+    return HttpResponse(meta)

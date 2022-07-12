@@ -687,6 +687,7 @@
                 <a href="#">{% trans "Партнеры" %}</a>
                 <a href="#">{% trans "Спонсоры" %}</a>
             </div>
+            {% get_current_language as LANGUAGE_CODE %}
             <div class="position col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <p>{% trans "Наука" %}</p>
                 <a href="/science-directions/">{% trans "Исследования и лаборатории" %}</a>
@@ -695,7 +696,12 @@
                 <a href="/key-pub/">{% trans "Публикации" %}</a> <!-- Вариант для перевода на английский язык: 'Publications' -->
                 <a href="/ckp/">{% trans "Центр коллективного пользования уникальным научным оборудованием" %}</a>
                 <a href="/wbg-project/">{% trans "Проект «Модернизация высшего образования Республики Беларусь»" %}</a>
-                <a href="https://journals.bsu.by/index.php/physics">{% trans "Журнал БГУ. Физика" %}</a> <!-- Вариант для перевода на английский язык: 'Journal of BSU. Physics' -->
+                {% if LANGUAGE_CODE == "ru"%}
+                <a href="https://journals.bsu.by/index.php/physics/user/setLocale/ru_RU?source=%2Findex.php%2Fphysics">{% trans "Журнал БГУ. Физика" %}</a> <!-- Вариант для перевода на английский язык: 'Journal of BSU. Physics' -->
+                {% endif %}
+                {% if LANGUAGE_CODE == "en"%}
+                <a href="https://journals.bsu.by/index.php/physics/user/setLocale/en_US?source=%2Findex.php%2Fphysics">{% trans "Журнал БГУ. Физика" %}</a> <!-- Вариант для перевода на английский язык: 'Journal of BSU. Physics' -->
+                {% endif %}
             </div>
             <div class="position col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <p>{% trans "Образование" %}</p>

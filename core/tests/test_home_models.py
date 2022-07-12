@@ -23,3 +23,16 @@ def test_key_publications_model():
 
     assert article.title == "pytest-title"
     assert article.publicationUrl == "https://pytest.com"
+
+
+@pytest.mark.django_db
+def test_famous_graduates_model():
+    graduate = FamousGraduates.objects.create(
+        name="Linus Torvalds",
+        periodOfStudy="1997",
+        professionalAchievements="this finger wrote linux"
+    )
+
+    assert graduate.name == "Linus Torvalds"
+    assert graduate.periodOfStudy == "1997"
+    assert graduate.professionalAchievements == "this finger wrote linux"

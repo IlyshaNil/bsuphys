@@ -14,3 +14,7 @@ class Department(models.Model):
     courses = RichTextField(null=True, blank=True)
     staff = models.ManyToManyField(Staff_unit)
     slug = models.SlugField(max_length=250)
+
+    class Meta:
+        verbose_name_plural = "Добавление кафедры"
+        verbose_name = "кафедры"
