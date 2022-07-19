@@ -60,26 +60,26 @@ def language_switch_ru_main(request):
 def index(request):
     post = Post.published.latest("publish")
     lastKeyPub = KeyPublications.objects.order_by("-id")[:3]
-    if MainPageStatisticNumber.objects.count() > 4 and FamousGraduates.objects.count() > 3:
-        randomNumbers = get_random_statistic_number(MainPageStatisticNumber, 4)
-        random_alumnu = get_random_statistic_number(FamousGraduates, 3)
-        return render(
-            request,
-            "main.html",
-            {
-                "post": post,
-                "stat1": randomNumbers[0],
-                "stat2": randomNumbers[1],
-                "stat3": randomNumbers[2],
-                "stat4": randomNumbers[3],
-                "pub1": lastKeyPub[0],
-                "pub2": lastKeyPub[1],
-                "pub3": lastKeyPub[2],
-                "graduates": random_alumnu,
-            },
-        )
-    else:
-        return HttpResponse("200 OK")
+    # if MainPageStatisticNumber.objects.count() > 3 and FamousGraduates.objects.count() > 2:
+    randomNumbers = get_random_statistic_number(MainPageStatisticNumber, 4)
+    random_alumnu = get_random_statistic_number(FamousGraduates, 3)
+    return render(
+        request,
+        "main.html",
+        {
+            "post": post,
+            "stat1": randomNumbers[0],
+            "stat2": randomNumbers[1],
+            "stat3": randomNumbers[2],
+            "stat4": randomNumbers[3],
+            "pub1": lastKeyPub[0],
+            "pub2": lastKeyPub[1],
+            "pub3": lastKeyPub[2],
+            "graduates": random_alumnu,
+        },
+    )
+    # else:
+    #     return HttpResponse("200 OK")
 
 
 def alum_detail(request, alum):
