@@ -1,0 +1,138 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Профбюро факультета" %}{% endblock %}
+
+
+{% block content %}
+<div class="pages">
+  {% get_current_language as LANGUAGE_CODE %}
+  <div class="container">
+      <div class="page_name">{% trans "Профбюро факультета" %}</div>
+ 
+  {% if LANGUAGE_CODE == "ru"%}
+      <p>
+        На <strong>физическом&nbsp;факультете Белорусского государственного&nbsp;университета</strong> функционирует <strong>первичный профсоюзный&nbsp;комитет его работников</strong>.<br><br>
+        Целью&nbsp;деятельности Профсоюза является защита социально-экономических, правовых и иных интересов <strong>всех&nbsp;сотрудников</strong> физического&nbsp;факультета.
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <table class="table-p-special" style="width:100%;" cellspacing="1" cellpadding="12" border="1">
+        <caption style="text-alghn:center!important;"><h2 style="margin-bottom:18px!important; text-align:center!important; font-weight:600!important;">Состав профбюро</h2></caption>
+        <tbody>
+          <tr style="display:flex; flex-direction:column; flex-wrap: nowrap!important; margin:0!important;">
+            <td rowspan="3" style="text-align:left; width:100%; padding:25px;">
+              <h3 style="margin-bottom: 10px!important; font-size:27px!important; font-style:oblique!important; font-weight:400;">Председатель профсоюзного комитета ППО&nbsp;работников&nbsp;БГУ физического&nbsp;факультета:</h3>
+            </td>
+          </tr><tr style="display:flex; flex-direction:row; flex-wrap: wrap!important;">
+            <td rowspan="3" style="text-align:left; vertical-align:top; width:50%; padding:25px;">
+              <p>
+                <a href="https://physics.bsu.by/ru/staff/larkina-elena-petrovna/" style="font-size: 22px!important; display: inline; padding-bottom: 0 !important; width: fit-content !important; text-decoration: none !important; border-bottom: 2px solid #e5bc29;" target="_blank">Ларькина Елена Петровна</a>
+                <p>&nbsp;</p>
+                <p>Ведущий&nbsp;специалист по учебному&nbsp;оборудованию</p>
+              </p>
+              <br>
+
+            <p style="margin-bottom:5px;">Сл.тел: <strong>+375&nbsp;(17)&nbsp;209-51-19&nbsp;(62-41)</strong></p>
+            <p style="margin-bottom:5px;">Адрес: <strong>г.&nbsp;Минск, ул.&nbsp;Бобруйская,&nbsp;5, к.&nbsp;222</strong></p>
+            </td>
+            <td rowspan="3" style="text-align:center; width:50%; padding:0;display: inline-flex !important;flex-direction: column !important;justify-content: center;"><img alt="Ларькина Е. П., председат. просоюзн. комитета физич. факульт." src="https://physics.bsu.by/media/media/staff/PBK_0444.jpg" style="height:auto; width:100%!important; padding: 0 5%;margin: 5% 0;"></td>
+          <div></div></tr>
+        </tbody>
+      </table>
+<br>
+<br>
+<br>
+<br>
+
+      <table class="table-p-special" style="width:100%;" cellspacing="1" cellpadding="12" border="1">
+        <caption style="text-alghn:center!important;"><h2 style="margin-bottom:18px!important; text-align:center!important; font-weight:600!important;">Основные документы</h2></caption>
+        <tbody>
+          <tr style="display:flex; flex-direction:column; flex-wrap: nowrap!important; margin-bottom:0!important; width:100%!important;">
+            <td rowspan="3" style="text-align:left; width:100%!important; padding:25px;">
+              <span style="display:block; margin:0 auto!important; font-style:italic!important; font-size:18px; text-align:center!important; color:#c2c2c2!important; user-select:none!important;">Информация не размещена</span>
+              <ul style="display:none!important; margin-bottom: 10px!important; font-size:18px!important; font-style:oblique!important; font-weight:400;">
+                <li><a href="#"></a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+<br>
+<br>
+<p style="margin-bottom:12px!important;"><strong><a href="https://bsu.by/structure/organizations/profsoyuznyy-komitet-rabotnikov-bgu-d/about" style="display:inline; padding-bottom:0!important; width:fit-content!important; text-decoration:none!important; font-size:18px!important; border-bottom: 2px solid #e5bc29;" target="_blank">Страница профсоюзного&nbsp;комитета работников БГУ</a></strong> на официальном сайте университета.</p>
+<p><strong><a href="https://tradeunion.bsu.by/" style="display: inline; padding-bottom: 0 !important; width: fit-content !important; font-size:18px!important; text-decoration: none !important; border-bottom: 2px solid #e5bc29;" target="_blank">Сайт Первичной профсоюзной&nbsp;организации работников&nbsp;БГУ</a></strong>.</p>
+ {% endif %}
+ {% if LANGUAGE_CODE == "en"%}
+      <p>
+        At <strong>the&nbsp;Faculty&nbsp;of&nbsp;Physics of the&nbsp;Belarusian State&nbsp;University</strong> functions the&nbsp;<strong>Primary Trade&nbsp;Union Committee of its employees</strong>.<br><br>
+        The&nbsp;purpose of the&nbsp;activity of the&nbsp;Trade&nbsp;Union is to protect the&nbsp;socio-economic, legal and other&nbsp;interests of <strong>all&nbsp;employees</strong> of the&nbsp;Faculty&nbsp;of&nbsp;Physics.
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <table class="table-p-special" style="width:100%;" cellspacing="1" cellpadding="12" border="1">
+        <caption style="text-alghn:center!important;"><h2 style="margin-bottom:18px!important; text-align:center!important; font-weight:600!important;">Staff of the&nbsp;Trade&nbsp;Union Bureau</h2></caption>
+        <tbody>
+          <tr style="display:flex; flex-direction:column; flex-wrap: nowrap!important; margin:0!important;">
+            <td rowspan="3" style="text-align:left; width:100%; padding:25px;">
+              <h3 style="margin-bottom: 10px!important; font-size:27px!important; font-style:oblique!important; font-weight:400;">Chairman of the&nbsp;Trade&nbsp;Union Committee of the&nbsp;Faculty&nbsp;of&nbsp;Physics,<br>the&nbsp;Primary Trade&nbsp;Union Organization of&nbsp;BSU&nbsp;Workers:</h3>
+            </td>
+          </tr><tr style="display:flex; flex-direction:row; flex-wrap: wrap!important;">
+            <td rowspan="3" style="text-align:left; vertical-align:top; width:50%; padding:25px;">
+              <p>
+                <a href="https://physics.bsu.by/en/staff/larkina-elena-petrovna/" style="font-size: 22px!important; display: inline; padding-bottom: 0 !important; width: fit-content !important; text-decoration: none !important; border-bottom: 2px solid #e5bc29;" target="_blank">Elena&nbsp;P.&nbsp;Larkina</a>
+                <p>&nbsp;</p>
+                <p>Leading&nbsp;specialist in training&nbsp;equipment</p>
+              </p>
+              <br>
+
+            <p style="margin-bottom:5px;">Phone: <strong>+375&nbsp;(17)&nbsp;209-51-19&nbsp;(62-41)</strong></p>
+            <p style="margin-bottom:5px;">Address: <strong>Minsk, 5,&nbsp;Bobruiskaya&nbsp;st., office&nbsp;222</strong></p>
+            </td>
+            <td rowspan="3" style="text-align:center; width:50%; padding:0;display: inline-flex !important;flex-direction: column !important;justify-content: center;"><img alt="E. P. Larkina, Chairm. of Trade Un. Commitee of the Faculty. of Phys." src="https://physics.bsu.by/media/media/staff/PBK_0444.jpg" style="height:auto; width:100%!important; padding: 0 5%;margin: 5% 0;"></td>
+          <div></div></tr>
+        </tbody>
+      </table>
+<br>
+<br>
+<br>
+<br>
+
+      <table class="table-p-special" style="width:100%;" cellspacing="1" cellpadding="12" border="1">
+        <caption style="text-alghn:center!important;"><h2 style="margin-bottom:18px!important; text-align:center!important; font-weight:600!important;">Basic&nbsp;documents</h2></caption>
+        <tbody>
+          <tr style="display:flex; flex-direction:column; flex-wrap: nowrap!important; margin-bottom:0!important; width:100%!important;">
+            <td rowspan="3" style="text-align:left; width:100%!important; padding:25px;">
+              <span style="display:block; margin:0 auto!important; font-style:italic!important; font-size:18px; text-align:center!important; color:#c2c2c2!important; user-select:none!important;">Information not posted</span>
+              <ul style="display:none!important; margin-bottom: 10px!important; font-size:18px!important; font-style:oblique!important; font-weight:400;">
+                <li><a href="#"></a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+<br>
+<br>
+<p style="margin-bottom:12px!important;"><strong><a href="https://bsu.by/structure/organizations/profsoyuznyy-komitet-rabotnikov-bgu-d/about" style="display:inline; padding-bottom:0!important; width:fit-content!important; text-decoration:none!important; font-size:18px!important; border-bottom: 2px solid #e5bc29;" target="_blank">The page of the&nbsp;Trade&nbsp;Union Committee of BSU&nbsp;employees</a></strong> on the official website of the&nbsp;University</p>
+<p><strong><a href="https://tradeunion.bsu.by/" style="display: inline; padding-bottom: 0 !important; width: fit-content !important; font-size:18px!important; text-decoration: none !important; border-bottom: 2px solid #e5bc29;" target="_blank">Website of the&nbsp;Primary Trade&nbsp;Union Organization of BSU&nbsp;Workers</a></strong>.</p>
+{% endif %}
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    </div>
+</div>
+{% endblock %}
