@@ -7,20 +7,20 @@
 {% block title %}{% trans "Разработки" %}{% endblock %}
 
 {% block content %}
-<div id="services-special" class="pages">
+<div id="equip-sw" class="pages">
     <div class="container">
         <div class="page_name">{% trans "Разработки" %}</div>
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE == "ru"%}
         <ul style="margin-bottom:30px!important;">
             <li style="padding-bottom:15px;">
-                <p><strong>В настоящем каталоге приводится список услуг, которые могут быть оказаны физическим&nbsp;факультетом БГУ в рамках прямых договоров&nbsp;(контрактов)</strong></p>
+                <p><strong>В настоящем каталоге представлен список разработанного на физическом&nbsp;факультете Белорусского государственного университета оборудования и программного обеспечения, доступного к заказу</strong></p>
             </li>
             <li style="padding-bottom:15px;">
-                <p><strong>Вы можете скачать <a id="link-services" download="" href="https://physics.bsu.by/media/media/Spisok-uslug-fizicheskogo-fakulteta-2022_2.pdf" style="display:inline!important; font-weight:bold;">список услуг в формате&nbsp;PDF</a></strong></p>
+                <p><strong>Вы можете скачать <a download="" href="https://physics.bsu.by/media/media/_Spisok_razrabotok_fizicheskogo_fakulteta_BGU_2022.pdf" style="display:inline!important; font-weight:bold;" id="link-equip-softw-1">список разработок в формате&nbsp;PDF</a></strong></p>
             </li>
             <li style="padding-bottom:15px;">
-                <p><strong>В наименованиях&nbsp;услуг представлены ссылки на контактные данные заведующих&nbsp;кафедрами, где проводятся указанные работы</strong></p>
+                <p><strong>В наименованиях приведены ссылки на контактные&nbsp;данные заведующих кафедрами / лабораториями, где созданы указанные разработки</strong></p>
             </li>
         </ul>
         
@@ -40,6 +40,12 @@
             <p style="display:inline!important;"><strong style="visibility:hidden!important; user-select:none!important;">e‑mail: </strong><u><a href="mailto:kolesovea@bsu.by" style="display:inline!important; padding:0!important; text-decoration:none!important;">kolesovea@bsu.by</a></u></p>
         </div>
 
+        <p>&nbsp;</p>
+        <ul style="margin-bottom:30px!important;">     
+            <li style="padding-bottom:15px;">
+                <p><strong>Также Вы можете ознакомиться со <a href="https://physics.bsu.by/ru/services/" id="link-equip-softw-2" style="display:inline!important; font-weight:bold;">списком наукоёмких услуг физического факультета</a></strong></p>
+            </li>
+        </ul>
         <p>&nbsp;</p>
 
         <div class="table-box" style="width:100%; max-width:1980px!important; overflow-x:auto!important; -ms-overflow-style:none!important; scrollbar-width:none!important;">
