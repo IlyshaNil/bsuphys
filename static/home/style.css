@@ -896,7 +896,8 @@
 
 /* ------------------------------------------------------------ */
 
-#services-special a {
+#services-special a,
+#equip-sw a {
   display: inline;
   padding-bottom: 0 !important;
   width: -webkit-fit-content !important;
