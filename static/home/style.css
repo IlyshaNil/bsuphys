@@ -908,6 +908,19 @@
   font-weight: 500;
 }
 
+#equip-sw table a {
+  border-bottom: none !important;
+}
+
+#equip-sw table a:hover {
+  color: #e5bc29 !important;
+  border-bottom: 2px solid #e5bc29 !important;
+}
+
+#equip-sw table a:hover > strong > span {
+  color: unset !important;
+}
+
 div.responsible-person > p:nth-of-type(4) a,
 div.responsible-person > p:nth-of-type(5) a {
   border-bottom: none !important;
