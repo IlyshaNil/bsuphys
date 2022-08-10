@@ -896,7 +896,7 @@
 
 /* ------------------------------------------------------------ */
 
-#services-special a,
+#services-special a, 
 #equip-sw a {
   display: inline;
   padding-bottom: 0 !important;
@@ -919,6 +919,10 @@
 
 #equip-sw table a:hover > strong > span {
   color: unset !important;
+}
+
+.td-price-2 {
+  text-align: center !important;
 }
 
 div.responsible-person > p:nth-of-type(4) a,
