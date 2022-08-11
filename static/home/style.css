@@ -917,7 +917,9 @@
   border-bottom: 2px solid #e5bc29 !important;
 }
 
-#equip-sw table a:hover > strong > span {
+#equip-sw table a:hover > strong > span,
+#equip-sw table a:hover > strong > em > span,
+#equip-sw table a:hover > span {
   color: unset !important;
 }
 
