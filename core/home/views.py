@@ -305,3 +305,7 @@ def aboba(request):
 
 def tradeUnion(request):
     return render(request, "primaryTradeUnionCommitee.html")
+
+
+def development(request):
+    return render(request, "theFacultyEquipmAndSoftware.html")
