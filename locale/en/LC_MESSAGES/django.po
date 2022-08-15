@@ -136,22 +136,16 @@ msgstr "Faculty of Physics booklet"
 msgid "Воспитательная работа"
 msgstr "Social issues"
 
+#: core/home/templates/build-suqad.html:7
 #: core/home/templates/EducationalWork.html:19
 msgid "Студенческий отряд 2022"
 msgstr "Студенческий отряд 2022"
-
-#: core/home/templates/EducationalWork.html:20
-msgid "Профбюро факультета"
-msgstr "Faculty Trade Union Bureau"
 
 #: core/home/templates/EducationalWork.html:21
 msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 
-#: core/home/templates/build-suqad.html:7
-msgid "Студенческий отряд 2022"
-msgstr "Студенческий отряд 2022"
-
+#: core/home/templates/EducationalWork.html:20
 #: core/home/templates/primaryTradeUnionCommitee.html:7 
 #: core/home/templates/primaryTradeUnionCommitee.html:14
 msgid "Профбюро факультета"
@@ -378,9 +372,7 @@ msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
 
 #: core/home/templates/EducationalWork.html:19
-#, fuzzy
-#| msgid "Студенческая олимпиада 2021"
-msgid "Студенческий отряд 2022"
+msgid "Студенческая олимпиада 2021"
 msgstr "Student Olimpiad 2021"
 
 #: core/home/templates/InternationalConnection.html:7
