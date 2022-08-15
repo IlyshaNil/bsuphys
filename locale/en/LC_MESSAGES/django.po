@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 13:14+0300\n"
-"PO-Revision-Date: 2022-03-28 13:00+0150\n"
-"Last-Translator: b'  <iv.rchwork@gmail.com>'\n"
+"POT-Creation-Date: 2022-07-10 17:57+0300\n"
+"PO-Revision-Date: 2022-07-10 20:28+0150\n"
+"Last-Translator: Иван Реентович <iv.rchwork@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.9.4\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: core/blog/templates/pagination.html:3
 msgid "Предыдущая страница >"
@@ -48,11 +48,11 @@ msgstr "Attached documents"
 msgid "Мы в СМИ"
 msgstr "We are in the media"
 
-#: core/core/settings.py:148
+#: core/core/settings.py:137
 msgid "Russian"
 msgstr ""
 
-#: core/core/settings.py:149
+#: core/core/settings.py:138
 msgid "English"
 msgstr ""
 
@@ -78,7 +78,8 @@ msgstr "Subject of theses and master's theses"
 #: core/observatory/templates/observatoryEmployee.html:13
 #: core/staff/templates/listStaffTemplate.html:7
 #: core/staff/templates/listStaffTemplate.html:13
-#: core/staff/templates/staffList.html:7 core/staff/templates/staffList.html:13
+#: core/staff/templates/staffList.html:7
+#: core/staff/templates/staffList.html:13
 msgid "Сотрудники"
 msgstr "Employees"
 
@@ -130,7 +131,7 @@ msgstr "Faculty of Physics booklet"
 
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
-#: core/home/templates/EducationalWork.html:27
+#: core/home/templates/EducationalWork.html:28
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
 msgid "Воспитательная работа"
 msgstr "Educational work"
@@ -147,8 +148,9 @@ msgstr "Admission"
 msgid "Абитуриенту"
 msgstr "Enrollee"
 
-#: core/home/templates/2.html:14 core/home/templates/dod.html:7
-#: core/home/templates/header.html:754 core/home/templates/header_6.html:676
+#: core/home/templates/2.html:14 core/home/templates/build-suqad.html:7
+#: core/home/templates/dod.html:7 core/home/templates/header.html:754
+#: core/home/templates/header_6.html:676
 msgid "День открытых дверей"
 msgstr "Open Day"
 
@@ -169,7 +171,8 @@ msgid "Физико-математическая школа 'Квант БГУ'"
 msgstr "Physics and Mathematics School 'Quantum BSU'"
 
 #: core/home/templates/2.html:18 core/home/templates/header.html:758
-#: core/home/templates/header_6.html:680 core/home/templates/secondStage.html:7
+#: core/home/templates/header_6.html:680
+#: core/home/templates/secondStage.html:7
 msgid "Магистратура"
 msgstr "Master's degree"
 
@@ -206,29 +209,29 @@ msgid "Спонсоры"
 msgstr "Sponsors"
 
 #: core/home/templates/4.html:7 core/home/templates/4.html:12
-#: core/home/templates/header.html:769 core/home/templates/header_6.html:691
+#: core/home/templates/header.html:769 core/home/templates/header_6.html:692
 msgid "Наука"
 msgstr "Science"
 
 #: core/home/templates/4.html:13 core/home/templates/header.html:770
-#: core/home/templates/header_6.html:692
+#: core/home/templates/header_6.html:693
 msgid "Исследования и лаборатории"
 msgstr "Research areas and laboratories"
 
 #: core/home/templates/4.html:14 core/home/templates/header.html:771
-#: core/home/templates/header_6.html:693 core/home/templates/worldwide.html:7
+#: core/home/templates/header_6.html:694 core/home/templates/worldwide.html:7
 #: core/home/templates/worldwide.html:36
 msgid "Международное сотрудничество"
 msgstr "International cooperation"
 
 #: core/home/templates/4.html:15 core/home/templates/conferences.html:7
 #: core/home/templates/conferences.html:12 core/home/templates/header.html:772
-#: core/home/templates/header_6.html:694
+#: core/home/templates/header_6.html:695
 msgid "Конференции"
 msgstr "Conferences"
 
 #: core/home/templates/4.html:16 core/home/templates/PublicationsAll.html:7
-#: core/home/templates/header.html:773 core/home/templates/header_6.html:695
+#: core/home/templates/header.html:773 core/home/templates/header_6.html:696
 #: core/home/templates/main.html:112
 #: core/observatory/templates/observatoryPublications.html:7
 #: core/observatory/templates/observatoryPublications.html:12
@@ -236,29 +239,30 @@ msgid "Публикации"
 msgstr "Publications"
 
 #: core/home/templates/4.html:17 core/home/templates/header.html:774
-#: core/home/templates/header_6.html:696
+#: core/home/templates/header_6.html:697
 msgid "Центр коллективного пользования уникальным научным оборудованием"
 msgstr "Center for collective use of unique scientific equipment"
 
 #: core/home/templates/4.html:18 core/home/templates/header.html:775
-#: core/home/templates/header_6.html:697
+#: core/home/templates/header_6.html:698
 #: core/home/templates/theWorldBankProj.html:7
 #: core/home/templates/theWorldBankProj.html:12
 msgid "Проект «Модернизация высшего образования Республики Беларусь»"
 msgstr ""
 
-#: core/home/templates/4.html:19 core/home/templates/header.html:776
-#: core/home/templates/header_6.html:698
+#: core/home/templates/4.html:19 core/home/templates/header.html:777
+#: core/home/templates/header.html:780 core/home/templates/header_6.html:700
+#: core/home/templates/header_6.html:703
 msgid "Журнал БГУ. Физика"
-msgstr "BSU Journal: Physics"
+msgstr "Journal of BSU: Physics"
 
 #: core/home/templates/5.html:7 core/home/templates/5.html:12
-#: core/home/templates/header.html:779 core/home/templates/header_6.html:701
+#: core/home/templates/header.html:784 core/home/templates/header_6.html:707
 msgid "Образование"
 msgstr "Education"
 
-#: core/home/templates/5.html:13 core/home/templates/header.html:780
-#: core/home/templates/header_6.html:702 core/home/templates/timetable.html:7
+#: core/home/templates/5.html:13 core/home/templates/header.html:785
+#: core/home/templates/header_6.html:708 core/home/templates/timetable.html:7
 #: core/home/templates/timetable.html:13
 #: core/home/templates/timetablemag.html:7
 #: core/quantum_School/templates/quantumSchool10.html:18
@@ -268,32 +272,32 @@ msgstr "Education"
 msgid "Расписание занятий"
 msgstr "Class schedule"
 
-#: core/home/templates/5.html:14 core/home/templates/header.html:781
-#: core/home/templates/header_6.html:703
+#: core/home/templates/5.html:14 core/home/templates/header.html:786
+#: core/home/templates/header_6.html:709
 #: core/home/templates/timetableExam.html:7
 msgid "Расписание экзаменов"
 msgstr "Exam Schedule"
 
 #: core/home/templates/5.html:15 core/home/templates/eduProcess.html:7
-#: core/home/templates/eduProcess.html:13 core/home/templates/header.html:782
-#: core/home/templates/header_6.html:704
+#: core/home/templates/eduProcess.html:13 core/home/templates/header.html:787
+#: core/home/templates/header_6.html:710
 msgid "График образовательного процесса"
 msgstr "Schedule of the educational process"
 
-#: core/home/templates/5.html:16 core/home/templates/header.html:783
-#: core/home/templates/header_6.html:705
+#: core/home/templates/5.html:16 core/home/templates/header.html:788
+#: core/home/templates/header_6.html:711
 #: core/observatory/templates/observatoryMain.html:8
 msgid "Учебно-научная астрономическая лаборатория"
 msgstr "Educational and scientific astronomical laboratory"
 
-#: core/home/templates/5.html:17 core/home/templates/header.html:784
-#: core/home/templates/header_6.html:706 core/home/templates/raspred.html:7
+#: core/home/templates/5.html:17 core/home/templates/header.html:789
+#: core/home/templates/header_6.html:712 core/home/templates/raspred.html:7
 #: core/home/templates/raspred.html:13
 msgid "Распределение"
 msgstr "Employment"
 
-#: core/home/templates/5.html:18 core/home/templates/header.html:785
-#: core/home/templates/header_6.html:707
+#: core/home/templates/5.html:18 core/home/templates/header.html:790
+#: core/home/templates/header_6.html:713
 #: core/home/templates/tutorService.html:7
 #: core/home/templates/tutorService.html:14
 msgid "Тьюторская служба факультета"
@@ -303,45 +307,52 @@ msgstr "Tutor service of the Faculty"
 msgid "Учебно-методические материалы (PhysInfo)"
 msgstr "Teaching materials (PhysInfo)"
 
-#: core/home/templates/5.html:20 core/home/templates/header.html:787
-#: core/home/templates/header_6.html:709
+#: core/home/templates/5.html:20 core/home/templates/header.html:792
+#: core/home/templates/header_6.html:715
+#: core/home/templates/studOlimp2021.html:7
 msgid "Студенческая олимпиада"
 msgstr "Student Olympiad"
 
 #: core/home/templates/6.html:7 core/home/templates/6.html:12
-#: core/home/templates/header.html:790 core/home/templates/header_6.html:712
+#: core/home/templates/header.html:795 core/home/templates/header_6.html:718
 #: core/observatory/templates/observatoryContacts.html:7
 msgid "Контакты"
 msgstr "Contacts"
 
 #: core/home/templates/6.html:13 core/home/templates/OneWindow.html:7
-#: core/home/templates/OneWindow.html:12 core/home/templates/header.html:791
-#: core/home/templates/header_6.html:713
+#: core/home/templates/OneWindow.html:12 core/home/templates/header.html:796
+#: core/home/templates/header_6.html:719
 msgid "Одно окно"
 msgstr "One window"
 
 #: core/home/templates/6.html:14 core/home/templates/googleMapsApi.html:7
-#: core/home/templates/header.html:792 core/home/templates/header_6.html:714
+#: core/home/templates/header.html:797 core/home/templates/header_6.html:720
 msgid "Мы на карте"
 msgstr "We are on the map"
 
 #: core/home/templates/EducationalWork.html:16
-#: core/home/templates/EducationalWork.html:28
-#: core/home/templates/EducationalWork.html:31
+#: core/home/templates/EducationalWork.html:29
+#: core/home/templates/EducationalWork.html:32
 msgid "Единый день информирования"
 msgstr "Single day of information"
 
 #: core/home/templates/EducationalWork.html:17
-#: core/home/templates/EducationalWork.html:29
+#: core/home/templates/EducationalWork.html:30
 #: core/home/templates/NwordDocuments.html:7
 #: core/home/templates/NwordDocuments.html:12
 msgid "Нормативные документы"
 msgstr "Regulations"
 
 #: core/home/templates/EducationalWork.html:18
-#: core/home/templates/EducationalWork.html:30
+#: core/home/templates/EducationalWork.html:31
 msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
+
+#: core/home/templates/EducationalWork.html:19
+#, fuzzy
+#| msgid "Студенческая олимпиада 2021"
+msgid "Студенческий отряд 2022"
+msgstr "Student Olimpiad 2021"
 
 #: core/home/templates/InternationalConnection.html:7
 #: core/home/templates/InternationalConnection.html:12
@@ -350,8 +361,8 @@ msgstr "International relations"
 
 #: core/home/templates/NwordDocuments.html:13
 msgid ""
-"Правила внутреннего распорядка для обучающихся в Белорусском государственном "
-"университете"
+"Правила внутреннего распорядка для обучающихся в Белорусском государственном"
+" университете"
 msgstr "Internal regulations for students at the Belarusian State University"
 
 #: core/home/templates/NwordDocuments.html:14
@@ -500,35 +511,35 @@ msgstr "Analysis of the tasks of the CT in physics"
 msgid "Физический факультет"
 msgstr "Physics faculty"
 
-#: core/home/templates/header.html:786 core/home/templates/header_6.html:708
+#: core/home/templates/header.html:791 core/home/templates/header_6.html:714
 msgid "Учебно-методические материалы"
 msgstr "Teaching materials "
 
-#: core/home/templates/header.html:816 core/home/templates/header_6.html:739
+#: core/home/templates/header.html:821 core/home/templates/header_6.html:745
 msgid "Министерство Образования РБ"
 msgstr "Ministry of Education of the Republic of Belarus"
 
-#: core/home/templates/header.html:819 core/home/templates/header_6.html:742
+#: core/home/templates/header.html:824 core/home/templates/header_6.html:748
 msgid "Белорусский государственный Университет"
 msgstr "Belarusian State University"
 
-#: core/home/templates/header.html:823 core/home/templates/header_6.html:746
+#: core/home/templates/header.html:828 core/home/templates/header_6.html:752
 msgid "Журнал Белорусского государственного университета. Физика"
-msgstr "Journal of the Belarusian State University. Physics"
+msgstr "Journal of BSU: Physics"
 
-#: core/home/templates/header.html:827 core/home/templates/header_6.html:750
+#: core/home/templates/header.html:832 core/home/templates/header_6.html:756
 msgid "220006, Минск"
 msgstr "220006, Minsk"
 
-#: core/home/templates/header.html:827 core/home/templates/header_6.html:750
+#: core/home/templates/header.html:832 core/home/templates/header_6.html:756
 msgid "ул. Бобруйская, 5, Физический Факультет"
 msgstr "st. Bobruiskaya, 5, Physics faculty "
 
-#: core/home/templates/header.html:832 core/home/templates/header_6.html:755
+#: core/home/templates/header.html:837 core/home/templates/header_6.html:761
 msgid "Тел.:"
 msgstr "Tel.:"
 
-#: core/home/templates/header.html:833 core/home/templates/header_6.html:756
+#: core/home/templates/header.html:838 core/home/templates/header_6.html:762
 msgid "Факс:"
 msgstr "Fax:"
 
@@ -554,7 +565,7 @@ msgid " Контакты"
 msgstr "Contacts"
 
 #: core/home/templates/main.html:51 core/home/templates/main.html:123
-#: core/home/templates/main.html:182
+#: core/home/templates/main.html:145
 msgid "Подробнее"
 msgstr "Details"
 
@@ -609,15 +620,15 @@ msgstr "place in the Shanghai ranking in physics"
 #: core/home/templates/nilAndScienceDir.html:7
 #: core/home/templates/nilAndScienceDir.html:13
 msgid "НИЛ и направления исследований"
-msgstr "RL and research directions"
+msgstr "Research areas and laboratories"
 
 #: core/home/templates/nilAndScienceDir.html:16
 msgid "НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЕ ЛАБОРАТОРИИ"
-msgstr "SCIENTIFIC RESEARCH LABORATORIES"
+msgstr "RESEARCH LABORATORIES"
 
 #: core/home/templates/nilAndScienceDir.html:20
 msgid "НИЛ биофизики и биотехнологий"
-msgstr "Research Laboratory of Biophysics and Biotechnology"
+msgstr "Biophysics and Biotechnology lab"
 
 #: core/home/templates/nilAndScienceDir.html:24
 #: core/home/templates/nilAndScienceDir.html:37
@@ -630,12 +641,13 @@ msgstr "Research Laboratory of Biophysics and Biotechnology"
 #: core/home/templates/nilAndScienceDir.html:128
 #: core/home/templates/nilAndScienceDir.html:141
 msgid "Тематика исследований: "
-msgstr "Research topics:"
+msgstr "Research area:"
 
 #: core/home/templates/nilAndScienceDir.html:24
-msgid "медицинская биофизика и биофизические методы в диагностике заболеваний."
+msgid ""
+"медицинская биофизика и биофизические методы в диагностике заболеваний."
 msgstr ""
-"medical biophysics and biophysical methods in the diagnosis of diseases."
+" medical biophysics and biophysical methods in the disease diagnostics."
 
 #: core/home/templates/nilAndScienceDir.html:25
 #: core/home/templates/nilAndScienceDir.html:38
@@ -648,11 +660,11 @@ msgstr ""
 #: core/home/templates/nilAndScienceDir.html:129
 #: core/home/templates/nilAndScienceDir.html:142
 msgid "зав. лаб."
-msgstr "head lab."
+msgstr "Head of the lab"
 
 #: core/home/templates/nilAndScienceDir.html:25
 msgid "к.б.н. доц. Владимир Петрович Зорин"
-msgstr "Ph.D. Assoc. Vladimir Petrovich Zorin"
+msgstr "Dr. Vladimir P. Zorin"
 
 #: core/home/templates/nilAndScienceDir.html:26
 #: core/home/templates/nilAndScienceDir.html:39
@@ -665,7 +677,7 @@ msgstr "Ph.D. Assoc. Vladimir Petrovich Zorin"
 #: core/home/templates/nilAndScienceDir.html:130
 #: core/home/templates/nilAndScienceDir.html:143
 msgid "тел.:"
-msgstr "Tel.:"
+msgstr "phone:"
 
 #: core/home/templates/nilAndScienceDir.html:27
 #: core/home/templates/nilAndScienceDir.html:40
@@ -678,28 +690,26 @@ msgstr "Tel.:"
 #: core/home/templates/nilAndScienceDir.html:131
 #: core/home/templates/nilAndScienceDir.html:144
 msgid "email:"
-msgstr ""
+msgstr "mail:"
 
 #: core/home/templates/nilAndScienceDir.html:33
 msgid "НИЛ клеточной инженерии и нанобиотехнологий"
-msgstr "Research Laboratory of Cell Engineering and Nanobiotechnology"
+msgstr "Cell Engineering and Nanobiotechnology lab"
 
 #: core/home/templates/nilAndScienceDir.html:37
 msgid ""
 "разработка аппаратуры и методов анализа для изучения клеточных процессов."
 msgstr ""
-"development of equipment and methods of analysis for the study of cellular "
-"processes."
+" development of equipment and analysis methods for the cellular process "
+"study."
 
 #: core/home/templates/nilAndScienceDir.html:38
 msgid "к.б.н. Андрей Анатольевич Денисов"
-msgstr "Ph.D. Andrey Anatolyevich Denisov"
+msgstr "Dr. Andrey A. Denisov"
 
 #: core/home/templates/nilAndScienceDir.html:46
 msgid "НИЛ высокоэнергетичной ионной имплантации и функциональной диагностики"
-msgstr ""
-"Research Laboratory of High-Energy Ion Implantation and Functional "
-"Diagnostics"
+msgstr "High-Energy Ion Implantation and Functional Diagnostics lab"
 
 #: core/home/templates/nilAndScienceDir.html:50
 msgid ""
@@ -708,62 +718,62 @@ msgid ""
 "методов исследования полупроводниковых материалов, автоматизация "
 "измерительных систем"
 msgstr ""
-"modification of the electrophysical, structural properties of diamond and "
-"other semiconductors to create electronic devices on their basis; "
-"development of research methods for semiconductor materials, automation of "
-"measuring systems"
+" modification of the electrophysical and structural properties of diamond "
+"and other semiconductors to create electronic devices on their basis; "
+"development of research methods for semiconductor materials, measurement "
+"system automation."
 
 #: core/home/templates/nilAndScienceDir.html:51
 msgid "Николай Михайлович Казючиц"
-msgstr "Nikolay Mikhailovich Kazyuchits"
+msgstr "Nikolai M. Kazuchits"
 
 #: core/home/templates/nilAndScienceDir.html:59
 msgid "НИЛ физики электронных материалов"
-msgstr "Research Laboratory of Physics of Electronic Materials"
+msgstr "Physics of Electronic Materials lab"
 
 #: core/home/templates/nilAndScienceDir.html:63
 msgid ""
 "физика полупроводников и полупроводниковых приборов, физика низкоразмерных "
 "систем, физика углеродных наноструктур."
 msgstr ""
-"physics of semiconductors and semiconductor devices, physics of low-"
+" physics of semiconductors and semiconductor devices, physics of low-"
 "dimensional systems, physics of carbon nanostructures."
 
 #: core/home/templates/nilAndScienceDir.html:64
 msgid "к.ф.-м.н. доц. Виталий Казимирович Ксеневич"
-msgstr "Ph.D. Assoc. Vitaly Kazimirovich Ksenevich"
+msgstr "Dr. Vitaly K. Ksenevich"
 
 #: core/home/templates/nilAndScienceDir.html:72
 msgid "НИЛ спектроскопии полупроводников"
-msgstr "Research Laboratory of Semiconductor Spectroscopy"
+msgstr "Semiconductor Spectroscopy lab"
 
 #: core/home/templates/nilAndScienceDir.html:76
 msgid ""
-"физика полупроводников и полупроводниковых приборов и структур, радиационное "
-"материаловедение структур диэлектрик-полупроводник."
+"физика полупроводников и полупроводниковых приборов и структур, радиационное"
+" материаловедение структур диэлектрик-полупроводник."
 msgstr ""
-"physics of semiconductors and semiconductor devices and structures, "
+" physics of semiconductors and semiconductor devices and structures, "
 "radiation materials science of dielectric-semiconductor structures."
 
 #: core/home/templates/nilAndScienceDir.html:77
 msgid "к.ф.-м.н. доц. Владислав Савельевич Просолович"
-msgstr "Ph.D. Assoc. Vladislav Savelyevich Prosolovich"
+msgstr "Dr. Vladislav S. Prosolovich"
 
 #: core/home/templates/nilAndScienceDir.html:85
 msgid "НИЛ спектроскопических систем"
-msgstr "Research Laboratory of Spectroscopic Systems"
+msgstr "Spectroscopic Systems lab"
 
 #: core/home/templates/nilAndScienceDir.html:89
 msgid "разработка спектральных приборов, оптическое приборостроение."
-msgstr "development of spectral instruments, optical instrumentation."
+msgstr " development of spectroscopic devices, optical device engineering."
 
 #: core/home/templates/nilAndScienceDir.html:90
 msgid "Максим Николаевич Коваленко"
-msgstr "Maxim Nikolaevich Kovalenko"
+msgstr "Maksim N. Kovalenko"
 
 #: core/home/templates/nilAndScienceDir.html:98
 msgid "НИЛ нелинейной оптики и спектроскопии"
-msgstr "Research Laboratory of Nonlinear Optics and Spectroscopy"
+msgstr "Nonlinear Optics and Spectroscopy lab"
 
 #: core/home/templates/nilAndScienceDir.html:102
 msgid ""
@@ -771,18 +781,17 @@ msgid ""
 "диагностики; разработка оптических материалов, технологий и создание на их "
 "основе управляемых дифракционных и волноводных элементов. "
 msgstr ""
-"development of laser spectroscopic methods and preparations for medical "
-"diagnostics; development of optical materials, technologies and creation on "
-"their basis of controlled diffractive and waveguide elements."
+" development of laser spectroscopic methods and drugs for medical "
+"diagnostics; development of optical materials, technologies and creation of "
+"controlled diffractive and waveguide elements on their basis."
 
 #: core/home/templates/nilAndScienceDir.html:103
 msgid "д.ф.-м.н. проф. Евгений Семёнович Воропай"
-msgstr ""
-"Doctor of Physical and Mathematical Sciences prof. Evgeny Semyonovich Voropai"
+msgstr "Prof. Eugene S. Voropai"
 
 #: core/home/templates/nilAndScienceDir.html:111
 msgid "НИЛ физики ионно-плазменной модификации твердых тел"
-msgstr "Research Laboratory of Physics of Ion-Plasma Modification of Solids"
+msgstr "Physics of Ion-Plasma Modification of Solids lab"
 
 #: core/home/templates/nilAndScienceDir.html:115
 msgid ""
@@ -790,17 +799,17 @@ msgid ""
 "плазменных потоков на материалы; защитные покрытия; тонкие пленки; "
 "электронная структура твердых тел; высокоскоростная кристаллизация."
 msgstr ""
-"radiation physics of solids and semiconductors; impact of pulsed plasma "
-"flows on materials; protective coatings; thin films; electronic structure of "
-"solids; high speed crystallization."
+" radiation physics of solids and semiconductors; impact of pulse plasma "
+"flows on materials; protective coatings; thin films; electronic structure of"
+" solids; high-speed crystallization."
 
 #: core/home/templates/nilAndScienceDir.html:116
 msgid "к.ф.-м.н. Андрей Константинович Кулешов"
-msgstr "Ph.D. Andrey Konstantinovich Kuleshov"
+msgstr "Dr. Andrey K. Kuleshov"
 
 #: core/home/templates/nilAndScienceDir.html:124
 msgid "НИЛ энергоэффективных материалов и технологий"
-msgstr "R&D Laboratory of Energy Efficient Materials and Technologies"
+msgstr "Energy Efficient Materials and Technologies lab"
 
 #: core/home/templates/nilAndScienceDir.html:128
 msgid ""
@@ -808,25 +817,25 @@ msgid ""
 "диагностика полупроводниковых материалов и разработка способов анализа их "
 "свойств."
 msgstr ""
-"solar energy materials, two-dimensional materials and nanomaterials science, "
-"diagnostics of semiconductor materials and development of methods for "
-"analyzing their properties."
+" solar energy materials, 2D materials and nanomaterials science, diagnostics"
+" of semiconductor materials and development of methods for analyzing their "
+"properties."
 
 #: core/home/templates/nilAndScienceDir.html:129
 msgid "к.ф.-м.н. Ольга Васильевна Королик"
-msgstr "Ph.D. Olga Vasilievna Korolik"
+msgstr "Dr. Olga V. Korolik"
 
 #: core/home/templates/nilAndScienceDir.html:137
 msgid "НИЛ физики и техники полупроводников"
-msgstr "Research Laboratory of Physics and Technology of Semiconductors"
+msgstr "Semiconductor Physics and Technology lab"
 
 #: core/home/templates/nilAndScienceDir.html:141
 msgid "физика конденсированных сред, приборостроение."
-msgstr "condensed matter physics, instrumentation."
+msgstr " condensed matter physics, device engineering."
 
 #: core/home/templates/nilAndScienceDir.html:142
 msgid "к.ф.-м.н. Игорь Иосифович Азарко"
-msgstr "Ph.D. Igor I. Azarko"
+msgstr "Dr. Igor I. Azarko"
 
 #: core/home/templates/nilAndScienceDir.html:150
 msgid "НАПРАВЛЕНИЯ ИССЛЕДОВАНИЙ"
@@ -838,25 +847,24 @@ msgstr "BIOPHYSICS"
 
 #: core/home/templates/nilAndScienceDir.html:159
 msgid "· биофизика клетки и клеточная инженерия"
-msgstr "· Cell Biophysics and Cell Engineering"
+msgstr "· cell biophysics and cell engineering"
 
 #: core/home/templates/nilAndScienceDir.html:160
 msgid "· редокс-сигнализация и редокс-регуляция в биосистемах"
-msgstr "· Redox signaling and redox regulation in biosystems"
+msgstr "· redox signaling and redox regulation in biosystems"
 
 #: core/home/templates/nilAndScienceDir.html:161
 msgid ""
 "· медицинская биофизика и биофизические методы в диагностике заболеваний"
-msgstr ""
-"· Medical biophysics and biophysical techniques in the diagnosis of diseases"
+msgstr "· medical biophysics and biophysical methods for disease diagnostics"
 
 #: core/home/templates/nilAndScienceDir.html:162
 msgid "· нанобиотехнологии и наномедицинские технологии"
-msgstr "· nanobiotechnology and nanomedical technologies"
+msgstr "· nanobiotechnology and nanomedical technology"
 
 #: core/home/templates/nilAndScienceDir.html:163
 msgid "· биосенсоры, нейросенсоры и биопреобразователи"
-msgstr "· biosensors, neurosensors and biotransducers"
+msgstr "· biosensors, neurosensors and bioconverters"
 
 #: core/home/templates/nilAndScienceDir.html:172
 msgid "МАТЕМАТИЧЕСКАЯ ФИЗИКА"
@@ -872,11 +880,11 @@ msgstr ""
 
 #: core/home/templates/nilAndScienceDir.html:176
 msgid "· вычислительная математика"
-msgstr "· Computational Mathematics"
+msgstr "· computational mathematics"
 
 #: core/home/templates/nilAndScienceDir.html:177
 msgid "· интегральные уравнения и краевые задачи"
-msgstr "· integral equations and boundary value problems"
+msgstr "· integral equations and boundary problems"
 
 #: core/home/templates/nilAndScienceDir.html:178
 msgid "· уравнения с частными производными дробного порядка"
@@ -884,11 +892,11 @@ msgstr "· fractional partial differential equations"
 
 #: core/home/templates/nilAndScienceDir.html:179
 msgid "·  математическое моделирование динамических биосистем"
-msgstr "· fractional partial differential equations"
+msgstr "· mathematical modeling of dynamic biosystems"
 
 #: core/home/templates/nilAndScienceDir.html:188
 msgid "КОМПЬЮТЕРНОЕ МОДЕЛИРОВАНИЕ"
-msgstr "COMPUTER MODELLING"
+msgstr "COMPUTER SIMULATIONS"
 
 #: core/home/templates/nilAndScienceDir.html:191
 msgid ""
@@ -901,8 +909,8 @@ msgid ""
 "· квантовый транспорт в неупорядоченных системах пониженной размерности, "
 "точно решаемые задачи в квантовой механике и стохастической динамике"
 msgstr ""
-"· Quantum transport in low-dimensional disordered systems, exactly solvable "
-"problems in quantum mechanics and stochastic dynamics"
+"· quantum transport in disordered systems of reduced dimension, exactly "
+"solvable problems in quantum mechanics and stochastic dynamics"
 
 #: core/home/templates/nilAndScienceDir.html:193
 msgid "· суперкомпьютерные и ГРИД-технологии"
@@ -913,16 +921,16 @@ msgid ""
 "· теоретическая и математическая физика диффузионных процессов, "
 "контролируемый транспорт на наноуровне, броуновские моторы"
 msgstr ""
-"· Theoretical and mathematical physics of diffusion processes, controlled "
-"transport at the nanoscale, Brownian motors"
+"· theoretical and mathematical physics of diffusion processes, nanoscale "
+"controlled transport, Brownian motors"
 
 #: core/home/templates/nilAndScienceDir.html:195
 msgid ""
 "· нелинейная оптика световых пучков и импульсов, взаимодействие лазерного "
 "излучения с веществом, нанофотоника"
 msgstr ""
-"· Nonlinear optics light beams and pulses of laser radiation interaction "
-"with the substance, nanophotonics"
+"· nonlinear optics of light beams and pulses, interaction of laser radiation"
+" with matter, nanophotonics"
 
 #: core/home/templates/nilAndScienceDir.html:204
 msgid "ЛАЗЕРНАЯ ФИЗИКА И СПЕКТРОСКОПИЯ"
@@ -930,28 +938,30 @@ msgstr "LASER PHYSICS AND SPECTROSCOPY"
 
 #: core/home/templates/nilAndScienceDir.html:207
 msgid "· лазерная физика, нелинейная оптика и голография"
-msgstr "· Laser physics, nonlinear optics and holography"
+msgstr "· laser physics, nonlinear optics and holography"
 
 #: core/home/templates/nilAndScienceDir.html:208
 msgid "· фотофизика и нелинейная спектроскопия конденсированных сред"
-msgstr "· Photophysics and nonlinear spectroscopy Condensed Matter"
+msgstr "· photophysics and nonlinear spectroscopy of condensed matter"
 
 #: core/home/templates/nilAndScienceDir.html:209
 msgid "· физика жидкокристаллических оптоэлектронных систем"
-msgstr "· Physics of liquid crystal optoelectronic systems"
+msgstr "· physics of liquid crystals for optoelectronic systems"
 
 #: core/home/templates/nilAndScienceDir.html:210
 msgid "· методы и препараты для биомедицинских применений"
-msgstr "· Methods and drugs for biomedical applications"
+msgstr "· methods and preparations for biomedical applications"
 
 #: core/home/templates/nilAndScienceDir.html:211
 msgid ""
-"· методы и аппаратно-программные средства спектрально-люминесцентного анализа"
-msgstr "· Methods and hardware and software luminescence analysis"
+"· методы и аппаратно-программные средства спектрально-люминесцентного "
+"анализа"
+msgstr ""
+"· methods and hardware-software means for spectral-luminescent analysis"
 
 #: core/home/templates/nilAndScienceDir.html:212
 msgid "· сложная динамика лазерных систем с быстрой фазовой релаксацией"
-msgstr "· complex dynamics of laser systems with fast phase relaxation"
+msgstr "· complex dynamics of laser systems with the fast phase relaxation"
 
 #: core/home/templates/nilAndScienceDir.html:213
 msgid ""
@@ -973,7 +983,7 @@ msgstr "· cosmology and astrophysics"
 
 #: core/home/templates/nilAndScienceDir.html:227
 msgid "· физика элементарных частиц и высоких энергий"
-msgstr "· physics of elementary particles and high energies"
+msgstr "· elementary particle and high-energy physics"
 
 #: core/home/templates/nilAndScienceDir.html:228
 msgid "· когерентные и квантовые эффекты в конденсированных средах"
@@ -981,59 +991,59 @@ msgstr "· coherent and quantum effects in condensed matter"
 
 #: core/home/templates/nilAndScienceDir.html:229
 msgid "·  оптика и акустика сложных сред"
-msgstr "· optics and acoustics of difficult environments"
+msgstr "· optics and acoustics of complex environments"
 
 #: core/home/templates/nilAndScienceDir.html:238
 msgid "ФИЗИКА ПОЛУПРОВОДНИКОВ И НАНОЭЛЕКТРОНИКА"
-msgstr "PHYSICS OF SEMICONDUCTORS AND NANOELECTRONICS"
+msgstr "SEMICONDUCTOR PHYSICS AND NANOELECTRONICS"
 
 #: core/home/templates/nilAndScienceDir.html:241
 msgid "· разработка элементной базы микро- и наноэлектроники"
-msgstr "· development of element base for micro- and nanoelectronics"
+msgstr "· development of the element base for micro- and nanoelectronics"
 
 #: core/home/templates/nilAndScienceDir.html:242
 msgid "· физика углеродных материалов"
-msgstr "· Physics of Carbon Materials"
+msgstr "· physics of carbon materials"
 
 #: core/home/templates/nilAndScienceDir.html:243
 msgid "· проектирование и программирование микроконтроллерных систем"
-msgstr "· Design and programming microcontroller systems"
+msgstr "· design and programming of microcontroller systems"
 
 #: core/home/templates/nilAndScienceDir.html:244
 msgid "· программируемые интеллектуальные датчики"
-msgstr "· Programmable Intelligent Sensors"
+msgstr "· programmable smart sensors"
 
 #: core/home/templates/nilAndScienceDir.html:245
 msgid ""
 "· разработка методов неразрушающего контроля, экспресс-диагностики "
 "материалов и структур"
 msgstr ""
-"· Development of non-destructive testing methods, rapid diagnosis of "
-"materials and structures"
+"· development of non-destructive testing methods, rapid diagnostics of "
+"materials and instrument structures"
 
 #: core/home/templates/nilAndScienceDir.html:254
 msgid "ФИЗИКА ТВЁРДОГО ТЕЛА"
-msgstr "SOLID BODY PHYSICS"
+msgstr "SOLID STATE PHYSICS"
 
 #: core/home/templates/nilAndScienceDir.html:257
 msgid "· взаимодействие заряженных частиц и плазмы с твердым телом"
-msgstr "·  interaction of charged particles and plasma with a solid"
+msgstr "· interaction of charged particles and plasma with solids"
 
 #: core/home/templates/nilAndScienceDir.html:258
 msgid "· компьютерное моделирование электронной структуры твердых тел"
-msgstr "· компьютерное моделирование электронной структуры твердых тел"
+msgstr "· computer simulation of the electronic structure of solids"
 
 #: core/home/templates/nilAndScienceDir.html:259
 msgid "· разработка перспективных материалов и защитных покрытий"
-msgstr "· Develop advanced materials and protective coatings"
+msgstr "· development of perspective materials and protective coatings"
 
 #: core/home/templates/nilAndScienceDir.html:260
 msgid "· разработка и изготовление эталонных термостатирующих устройств"
-msgstr "· Development and manufacture of standard temperature control devices"
+msgstr "· development and manufacturing of reference thermostatic devices"
 
 #: core/home/templates/nilAndScienceDir.html:261
 msgid "· ультразвуковой неразрушающий контроль"
-msgstr "· Ultrasonic nondestructive testing"
+msgstr "· ultrasonic non-destructive testing"
 
 #: core/home/templates/nilAndScienceDir.html:270
 msgid "ФИЗИЧЕСКАЯ ОПТИКА И ПРИКЛАДНАЯ ИНФОРМАТИКА"
@@ -1049,7 +1059,7 @@ msgstr "· physics of atomic-molecular processes and nanoscale systems"
 
 #: core/home/templates/nilAndScienceDir.html:275
 msgid "· физика атмосферы и аэрокосмическое дистанционное зондирование"
-msgstr "· atmospheric physics and aerospace remote sensing"
+msgstr "· atmospheric physics and aerospace remote probing"
 
 #: core/home/templates/nilAndScienceDir.html:276
 msgid "· оптоэлектроника"
@@ -1061,11 +1071,11 @@ msgstr "· photophysics and photochemistry of glassy polymers"
 
 #: core/home/templates/nilAndScienceDir.html:286
 msgid "ЭНЕРГОФИЗИКА"
-msgstr "ENERGOPHYSICS"
+msgstr "ENERGY PHYSICS"
 
 #: core/home/templates/nilAndScienceDir.html:289
 msgid "· материалы солнечной энергетики"
-msgstr "· Materials Solar Energy"
+msgstr "· solar energy materials"
 
 #: core/home/templates/nilAndScienceDir.html:290
 msgid "· наноструктурированные материалы и их применения"
@@ -1089,23 +1099,23 @@ msgstr "NUCLEAR PHYSICS"
 
 #: core/home/templates/nilAndScienceDir.html:305
 msgid "· детектирование, спектрометрия и радиометрия ионизирующего излучения"
-msgstr "· Detection, spectroscopy, and radiometry of ionizing radiation"
+msgstr "· detection, spectrometry and radiometry of ionizing radiation"
 
 #: core/home/templates/nilAndScienceDir.html:306
 msgid "· взаимодействие пучков заряженных частиц с периодическими структурами"
-msgstr "· Interaction of charged particle beams with periodic structures"
+msgstr "· interaction of charged particle beams with the periodic structures"
 
 #: core/home/templates/nilAndScienceDir.html:307
 msgid "· теплофизика ядерных реакторов и реакторных установок"
-msgstr "· Thermal physics of nuclear reactors and reactor systems"
+msgstr "· thermal physics of nuclear reactors and reactor facilities"
 
 #: core/home/templates/nilAndScienceDir.html:308
 msgid "· информационно-измерительные системы "
-msgstr "· Information and measuring systems"
+msgstr "· information measuring systems"
 
 #: core/home/templates/nilAndScienceDir.html:309
 msgid "· методы радиационного контроля"
-msgstr "· Methods of radiation control"
+msgstr "· radiation monitoring methods"
 
 #: core/home/templates/raspred.html:14
 msgid "Места распределения выпускников физического факультета 2021 года"
@@ -1147,22 +1157,36 @@ msgstr ""
 msgid "План набора"
 msgstr "Admission plan"
 
-#: core/home/templates/studOlimp2021.html:7
 #: core/home/templates/studOlimp2021.html:13
-msgid "Студенческая олимпиада 2021"
+#, fuzzy
+#| msgid "Студенческая олимпиада 2021"
+msgid "Студенческая олимпиада 2022"
 msgstr "Student Olimpiad 2021"
 
-#: core/home/templates/studOlimp2021.html:14
+#: core/home/templates/studOlimp2021.html:37
+#, fuzzy
+#| msgid "Программа курса"
+msgid "Программа олимпиады"
+msgstr "Course program"
+
+#: core/home/templates/studOlimp2021.html:38
+#: core/home/templates/studOlimp2021.html:46
 msgid "Условия задач"
 msgstr "Conditions of problems"
 
-#: core/home/templates/studOlimp2021.html:15
+#: core/home/templates/studOlimp2021.html:39
+#: core/home/templates/studOlimp2021.html:47
 msgid "Решения задач"
 msgstr "Solutions of problems"
 
-#: core/home/templates/studOlimp2021.html:16
+#: core/home/templates/studOlimp2021.html:40
+#: core/home/templates/studOlimp2021.html:48
 msgid "Результаты"
 msgstr "Results"
+
+#: core/home/templates/studOlimp2021.html:45
+msgid "Студенческая олимпиада 2021"
+msgstr "Student Olimpiad 2021"
 
 #: core/home/templates/timetable.html:14
 msgid "1 курс"
@@ -1198,45 +1222,77 @@ msgid "Расписание экзаменов и консультаций"
 msgstr "Schedule of exams and consultations"
 
 #: core/home/templates/timetableExam.html:15
-msgid "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+#, fuzzy
+#| msgid ""
+#| "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+msgid "Расписание экзаменов летней сессии 2021-2022 (размещено 28.05.2022)"
 msgstr "Schedule of exams and consultations"
 
 #: core/home/templates/timetableExam.html:16
+msgid "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+msgstr "Schedule of exams and consultations"
+
+#: core/home/templates/timetableExam.html:17
 msgid "Расписание экзаменов (4 курс)"
 msgstr "Exam Schedule 4 course"
 
-#: core/home/templates/timetableExam.html:17
+#: core/home/templates/timetableExam.html:18
 msgid "Расписание экзаменов (5 курс)"
 msgstr "Exam Schedule 5 course"
 
-#: core/home/templates/timetableExam.html:22
+#: core/home/templates/timetableExam.html:23
+#, fuzzy
+#| msgid ""
+#| "Расписание консультаций зимней сессии 2021-2022 (размещено 24.12.2021)"
+msgid "Расписание консультаций летней сессии 2021-2022 (размещено 28.05.2022)"
+msgstr ""
+"Schedule of consultations for the winter session 2021-2022 (posted on "
+"12/24/2021)"
+
+#: core/home/templates/timetableExam.html:24
 msgid "Расписание консультаций зимней сессии 2021-2022 (размещено 24.12.2021)"
 msgstr ""
 "Schedule of consultations for the winter session 2021-2022 (posted on "
 "12/24/2021)"
 
-#: core/home/templates/timetableExam.html:23
+#: core/home/templates/timetableExam.html:25
 msgid "Расписание консультаций (4 курс)"
 msgstr "Consultation schedule 4 course"
 
-#: core/home/templates/timetableExam.html:24
+#: core/home/templates/timetableExam.html:26
 msgid "Расписание консультаций (5 курс)"
 msgstr "Consultation schedule 5 course"
 
-#: core/home/templates/timetableExam.html:29
+#: core/home/templates/timetableExam.html:31
 #: core/home/templates/timetablemag.html:13
 msgid "Расписание для магистратуры"
 msgstr "Master's Degree Schedule "
 
-#: core/home/templates/timetableExam.html:30
-#: core/home/templates/timetableExam.html:31
+#: core/home/templates/timetableExam.html:32
+msgid "Экзамены (размещено 06.04.2022)"
+msgstr ""
+
+#: core/home/templates/timetableExam.html:33
+#: core/home/templates/timetableExam.html:34
 #: core/home/templates/timetablemag.html:14
 #: core/home/templates/timetablemag.html:15
 msgid "Экзамены"
 msgstr "Exams"
 
-#: core/home/templates/timetableExam.html:32
-#: core/home/templates/timetableExam.html:33
+#: core/home/templates/timetableExam.html:35
+#, fuzzy
+#| msgid "Консультации"
+msgid "Экзамены 'Прикладная физика' (размещено 30.05.2022)"
+msgstr "Сonsultations"
+
+#: core/home/templates/timetableExam.html:36
+#, fuzzy
+#| msgid "Консультации"
+msgid "Консультации (размещено 06.04.2022)"
+msgstr "Сonsultations"
+
+#: core/home/templates/timetableExam.html:37
+#: core/home/templates/timetableExam.html:38
 #: core/home/templates/timetablemag.html:16
 #: core/home/templates/timetablemag.html:17
 msgid "Консультации"
@@ -1247,16 +1303,16 @@ msgid "международные проекты"
 msgstr " international projects"
 
 #: core/home/templates/worldwide.html:64
-msgid "БРФФИ"
-msgstr "BRFFR"
+msgid "20-30 БРФФИ"
+msgstr "20-30 BRFFR"
 
 #: core/home/templates/worldwide.html:66
-msgid "ГКНТ"
-msgstr "SCST"
+msgid "ГКНТ международных проектов ежегодно"
+msgstr "SCST international projects annually"
 
 #: core/home/templates/worldwide.html:69
-msgid "договоры о сотрудничестве – 28"
-msgstr "cooperation agreements - 28"
+msgid "около 30 договоров о сотрудничестве"
+msgstr "about 30 cooperation agreements"
 
 #: core/home/templates/worldwide.html:71
 msgid "ежегодные международные контракты"
@@ -1543,6 +1599,7 @@ msgstr "Scientific results"
 #: core/quantum_School/templates/quantumSchoolAds.html:7
 #: core/quantum_School/templates/quantumSchoolMain.html:7
 #: core/quantum_School/templates/quantumSchoolOlimp.html:7
+#: core/quantum_School/templates/quantumSchoolOlimp.html:13
 #: core/quantum_School/templates/quantumSchoolUni.html:7
 #: core/quantum_School/templates/quantumSchoolUrls.html:7
 msgid "Квант БГУ"
@@ -1560,7 +1617,7 @@ msgstr "Quantum X"
 #: core/quantum_School/templates/quantumSchool11.html:16
 #: core/quantum_School/templates/quantumSchool9.html:16
 #: core/quantum_School/templates/quantumSchoolAds.html:13
-#: core/quantum_School/templates/quantumSchoolOlimp.html:40
+#: core/quantum_School/templates/quantumSchoolOlimp.html:29
 #: core/quantum_School/templates/quantumSchoolUni.html:55
 msgid "Объявления"
 msgstr "Ads"
@@ -1596,15 +1653,11 @@ msgstr "Quantum XI"
 msgid "Квант IX"
 msgstr "Quantum IX"
 
-#: core/quantum_School/templates/quantumSchoolOlimp.html:13
-msgid "Квант"
-msgstr "Quantum "
-
-#: core/quantum_School/templates/quantumSchoolOlimp.html:41
+#: core/quantum_School/templates/quantumSchoolOlimp.html:30
 msgid "Краткие планы занятий"
-msgstr "Short lesson plan"
+msgstr "Short lesson plans"
 
-#: core/quantum_School/templates/quantumSchoolOlimp.html:42
+#: core/quantum_School/templates/quantumSchoolOlimp.html:31
 msgid "Ссылки на портал"
 msgstr "Links to the portal"
 
@@ -1724,6 +1777,12 @@ msgstr "Phone"
 msgid "Краткая информация"
 msgstr "Brief information"
 
+#~ msgid "Квант"
+#~ msgstr "Quantum "
+
+#~ msgid "ГКНТ"
+#~ msgstr "SCST"
+
 #~ msgid "Подана заявка на включение в SCOPUS"
 #~ msgstr "Application submitted for SCOPUS indexing"
 
@@ -1761,8 +1820,7 @@ msgstr "Brief information"
 #~ msgstr "degrease"
 
 #~ msgid "выпускников- академиков НАН Беларуси"
-#~ msgstr ""
-#~ "graduates-academicians of the national Academy of Sciences of Belarus"
+#~ msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
 
 #~ msgid "кафедр"
 #~ msgstr "departments"
