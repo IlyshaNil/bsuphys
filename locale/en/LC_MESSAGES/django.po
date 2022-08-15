@@ -131,7 +131,7 @@ msgstr "Faculty of Physics booklet"
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
-msgid "Воспитательная работа"
+msgid "Социальные вопросы"
 msgstr "Social issues"
 
 #: core/home/templates/EducationalWork.html:19
