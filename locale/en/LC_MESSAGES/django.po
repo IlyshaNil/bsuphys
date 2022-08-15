@@ -371,6 +371,7 @@ msgstr "Regulations"
 msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
 
+#: core/home/templates/studOlimp2021.html:45
 #: core/home/templates/EducationalWork.html:19
 msgid "Студенческая олимпиада 2021"
 msgstr "Student Olimpiad 2021"
@@ -1204,10 +1205,6 @@ msgstr "Solutions of problems"
 #: core/home/templates/studOlimp2021.html:48
 msgid "Результаты"
 msgstr "Results"
-
-#: core/home/templates/studOlimp2021.html:45
-msgid "Студенческая олимпиада 2021"
-msgstr "Student Olimpiad 2021"
 
 #: core/home/templates/timetable.html:14
 msgid "1 курс"
