@@ -130,10 +130,36 @@ msgstr "Faculty of Physics booklet"
 
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
-#: core/home/templates/EducationalWork.html:27
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
 msgid "Воспитательная работа"
-msgstr "Educational work"
+msgstr "Social issues"
+
+#: core/home/templates/EducationalWork.html:19
+msgid "Студенческий отряд 2022"
+msgstr "Студенческий отряд 2022"
+
+#: core/home/templates/EducationalWork.html:20
+msgid "Профбюро факультета"
+msgstr "Faculty Trade Union Bureau"
+
+#: core/home/templates/EducationalWork.html:21
+msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
+msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
+
+#: core/home/templates/build-suqad.html:7
+msgid "Студенческий отряд 2022"
+msgstr "Студенческий отряд 2022"
+
+#: core/home/templates/primaryTradeUnionCommitee.html:7 
+#: core/home/templates/primaryTradeUnionCommitee.html:14
+msgid "Профбюро факультета"
+msgstr "Faculty Trade Union Bureau"
+
+#: core/home/templates/3.html:13 core/home/templates/theFacultyEquipmAndSoftware.html:7
+#: core/home/templates/theFacultyEquipmAndSoftware.html:12
+#: core/home/templates/header.html:763 core/home/templates/header_6.html:685
+msgid "Разработки"
+msgstr "Equipment and Software"
 
 #: core/home/templates/2.html:7 core/home/templates/2.html:12
 #: core/home/templates/header.html:752 core/home/templates/header_6.html:674
@@ -326,13 +352,12 @@ msgid "Мы на карте"
 msgstr "We are on the map"
 
 #: core/home/templates/EducationalWork.html:16
-#: core/home/templates/EducationalWork.html:28
 #: core/home/templates/EducationalWork.html:31
 msgid "Единый день информирования"
 msgstr "Single day of information"
 
 #: core/home/templates/EducationalWork.html:17
-#: core/home/templates/EducationalWork.html:29
+#: core/home/templates/EducationalWork.html:32
 #: core/home/templates/NwordDocuments.html:7
 #: core/home/templates/NwordDocuments.html:12
 msgid "Нормативные документы"
