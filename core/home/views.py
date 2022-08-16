@@ -1,3 +1,4 @@
+from urllib import response
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
@@ -59,6 +60,7 @@ def language_switch_ru_main(request):
 def index(request):
     post = Post.published.latest("publish")
     lastKeyPub = KeyPublications.objects.order_by("-id")[:3]
+    # if MainPageStatisticNumber.objects.count() > 3 and FamousGraduates.objects.count() > 2:
     randomNumbers = get_random_statistic_number(MainPageStatisticNumber, 4)
     random_alumnu = get_random_statistic_number(FamousGraduates, 3)
     return render(
@@ -76,6 +78,8 @@ def index(request):
             "graduates": random_alumnu,
         },
     )
+    # else:
+    #     return HttpResponse("200 OK")
 
 
 def alum_detail(request, alum):
@@ -297,3 +301,11 @@ def page_not_found_view(request, exception):
 def aboba(request):
     meta = request.META.items()
     return HttpResponse(meta)
+
+
+def tradeUnion(request):
+    return render(request, "primaryTradeUnionCommitee.html")
+
+
+def development(request):
+    return render(request, "theFacultyEquipmAndSoftware.html")
