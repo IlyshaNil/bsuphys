@@ -927,14 +927,6 @@
   text-align: center !important;
 }
 
-/* td.CR-equipm > p {
-  padding-bottom: 25px !important;
-}
-
-td.move-prices > p {
-  padding-bottom: 25px !important;
-} */
-
 div.responsible-person > p:nth-of-type(4) a,
 div.responsible-person > p:nth-of-type(5) a {
   border-bottom: none !important;
@@ -1007,6 +999,7 @@ table.Table > tbody > tr > td:last-child {
 
 @media (max-width: 960px) {
   span.table-tooltip,
+  span.table-tooltip-1,
   div.table-box:hover > span.table-tooltip,
   div.table-box:hover > span.table-tooltip-1 {
     display: none !important;
