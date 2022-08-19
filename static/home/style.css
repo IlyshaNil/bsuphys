@@ -912,7 +912,8 @@
   border-bottom: none !important;
 }
 
-#equip-sw table a:hover {
+#equip-sw table a:hover,
+#equip-sw table a:hover > em > strong > span {
   color: #e5bc29 !important;
   border-bottom: 2px solid #e5bc29 !important;
 }
