@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 12:53+0300\n"
-"PO-Revision-Date: 2022-07-10 20:28+0150\n"
+"POT-Creation-Date: 2022-08-15 13:02+0300\n"
+"PO-Revision-Date: 2022-08-15 17:58+0150\n"
 "Last-Translator: Иван Реентович <iv.rchwork@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -78,7 +78,8 @@ msgstr "Subject of theses and master's theses"
 #: core/observatory/templates/observatoryEmployee.html:13
 #: core/staff/templates/listStaffTemplate.html:7
 #: core/staff/templates/listStaffTemplate.html:13
-#: core/staff/templates/staffList.html:7 core/staff/templates/staffList.html:13
+#: core/staff/templates/staffList.html:7
+#: core/staff/templates/staffList.html:13
 msgid "Сотрудники"
 msgstr "Employees"
 
@@ -132,7 +133,7 @@ msgstr "Faculty of Physics booklet"
 #: core/home/templates/EducationalWork.html:12
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
 msgid "Социальные вопросы"
-msgstr "Regulations"
+msgstr "Social issues"
 
 #: core/home/templates/EducationalWork.html:21
 msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
@@ -189,7 +190,8 @@ msgid "Физико-математическая школа 'Квант БГУ'"
 msgstr "Physics and Mathematics School 'Quantum BSU'"
 
 #: core/home/templates/2.html:18 core/home/templates/header.html:758
-#: core/home/templates/header_6.html:680 core/home/templates/secondStage.html:7
+#: core/home/templates/header_6.html:680
+#: core/home/templates/secondStage.html:7
 msgid "Магистратура"
 msgstr "Master's degree"
 
@@ -398,8 +400,8 @@ msgstr "International relations"
 
 #: core/home/templates/NwordDocuments.html:13
 msgid ""
-"Правила внутреннего распорядка для обучающихся в Белорусском государственном "
-"университете"
+"Правила внутреннего распорядка для обучающихся в Белорусском государственном"
+" университете"
 msgstr "Internal regulations for students at the Belarusian State University"
 
 #: core/home/templates/NwordDocuments.html:14
@@ -681,7 +683,8 @@ msgid "Тематика исследований: "
 msgstr "Research area:"
 
 #: core/home/templates/nilAndScienceDir.html:24
-msgid "медицинская биофизика и биофизические методы в диагностике заболеваний."
+msgid ""
+"медицинская биофизика и биофизические методы в диагностике заболеваний."
 msgstr ""
 " medical biophysics and biophysical methods in the disease diagnostics."
 
@@ -785,8 +788,8 @@ msgstr "Semiconductor Spectroscopy lab"
 
 #: core/home/templates/nilAndScienceDir.html:76
 msgid ""
-"физика полупроводников и полупроводниковых приборов и структур, радиационное "
-"материаловедение структур диэлектрик-полупроводник."
+"физика полупроводников и полупроводниковых приборов и структур, радиационное"
+" материаловедение структур диэлектрик-полупроводник."
 msgstr ""
 " physics of semiconductors and semiconductor devices and structures, "
 "radiation materials science of dielectric-semiconductor structures."
@@ -842,8 +845,8 @@ msgid ""
 "электронная структура твердых тел; высокоскоростная кристаллизация."
 msgstr ""
 " radiation physics of solids and semiconductors; impact of pulse plasma "
-"flows on materials; protective coatings; thin films; electronic structure of "
-"solids; high-speed crystallization."
+"flows on materials; protective coatings; thin films; electronic structure of"
+" solids; high-speed crystallization."
 
 #: core/home/templates/nilAndScienceDir.html:116
 msgid "к.ф.-м.н. Андрей Константинович Кулешов"
@@ -859,8 +862,8 @@ msgid ""
 "диагностика полупроводниковых материалов и разработка способов анализа их "
 "свойств."
 msgstr ""
-" solar energy materials, 2D materials and nanomaterials science, diagnostics "
-"of semiconductor materials and development of methods for analyzing their "
+" solar energy materials, 2D materials and nanomaterials science, diagnostics"
+" of semiconductor materials and development of methods for analyzing their "
 "properties."
 
 #: core/home/templates/nilAndScienceDir.html:129
@@ -971,8 +974,8 @@ msgid ""
 "· нелинейная оптика световых пучков и импульсов, взаимодействие лазерного "
 "излучения с веществом, нанофотоника"
 msgstr ""
-"· nonlinear optics of light beams and pulses, interaction of laser radiation "
-"with matter, nanophotonics"
+"· nonlinear optics of light beams and pulses, interaction of laser radiation"
+" with matter, nanophotonics"
 
 #: core/home/templates/nilAndScienceDir.html:204
 msgid "ЛАЗЕРНАЯ ФИЗИКА И СПЕКТРОСКОПИЯ"
@@ -996,7 +999,8 @@ msgstr "· methods and preparations for biomedical applications"
 
 #: core/home/templates/nilAndScienceDir.html:211
 msgid ""
-"· методы и аппаратно-программные средства спектрально-люминесцентного анализа"
+"· методы и аппаратно-программные средства спектрально-люминесцентного "
+"анализа"
 msgstr ""
 "· methods and hardware-software means for spectral-luminescent analysis"
 
@@ -1264,7 +1268,8 @@ msgstr "Schedule of exams and consultations"
 
 #: core/home/templates/timetableExam.html:15
 #, fuzzy
-#| msgid "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+#| msgid ""
+#| "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
 msgid "Расписание экзаменов летней сессии 2021-2022 (размещено 28.05.2022)"
 msgstr "Schedule of exams and consultations"
 
@@ -1860,8 +1865,7 @@ msgstr "Brief information"
 #~ msgstr "degrease"
 
 #~ msgid "выпускников- академиков НАН Беларуси"
-#~ msgstr ""
-#~ "graduates-academicians of the national Academy of Sciences of Belarus"
+#~ msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
 
 #~ msgid "кафедр"
 #~ msgstr "departments"
