@@ -132,9 +132,29 @@ msgstr "Faculty of Physics booklet"
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
-#| msgid "Нормативные документы"
 msgid "Социальные вопросы"
 msgstr "Social issues"
+
+#: core/home/templates/EducationalWork.html:21
+msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
+msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
+
+#: core/home/templates/build-suqad.html:7
+#: core/home/templates/EducationalWork.html:19
+msgid "Студенческий отряд 2022"
+msgstr "Студенческий отряд 2022"
+
+#: core/home/templates/primaryTradeUnionCommitee.html:7 
+#: core/home/templates/primaryTradeUnionCommitee.html:14
+#: core/home/templates/EducationalWork.html:20
+msgid "Профбюро факультета"
+msgstr "Faculty Trade Union Bureau"
+
+#: core/home/templates/3.html:13 core/home/templates/theFacultyEquipmAndSoftware.html:7
+#: core/home/templates/theFacultyEquipmAndSoftware.html:12
+#: core/home/templates/header.html:763 core/home/templates/header_6.html:685
+msgid "Разработки"
+msgstr "Equipment and Software"
 
 #: core/home/templates/2.html:7 core/home/templates/2.html:12
 #: core/home/templates/header.html:752 core/home/templates/header_6.html:674

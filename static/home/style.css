@@ -940,7 +940,8 @@ div.table-box {
   position: relative;
 }
 
-span.table-tooltip {
+span.table-tooltip,
+span.table-tooltip-1 {
   position: absolute;
   display: none !important;
 }
@@ -987,9 +988,20 @@ table.Table > tbody > tr > td:last-child {
   }
 }
 
+@media (max-width: 1199px) {
+  div.table-box:hover > span.table-tooltip-1 {
+    top: 3px;
+    left: 3px;
+    display: block !important;
+    font-size: 10px !important;
+  }
+}
+
 @media (max-width: 960px) {
   span.table-tooltip,
-  div.table-box:hover > span.table-tooltip {
+  span.table-tooltip-1,
+  div.table-box:hover > span.table-tooltip,
+  div.table-box:hover > span.table-tooltip-1 {
     display: none !important;
   }
 }
@@ -1017,7 +1029,8 @@ table.Table > tbody > tr > td:last-child {
   }
   
   div.table-box,
-  div#services-special > div > p:last-of-type {
+  div#services-special > div > p:last-of-type,
+  div#equip-sw > div > p {
     margin-left: 20px !important;
     margin-right: 20px !important;
     width: calc(100% - 40px) !important;
