@@ -896,6 +896,24 @@
 
 /* ------------------------------------------------------------ */
 
+div.facultyC_ table {
+  margin: 0 auto !important;
+}
+
+div.facultyC_ table tbody tr td {
+  border: 3px inset #000 !important;
+  text-align: left !important;
+}
+
+div.facultyC_ table tbody tr td h3,
+div.facultyC_ > table > tbody > tr > td > h3 > p {
+  text-align: left !important;
+}
+
+div.facultyC_ > table > tbody > tr > td {
+  vertical-align: middle !important;
+}
+
 #services-special a, 
 #equip-sw a {
   display: inline;
