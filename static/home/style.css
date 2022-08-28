@@ -902,12 +902,12 @@ div.facultyC_ table {
 
 div.facultyC_ table tbody tr td {
   border: 3px inset #000 !important;
-  text-align: left !important;
+  text-align: center !important;
 }
 
 div.facultyC_ table tbody tr td h3,
 div.facultyC_ > table > tbody > tr > td > h3 > p {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 div.facultyC_ > table > tbody > tr > td {
