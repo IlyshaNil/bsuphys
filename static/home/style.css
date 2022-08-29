@@ -896,6 +896,24 @@
 
 /* ------------------------------------------------------------ */
 
+div.facultyC_ table {
+  margin: 0 auto !important;
+}
+
+div.facultyC_ table tbody tr td {
+  border: 3px inset #000 !important;
+  text-align: center !important;
+}
+
+div.facultyC_ table tbody tr td h3,
+div.facultyC_ > table > tbody > tr > td > h3 > p {
+  text-align: center !important;
+}
+
+div.facultyC_ > table > tbody > tr > td {
+  vertical-align: middle !important;
+}
+
 #services-special a, 
 #equip-sw a {
   display: inline;
@@ -1081,7 +1099,18 @@ div.listPersonTemplate_wrap > img {
 
 /* ------------------------------------------------------------ */
 
+@media (max-width: 1200px) {
+  div.facultyC_ {
+    margin-right: 0 !important;;
+    margin-left: 0 !important;;
+  }
+}
+
 @media (max-width: 750px) {
+  div.facultyC_ {
+    overflow-x: auto !important;
+  }
+  
   img.directions-img {
     align-self: flex-start!important;
   }
