@@ -1090,6 +1090,22 @@ div.listPersonTemplate_wrap > img {
   }
 }
 
+@media (max-width: 750px) {
+  .somePage img {
+    width: 100% !important;
+  }
+  
+  .somePage a {
+    display: inline-block !important;
+    width: 100% !important;
+  }
+  
+  .somePage table,
+  .somePage table a > img {
+      width: 100% !important;
+  }
+}
+
 @media (max-width: 650px) {
   div.listPersonTemplate_wrap > img {
     height: 550px !important;
