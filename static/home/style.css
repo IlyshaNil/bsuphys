@@ -996,6 +996,16 @@ table.Table > tbody > tr > td:last-child {
 /*   vertical-align: top !important; */
 }
 
+a.sc-sch-link:hover ~ span.view-sc-sch,
+span.view-sc-sch:hover {
+  display: inline-block !important;
+}
+
+a.btn-pdf-link > img:hover {
+  box-shadow: 0 0 2px #c2c2c2 !important;
+  transition: box-shadow 0.3s linear !important;
+}
+
 /* -------------------------------------------------- */
 
 @media (max-width: 1215px) {
@@ -1129,6 +1139,11 @@ div.listPersonTemplate_wrap > img {
   
   img.directions-img {
     align-self: flex-start!important;
+  }
+  
+  a.sc-sch-link:hover ~ span.view-sc-sch,
+  span.view-sc-sch:hover {
+    display: none !important;
   }
 }
 
