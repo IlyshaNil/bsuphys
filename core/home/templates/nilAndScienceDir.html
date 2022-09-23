@@ -312,7 +312,40 @@
                 </div>
             </div>
         </div><br><br>
-        <div class="description" style="font-size:30px!important;"><a href="https://physics.bsu.by/science-directions/science-schools/" style="border:none!important;" target="_blank">{% trans "НАУЧНЫЕ ШКОЛЫ" %}<br></a></div>
+        <div class="description sc-sch" style="position:relative; font-size:30px!important; display:flex; justify-content:space-between; width:75%;">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == "ru"%}
+              <a href="https://physics.bsu.by/science-directions/science-schools/" style="position:relative; border:none!important;" target="_blank">НАУЧНЫЕ ШКОЛЫ<br></a>
+                  <span class="view-sc-sch" style="position:absolute; top:45px; left:0!important; display:none; padding:7px 8px; width:fit-content; height:auto; max-height:75px!important; overflow-y:auto; border:7px solid #ffffff; background:#ffffff; box-shadow: 0 0 5px #c2c2c2; font-size:14px!important; user-select:none;">
+                      <span style="display:inline-block; width:100%; background:#ffffff;">
+                          <span>
+                              К сожалению, данная страница временно недоступна для просмотра по прямой ссылке. Приносим свои извинения за временные неудобства.<br><br>
+                              Вы сможете посмотреть информацию о научных&nbsp;школах <strong style="color:#2e2d2d;">физического&nbsp;факультета</strong> в pdf-файле на GoogleDocs, перейдя по ссылке-кнопке '<img alt="PDF" style="display:inline!important; padding:1px 2px; width:14px !important; border:none!important; border-radius:5px!important; box-shadow:0 0 3px #c2c2c2; font-size:12px!important; text-align:center!important; height:12px!important; object-fit: contain;" src="{% static 'home/assets/images/pdf-icon_.png' %}">'.
+                          </span>
+                      </span>
+                  </span>
+              
+              <a class="btn-pdf-link" href="https://drive.google.com/file/d/1p7w-Iw0rINAdGzHepgOv0UvQAaI2jwyV/view?usp=sharing" style="display:inline; width:60px; height:45px; border:none!important;" target="_blank">
+                <img alt="PDF" style="width:42px !important; border:none!important; border-radius:5px!important; box-shadow:0 0 3px #c2c2c2; font-size:25px!important; text-align:center!important; padding:4px 5px; height:38px!important; object-fit:contain;" src="{% static 'home/assets/images/pdf-icon_.png' %}" title="Посмотреть информацию о научных школах факультета в pdf-файле на GoogleDocs">
+              </a>
+            {% endif %}
+            {% if LANGUAGE_CODE == "en"%}
+              <a href="https://physics.bsu.by/science-directions/science-schools/" style="position:relative; border:none!important;" target="_blank">SCIENCE SCHOOLS<br></a>
+                  <span style="position:absolute; top:45px; left:0!important; display:none; padding:7px 8px; width:fit-content; height:auto; max-height:75px!important; overflow-y:auto; border:7px solid #ffffff; background:#ffffff; box-shadow: 0 0 5px #c2c2c2; font-size:14px!important; user-select:none;">
+                      <span style="display:inline-block; width:100%; background:#ffffff;">
+                          <span>
+                              Unfortunately, this page is temporarily unavailable for viewing via the direct link. We apologize for the temporary inconvenience.<br><br>
+                              You can view information about the&nbsp;science&nbsp;schools of&nbsp;the&nbsp;<strong style="color:#2e2d2d;">Faculty&nbsp;of&nbsp;Physics</strong> in the&nbsp;pdf-file on&nbsp;GoogleDocs, by clicking on the&nbsp;link-button '<img alt="PDF" style="display:inline!important; padding:1px 2px; width:14px !important; border:none!important; border-radius:5px!important; box-shadow:0 0 3px #c2c2c2; font-size:12px!important; text-align:center!important; height:12px!important; object-fit: contain;" src="{% static 'home/assets/images/pdf-icon_.png' %}">'.
+                          </span>
+                      </span>
+                  </span>
+              
+              <a href="https://drive.google.com/file/d/1p7w-Iw0rINAdGzHepgOv0UvQAaI2jwyV/view?usp=sharing" style="display:inline; width:60px; height:45px;border:none!important;" target="_blank">
+                <img alt="PDF" style="width:42px !important; border:none!important; border-radius:5px!important; box-shadow:0 0 3px #c2c2c2; font-size:25px!important; text-align:center!important; padding:4px 5px; height:38px!important; object-fit:contain;" src="{% static 'home/assets/images/pdf-icon_.png' %}" title="View information about the science schools of the Faculty in pdf on GoogleDocs (available in Russian)">
+              </a>            
+            {% endif %}
+        </div>
+        
         <p><br><br></p>
     </div>
 </div>
