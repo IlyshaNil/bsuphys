@@ -1106,10 +1106,10 @@ div.listPersonTemplate_wrap > img {
   }
   
   .somePage a {
-    display: inline-block !important;
+    display: inline !important;
     width: 100% !important;
   }
-  
+
   .somePage table,
   .somePage table a > img {
       width: 100% !important;
