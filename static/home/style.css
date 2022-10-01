@@ -1105,14 +1105,17 @@ div.listPersonTemplate_wrap > img {
     width: 100% !important;
   }
   
-  .somePage a {
+  .somePage a,
+  .somePage u > a,
+  div.somePage a,
+  div.somePage u > a {
     display: inline !important;
-    width: 100% !important;
+/*     width: 100% !important; */
   }
 
   .somePage table,
   .somePage table a > img {
-      width: 100% !important;
+    width: 100% !important;
   }
 }
 
@@ -1120,6 +1123,15 @@ div.listPersonTemplate_wrap > img {
   div.listPersonTemplate_wrap > img {
     height: 550px !important;
     object-fit: cover !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .somePage a,
+  .somePage u > a,
+  div.somePage a,
+  div.somePage u > a {
+    display: inline !important;
   }
 }
 
