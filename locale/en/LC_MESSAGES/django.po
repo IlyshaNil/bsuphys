@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 13:02+0300\n"
+"POT-Creation-Date: 2022-10-19 05:07+0300\n"
 "PO-Revision-Date: 2022-08-15 17:58+0150\n"
 "Last-Translator: Иван Реентович <iv.rchwork@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,8 +78,7 @@ msgstr "Subject of theses and master's theses"
 #: core/observatory/templates/observatoryEmployee.html:13
 #: core/staff/templates/listStaffTemplate.html:7
 #: core/staff/templates/listStaffTemplate.html:13
-#: core/staff/templates/staffList.html:7
-#: core/staff/templates/staffList.html:13
+#: core/staff/templates/staffList.html:7 core/staff/templates/staffList.html:13
 msgid "Сотрудники"
 msgstr "Employees"
 
@@ -129,56 +128,11 @@ msgstr "Faculty Council"
 msgid "Буклет Физического факультета"
 msgstr "Faculty of Physics booklet"
 
-#:core/home/templates/ScienceSchools.html:7
-msgid "Научные школы"
-msgstr ""
-
-#:core/home/templates/ScienceSchools.html:54
-msgid "НАУЧНАЯ ШКОЛА ПО ФИЗИКЕ И ТЕХНИКЕ ПОЛУПРОВОДНИКОВ"
-msgstr ""
-
-#:core/home/templates/ScienceSchools.html:345
-msgid "НАУЧНАЯ ШКОЛА ПО ТЕОРЕТИЧЕСКОЙ ФИЗИКЕ"
-msgstr ""
-
-#:core/home/templates/ScienceSchools.html:539
-msgid "НАУЧНАЯ ШКОЛА ПО ФОТОНИКЕ (ПО ОПТИКЕ И ЛАЗЕРНОЙ ФИЗИКЕ)"
-msgstr ""
-
-#:core/home/templates/ScienceSchools.html:750
-msgid "НАУЧНАЯ ШКОЛА В ОБЛАСТИ БИОФИЗИКИ И КЛЕТОЧНОЙ ИНЖЕНЕРИИ"
-msgstr ""
-
-#:core/home/templates/ScienceSchools.html:909
-msgid "НАУЧНАЯ ШКОЛА В ОБЛАСТИ ФИЗИКИ МЕТАЛЛОВ"
-msgstr ""
-
 #: core/home/templates/1.html:21 core/home/templates/EducationalWork.html:7
 #: core/home/templates/EducationalWork.html:12
 #: core/home/templates/header.html:748 core/home/templates/header_6.html:671
 msgid "Социальные вопросы"
 msgstr "Social issues"
-
-#: core/home/templates/EducationalWork.html:21
-msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
-msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
-
-#: core/home/templates/build-suqad.html:7
-#: core/home/templates/EducationalWork.html:19
-msgid "Студенческий отряд 2022"
-msgstr "Студенческий отряд 2022"
-
-#: core/home/templates/primaryTradeUnionCommitee.html:7 
-#: core/home/templates/primaryTradeUnionCommitee.html:14
-#: core/home/templates/EducationalWork.html:20
-msgid "Профбюро факультета"
-msgstr "Faculty Trade Union Bureau"
-
-#: core/home/templates/3.html:13 core/home/templates/theFacultyEquipmAndSoftware.html:7
-#: core/home/templates/theFacultyEquipmAndSoftware.html:12
-#: core/home/templates/header.html:763 core/home/templates/header_6.html:685
-msgid "Разработки"
-msgstr "Equipment and Software"
 
 #: core/home/templates/2.html:7 core/home/templates/2.html:12
 #: core/home/templates/header.html:752 core/home/templates/header_6.html:674
@@ -214,8 +168,7 @@ msgid "Физико-математическая школа 'Квант БГУ'"
 msgstr "Physics and Mathematics School 'Quantum BSU'"
 
 #: core/home/templates/2.html:18 core/home/templates/header.html:758
-#: core/home/templates/header_6.html:680
-#: core/home/templates/secondStage.html:7
+#: core/home/templates/header_6.html:680 core/home/templates/secondStage.html:7
 msgid "Магистратура"
 msgstr "Master's degree"
 
@@ -381,27 +334,27 @@ msgid "Мы на карте"
 msgstr "We are on the map"
 
 #: core/home/templates/EducationalWork.html:16
-#: core/home/templates/EducationalWork.html:31
-#: core/home/templates/EducationalWork.html:34
+#: core/home/templates/EducationalWork.html:66
+#: core/home/templates/EducationalWork.html:69
 msgid "Единый день информирования"
 msgstr "Single day of information"
 
 #: core/home/templates/EducationalWork.html:17
-#: core/home/templates/EducationalWork.html:32
+#: core/home/templates/EducationalWork.html:67
 #: core/home/templates/NwordDocuments.html:7
 #: core/home/templates/NwordDocuments.html:12
 msgid "Нормативные документы"
 msgstr "Regulations"
 
 #: core/home/templates/EducationalWork.html:18
-#: core/home/templates/EducationalWork.html:33
+#: core/home/templates/EducationalWork.html:68
 msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
 
 #: core/home/templates/EducationalWork.html:19
 #: core/home/templates/build-suqad.html:7
 msgid "Студенческий отряд 2022"
-msgstr "Студенческий отряд 2022"
+msgstr "Student's squad 2022"
 
 #: core/home/templates/EducationalWork.html:20
 #: core/home/templates/primaryTradeUnionCommitee.html:7
@@ -413,7 +366,7 @@ msgstr "Faculty Trade Union Bureau"
 msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 
-#: core/home/templates/EducationalWork.html:30
+#: core/home/templates/EducationalWork.html:65
 msgid "Воспитательная работа"
 msgstr "Social issues"
 
@@ -424,8 +377,8 @@ msgstr "International relations"
 
 #: core/home/templates/NwordDocuments.html:13
 msgid ""
-"Правила внутреннего распорядка для обучающихся в Белорусском государственном"
-" университете"
+"Правила внутреннего распорядка для обучающихся в Белорусском государственном "
+"университете"
 msgstr "Internal regulations for students at the Belarusian State University"
 
 #: core/home/templates/NwordDocuments.html:14
@@ -439,6 +392,30 @@ msgstr "Collective agreement"
 #: core/home/templates/NwordDocuments.html:16
 msgid "Этический кодекс"
 msgstr "Ethical code"
+
+#: core/home/templates/ScienceSchools.html:7
+msgid "Научные школы"
+msgstr ""
+
+#: core/home/templates/ScienceSchools.html:54
+msgid "НАУЧНАЯ ШКОЛА ПО ФИЗИКЕ И ТЕХНИКЕ ПОЛУПРОВОДНИКОВ"
+msgstr ""
+
+#: core/home/templates/ScienceSchools.html:345
+msgid "НАУЧНАЯ ШКОЛА ПО ТЕОРЕТИЧЕСКОЙ ФИЗИКЕ"
+msgstr ""
+
+#: core/home/templates/ScienceSchools.html:539
+msgid "НАУЧНАЯ ШКОЛА ПО ФОТОНИКЕ (ПО ОПТИКЕ И ЛАЗЕРНОЙ ФИЗИКЕ)"
+msgstr ""
+
+#: core/home/templates/ScienceSchools.html:750
+msgid "НАУЧНАЯ ШКОЛА В ОБЛАСТИ БИОФИЗИКИ И КЛЕТОЧНОЙ ИНЖЕНЕРИИ"
+msgstr ""
+
+#: core/home/templates/ScienceSchools.html:909
+msgid "НАУЧНАЯ ШКОЛА В ОБЛАСТИ ФИЗИКИ МЕТАЛЛОВ"
+msgstr ""
 
 #: core/home/templates/abiturOlimp.html:7
 msgid "Олимпиада абитуриентов"
@@ -707,8 +684,7 @@ msgid "Тематика исследований: "
 msgstr "Research area:"
 
 #: core/home/templates/nilAndScienceDir.html:24
-msgid ""
-"медицинская биофизика и биофизические методы в диагностике заболеваний."
+msgid "медицинская биофизика и биофизические методы в диагностике заболеваний."
 msgstr ""
 " medical biophysics and biophysical methods in the disease diagnostics."
 
@@ -812,8 +788,8 @@ msgstr "Semiconductor Spectroscopy lab"
 
 #: core/home/templates/nilAndScienceDir.html:76
 msgid ""
-"физика полупроводников и полупроводниковых приборов и структур, радиационное"
-" материаловедение структур диэлектрик-полупроводник."
+"физика полупроводников и полупроводниковых приборов и структур, радиационное "
+"материаловедение структур диэлектрик-полупроводник."
 msgstr ""
 " physics of semiconductors and semiconductor devices and structures, "
 "radiation materials science of dielectric-semiconductor structures."
@@ -869,8 +845,8 @@ msgid ""
 "электронная структура твердых тел; высокоскоростная кристаллизация."
 msgstr ""
 " radiation physics of solids and semiconductors; impact of pulse plasma "
-"flows on materials; protective coatings; thin films; electronic structure of"
-" solids; high-speed crystallization."
+"flows on materials; protective coatings; thin films; electronic structure of "
+"solids; high-speed crystallization."
 
 #: core/home/templates/nilAndScienceDir.html:116
 msgid "к.ф.-м.н. Андрей Константинович Кулешов"
@@ -886,8 +862,8 @@ msgid ""
 "диагностика полупроводниковых материалов и разработка способов анализа их "
 "свойств."
 msgstr ""
-" solar energy materials, 2D materials and nanomaterials science, diagnostics"
-" of semiconductor materials and development of methods for analyzing their "
+" solar energy materials, 2D materials and nanomaterials science, diagnostics "
+"of semiconductor materials and development of methods for analyzing their "
 "properties."
 
 #: core/home/templates/nilAndScienceDir.html:129
@@ -998,8 +974,8 @@ msgid ""
 "· нелинейная оптика световых пучков и импульсов, взаимодействие лазерного "
 "излучения с веществом, нанофотоника"
 msgstr ""
-"· nonlinear optics of light beams and pulses, interaction of laser radiation"
-" with matter, nanophotonics"
+"· nonlinear optics of light beams and pulses, interaction of laser radiation "
+"with matter, nanophotonics"
 
 #: core/home/templates/nilAndScienceDir.html:204
 msgid "ЛАЗЕРНАЯ ФИЗИКА И СПЕКТРОСКОПИЯ"
@@ -1023,8 +999,7 @@ msgstr "· methods and preparations for biomedical applications"
 
 #: core/home/templates/nilAndScienceDir.html:211
 msgid ""
-"· методы и аппаратно-программные средства спектрально-люминесцентного "
-"анализа"
+"· методы и аппаратно-программные средства спектрально-люминесцентного анализа"
 msgstr ""
 "· methods and hardware-software means for spectral-luminescent analysis"
 
@@ -1187,30 +1162,36 @@ msgid "· методы радиационного контроля"
 msgstr "· radiation monitoring methods"
 
 #: core/home/templates/raspred.html:14
-msgid "Места распределения выпускников физического факультета 2021 года"
+#, fuzzy
+#| msgid "Места распределения выпускников физического факультета 2021 года"
+msgid "Места распределения выпускников физического факультета 2022 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2020"
 
 #: core/home/templates/raspred.html:15
-msgid "Места распределения выпускников физического факультета 2020 года"
+msgid "Места распределения выпускников физического факультета 2021 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2020"
 
 #: core/home/templates/raspred.html:16
+msgid "Места распределения выпускников физического факультета 2020 года"
+msgstr "Places of distribution of graduates of the Faculty of Physics of 2020"
+
+#: core/home/templates/raspred.html:17
 msgid "Места распределения выпускников физического факультета 2019 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2019"
 
-#: core/home/templates/raspred.html:17
+#: core/home/templates/raspred.html:18
 msgid "Места распределения выпускников физического факультета 2018 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2018"
 
-#: core/home/templates/raspred.html:18
+#: core/home/templates/raspred.html:19
 msgid "Места распределения выпускников физического факультета 2017 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2017"
 
-#: core/home/templates/raspred.html:19
+#: core/home/templates/raspred.html:20
 msgid "Места распределения выпускников физического факультета 2016 года"
 msgstr "Places of distribution of graduates of the Faculty of Physics of 2016"
 
-#: core/home/templates/raspred.html:21
+#: core/home/templates/raspred.html:22
 msgid "Нормативные документы, регулирующие вопросы распределения"
 msgstr "Distribution Regulations"
 
@@ -1292,8 +1273,7 @@ msgstr "Schedule of exams and consultations"
 
 #: core/home/templates/timetableExam.html:15
 #, fuzzy
-#| msgid ""
-#| "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+#| msgid "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
 msgid "Расписание экзаменов летней сессии 2021-2022 (размещено 28.05.2022)"
 msgstr "Schedule of exams and consultations"
 
@@ -1333,35 +1313,47 @@ msgid "Расписание консультаций (5 курс)"
 msgstr "Consultation schedule 5 course"
 
 #: core/home/templates/timetableExam.html:31
+msgid ""
+"График ликвидаций задолженностей студентов в летнюю экзаменационную сессию "
+"2021-2022 учебного года"
+msgstr ""
+
+#: core/home/templates/timetableExam.html:32
+#, fuzzy
+#| msgid "Расписание экзаменов зимней сессии 2021-2022 (размещено 24.12.2021)"
+msgid "Расписание пересдач экзаменов (размещено 14.09.2022)"
+msgstr "Schedule of exams and consultations"
+
+#: core/home/templates/timetableExam.html:37
 #: core/home/templates/timetablemag.html:13
 msgid "Расписание для магистратуры"
 msgstr "Master's Degree Schedule "
 
-#: core/home/templates/timetableExam.html:32
+#: core/home/templates/timetableExam.html:38
 msgid "Экзамены (размещено 06.04.2022)"
 msgstr ""
 
-#: core/home/templates/timetableExam.html:33
-#: core/home/templates/timetableExam.html:34
+#: core/home/templates/timetableExam.html:39
+#: core/home/templates/timetableExam.html:40
 #: core/home/templates/timetablemag.html:14
 #: core/home/templates/timetablemag.html:15
 msgid "Экзамены"
 msgstr "Exams"
 
-#: core/home/templates/timetableExam.html:35
+#: core/home/templates/timetableExam.html:41
 #, fuzzy
 #| msgid "Консультации"
 msgid "Экзамены 'Прикладная физика' (размещено 30.05.2022)"
 msgstr "Сonsultations"
 
-#: core/home/templates/timetableExam.html:36
+#: core/home/templates/timetableExam.html:42
 #, fuzzy
 #| msgid "Консультации"
 msgid "Консультации (размещено 06.04.2022)"
 msgstr "Сonsultations"
 
-#: core/home/templates/timetableExam.html:37
-#: core/home/templates/timetableExam.html:38
+#: core/home/templates/timetableExam.html:43
+#: core/home/templates/timetableExam.html:44
 #: core/home/templates/timetablemag.html:16
 #: core/home/templates/timetablemag.html:17
 msgid "Консультации"
@@ -1889,7 +1881,8 @@ msgstr "Brief information"
 #~ msgstr "degrease"
 
 #~ msgid "выпускников- академиков НАН Беларуси"
-#~ msgstr "graduates-academicians of the national Academy of Sciences of Belarus"
+#~ msgstr ""
+#~ "graduates-academicians of the national Academy of Sciences of Belarus"
 
 #~ msgid "кафедр"
 #~ msgstr "departments"
