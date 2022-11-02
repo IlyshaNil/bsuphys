@@ -131,7 +131,7 @@ msgstr "Faculty of Physics booklet"
 
 #:core/home/templates/ScienceSchools.html:7
 msgid "Научные школы"
-msgstr ""
+msgstr "Science schools"
 
 #:core/home/templates/ScienceSchools.html:54
 msgid "НАУЧНАЯ ШКОЛА ПО ФИЗИКЕ И ТЕХНИКЕ ПОЛУПРОВОДНИКОВ"
@@ -159,18 +159,24 @@ msgstr ""
 msgid "Социальные вопросы"
 msgstr "Social issues"
 
-#: core/home/templates/EducationalWork.html:21
+#: core/home/templates/EducationalWork.html:22
 msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 
+#: core/home/templates/YouthOrganizations.html:7
+#: core/home/templates/YouthOrganizations.html:14
+#: core/home/templates/EducationalWork.html:18
+msgid "Молодёжные организации факультета"
+msgstr ""
+
 #: core/home/templates/build-suqad.html:7
-#: core/home/templates/EducationalWork.html:19
+#: core/home/templates/EducationalWork.html:20
 msgid "Студенческий отряд 2022"
 msgstr "Студенческий отряд 2022"
 
 #: core/home/templates/primaryTradeUnionCommitee.html:7 
 #: core/home/templates/primaryTradeUnionCommitee.html:14
-#: core/home/templates/EducationalWork.html:20
+#: core/home/templates/EducationalWork.html:21
 msgid "Профбюро факультета"
 msgstr "Faculty Trade Union Bureau"
 
@@ -393,25 +399,19 @@ msgstr "Single day of information"
 msgid "Нормативные документы"
 msgstr "Regulations"
 
-#: core/home/templates/EducationalWork.html:18
+#: core/home/templates/EducationalWork.html:19
 #: core/home/templates/EducationalWork.html:33
 msgid "Навстречу референдуму"
 msgstr "Towards to the Plebiscite"
 
-#: core/home/templates/EducationalWork.html:19
 #: core/home/templates/build-suqad.html:7
 msgid "Студенческий отряд 2022"
 msgstr "Студенческий отряд 2022"
 
-#: core/home/templates/EducationalWork.html:20
 #: core/home/templates/primaryTradeUnionCommitee.html:7
 #: core/home/templates/primaryTradeUnionCommitee.html:14
 msgid "Профбюро факультета"
 msgstr "Faculty Trade Union Bureau"
-
-#: core/home/templates/EducationalWork.html:21
-msgid "ВИЧ – Что нужно знать в ответ на 5 вопросов"
-msgstr "ВИЧ – Что нужно знать в ответ на 5 вопросов"
 
 #: core/home/templates/EducationalWork.html:30
 msgid "Воспитательная работа"
