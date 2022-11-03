@@ -315,4 +315,8 @@ def scienceSchool(request):
     return render(request, "ScienceSchools.html")
 
 
+def youthOrganizations(request):
+    return render(request, "YouthOrganizations.html")
+
+
 
