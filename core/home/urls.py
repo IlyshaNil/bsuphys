@@ -58,5 +58,5 @@ urlpatterns = [
     path("educations/trade-union/", views.tradeUnion, name="trade union"),
     path("developments/", views.development, name="development"),
     path("science-school/", views.scienceSchool, name="science-school"),
-    path("youth-orgs/", views.youthOrganizations, name="youth-organizations")
+    path("faculty/youth-orgs/", views.youthOrganizations, name="youth-organizations")
 ]
