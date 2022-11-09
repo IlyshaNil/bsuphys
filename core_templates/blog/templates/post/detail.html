@@ -1,8 +1,0 @@
-{% extends "blog/templates/base.html" %}
-{% block title %}{{ post.title }}{% endblock %}
-{% block content %}
-    <h1>{{ post.title }}</h1>
-    <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
-    {{ post.body|linebreaks }}
-    <img src="{{ post.image.url }}" alt="альтернативный текст">
-{% endblock %}
