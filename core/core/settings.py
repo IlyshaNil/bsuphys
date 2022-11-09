@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "home",
     "blog.apps.BlogConfig",
     "taggit",
+    "images.apps.ImagesConfig",
     "Uploads",
     "staff",
     "ckeditor",
