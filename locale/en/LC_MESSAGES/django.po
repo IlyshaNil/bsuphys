@@ -154,7 +154,7 @@ msgstr "Open Day"
 #: core/home/templates/2.html:15 core/home/templates/header.html:755
 #: core/home/templates/header_6.html:677
 msgid "Олимпиада"
-msgstr "Olimpiad "
+msgstr "Olimpiad"
 
 #: core/home/templates/2.html:16 core/home/templates/header.html:756
 #: core/home/templates/header_6.html:678
