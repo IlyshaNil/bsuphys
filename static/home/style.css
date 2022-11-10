@@ -1006,6 +1006,10 @@ a.btn-pdf-link > img:hover {
   transition: box-shadow 0.3s linear !important;
 }
 
+a.obs-employee:hover {
+  color: #e5bc29 !important;
+}
+
 /* -------------------------------------------------- */
 
 @media (max-width: 1215px) {
