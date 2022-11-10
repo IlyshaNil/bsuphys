@@ -309,3 +309,14 @@ def tradeUnion(request):
 
 def development(request):
     return render(request, "theFacultyEquipmAndSoftware.html")
+
+
+def scienceSchool(request):
+    return render(request, "ScienceSchools.html")
+
+
+def youthOrganizations(request):
+    return render(request, "YouthOrganizations.html")
+
+
+
