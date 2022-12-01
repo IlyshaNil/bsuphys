@@ -319,4 +319,8 @@ def youthOrganizations(request):
     return render(request, "YouthOrganizations.html")
 
 
+def prRules(request):
+    return render(request, "rulesOfConductOfTeachingEmployees.html")
+
+
 
