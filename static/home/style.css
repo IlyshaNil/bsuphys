@@ -1010,6 +1010,15 @@ a.obs-employee:hover {
   color: #e5bc29 !important;
 }
 
+a.main-doc-for-departments:hover {
+  background-color: #000 !important;
+  font-weight: normal !important;
+}
+
+a.mdd-pdf:hover {
+  font-weight: 500 !important;
+}
+
 /* -------------------------------------------------- */
 
 @media (max-width: 1215px) {
