@@ -323,4 +323,5 @@ def prRules(request):
     return render(request, "rulesOfConductOfTeachingEmployees.html")
 
 
-
+def PublicationsInArchive(request):
+    return render(request, "PublicationsInArchive.html")
