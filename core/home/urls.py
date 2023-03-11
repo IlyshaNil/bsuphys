@@ -60,5 +60,6 @@ urlpatterns = [
     path("science-school/", views.scienceSchool, name="science-school"),
     path("faculty/youth-orgs/", views.youthOrganizations, name="youth-organizations"),
     path("pravila-pr/", views.prRules, name="pravila-pr"),
-    path("pubs-in-archive/", views.PublicationsInArchive, name="publications-archived")
+    path("pubs-in-archive/", views.PublicationsInArchive, name="publications-archived"),
+    path("phd-course/", views.thirdStage, name="phd-course")
 ]
