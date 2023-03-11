@@ -325,3 +325,8 @@ def prRules(request):
 
 def PublicationsInArchive(request):
     return render(request, "PublicationsInArchive.html")
+
+
+def thirdStage(request):
+    return render(request, "thirdStage.html")
+
