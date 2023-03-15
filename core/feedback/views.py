@@ -12,7 +12,7 @@ class FeedbackCreateView(SuccessMessageMixin, CreateView):
     model = Feedback
     form_class = FeedbackCreateForm
     success_message = 'Спасибо за отзыв!'
-    template_name = '.templates/feedback.html'
+    template_name = 'feedback.html'
     extra_context = {'title': 'Контактная форма'}
     success_url = reverse_lazy('home')
 
