@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     "quantum_School",
     "observatory",
     "departments",
+    "feedback",
 ]
 
 MIDDLEWARE = [

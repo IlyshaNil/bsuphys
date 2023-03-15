@@ -26,6 +26,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("images/", include("images.urls", namespace="images")),
     path("i18n/", include("django.conf.urls.i18n")),
+    path("feedback/", include("feedback.urls"))
 ]
 
 urlpatterns += i18n_patterns(
