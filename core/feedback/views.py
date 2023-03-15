@@ -14,7 +14,7 @@ class FeedbackCreateView(SuccessMessageMixin, CreateView):
     success_message = 'Спасибо за отзыв!'
     template_name = 'feedback.html'
     extra_context = {'title': 'Контактная форма'}
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('index')
 
     def form_valid(self, form):
         if form.is_valid():
