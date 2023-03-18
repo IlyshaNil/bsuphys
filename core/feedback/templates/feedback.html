@@ -1,10 +1,10 @@
 {% extends 'header_6.html' %}
 {% load static %}
 {% block content %}
-    <div class="card mb-3 border-0 nth-shadow">
+    <div class="card mb-3 border-0 nth-shadow container">
         <div class="card-body">
             <div class="card-title nth-card-title">
-                <h4>Контактная форма</h4>
+                <h4>Форма обратной связи</h4>
             </div>
             <form method="post" action="{% url 'feedback' %}">
                 {% csrf_token %}
