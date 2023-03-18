@@ -996,6 +996,11 @@ table.Table > tbody > tr > td:last-child {
 /*   vertical-align: top !important; */
 }
 
+a.mast-link {
+  color: #111111;
+  border-bottom: 2px solid #ffe100 !important;
+}
+
 a.sc-sch-link:hover ~ span.view-sc-sch,
 span.view-sc-sch:hover {
   display: inline-block !important;
@@ -1017,6 +1022,13 @@ a.main-doc-for-departments:hover {
 
 a.mdd-pdf:hover {
   font-weight: 500 !important;
+}
+
+a.mast-main-link:hover,
+a.mast-link:hover {
+  font-weight: 600 !important;
+  color: #ffe100 !important;
+  border-bottom: 2px solid #ffe100 !important;
 }
 
 /* -------------------------------------------------- */
