@@ -1,18 +1,149 @@
 {% extends 'header_6.html' %}
 {% load static %}
 {% block content %}
-    <div class="card mb-3 border-0 nth-shadow container">
-        <div class="card-body page row center-lg center-md center-sm center-xs">
-            <div class="card-title nth-card-title page row center-lg center-md center-sm center-xs">
-                <h4>Форма обратной связи</h4>
+    <div class="container">
+        <form method="post" action="{% url 'feedback' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="field" tabindex="1">
+                <label for="username">
+                    <i class="far fa-user"></i>Ваше имя
+                </label>
+                <input name="username" type="text" placeholder="как к Вам можно обращаться?" required>
             </div>
-            <form method="post" action="{% url 'feedback' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <div class="d-grid gap-2 d-md-block mt-2">
-                <button type="submit" class="page row center-lg center-md center-sm center-xs btn btn-dark">Отправить отзыв</button>
-             </div>
-            </form>
-        </div>
+            <div class="field" tabindex="2">
+                <label for="email">
+                    <i class="far fa-envelope"></i>Контакт для обратной связи
+                </label>
+                <input name="email" type="text" placeholder="email / Telegram / vk " required>
+            </div>
+            <div class="field" tabindex="3">
+                <label for="message">
+                    <i class="far fa-edit"></i>Ваше обращение
+                </label>
+                <textarea name="message" placeholder="Опишите Ваши пожелания / предложения / замечания / исправления" required></textarea>
+            </div>
+            <button type="reset">Отправить</button>
+        </form>
     </div>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap");
+* {
+  font-family: 'IBM Plex Mono', monospace;
+
+  transition: all 0.5s ease;
+}
+
+body {
+  background: #dfdfdf;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+form div,
+form label,
+form input,
+form textarea {
+  width: 100%;
+}
+
+.field:nth-of-type(2) {
+  margin: 16px 0;
+}
+
+label,
+input,
+textarea {
+  padding: 8px;
+}
+
+label,
+[placeholder] {
+  color: #000000;
+}
+
+label i {
+  margin: 0 10px 0 0;
+}
+
+.field:focus-within label {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 6px -6px #e5bc29;
+}
+input:focus,
+textarea:focus {
+  background: white;
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+button {
+  background: #e5bc29;
+  margin: 16px 0 50px 0;
+  padding: 8px 16px;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px #555;
+}
+button:hover {
+  letter-spacing: 2px;
+  box-shadow: none;
+}
+
+.social-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+:not(.social-media) {
+  font-size: 14px;
+}
+.social-media span {
+  font-size: 16px;
+}
+.social-media span .fas {
+  margin: 0 0 0 10px;
+}
+.social-media a {
+  color: #000;
+  font-size: 20px;
+}
+
+@media (max-width: 425px) {
+  form {
+    width: 100%;
+  }
+}
+    </style>
 {% endblock %}
