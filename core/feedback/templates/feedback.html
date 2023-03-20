@@ -2,15 +2,15 @@
 {% load static %}
 {% block content %}
     <div class="card mb-3 border-0 nth-shadow container">
-        <div class="card-body">
-            <div class="card-title nth-card-title">
+        <div class="card-body page row center-lg center-md center-sm center-xs">
+            <div class="card-title nth-card-title page row center-lg center-md center-sm center-xs">
                 <h4>Форма обратной связи</h4>
             </div>
             <form method="post" action="{% url 'feedback' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <div class="d-grid gap-2 d-md-block mt-2">
-                <button type="submit" class="btn btn-dark">Отправить отзыв</button>
+                <button type="submit" class="page row center-lg center-md center-sm center-xs btn btn-dark">Отправить отзыв</button>
              </div>
             </form>
         </div>
