@@ -4,7 +4,6 @@
     <div class="container">
         <form method="post" action="{% url 'feedback' %}">
             {% csrf_token %}
-            {{ form.as_p }}
             <div class="field" tabindex="1">
                 <label for="username">
                     <i class="far fa-user"></i>Ваше имя
