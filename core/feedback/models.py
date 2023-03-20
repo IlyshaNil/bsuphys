@@ -5,7 +5,7 @@ class Feedback(models.Model):
     """
     Модель обратной связи
     """
-    subject = models.CharField(max_length=255, verbose_name='Тема отзыва')
+    subject = models.CharField(max_length=255, verbose_name='Ваше имя')
     email = models.CharField(max_length=255, verbose_name='Контакт для обратной связи')
     content = models.TextField(verbose_name='Содержимое отзыва')
     time_create = models.DateTimeField(auto_now_add=True, verbose_name='Дата отправки')
