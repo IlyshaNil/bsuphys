@@ -15,17 +15,17 @@ class FeedbackCreateForm(forms.ModelForm):
             'subject': TextInput(attrs={
                 'class': "form-control",
                 'style': '',
-                'placeholder': 'Username'
+                'placeholder': 'Как к Вам можно обращаться?'
                 }),
             'email': TextInput(attrs={
                 'class': "form-control", 
                 'style': '',
-                'placeholder': 'email / Telegram / vk / instagram'
+                'placeholder': 'Контакт для обратной связи (Email / Telegram / VK / Instagram)'
                 }),
             'content': Textarea(attrs={
                 'class': 'from-control',
                 'style': 'class="textarea"',
-                'placeholder': 'Опишите Ваши впечатления / замечания / предложения'
+                'placeholder': 'Пожалуйста, опишите Ваши впечатления / замечания / предложения'
             })
         }
 
