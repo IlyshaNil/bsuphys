@@ -8,5 +8,5 @@ class FeedbackAdmin(admin.ModelAdmin):
     """
     Админ-панель модели профиля
     """
-    list_display = ('email', 'content', 'ip_address')
-    list_display_links = ('email', 'ip_address')
+    list_display = ('subject', 'content', 'time_create')
+    list_display_links = ('subject')
