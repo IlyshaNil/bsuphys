@@ -24,7 +24,7 @@ class FeedbackCreateForm(forms.ModelForm):
                 }),
             'content': Textarea(attrs={
                 'class': 'from-control',
-                'style': '',
+                'style': 'class="textarea"',
                 'placeholder': 'Опишите Ваши впечатления / замечания / предложения'
             })
         }
