@@ -7,14 +7,22 @@
     <div class="card mb-3 border-0 nth-shadow">
       <div class="card-body">
           <div class="card-title nth-card-title">
-              <h4>Контактная форма</h4>
+              <h4>Форма обратной связи</h4>
           </div>
           <form method="post" action="{% url 'feedback' %}">
               {% csrf_token %}
-              {{ form.as_p }}
-              <div class="d-grid gap-2 d-md-block mt-2">
-              <button type="submit" class="btn btn-dark">Отправить </button>
-          </div>
+              <div class="form-group">
+                {{ form.subject }}
+              </div>
+              <div class="form-group">
+                  {{ form.email }}
+              </div>
+              <div class="form-group">
+                  {{ form.context }}
+              </div>
+              <div class="form-group">
+                  <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
           </form>
       </div>
     </div>
