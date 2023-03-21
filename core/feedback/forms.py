@@ -14,18 +14,18 @@ class FeedbackCreateForm(forms.ModelForm):
         widgets = {
             'subject': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': '',
                 'placeholder': 'Username'
                 }),
             'email': TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': '',
                 'placeholder': 'email / Telegram / vk / instagram'
                 }),
-            'context': Textarea(attrs={
-                'class': "from-control",
-                'style': "max-width",
-                'placeholder': 'Опигите Ваши впечатления / замечания / предложения'
+            'content': Textarea(attrs={
+                'class': 'from-control',
+                'style': '',
+                'placeholder': 'Опишите Ваши впечатления / замечания / предложения'
             })
         }
 
