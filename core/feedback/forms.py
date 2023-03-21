@@ -1,6 +1,6 @@
 
 from django import forms
-from django.forms import TextInput
+from django.forms import TextInput, Textarea
 from .models import Feedback
 
 class FeedbackCreateForm(forms.ModelForm):
@@ -21,7 +21,12 @@ class FeedbackCreateForm(forms.ModelForm):
                 'class': "form-control", 
                 'style': 'max-width: 300px;',
                 'placeholder': 'email / Telegram / vk / instagram'
-                })
+                }),
+            'context': Textarea(attrs={
+                'class': "from-control",
+                'style': "max-width",
+                'placeholder': 'Опигите Ваши впечатления / замечания / предложения'
+            })
         }
 
     def __init__(self, *args, **kwargs):
