@@ -9,4 +9,4 @@ class FeedbackAdmin(admin.ModelAdmin):
     Админ-панель модели профиля
     """
     list_display = ('subject', 'content', 'time_create')
-    list_display_links = ('subject')
+    list_display_links = ('subject',)
