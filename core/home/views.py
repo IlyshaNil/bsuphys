@@ -12,6 +12,7 @@ import random
 from django.shortcuts import redirect
 import pprint
 from django.http import HttpResponse
+import os
 
 
 def language_switch_en(request):
@@ -329,4 +330,9 @@ def PublicationsInArchive(request):
 
 def thirdStage(request):
     return render(request, "thirdStage.html")
+
+
+def updateGithub(request):
+    os.system('sudo ./home/dev/cicd')
+    return HttpResponse("Hello")
 
