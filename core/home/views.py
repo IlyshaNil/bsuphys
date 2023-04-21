@@ -333,6 +333,6 @@ def thirdStage(request):
 
 
 def updateGithub(request):
-    os.system('sudo ./home/dev/cicd')
+    os.system('sudo bash /home/dev/cicd')
     return HttpResponse("Hello")
 
