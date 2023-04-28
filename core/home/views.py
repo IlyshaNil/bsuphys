@@ -411,4 +411,5 @@ def handle_github_hook(request):
     if not hmac.compare_digest(github_signature, expected_signature):
         return HttpResponseForbidden('Invalid signature header')
 
+
     return HttpResponse('Webhook received')
