@@ -367,7 +367,7 @@ def ifGithubHook(request):
     else:
         return HttpResponseForbidden('Permission denied.')
 
-    return True
+    return HttpResponse('pong')
 
 
 def verifyGithubToken(request):
