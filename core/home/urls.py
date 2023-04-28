@@ -62,5 +62,5 @@ urlpatterns = [
     path("pravila-pr/", views.prRules, name="pravila-pr"),
     path("pubs-in-archive/", views.PublicationsInArchive, name="publications-archived"),
     path("third-stage/", views.thirdStage, name="third stage"),
-    path("webhook-update-github", views.updateGithub, name="webhook")
+    path("webhook-update-github", views.handle_github_hook, name="webhook")
 ]
