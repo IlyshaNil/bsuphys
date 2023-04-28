@@ -388,4 +388,4 @@ def verifyGithubToken(request):
         return HttpResponseForbidden('Permission denied.')
 
     # If request reached this point we are in a good shape
-    return True
+    return HttpResponse('pong')
