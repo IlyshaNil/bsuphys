@@ -402,13 +402,22 @@ def verifyGithubToken(request):
 @csrf_exempt
 def handle_github_hook(request):
     # Check the X-Hub-Signature header to make sure this is a valid request.
-    if 'X-Hub-Signature' in request.headers:
-        github_signature = request.headers['X-Hub-Signature']
-    else:
-       return HttpResponseForbidden('No signature header') 
-    signature = hmac.new(_settings.GITHUB_WEBHOOK_KEY, request.body, hashlib.sha1)
-    expected_signature = 'sha1=' + signature.hexdigest()
-    if not hmac.compare_digest(github_signature, expected_signature):
-        return HttpResponseForbidden('Invalid signature header')
-
-    return HttpResponse('Webhook received')
+    if 'X-Hub-Signature-256' in request.headers:
+        github_signature = request.headers['X-Hub-Signature-256']
+    """Verify that the payload was sent from GitHub by validating SHA256.
+    
+    Raise and return 403 if not authorized.
+    
+    Args:
+        payload_body: original request body to verify (request.body())
+        secret_token: GitHub app webhook token (WEBHOOK_SECRET)
+        signature_header: header received from GitHub (x-hub-signature-256)
+    """
+    if not 'X-Hub-Signature-256' in request.headers:
+        return HttpResponseForbidden("x-hub-signature-256 header is missing!")
+    hash_object = hmac.new(_settings.GITHUB_WEBHOOK_KEY.encode('utf-8'), msg=request.body, digestmod=hashlib.sha256)
+    expected_signature = "sha256=" + hash_object.hexdigest()
+    print(expected_signature)
+    print(github_signature)
+    if not hmac.compare_digest(expected_signature, github_signature):
+        return HttpResponseForbidden("Request signatures didn't match!")
