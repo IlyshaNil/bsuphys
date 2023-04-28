@@ -402,8 +402,9 @@ def verifyGithubToken(request):
 @csrf_exempt
 def handle_github_hook(request):
     # Check the X-Hub-Signature header to make sure this is a valid request.
-    github_signature = request.META['HTTP_X_HUB_SIGNATURE']
-    if not github_signature:
+    if 'X-Hub-Signature' in request.headers:
+        github_signature = request.headers['X-Hub-Signature']
+    else:
        return HttpResponseForbidden('No signature header') 
     signature = hmac.new(_settings.GITHUB_WEBHOOK_KEY, request.body, hashlib.sha1)
     expected_signature = 'sha1=' + signature.hexdigest()
