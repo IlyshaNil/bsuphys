@@ -415,9 +415,11 @@ def handle_github_hook(request):
     """
     if not 'X-Hub-Signature-256' in request.headers:
         return HttpResponseForbidden("x-hub-signature-256 header is missing!")
-    hash_object = hmac.new(_settings.GITHUB_WEBHOOK_KEY.encode('utf-8'), msg=request.body, digestmod=hashlib.sha256)
+    hash_object = hmac.new(_settings.GITHUB_WEBHOOK_KEY.encode('utf-8'), msg=request.body, digestmod='sha256')
     expected_signature = "sha256=" + hash_object.hexdigest()
     print(expected_signature)
     print(github_signature)
+
+
     if not hmac.compare_digest(expected_signature, github_signature):
         return HttpResponseForbidden("Request signatures didn't match!")
