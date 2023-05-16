@@ -399,7 +399,7 @@ def verifyGithubToken(request):
     return HttpResponse('pong')
 
 
-
+@csrf_exempt
 def handle_github_hook(request):
     # Verify if request came from GitHub
     # forwarded_for = u'{}'.format(request.META.get('HTTP_X_FORWARDED_FOR'))
