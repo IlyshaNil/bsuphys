@@ -37,6 +37,7 @@ from django.conf import settings
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.encoding import force_bytes
+from django_github_webhook.views import WebHookView
 
 
 def language_switch_en(request):
@@ -383,15 +384,21 @@ def verifyGithubToken(request):
     # ...
 
     # Verify the request signature
-    header_signature = request.META.get('HTTP_X_HUB_SIGNATURE')
+    header_signature = request.META.get('HTTP_X_HUB_SIGNATURE_256')
     if header_signature is None:
         return HttpResponseForbidden('Permission denied.')
 
     sha_name, signature = header_signature.split('=')
-    if sha_name != 'sha1':
+    if sha_name != 'sha256':
         return HttpResponseServerError('Operation not supported.', status=501)
+    
+    if 'payload' in request.POST:
+        payload = json.loads(request.POST['payload'])
+    else:
+        payload = json.loads(request.body)
 
-    mac = hmac.new(force_bytes(_settings.GITHUB_WEBHOOK_KEY), msg=force_bytes(request.body), digestmod=sha1)
+
+    mac = hmac.new(force_bytes(_settings.GITHUB_WEBHOOK_KEY), msg=payload, digestmod=sha1)
     if not hmac.compare_digest(force_bytes(mac.hexdigest()), force_bytes(signature)):
         return HttpResponseForbidden('Permission denied.')
 
@@ -399,54 +406,3 @@ def verifyGithubToken(request):
     return HttpResponse('pong')
 
 
-@csrf_exempt
-def handle_github_hook(request):
-    # Verify if request came from GitHub
-    # forwarded_for = u'{}'.format(request.META.get('HTTP_X_FORWARDED_FOR'))
-    # client_ip_address = ip_address(forwarded_for)
-    # whitelist = requests.get('https://api.github.com/meta').json()['hooks']
-
-    # for valid_ip in whitelist:
-    #     if client_ip_address in ip_network(valid_ip):
-    #         break
-    # else:
-    #     return HttpResponseForbidden('Permission denied.')
-
-    # Verify the request signature
-    header_signature = request.META.get('HTTP_X_HUB_SIGNATURE')
-    if header_signature is None:
-        return HttpResponseForbidden('Permission denied.')
-
-    sha_name, signature = header_signature.split('=')
-    if sha_name != 'sha1':
-        return HttpResponseServerError('Operation not supported.', status=501)
-
-    mac = hmac.new(force_bytes(settings.GITHUB_WEBHOOK_KEY), msg=force_bytes(request.body), digestmod=sha1)
-    if not hmac.compare_digest(force_bytes(mac.hexdigest()), force_bytes(signature)):
-        return HttpResponseForbidden('Permission denied.')
-
-    # If request reached this point we are in a good shape
-    # Process the GitHub events
-    event = request.META.get('HTTP_X_GITHUB_EVENT', 'ping')
-
-    if event == 'ping':
-        return HttpResponse('pong')
-    elif event == 'push':
-        # Deploy some code for example
-        return HttpResponse('success')
-
-    # In case we receive an event that's not ping or push
-    return HttpResponse(status=204)
-    # # Check the X-Hub-Signature header to make sure this is a valid request.
-    # if 'X-Hub-Signature-256' in request.headers:
-    #     github_signature = request.headers['X-Hub-Signature-256']
-    # else:
-    #     return HttpResponseForbidden("x-hub-signature-256 header is missing!")
-    # hash_object = hmac.new(_settings.GITHUB_WEBHOOK_KEY.encode('utf-8'), msg=request.body, digestmod=hashlib.sha256)
-    # expected_signature = "sha256=" + hash_object.hexdigest()
-    # if not hmac.compare_digest(expected_signature, github_signature):
-    #     return HttpResponseForbidden("x-hub-signature-256 header isn't match!")
-    
-    # return HttpResponse("200")
-    
-    
