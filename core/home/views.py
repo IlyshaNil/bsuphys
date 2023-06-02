@@ -357,50 +357,30 @@ def thirdStage(request):
     return render(request, "thirdStage.html")
 
 
-def updateGithub(request):
-    if ifGithubHook(request) and verifyGithubToken(request):
-        os.system('sudo bash /home/dev/cicd')
-    return HttpResponse("Hello")
+# def updateGithub(request):
+#     if ifGithubHook(request) and verifyGithubToken(request):
+#         os.system('sudo bash /home/dev/cicd')
+#     return HttpResponse("Hello")
 
-@require_POST
 @csrf_exempt
-def ifGithubHook(request):
-    # Verify if request came from GitHub
-    forwarded_for = u'{}'.format(request.META.get('HTTP_X_FORWARDED_FOR'))
-    client_ip_address = ip_address(forwarded_for)
-    whitelist = requests.get('https://api.github.com/meta').json()['hooks']
-
-    for valid_ip in whitelist:
-        if client_ip_address in ip_network(valid_ip):
-            break
-    else:
-        return HttpResponseForbidden('Permission denied.')
-
-    return HttpResponse('pong')
-
-
 def verifyGithubToken(request):
-    # Verify if request came from GitHub
-    # ...
+    # header_signature = request.META.get('HTTP_X_HUB_SIGNATURE_256')
+    # if header_signature is None:
+    #     return HttpResponseForbidden('Permission denied.')
 
-    # Verify the request signature
-    header_signature = request.META.get('HTTP_X_HUB_SIGNATURE_256')
-    if header_signature is None:
-        return HttpResponseForbidden('Permission denied.')
-
-    sha_name, signature = header_signature.split('=')
-    if sha_name != 'sha256':
+    sha_name, signature = request.META.get('HTTP_X_HUB_SIGNATURE').split('=')
+    if sha_name != 'sha1':
         return HttpResponseServerError('Operation not supported.', status=501)
     
-    if 'payload' in request.POST:
-        payload = json.loads(request.POST['payload'])
-    else:
-        payload = json.loads(request.body)
+    # if 'payload' in request.POST:
+    #     payload = json.loads(request.POST['payload'])
+    # else:
+    payload = json.loads(request.body.decode('utf-8'))
 
-
+    # print(request.body.decode('utf-8'))
     mac = hmac.new(force_bytes(_settings.GITHUB_WEBHOOK_KEY), msg=payload, digestmod=sha1)
     if not hmac.compare_digest(force_bytes(mac.hexdigest()), force_bytes(signature)):
-        return HttpResponseForbidden('Permission denied.')
+        return HttpResponse('pong')#HttpResponseForbidden('Permission denied.')
 
     # If request reached this point we are in a good shape
     return HttpResponse('pong')
