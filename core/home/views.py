@@ -37,7 +37,7 @@ from django.conf import settings
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.encoding import force_bytes
-from django_github_webhook.views import WebHookView
+
 
 
 def language_switch_en(request):
