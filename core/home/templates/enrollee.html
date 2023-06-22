@@ -26,6 +26,35 @@
         <a href="https://physics.bsu.by/media/media/Eglish_ver-1972.pdf">Faculty of Physics Booklet</a>
         {% endif %}
         <a href="/media/media/2022SIBD_3.pdf">{% trans "Презентация совместного института БГУ и ДПУ" %}</a>
+
+        <div class="special-content-block">
+          <div style="margin:0!important;">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+               <p style="text-align:center;"><img alt="" src="https://physics.bsu.by/media/media/a-50HQpapjk.jpg" style="width:80%;"></p>
+               <p>&nbsp;</p>
+               <p>&nbsp;</p>
+              {% if LANGUAGE_CODE == "ru"%}
+               <h2 style="font-size:36px!important; text-align:center!important;">Уважаемые абитуриенты!</h2>
+               <p>&nbsp;</p>
+                <p style="font-size:24px!important; line-height:1.5!important; text-align:center!important;">
+                    <strong>27</strong>&nbsp;<strong>июня</strong> в <strong>11-00</strong> в&nbsp;<strong>220</strong>&nbsp;<strong>аудитории</strong> физического&nbsp;факультета состоится консультация по физике перед централизованным тестированием. Консультация бесплатная, приглашаются все желающие.
+                </p>
+              {% endif %}
+              {% if LANGUAGE_CODE == "en"%}
+               <h2 style="font-size:36px!important; text-align:center!important;">Dear enrollees!</h2>
+               <p style="text-align:center;"><img alt="" src="https://physics.bsu.by/media/media/a-50HQpapjk.jpg" style="width:80%;"></p>
+               <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                 <p style="font-size:24px!important; line-height:1.5!important; text-align:center!important;">
+                     <strong>On</strong> <strong>June</strong> <strong>27</strong> at&nbsp;<strong>11-00</strong> in the&nbsp;lecture room <strong>220</strong> of the Faculty of Physics there will be the&nbsp;consultation on&nbsp;Physics before the&nbsp;Centralized&nbsp;Testing. The consultation is free, everyone is welcome.
+                 </p>
+              {% endif %}
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+           </div>
+        </div>
+
         
 <!--         <div class="special-content-block">
           <div style="margin:0!important;">
@@ -223,7 +252,6 @@
 <!--         <div id="progRL"><a href="https://physics.bsu.by/media/media/Programma-rozhdestvenskikh-lektsij-fizich-fakulteta-BGU-2022-2023.pdf" target="_blank">{% trans "Программа мероприятий рождественских лекций физического факультета БГУ 2022-2023" %}</a></div> -->
         <a style="display:none!important;" href="https://physics.bsu.by/ru/blog/2021/6/21/vnimaniyu-abiturientov/">{% trans "Разбор заданий ЦТ по физике" %}</a>
         <a href="https://vk.com/abit.bsuphys?from=quick_search" target="_blank">{% trans "Сообщество 'Абитуриенты ФизФака БГУ' в ВКонтакте" %}</a>
-<!--         <a href="https://vk.com/abit.bsuphys?from=quick_search" target="_blank">Сообщество абитуриентов факультета в ВКонтакте</a> -->
     </div>
 </div>
 {% endblock %}
