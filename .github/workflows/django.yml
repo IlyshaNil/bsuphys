@@ -36,6 +36,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
+    - name: Notification
+      run: |
+        curl -d "text=Changes detected in master branch!%0AYour updates will be deployed by CI/CD automatically after build and test" "https://api.telegram.org/bot6034033329:AAHJ9KlrA378w0_qL8ypMdEQ9gQqBzkqJ8U/sendMessage"
+    
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
