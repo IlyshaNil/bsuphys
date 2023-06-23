@@ -1,42 +1,19 @@
-from urllib import response
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
 from home.models import MainPageStatisticNumber, KeyPublications, FamousGraduates
-from django.utils import timezone
 from django.conf import settings
 from django.http import HttpResponse
 from django.utils import translation
-from django.db.models import Max
 import random
 from django.shortcuts import redirect
-import pprint
 from django.http import HttpResponse
-import os
-import hashlib
-import hmac
-import hmac
-from hashlib import sha1
-from django.http import HttpResponse, HttpResponseForbidden
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_POST
-import hashlib
-import hmac
-import json
+from django.http import HttpResponse
 from dynaconf import settings as _settings
 
 from django.conf import settings
-from django.http import HttpResponse, HttpResponseForbidden
-from django.views.decorators.csrf import csrf_exempt
-
-import requests
-from ipaddress import ip_address, ip_network
 
 
-from django.conf import settings
-from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
-from django.views.decorators.csrf import csrf_exempt
-from django.utils.encoding import force_bytes
 
 
 
@@ -180,10 +157,6 @@ def timetableExams(request):
     return render(request, "timetableExam.html")
 
 
-def timofey(request):
-    return HttpResponse("url для Тимофея")
-
-
 def get_random_statistic_number(model_class, amount):
     max_id = list(model_class.objects.values('id'))
     value_list = []
@@ -264,10 +237,6 @@ def eduProcess(request):
     return render(request, "eduProcess.html")
 
 
-def test(request):
-    return render(request, "worldwide.html")
-
-
 def dod(request):
     return render(request, "dod.html")
 
@@ -278,10 +247,6 @@ def secondStage(request):
 
 def keyPublicationsListAll(request):
     return render(request, "PublicationsAll.html")
-
-
-def servicePage(request):
-    return render(request, "servicePage.html")
 
 
 def studOlimp2021(request):
@@ -324,11 +289,6 @@ def page_not_found_view(request, exception):
     return render(request, '404.html', status=404)
 
 
-def aboba(request):
-    meta = request.META.items()
-    return HttpResponse(meta)
-
-
 def tradeUnion(request):
     return render(request, "primaryTradeUnionCommitee.html")
 
@@ -355,34 +315,3 @@ def PublicationsInArchive(request):
 
 def thirdStage(request):
     return render(request, "thirdStage.html")
-
-
-# def updateGithub(request):
-#     if ifGithubHook(request) and verifyGithubToken(request):
-#         os.system('sudo bash /home/dev/cicd')
-#     return HttpResponse("Hello")
-
-@csrf_exempt
-def verifyGithubToken(request):
-    # header_signature = request.META.get('HTTP_X_HUB_SIGNATURE_256')
-    # if header_signature is None:
-    #     return HttpResponseForbidden('Permission denied.')
-
-    sha_name, signature = request.META.get('HTTP_X_HUB_SIGNATURE').split('=')
-    if sha_name != 'sha1':
-        return HttpResponseServerError('Operation not supported.', status=501)
-    
-    # if 'payload' in request.POST:
-    #     payload = json.loads(request.POST['payload'])
-    # else:
-    payload = json.loads(request.body.decode('utf-8'))
-
-    # print(request.body.decode('utf-8'))
-    mac = hmac.new(force_bytes(_settings.GITHUB_WEBHOOK_KEY), msg=payload, digestmod=sha1)
-    if not hmac.compare_digest(force_bytes(mac.hexdigest()), force_bytes(signature)):
-        return HttpResponse('pong')#HttpResponseForbidden('Permission denied.')
-
-    # If request reached this point we are in a good shape
-    return HttpResponse('pong')
-
-
