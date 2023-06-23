@@ -40,7 +40,6 @@ urlpatterns = [
     path("conferences/", views.conferences, name="conferences"),
     path("science-directions/", views.nilAndScienceDirections, name="info"),
     path("edu-proc/", views.eduProcess, name="info"),
-    path("test/", views.test, name="info"),
     path("dod/", views.dod, name="dod"),
     path("second-stage/", views.secondStage, name="second stage"),
     path("olimp2021/", views.studOlimp2021, name="service"),
