@@ -53,8 +53,28 @@ jobs:
       working-directory: ./core
       run: pytest
       
-    - name: Deploy
-      run: |
-        echo "${{secrets.SSH_KEY}}" > key.rsa
-        ssh -i key.rsa ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "sudo bash cicd"
-    
+  deploy:
+    name: "Deploy to server"
+    runs-on: ubuntu-20.04
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: build
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/ssh.key
+          chmod 600 ~/.ssh/ssh.key
+          cat >>~/.ssh/config <<END
+          Host server
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/ssh.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+
+      - name: Deploy and restart
+        run: ssh server 'sudo bash cicd'
