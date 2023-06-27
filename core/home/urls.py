@@ -58,4 +58,7 @@ urlpatterns = [
     path("pravila-pr/", views.prRules, name="pravila-pr"),
     path("pubs-in-archive/", views.PublicationsInArchive, name="publications-archived"),
     path("third-stage/", views.thirdStage, name="third stage"),
+    path("forEmployers/", views.forEmployers, name="forEmployers"),
+    path("partners/", views.partners, name="partners"),
+    path("sponsors/", views.sponsors, name="sponsors"),
 ]
