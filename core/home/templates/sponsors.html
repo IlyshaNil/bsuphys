@@ -1,0 +1,19 @@
+{% extends 'header_6.html' %}
+
+{% load static %}
+
+
+{% load i18n %}
+
+{% block title %}{% trans "Спонсоры" %}{% endblock %}
+
+{% block content %}
+
+<div class="spec" style="margin:0 5%; cursor:auto!important; min-height:700px!important;">
+    {% get_current_language as LANGUAGE_CODE %}
+    <div class="container">
+        <div class="page_name">{% trans "Спонсоры" %}</div>
+        <p style="padding:75px 0 !important; font-size:18px; font-style:italic!important; text-align:center!important; color:#c4c4c4!important;margin-top: 10%; user-select:none;">{% trans "Информация не размещена" %}</p>
+</div>
+</div>
+{% endblock %}
