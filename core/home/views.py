@@ -315,3 +315,15 @@ def PublicationsInArchive(request):
 
 def thirdStage(request):
     return render(request, "thirdStage.html")
+
+
+def forEmployers(request):
+    return render(request, "forEmployers.html")
+
+
+def partners(request):
+    return render(request, "partners.html")
+
+
+def sponsors(request):
+    return render(request, "sponsors.html")
