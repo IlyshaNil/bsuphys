@@ -12,9 +12,10 @@
 <div class="spec" style="margin:0 5%; cursor:auto!important; min-height:500px!important;">
     {% get_current_language as LANGUAGE_CODE %}
     <div class="container">
-        <div class="page_name">{% trans "Расписание физико-математической школы 'Квант БГУ'" %}</div>  <!-- Вариант перевода на английский язык: The Schedule of the Physics and Mathematics School 'Quantum BSU' -->
+        <div class="page_name">{% trans "Расписание физико-математической школы 'Квант БГУ'" %}</div>
         {% if LANGUAGE_CODE == "ru"%}
-        <div class="page_spec">		
+        <div class="page_spec">
+<!--
 	<p>&nbsp;</p>
 	<p style="font-size:22px; text-align:left;"><strong>ВНИМАНИЕ!</strong>&nbsp; В связи с зачетно-экзаменационной сессией <strong>изменяется время начала занятий в «Квант-11»</strong> (касается <strong>только трех</strong> занятий: <strong><span style="color:red">28</span>&nbsp;<span style="color:red">декабря</span>&nbsp;<span style="color:red">2022</span>&nbsp;<span style="color:red">г.,</span></strong> <strong><span style="color:red">4</span>&nbsp;<span style="color:red">января и 5</span>&nbsp;<span style="color:red">января</span>&nbsp;<span style="color:red">2023</span>&nbsp;<span style="color:red">г.</span></strong>). Начало занятий в&nbsp;<strong>9.00</strong> в&nbsp;аудитории <strong>222</strong>. Вторая пара начнется в <strong>10.45</strong> также в <strong>222&nbsp;ауд</strong>.</p>
 	<p>&nbsp;</p>
@@ -28,19 +29,19 @@
 		
 	<div style="text-align:center!important; font-size:23px!important;"> 
 		
-	<!--<p>ВНИМАНИЕ! В связи с проведением на физическом факультете 16&nbsp;апреля&nbsp;2022&nbsp;г. олимпиады «Абитуриент-2022» произошли изменения в расписании «Квант&nbsp;БГУ»</p>
+	<p>ВНИМАНИЕ! В связи с проведением на физическом факультете 16&nbsp;апреля&nbsp;2022&nbsp;г. олимпиады «Абитуриент-2022» произошли изменения в расписании «Квант&nbsp;БГУ»</p>
 	    <p>&nbsp;</p>
 	    <p>&nbsp;</p>
-            <p>&nbsp;</p>-->
+            <p>&nbsp;</p>
 		
 	<p style="font-size: 27px;">РАСПИСАНИЕ ЗАНЯТИЙ В ФИЗИКО-МАТЕМАТИЧЕСКОЙ ШКОЛЕ «КВАНТ&nbsp;БГУ»</p>
 	<p>&nbsp;</p>
-		
+-->
 	</div>
 
-<!--p style="font-size:18px; font-style:italic!important; text-align:center!important; color:#c4c4c4!important;">Расписание не размещено</p-->
+<p style="font-size:18px; font-style:italic!important; text-align:center!important; color:#c4c4c4!important;">Расписание не размещено</p>
 
-
+<!--
 <table border="1" cellpadding="9" cellspacing="0" class="Table" style="border-collapse:collapse; min-width:320px; width:100%">
 	<tbody>
 		<tr>
@@ -400,7 +401,9 @@
 		</tr>
 	</tbody>
 </table>
+-->
 
+	    
 <p>&nbsp;</p>
 
 <!--
@@ -637,19 +640,20 @@
 
             <p>&nbsp;</p>
 
-            <p><strong>Расписание</strong> также доступно по&nbsp;<strong><a style="color:#f39c12; text-decoration: underline!important;" href="https://physics.bsu.by/media/media/Raspisanie_Kvant__2022-2023___2.pdf" download="">ссылке</a></strong>.</p>
+<!--             <p><strong>Расписание</strong> также доступно по&nbsp;<strong><a style="color:#f39c12; text-decoration: underline!important;" href="https://physics.bsu.by/media/media/Raspisanie_Kvant__2022-2023___2.pdf" download="">ссылке</a></strong>.</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
-		<p style="font-size:20px!important;">Будем рады Вас видеть на физическом факультете&nbsp;БГУ!</p>
+		<p style="font-size:20px!important;">Будем рады Вас видеть на физическом факультете&nbsp;БГУ!</p> -->
 		<p>&nbsp;</p>
         </div>
         {% endif %}
         {% if LANGUAGE_CODE == "en"%}
-        <div class="page_spec">
-		
+        <div class="page_spec">	
 	<p>&nbsp;</p>
+
+<!--
 	<p style="font-size:22px; text-align:left;"><strong>ATTENTION!</strong>&nbsp; In connection with the test and examination session <strong>the start time of classes at Quantum-11 is changing</strong> (it is concerned <strong>the only three</strong> classes: <strong><span style="color:red">December</span>&nbsp;<span style="color:red">28,</span>&nbsp;<span style="color:red">2022,</span></strong> <strong><span style="color:red">January</span>&nbsp;<span style="color:red">4 and January</span>&nbsp;<span style="color:red">5,</span>&nbsp;<span style="color:red">2023</span></strong>). Classes start at&nbsp;<strong>9.00</strong> in&nbsp;lecture&nbsp;room <strong>222</strong>. The second class will start at <strong>10.45</strong> also in <strong>lecture&nbsp;room&nbsp;222</strong>.</p>
 	<p>&nbsp;</p>
 	<p style="font-size:22px; text-align:left;">Classes at Quantum-9, Quantum-10, and also at Quantum-11 will continue on Saturdays <strong>from&nbsp;January&nbsp;14,&nbsp;2023</strong>.</p>
@@ -659,21 +663,23 @@
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-
+-->
+		
 	<div style="text-align:center!important; font-size:23px!important;">
 <!-- 		<p>ATTENTION! Taking into consideration the holding of the Olympiad &quot;Enrollee-2022&quot; at the Faculty of Physics on April 16, 2022, there have been changes in the schedule of &quot;Quantum BSU&quot;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
-		<p>&nbsp;</p> -->
-		
+		<p>&nbsp;</p>
+
 		<p style="font-size:27px;">SCHEDULE OF CLASSES AT THE PHYSICS AND MATHEMATICS SCHOOL &quot;QUANTUM&nbsp;BSU&quot;</p>
+-->
 		<p>&nbsp;</p>
 	</div>
 
 		
-<!--p style="font-size:18px; font-style:italic!important; text-align:center!important; color:#c4c4c4!important;">Schedule not posted</p-->
+<p style="font-size:18px; font-style:italic!important; text-align:center!important; color:#c4c4c4!important;">Schedule not posted</p>
 
-		
+<!--
 <table border="1" cellpadding="9" cellspacing="0" class="Table" style="border-collapse:collapse; min-width:320px; width:100%">
 	<tbody>
 		<tr>
@@ -1033,7 +1039,7 @@
 		</tr>
 	</tbody>
 </table>
-
+-->
 
 <!--
             <table cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:none; width:45%;">
@@ -1578,16 +1584,18 @@
 		</tr>
 	</tbody>
 </table>
+
 -->
 
-        <p>&nbsp;</p
-
+        <p>&nbsp;</p>
+<!--
         <p>The&nbsp;<strong>schedule</strong>&nbsp;(in&nbsp;Russian) is also available through the&nbsp;<strong><a style="color:#f39c12; text-decoration:underline!important;" href="https://physics.bsu.by/media/media/Raspisanie_Kvant__2022-2023___2.pdf" download="">link</a></strong>.</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p style="font-size:23px!important;">We will be glad to see You at the&nbsp;Faculty&nbsp;of&nbsp;Physics of&nbsp;BSU!</p>
+-->
 		<p>&nbsp;</p>
         {% endif %}
     </div>
