@@ -13,7 +13,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <img src="{{ post.image.url }}">
         </div>
-        <div class="data">{% trans "Опубликованно" %} {{ post.publish }} by {{ post.author }}</div>
+        <div class="data">{% trans "Опубликовано" %} {{ post.publish }} by {{ post.author }}</div>
         <div class="inf">{{ post.body| safe }} </div>
         {% if post.uploads %}
         <a href="{{ BASE_DIR }}/media/{{ post.uploads.file }}">{% trans "Прикрепленные документы" %}</a>
