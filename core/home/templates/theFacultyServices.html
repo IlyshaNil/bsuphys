@@ -4,12 +4,12 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "Услуги" %}{% endblock %}  <!-- Вариант перевода на английский язык: 'Services' -->
+{% block title %}{% trans "Услуги" %}{% endblock %}
 
 {% block content %}
 <div id="services-special" class="pages">
     <div class="container">
-        <div class="page_name">{% trans "Услуги" %}</div>  <!-- Вариант перевода на английский язык: 'Services' -->
+        <div class="page_name">{% trans "Услуги" %}</div>
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE == "ru"%}
         <ul style="margin-bottom:30px!important;">
