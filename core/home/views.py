@@ -201,30 +201,6 @@ def edi(request):
     return render(request, "edi.html")
 
 
-def ckpMain(request):
-    return render(request, "CKP/index.html")
-
-
-def linesOfResearches(request):
-    return render(request, "CKP/lines-of-researches.html")
-
-
-def measurementProcedures(request):
-    return render(request, "CKP/measurement-procedures.html")
-
-
-def equipment(request):
-    return render(request, "CKP/equipment.html")
-
-
-def contactsCKP(request):
-    return render(request, "CKP/contacts.html")
-
-
-def scientificServices(request):
-    return render(request, "CKP/scientific-services.html")
-
-
 def conferences(request):
     return render(request, "conferences.html")
 
